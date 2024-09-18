@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from "./Components/Header.jsx"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Header />
+      App
+    </div>
   )
 }
 
