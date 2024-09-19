@@ -1,0 +1,1141 @@
+.bg-container {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-image: url('/images/surucu-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    font-family:sans-serif; 
+    
+    @media (max-width: 1024px) {
+        height: 100vh;
+      }
+
+      @media (min-width: 1024px) {
+        height: 700px;
+      }
+  }
+
+
+  .container2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    height: 100%;
+    z-index:2; 
+    
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        width: 100%;
+        gap:30px
+      }
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        width: 80%;
+        gap:0px
+      }
+
+      p,text{
+        color: #2e3645;
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: 17px;
+      }
+
+      h2{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: #2e3645;
+        line-height: 1.5;
+    }
+  }
+
+  .subContainerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:10px;
+    position: relative; 
+
+    @media (max-width: 1024px) {
+        width: 90%;
+      }
+      @media (min-width: 1024px) {
+        width: 40%;
+      }
+
+  }
+
+  .buttonMore2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color:#259c1c;
+    border:none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+
+    text{
+        font-size:18px;
+        color: #ffffff;
+    }
+  }
+
+  .slide-upSatis2 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .slide-upSatis2.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* donen logolar */
+  .ic {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 255px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-ic 43.32s infinite linear;
+    animation: rot-ic 43.32s infinite linear;
+    z-index: 200;
+
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/afyon-emniyet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ic2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 255px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-iciki 43.32s infinite linear;
+    animation: rot-iciki 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/akdeniz-universitesi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ic3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 255px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-icuc 43.32s infinite linear;
+    animation: rot-icuc 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/kepez-belediyesi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ic4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 255px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-icdort 43.32s infinite linear;
+    animation: rot-icdort 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/strateji-butce.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ic5 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 255px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-icbes 43.32s infinite linear;
+    animation: rot-icbes 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/bolu-valiligi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ic6 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 255px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-icalti 43.32s infinite linear;
+    animation: rot-icalti 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/devlet-meydan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-dis 43.32s infinite linear;
+    animation: rot-dis 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/gaziantep-buyuksehir.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disbir 43.32s infinite linear;
+    animation: rot-disbir 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/elazig-il-ozel-idare.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disiki 43.32s infinite linear;
+    animation: rot-disiki 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/adana-buyuk-bel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disuc 43.32s infinite linear;
+    animation: rot-disuc 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/ilbank-bank.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disdort 43.32s infinite linear;
+    animation: rot-disdort 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/isparta-bel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis5 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disbes 43.32s infinite linear;
+    animation: rot-disbes 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/isparta-il-ozel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis6 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disalti 43.32s infinite linear;
+    animation: rot-disalti 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/turk-cdd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis7 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disyedi 43.32s infinite linear;
+    animation: rot-disyedi 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/kemer-belediye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis8 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-dissekiz 43.32s infinite linear;
+    animation: rot-dissekiz 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/tarim-orman-bakanligi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis9 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disdokuz 43.32s infinite linear;
+    animation: rot-disdokuz 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/konyaalti-bel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis10 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-dison 43.32s infinite linear;
+    animation: rot-dison 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/malatya-belediyesi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis11 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disonbir 43.32s infinite linear;
+    animation: rot-disonbir 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/manavgat-bel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis12 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disoniki 43.32s infinite linear;
+    animation: rot-disoniki 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/muratpasa-bel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis13 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disonuc 43.32s infinite linear;
+    animation: rot-disonuc 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/cesme-belediyesi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis14 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disondort 43.32s infinite linear;
+    animation: rot-disondort 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/canakkale-ozel-il.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis15 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disonbes 43.32s infinite linear;
+    animation: rot-disonbes 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/sosyal-guvenlik-kurumu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis16 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disonalti 43.32s infinite linear;
+    animation: rot-disonalti 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/aksu-bel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.dis17 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 245px;
+    left: 45%;
+    margin: -35px;
+    -webkit-animation: rot-disonyedi 43.32s infinite linear;
+    animation: rot-disonyedi 43.32s infinite linear;
+    z-index: 200;
+    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/usak-ozel-il.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@-webkit-keyframes rot-ic {
+    from {
+        transform: rotate(0deg) translatey(-100px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translatey(-100px) rotate(-360deg);
+    }
+}
+@-webkit-keyframes rot-iciki {
+    from {
+        transform: rotate(60deg) translatey(-100px) rotate(-60deg);
+    }
+
+    to {
+        transform: rotate(420deg) translatey(-100px) rotate(-420deg);
+    }
+}
+@-webkit-keyframes rot-icuc {
+    from {
+        transform: rotate(120deg) translatey(-100px) rotate(-120deg);
+    }
+
+    to {
+        transform: rotate(480deg) translatey(-100px) rotate(-480deg);
+    }
+}
+@-webkit-keyframes rot-icdort {
+    from {
+        transform: rotate(180deg) translatey(-100px) rotate(-180deg);
+    }
+
+    to {
+        transform: rotate(540deg) translatey(-100px) rotate(-540deg);
+    }
+}
+@-webkit-keyframes rot-icbes {
+    from {
+        transform: rotate(240deg) translatey(-100px) rotate(-240deg);
+    }
+
+    to {
+        transform: rotate(600deg) translatey(-100px) rotate(-600deg);
+    }
+}
+@-webkit-keyframes rot-icalti {
+    from {
+        transform: rotate(300deg) translatey(-100px) rotate(-300deg);
+    }
+
+    to {
+        transform: rotate(660deg) translatey(-100px) rotate(-660deg);
+    }
+}
+@-webkit-keyframes rot-dis {
+    from {
+        -webkit-transform: rotate(0deg) translatey(-290px) rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translatey(-290px) rotate(-360deg);
+    }
+}
+@-webkit-keyframes rot-disbir {
+    from {
+        -webkit-transform: rotate(20deg) translatey(-280px) rotate(-20deg);
+    }
+    to {
+        -webkit-transform: rotate(380deg) translatey(-280px) rotate(-380deg);
+    }
+}
+@-webkit-keyframes rot-disiki {
+    from {
+        -webkit-transform: rotate(40deg) translatey(-290px) rotate(-40deg);
+    }
+    to {
+        -webkit-transform: rotate(400deg) translatey(-290px) rotate(-400deg);
+    }
+}
+@-webkit-keyframes rot-disuc {
+    from {
+        -webkit-transform: rotate(60deg) translatey(-290px) rotate(-60deg);
+    }
+    to {
+        -webkit-transform: rotate(420deg) translatey(-290px) rotate(-420deg);
+    }
+}
+@-webkit-keyframes rot-disdort {
+    from {
+        -webkit-transform: rotate(80deg) translatey(-290px) rotate(-80deg);
+    }
+    to {
+        -webkit-transform: rotate(440deg) translatey(-290px) rotate(-440deg);
+    }
+}
+@-webkit-keyframes rot-disbes {
+    from {
+        -webkit-transform: rotate(100deg) translatey(-290px) rotate(-100deg);
+    }
+    to {
+        -webkit-transform: rotate(460deg) translatey(-290px) rotate(-460deg);
+    }
+}
+@-webkit-keyframes rot-disalti {
+    from {
+        -webkit-transform: rotate(120deg) translatey(-290px) rotate(-120deg);
+    }
+    to {
+        -webkit-transform: rotate(480deg) translatey(-290px) rotate(-480deg);
+    }
+}
+@-webkit-keyframes rot-disyedi {
+    from {
+        -webkit-transform: rotate(140deg) translatey(-290px) rotate(-140deg);
+    }
+    to {
+        -webkit-transform: rotate(500deg) translatey(-290px) rotate(-500deg);
+    }
+}
+@-webkit-keyframes rot-dissekiz {
+    from {
+        -webkit-transform: rotate(160deg) translatey(-290px) rotate(-160deg);
+    }
+    to {
+        -webkit-transform: rotate(520deg) translatey(-290px) rotate(-520deg);
+    }
+}
+@-webkit-keyframes rot-disdokuz {
+    from {
+        -webkit-transform: rotate(180deg) translatey(-290px) rotate(-180deg);
+    }
+    to {
+        -webkit-transform: rotate(540deg) translatey(-290px) rotate(-540deg);
+    }
+}
+@-webkit-keyframes rot-dison {
+    from {
+        -webkit-transform: rotate(200deg) translatey(-290px) rotate(-200deg);
+    }
+    to {
+        -webkit-transform: rotate(560deg) translatey(-290px) rotate(-560deg);
+    }
+}
+@-webkit-keyframes rot-disonbir {
+    from {
+        -webkit-transform: rotate(220deg) translatey(-290px) rotate(-220deg);
+    }
+    to {
+        -webkit-transform: rotate(580deg) translatey(-290px) rotate(-580deg);
+    }
+}
+@-webkit-keyframes rot-disoniki {
+    from {
+        -webkit-transform: rotate(240deg) translatey(-290px) rotate(-240deg);
+    }
+    to {
+        -webkit-transform: rotate(600deg) translatey(-290px) rotate(-600deg);
+    }
+}
+@-webkit-keyframes rot-disonuc {
+    from {
+        -webkit-transform: rotate(260deg) translatey(-290px) rotate(-260deg);
+    }
+    to {
+        -webkit-transform: rotate(620deg) translatey(-290px) rotate(-620deg);
+    }
+}
+@-webkit-keyframes rot-disondort {
+    from {
+        -webkit-transform: rotate(280deg) translatey(-290px) rotate(-280deg);
+    }
+    to {
+        -webkit-transform: rotate(640deg) translatey(-290px) rotate(-640deg);
+    }
+}
+@-webkit-keyframes rot-disonbes {
+    from {
+        -webkit-transform: rotate(300deg) translatey(-290px) rotate(-300deg);
+    }
+    to {
+        -webkit-transform: rotate(660deg) translatey(-290px) rotate(-660deg);
+    }
+}
+@-webkit-keyframes rot-disonalti {
+    from {
+        -webkit-transform: rotate(320deg) translatey(-290px) rotate(-320deg);
+    }
+    to {
+        -webkit-transform: rotate(680deg) translatey(-290px) rotate(-680deg);
+    }
+}
+@-webkit-keyframes rot-disonyedi {
+    from {
+        -webkit-transform: rotate(340deg) translatey(-290px) rotate(-340deg);
+    }
+    to {
+        -webkit-transform: rotate(700deg) translatey(-290px) rotate(-700deg);
+    }
+}
+
+
+@media (max-width: 991px) {
+    .ic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-ic 43.32s infinite linear;
+        animation: rot-ic 43.32s infinite linear;
+        z-index: 200;
+    }
+    .ic2 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-iciki 43.32s infinite linear;
+        animation: rot-iciki 43.32s infinite linear;
+        z-index: 200;
+    }
+    .ic3 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-icuc 43.32s infinite linear;
+        animation: rot-icuc 43.32s infinite linear;
+        z-index: 200;
+    }
+    .ic4 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-icdort 43.32s infinite linear;
+        animation: rot-icdort 43.32s infinite linear;
+        z-index: 200;
+    }
+    .ic5 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-icbes 43.32s infinite linear;
+        animation: rot-icbes 43.32s infinite linear;
+        z-index: 200;
+    }
+    .ic6 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-icalti 43.32s infinite linear;
+        animation: rot-icalti 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-dis 43.32s infinite linear;
+        animation: rot-dis 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis1 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disbir 43.32s infinite linear;
+        animation: rot-disbir 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis2 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disiki 43.32s infinite linear;
+        animation: rot-disiki 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis3 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disuc 43.32s infinite linear;
+        animation: rot-disuc 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis4 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disdort 43.32s infinite linear;
+        animation: rot-disdort 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis5 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disbes 43.32s infinite linear;
+        animation: rot-disbes 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis6 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disalti 43.32s infinite linear;
+        animation: rot-disalti 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis7 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disyedi 43.32s infinite linear;
+        animation: rot-disyedi 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis8 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-dissekiz 43.32s infinite linear;
+        animation: rot-dissekiz 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis9 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disdokuz 43.32s infinite linear;
+        animation: rot-disdokuz 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis10 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-dison 43.32s infinite linear;
+        animation: rot-dison 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis11 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disonbir 43.32s infinite linear;
+        animation: rot-disonbir 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis12 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disoniki 43.32s infinite linear;
+        animation: rot-disoniki 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis13 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disonuc 43.32s infinite linear;
+        animation: rot-disonuc 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis14 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disondort 43.32s infinite linear;
+        animation: rot-disondort 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis15 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disonbes 43.32s infinite linear;
+        animation: rot-disonbes 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis16 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disonalti 43.32s infinite linear;
+        animation: rot-disonalti 43.32s infinite linear;
+        z-index: 200;
+    }
+    .dis17 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 180px;
+        left: 53%;
+        margin: -35px;
+        -webkit-animation: rot-disonyedi 43.32s infinite linear;
+        animation: rot-disonyedi 43.32s infinite linear;
+        z-index: 200;
+    }
+
+   
+
+    @-webkit-keyframes rot-ic {
+        from {
+            transform: rotate(0deg) translatey(-60px) rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg) translatey(-60px) rotate(-360deg);
+        }
+    }
+    @-webkit-keyframes rot-iciki {
+        from {
+            transform: rotate(60deg) translatey(-60px) rotate(-60deg);
+        }
+
+        to {
+            transform: rotate(420deg) translatey(-60px) rotate(-420deg);
+        }
+    }
+    @-webkit-keyframes rot-icuc {
+        from {
+            transform: rotate(120deg) translatey(-60px) rotate(-120deg);
+        }
+
+        to {
+            transform: rotate(480deg) translatey(-60px) rotate(-480deg);
+        }
+    }
+    @-webkit-keyframes rot-icdort {
+        from {
+            transform: rotate(180deg) translatey(-60px) rotate(-180deg);
+        }
+
+        to {
+            transform: rotate(540deg) translatey(-60px) rotate(-540deg);
+        }
+    }
+    @-webkit-keyframes rot-icbes {
+        from {
+            transform: rotate(240deg) translatey(-60px) rotate(-240deg);
+        }
+
+        to {
+            transform: rotate(600deg) translatey(-60px) rotate(-600deg);
+        }
+    }
+    @-webkit-keyframes rot-icalti {
+        from {
+            transform: rotate(300deg) translatey(-60px) rotate(-300deg);
+        }
+
+        to {
+            transform: rotate(660deg) translatey(-60px) rotate(-660deg);
+        }
+    }
+    @-webkit-keyframes rot-dis {
+        from {
+            -webkit-transform: rotate(0deg) translatey(-150px) rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg) translatey(-150px) rotate(-360deg);
+        }
+    }
+    @-webkit-keyframes rot-disbir {
+        from {
+            -webkit-transform: rotate(20deg) translatey(-150px) rotate(-20deg);
+        }
+        to {
+            -webkit-transform: rotate(380deg) translatey(-150px) rotate(-380deg);
+        }
+    }
+    @-webkit-keyframes rot-disiki {
+        from {
+            -webkit-transform: rotate(40deg) translatey(-150px) rotate(-40deg);
+        }
+        to {
+            -webkit-transform: rotate(400deg) translatey(-150px) rotate(-400deg);
+        }
+    }
+    @-webkit-keyframes rot-disuc {
+        from {
+            -webkit-transform: rotate(60deg) translatey(-150px) rotate(-60deg);
+        }
+        to {
+            -webkit-transform: rotate(420deg) translatey(-150px) rotate(-420deg);
+        }
+    }
+    @-webkit-keyframes rot-disdort {
+        from {
+            -webkit-transform: rotate(80deg) translatey(-150px) rotate(-80deg);
+        }
+        to {
+            -webkit-transform: rotate(440deg) translatey(-150px) rotate(-440deg);
+        }
+    }
+    @-webkit-keyframes rot-disbes {
+        from {
+            -webkit-transform: rotate(100deg) translatey(-150px) rotate(-100deg);
+        }
+        to {
+            -webkit-transform: rotate(460deg) translatey(-150px) rotate(-460deg);
+        }
+    }
+    @-webkit-keyframes rot-disalti {
+        from {
+            -webkit-transform: rotate(120deg) translatey(-150px) rotate(-120deg);
+        }
+        to {
+            -webkit-transform: rotate(480deg) translatey(-150px) rotate(-480deg);
+        }
+    }
+    @-webkit-keyframes rot-disyedi {
+        from {
+            -webkit-transform: rotate(140deg) translatey(-150px) rotate(-140deg);
+        }
+        to {
+            -webkit-transform: rotate(500deg) translatey(-150px) rotate(-500deg);
+        }
+    }
+    @-webkit-keyframes rot-dissekiz {
+        from {
+            -webkit-transform: rotate(160deg) translatey(-150px) rotate(-160deg);
+        }
+        to {
+            -webkit-transform: rotate(520deg) translatey(-150px) rotate(-520deg);
+        }
+    }
+    @-webkit-keyframes rot-disdokuz {
+        from {
+            -webkit-transform: rotate(180deg) translatey(-150px) rotate(-180deg);
+        }
+        to {
+            -webkit-transform: rotate(540deg) translatey(-150px) rotate(-540deg);
+        }
+    }
+    @-webkit-keyframes rot-dison {
+        from {
+            -webkit-transform: rotate(200deg) translatey(-150px) rotate(-200deg);
+        }
+        to {
+            -webkit-transform: rotate(560deg) translatey(-150px) rotate(-560deg);
+        }
+    }
+    @-webkit-keyframes rot-disonbir {
+        from {
+            -webkit-transform: rotate(220deg) translatey(-150px) rotate(-220deg);
+        }
+        to {
+            -webkit-transform: rotate(580deg) translatey(-150px) rotate(-580deg);
+        }
+    }
+    @-webkit-keyframes rot-disoniki {
+        from {
+            -webkit-transform: rotate(240deg) translatey(-150px) rotate(-240deg);
+        }
+        to {
+            -webkit-transform: rotate(600deg) translatey(-150px) rotate(-600deg);
+        }
+    }
+    @-webkit-keyframes rot-disonuc {
+        from {
+            -webkit-transform: rotate(260deg) translatey(-150px) rotate(-260deg);
+        }
+        to {
+            -webkit-transform: rotate(620deg) translatey(-150px) rotate(-620deg);
+        }
+    }
+    @-webkit-keyframes rot-disondort {
+        from {
+            -webkit-transform: rotate(280deg) translatey(-150px) rotate(-280deg);
+        }
+        to {
+            -webkit-transform: rotate(640deg) translatey(-150px) rotate(-640deg);
+        }
+    }
+    @-webkit-keyframes rot-disonbes {
+        from {
+            -webkit-transform: rotate(300deg) translatey(-150px) rotate(-300deg);
+        }
+        to {
+            -webkit-transform: rotate(660deg) translatey(-150px) rotate(-660deg);
+        }
+    }
+    @-webkit-keyframes rot-disonalti {
+        from {
+            -webkit-transform: rotate(320deg) translatey(-150px) rotate(-320deg);
+        }
+        to {
+            -webkit-transform: rotate(680deg) translatey(-150px) rotate(-680deg);
+        }
+    }
+    @-webkit-keyframes rot-disonyedi {
+        from {
+            -webkit-transform: rotate(340deg) translatey(-150px) rotate(-340deg);
+        }
+        to {
+            -webkit-transform: rotate(700deg) translatey(-150px) rotate(-700deg);
+        }
+    }
+}

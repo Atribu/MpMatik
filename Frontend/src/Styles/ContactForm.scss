@@ -5,19 +5,18 @@
     background-color: rgba(45, 55, 72, 0.9); 
     flex-direction: column;
     width: 33.33vw; 
-   
     gap:20px;
     text-align: center;
     font-family:sans-serif; 
 
-    @media (max-width: 1024px) {
-        width: 90%; 
+    @media (min-width: 1024px) {
+        width: 70%; 
         height: 724px; 
       }
     
       @media (max-width: 768px) {
         width: 90%;  
-        height: 500px;
+        height: 540px;
       }
 }
 
