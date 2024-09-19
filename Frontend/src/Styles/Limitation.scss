@@ -3,19 +3,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: "#4caf50";
+    background: #03651a;
     width: 100vw;
-    height: 100vh;
+    font-family:sans-serif; 
+    // height: auto;
+    // @media (max-width: 1024px) {
+    //     height:100vh;
+    //   }
 }
 
 .div-1{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    width: 90%;
+    width: 80%;
     gap:10px;
-    text-transform: uppercase;
     margin: 20px;
 
     @media (max-width: 1024px) {
@@ -27,20 +30,113 @@
       }
 }
 
+.div-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    gap:10px;
+    background: #1A202C;
+    padding:30px 30px;
+
+    text{
+        color: #ffffff;
+    }
+
+    h2{
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
 .button{
     background-color: #22872b;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    padding-top:15px;
-    padding-bottom:15px;
+    padding-top:25px;
+    padding-bottom:25px;
     padding-left: 100px;
     padding-right: 100px;
-    width: 154px;
+    width: 375px;
     border:none;
     text-align: center;
     font-size: 30;
     text-transform: uppercase;
+
+    text{
+        text-align: center;
+        font-size: 25;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &:hover {
+        background-color: #085e0b;
+        cursor: pointer; 
+  
+        text {
+          color: #ffffff;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        width: 375px;
+      }
+    
+      @media (max-width: 768px) {
+        width: 90%;
+      }
+
+    
+}
+
+.buttonBlack{
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 375px;
+    border:none;
+    text-align: center;
+    font-size: 30;
+    text-transform: uppercase;
+    display: none; // Varsayılan olarak gizle
+  
+  @media (min-width: 1024px) {
+    display: block; // Ekran genişliği 1024px ve üzerindeyken görünür yap
+  }
+
+    text{
+        text-align: center;
+        font-size: 25;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
+.buttonBlack2{
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 375px;
+    border:none;
+    text-align: center;
+    font-size: 30;
+    text-transform: uppercase;
+    display: block; // Varsayılan olarak gizle
+  
+  @media (min-width: 1024px) {
+    display: none; // Ekran genişliği 1024px ve üzerindeyken görünür yap
+  }
 
     text{
         text-align: center;
@@ -56,8 +152,85 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 50%;
+    
     gap:10px;
     text-transform: uppercase;
     margin: 20px;
+
+    @media (max-width: 1024px) {
+        width: 50%;
+      }
+    
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+}
+.div-limitsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.div-manbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column; // Mobilde column düzeni
+
+    @media (min-width: 768px) { // Tablet boyutu
+      flex-direction: row; // Tablet ve üzeri ekranlar için row düzeni
+    }
+   
+    
+}
+
+
+.div-limitman{
+    display: flex;
+    width: 95%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        flex-direction: row;
+      }
+    
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+}
+
+.div-limittext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    gap:10px;
+    color: #ffffff;
+
+    @media (max-width: 1024px) {
+        width: 50%;
+      }
+    
+      @media (max-width: 768px) {
+        width: 85%;
+      }
+    
+}
+
+.title {
+    font: size 32px;
+    font-weight: bold;
+
+}
+text{
+    font: size 20px;
+    font-weight: normal;
+
 }

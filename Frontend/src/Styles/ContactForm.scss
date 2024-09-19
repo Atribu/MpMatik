@@ -5,17 +5,19 @@
     background-color: rgba(45, 55, 72, 0.9); 
     flex-direction: column;
     width: 33.33vw; 
-    height: 724px;
+   
     gap:20px;
     text-align: center;
     font-family:sans-serif; 
 
     @media (max-width: 1024px) {
-        width: 90%;  
+        width: 90%; 
+        height: 724px; 
       }
     
       @media (max-width: 768px) {
         width: 90%;  
+        height: 500px;
       }
 }
 
@@ -40,7 +42,7 @@
     color: #ffffff;
 }
 
-.section{
+.input-section{
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -127,7 +129,7 @@ input {
     }
   }
 
-  .button {
+  .green-button {
     width: 90%;
     background-color: #4caf50;
     color: #ffffff;
@@ -140,7 +142,18 @@ input {
         font-size: 20px;
         text-transform: uppercase;
     }
+
+    &:hover {
+      background-color: #1b9d20;
+      cursor: pointer; 
+
+      text {
+        color: #ffffff;
+      }
+    }
   }
+
+
 
   .city-select {
     position: relative;
