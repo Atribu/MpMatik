@@ -46,15 +46,15 @@ const ContactForm = () => {
         <text className='h2'>BP TAŞITMATİK</text>
         <text className='h3'>kurumsal başvuru formu</text>
       </div>
-      <section className='section'>
+      <section className='input-section'>
         <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />
         <input type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required />
       </section>
-      <section className='section'>
+      <section className='input-section'>
         <input type="text" id="name" name="name" placeholder='Telefon*' required />
         <input type="text" id="firmaname" name="firmaname" placeholder='Email*' required />
       </section>
-      <section className='section'>
+      <section className='input-section'>
       <div className="city-select">
       <div 
         className={`city-select__input ${selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
@@ -104,7 +104,7 @@ const ContactForm = () => {
       </section>
 
 {/* aylık tüketim */}
-      <section className='section'>
+      <section className='input-section'>
       <div className="city-select">
       <div 
         className={`city-select__input ${selectedTuketim === 'Aylık Tüketim*' ? 'placeholder' : ''}`} 
@@ -164,7 +164,7 @@ const ContactForm = () => {
         Ben robot değilim
       </label>
       
-      <button className='button'><text>Gönder</text></button>
+      <button className='green-button '><text>Gönder</text></button>
       
     </form>
   )
