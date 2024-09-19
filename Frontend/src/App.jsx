@@ -1,15 +1,15 @@
 import React from 'react'
 import Header from "./Components/Header.jsx"
-import MainCarousel from "./Components/MainCarousel.jsx"
-import ContactForm from './Components/ContactForm.jsx'
-import Limitation from './Components/Limitation.jsx'
+
+import Header1 from './Components/Header1.jsx'
 
 const App = () => {
   return (
     <div>
       <Header />
-      <MainCarousel/>
-      <Limitation/>
+
+      <Header1 />
+
     </div>
   )
 }
