@@ -1,0 +1,212 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    background-color: rgba(45, 55, 72, 0.9); 
+    flex-direction: column;
+    width: 33.33vw; 
+    height: 724px;
+    gap:20px;
+    text-align: center;
+    font-family:sans-serif; 
+
+    @media (max-width: 1024px) {
+        width: 90%;  
+      }
+    
+      @media (max-width: 768px) {
+        width: 90%;  
+      }
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    gap:10px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.h2{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.h3{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 10px;
+}
+
+input {
+    font-size: 16px;           
+    font-family:sans-serif; 
+    color: #333;               
+    padding: 10px;             
+    border: 1px solid #ccc;    
+    border-radius: 4px;       
+    width: 50vw;              
+    height: 50px;
+    display: inline-block;
+    box-sizing: border-box;    // Padding ve border ile uyumlu genişlik hesaplama
+  
+    // Placeholder için stil
+    &.placeholder {
+        font-style: normal;  
+        color: #999; 
+      }
+  
+    // Odaklanma (focus) durumunda stil
+    &:focus {
+      outline: none;           // Varsayılan outline kaldırılır
+      border-color: #4caf50;   // Odaklanınca kenar rengi değişir
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); // Hafif bir gölge verilir
+    }
+  }
+  
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    color: #ffff;
+  
+    .checkbox-input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    .checkbox-custom {
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 4px;
+      margin-right: 8px;
+      transition: background-color 0.3s ease;
+    }
+  
+    // Checked durumunda renk değişimi
+    .checkbox-input:checked ~ .checkbox-custom {
+      background-color: #4caf50; // Check durumunda yeşil arka plan
+    }
+  
+    // Hover'da stil değişimi
+    &:hover .checkbox-custom {
+      background-color: #ddd;
+    }
+  
+    // İşaretli durumda bir işaret ekleyelim
+    .checkbox-input:checked ~ .checkbox-custom::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 3px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .button {
+    width: 90%;
+    background-color: #4caf50;
+    color: #ffffff;
+    padding-top:20px;
+    padding-bottom:20px;
+    border:none;
+    border-radius: 5px;
+    
+    text{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+  }
+
+  .city-select {
+    position: relative;
+    display: inline-block;
+    width: 50vw; 
+    
+  
+    &__input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      font-family:sans-serif; 
+      font-size: 16px; 
+      color: #333; // Metin rengi
+      height: 25px;
+      
+      &.placeholder {
+        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
+        color: #999; // Placeholder için farklı renk kullanabilirsin
+      }
+  
+  
+      .arrow {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #333; // Ok işareti rengi
+        margin-left: 10px;
+      }
+    }
+  
+    &__dropdown {
+      position: absolute;
+      top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      z-index: 10; // Dropdown'ın üstte kalmasını sağlar
+      max-height: 150px; // Maksimum yükseklik
+      overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Hafif gölge
+  
+      // Liste öğeleri için stil
+      &__option {
+        padding: 10px 15px; // Y ekseninde 10px, X ekseninde 15px padding
+        cursor: pointer;
+        font-family:sans-serif; 
+        font-size: 14px; // Font boyutu
+        color: #333; // Metin rengi
+        transition: background-color 0.3s, padding 0.3s; // Geçiş efektleri
+  
+        &:hover {
+          background-color: #f0f0f0; // Hover sırasında arka plan rengi
+          padding: 12px 15px; // Hover sırasında padding artışı
+        }
+      }
+    }
+  }
+  
+  
+  
