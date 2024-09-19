@@ -1,0 +1,29 @@
+.blogGreenSec{
+    display: flex;
+    flex-direction: column;
+    background: #03651b;
+    width: 100vw;
+    height:700px;
+    align-items: center;
+    justify-content: start;
+    color: #ffff;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap:10px;
+    position: relative; 
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        flex-direction: column;
+      }
+      @media (min-width: 1024px) {
+        width: 80%;
+        flex-direction: row;
+      }
+}

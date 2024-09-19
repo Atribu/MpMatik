@@ -76,6 +76,24 @@
 
   }
 
+  .subContainer2Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 20px;
+    position: relative; 
+    @media (max-width: 1024px) {
+        width: 90%;
+      }
+
+      @media (min-width: 1024px) {
+        width: 60%;
+      }
+
+  }
+
   .buttonMore2{
     display: flex;
     align-items: center;
@@ -109,368 +127,450 @@
     transform: translateY(0);
   }
 
-  /* donen logolar */
+  $circle-count: 18; // Büyük dairedeki toplam yuvarlak sayısı
+  $inner-circle-count: 6; // İç çemberdeki yuvarlak sayısı
+  $radius: 300px; // Büyük dairenin yarıçapı (Genişletilmiş)
+  $inner-radius: 100px; // İç çemberin yarıçapı
+  $circle-size: 100px; // Küçük dairelerin boyutu
+  
+  /* Büyük çember */
+  .big-circle {
+    width: 600px; // Halkanın kapsayacağı alan
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 43.32s linear infinite; // Büyük daireyi döndürme animasyonu
+  
+    /* İç çember */
+    &::before {
+      content: "";
+      position: absolute;
+      width: $circle-size;
+      height: $circle-size;
+      border-radius: 50%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
+    }
+  }
+  
+  /* Küçük yuvarlaklar */
   .ic {
-    width: 100px;
-    height: 100px;
+    width: $circle-size;
+    height: $circle-size;
     position: absolute;
-    top: 255px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-ic 43.32s infinite linear;
-    animation: rot-ic 43.32s infinite linear;
-    z-index: 200;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    animation: rotate-icon 10s linear infinite; // Küçük dairelerin kendi etrafında dönme animasyonu
+  }
+  
+  /* Büyük çemberdeki küçük dairelerin yerleşimi */
+  @for $i from 1 through $circle-count {
+    .ic-#{$i} {
+      transform: rotate(calc(360deg / $circle-count * #{$i})) translate($radius) rotate(calc(-360deg / $circle-count * #{$i}));
+    }
+  }
+  
+  /* İç çemberdeki küçük dairelerin yerleşimi */
+  .inner-circle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 2;
+    animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
+  }
+  
+  @for $i from 1 through $inner-circle-count {
+    .inner-ic-#{$i} {
+      transform: rotate(calc(360deg / $inner-circle-count * #{$i})) translate($inner-radius) rotate(calc(-360deg / $inner-circle-count * #{$i}));
+    }
+  }
+  
+  /* Büyük çemberin dönme animasyonu */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* İç çemberin döndürülme animas
+  
+  
 
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/afyon-emniyet.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.ic2 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 255px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-iciki 43.32s infinite linear;
-    animation: rot-iciki 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/akdeniz-universitesi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.ic3 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 255px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-icuc 43.32s infinite linear;
-    animation: rot-icuc 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/kepez-belediyesi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.ic4 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 255px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-icdort 43.32s infinite linear;
-    animation: rot-icdort 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/strateji-butce.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.ic5 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 255px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-icbes 43.32s infinite linear;
-    animation: rot-icbes 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/bolu-valiligi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.ic6 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 255px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-icalti 43.32s infinite linear;
-    animation: rot-icalti 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/devlet-meydan.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-dis 43.32s infinite linear;
-    animation: rot-dis 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/gaziantep-buyuksehir.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis1 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disbir 43.32s infinite linear;
-    animation: rot-disbir 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/elazig-il-ozel-idare.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis2 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disiki 43.32s infinite linear;
-    animation: rot-disiki 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/adana-buyuk-bel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis3 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disuc 43.32s infinite linear;
-    animation: rot-disuc 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/ilbank-bank.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis4 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disdort 43.32s infinite linear;
-    animation: rot-disdort 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/isparta-bel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis5 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disbes 43.32s infinite linear;
-    animation: rot-disbes 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/isparta-il-ozel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis6 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disalti 43.32s infinite linear;
-    animation: rot-disalti 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/turk-cdd.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis7 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disyedi 43.32s infinite linear;
-    animation: rot-disyedi 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/kemer-belediye.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis8 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-dissekiz 43.32s infinite linear;
-    animation: rot-dissekiz 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/tarim-orman-bakanligi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis9 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disdokuz 43.32s infinite linear;
-    animation: rot-disdokuz 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/konyaalti-bel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis10 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-dison 43.32s infinite linear;
-    animation: rot-dison 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/malatya-belediyesi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis11 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disonbir 43.32s infinite linear;
-    animation: rot-disonbir 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/manavgat-bel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis12 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disoniki 43.32s infinite linear;
-    animation: rot-disoniki 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/muratpasa-bel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis13 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disonuc 43.32s infinite linear;
-    animation: rot-disonuc 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/cesme-belediyesi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis14 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disondort 43.32s infinite linear;
-    animation: rot-disondort 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/canakkale-ozel-il.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis15 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disonbes 43.32s infinite linear;
-    animation: rot-disonbes 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/sosyal-guvenlik-kurumu.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis16 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disonalti 43.32s infinite linear;
-    animation: rot-disonalti 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/aksu-bel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.dis17 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 245px;
-    left: 45%;
-    margin: -35px;
-    -webkit-animation: rot-disonyedi 43.32s infinite linear;
-    animation: rot-disonyedi 43.32s infinite linear;
-    z-index: 200;
-    background-image: url("https://www.mptasitmatik.com/wp-content/uploads/usak-ozel-il.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+  /* donen logolar */
+//   .ic {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 255px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-ic 43.32s infinite linear;
+//     animation: rot-ic 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/afyon-emniyet.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .ic2 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 255px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-iciki 43.32s infinite linear;
+//     animation: rot-iciki 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/akdeniz-universitesi.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .ic3 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 255px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-icuc 43.32s infinite linear;
+//     animation: rot-icuc 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/kepez-belediyesi.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .ic4 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 255px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-icdort 43.32s infinite linear;
+//     animation: rot-icdort 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/strateji-butce.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .ic5 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 255px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-icbes 43.32s infinite linear;
+//     animation: rot-icbes 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/bolu-valiligi.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .ic6 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 255px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-icalti 43.32s infinite linear;
+//     animation: rot-icalti 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/devlet-meydan.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-dis 43.32s infinite linear;
+//     animation: rot-dis 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/gaziantep-buyuksehir.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis1 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disbir 43.32s infinite linear;
+//     animation: rot-disbir 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/elazig-il-ozel-idare.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis2 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disiki 43.32s infinite linear;
+//     animation: rot-disiki 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/adana-buyuk-bel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis3 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disuc 43.32s infinite linear;
+//     animation: rot-disuc 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/ilbank-bank.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis4 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disdort 43.32s infinite linear;
+//     animation: rot-disdort 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/isparta-bel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis5 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disbes 43.32s infinite linear;
+//     animation: rot-disbes 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/isparta-il-ozel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis6 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disalti 43.32s infinite linear;
+//     animation: rot-disalti 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/turk-cdd.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis7 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disyedi 43.32s infinite linear;
+//     animation: rot-disyedi 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/kemer-belediye.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis8 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-dissekiz 43.32s infinite linear;
+//     animation: rot-dissekiz 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/tarim-orman-bakanligi.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis9 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disdokuz 43.32s infinite linear;
+//     animation: rot-disdokuz 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/konyaalti-bel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis10 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-dison 43.32s infinite linear;
+//     animation: rot-dison 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/malatya-belediyesi.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis11 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disonbir 43.32s infinite linear;
+//     animation: rot-disonbir 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/manavgat-bel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis12 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disoniki 43.32s infinite linear;
+//     animation: rot-disoniki 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/muratpasa-bel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis13 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disonuc 43.32s infinite linear;
+//     animation: rot-disonuc 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/cesme-belediyesi.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis14 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disondort 43.32s infinite linear;
+//     animation: rot-disondort 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/canakkale-ozel-il.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis15 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disonbes 43.32s infinite linear;
+//     animation: rot-disonbes 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/sosyal-guvenlik-kurumu.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis16 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disonalti 43.32s infinite linear;
+//     animation: rot-disonalti 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/aksu-bel.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .dis17 {
+//     width: 100px;
+//     height: 100px;
+//     position: absolute;
+//     top: 245px;
+//     left: 45%;
+//     margin: -35px;
+//     -webkit-animation: rot-disonyedi 43.32s infinite linear;
+//     animation: rot-disonyedi 43.32s infinite linear;
+//     z-index: 200;
+//     background-image: url("https://www.mptasitmatik.com/wp-content/uploads/usak-ozel-il.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+// }
 
 @-webkit-keyframes rot-ic {
     from {
