@@ -17,8 +17,8 @@ const App = () => {
       <MainCarousel/>
       <Limitation/>
       <Satis1/>
-      <Satis2/>
-      <BlogSection/>
+      <Satis2/> 
+     <BlogSection/>
     </div>
   )
 }
