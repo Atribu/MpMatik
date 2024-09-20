@@ -1,0 +1,37 @@
+.blog-containerItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3,p{
+        color: #000;
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: 17px;
+    }
+
+    h3{
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+.img-container{
+    width: 90%;
+    height: auto;
+}
+
+.buttonMoreGray{
+    background: #444444;
+    color: #ffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}

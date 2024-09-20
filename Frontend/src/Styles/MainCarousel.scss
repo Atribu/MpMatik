@@ -50,6 +50,14 @@
     font-family:sans-serif;
     background-color: transparent;
     line-height: 1.4;
+
+    @media (max-width: 768px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); // Tam ortalama için
+      width: 90%; // Mobilde genişliği ekranın %90'ına çekiyoruz
+      justify-content: center; // Mobilde ortalanmış içerik
+    }
   }
 
   .custom-text-2 {
@@ -59,6 +67,14 @@
     font-family:sans-serif;
     background-color: transparent;
     line-height: 1.4;
+    @media (max-width: 768px) {
+      top: 70%;
+      left: 50%;
+      right: auto; // `right` değerini kaldırıyoruz
+      transform: translate(-50%, -50%); // Tam ortalama için
+      width: 90%; // Mobilde genişliği ekranın %90'ına çekiyoruz
+      justify-content: center; // Mobilde ortalanmış içerik
+    }
   }
   }
 
@@ -106,7 +122,15 @@
   .carousel-image {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    display: flex;
+
+    @media (max-width: 1024px) { 
+      object-fit: contain;
+    }
+
+    @media (max-width: 1024px) { 
+      object-fit: cover;
+    }
   }
   
   .carousel-controls {

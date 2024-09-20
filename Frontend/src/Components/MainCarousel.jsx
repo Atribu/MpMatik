@@ -43,7 +43,7 @@ const HomeCarousel = () => {
             <div className="carousel-slide" key={index}>
               <img
                 src={image}
-                style={{ objectFit: "contain" }}
+               
                 width={image.width}
                 height={image.height}
                 alt={`Slide ${index + 1}`}
