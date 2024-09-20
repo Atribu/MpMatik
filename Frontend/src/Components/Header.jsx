@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="hidden-header">
       <Link to="/">
-        <img src="../../public/Logo/Logo3.jpg" alt="Logo" width="100" height="50" />
+        <img src="../../Logo/mpmatik-siyah.png" alt="Logo" width="100" height="50" />
       </Link>
       <nav>
         <Link to="/"><FaPhoneSquareAlt/></Link>

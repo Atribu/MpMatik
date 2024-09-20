@@ -26,7 +26,7 @@ const Header1 = () => {
     <header className={`sticky-header ${isSticky ? 'is-sticky' : ''}`}>
       <Link>
         <img 
-          src={isSticky ? '/Logo/new-logo.png' : '/Logo/bp-logo-kendi.png'} 
+          src={isSticky ? '/Logo/bp-logo-beyazimsi.png' : '/Logo/bp-logo-kendi.png'} 
           alt='Logo' 
         />        
       </Link>
