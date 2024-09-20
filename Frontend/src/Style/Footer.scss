@@ -1,0 +1,263 @@
+.footer-main {
+    display: flex;
+    width: 100%;
+    gap: 2px;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: #2C3440;
+    padding: 1% 5%;
+}
+
+.div-bir {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+
+    a {
+        width: 100%;
+        height: 20%;
+        align-items: center;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+
+    p {
+        color: white;
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    div {
+        display: flex;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .social-icons {
+        height: 100px;
+        display: flex;
+        gap: 10px;  
+    }
+    
+    .icon {
+        padding: 10px;
+        border-radius: 50%; 
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .whatsapp {
+        background-color: #25D366;
+        color: #fff;
+    }
+    
+    .instagram {
+        background-color: #C13584;
+        color: #fff;
+    }
+    
+    .facebook {
+        background-color: #4267B2;
+        color: #fff;
+    }
+    
+    .twitter {
+        background-color: #1DA1F2;
+        color: #fff;
+    }
+    
+    .youtube {
+        background-color: #FF0000;
+        color: #fff;
+    }
+    
+    .icon:hover {
+        opacity: 0.8; 
+    }
+
+    section {
+        display: flex;
+        gap: 10%;
+        padding: 10%;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+
+        a {
+            display: flex;
+            padding: 2% 10%;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .button-basvuru {
+            background-color: #22872B;
+
+            &:hover {
+                background-color: #218838;
+            }
+            
+        }
+
+        .button-kolay {
+            background-color: #F4780A;
+
+            &:hover {
+                background-color: #e36d0e; 
+            }
+        }
+
+    }
+}    
+    
+
+.div-iki {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+
+    h3 {
+        color: white;
+        margin-right: 15%;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.7;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    ul {
+        box-sizing: border-box;
+        color: white;
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        li {
+            padding: 5px;
+            list-style-type: disc;
+            list-style-position: inside;
+            list-style-position: outside;
+            text-indent: -15px;
+            padding-left: 30px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}
+
+.div-uc {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: start;
+
+    h3 {
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.7;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    ul {
+        box-sizing: border-box;
+        color: white;
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        li {
+            padding: 5px 0; /* Üst ve alt boşluk */
+            list-style-type: disc; /* Nokta işaretleyici */
+            list-style-position: inside; /* Noktanın metin hizasında olması */
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.div-dort {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #364154;
+    border-radius: 10px;
+    
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    h2 {
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 21px;
+        
+    }
+
+    p {
+        font-size: 17px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .button-oku {
+        background-color: #4a5568;
+        padding: 10px 20px;
+        border-radius: 1px;
+        align-self: flex-start;
+        color: white;
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #e36d0e;
+        }
+    }
+
+}
