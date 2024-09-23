@@ -5,11 +5,13 @@
   height: 100vh;
   align-items: center;
   margin-top: 50px;
+  gap: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   &__title {
-    font-size: 18px;
+    font-size: 25px;
     text-transform: uppercase;
-    color: #d3d3d3;
+    color: #ffff;
     letter-spacing: 3.6px;
     text-align: center;
     margin-bottom: 36px;
@@ -18,11 +20,15 @@
   &__carousel {
     overflow: hidden;
     position: relative;
+    background:#ffff;
+    padding:28px 14px;
   }
 
   &__carousel-container {
     display: flex;
     grid-auto-flow: column;
+    align-items: start;
+    
   }
 
   &__item {
@@ -30,8 +36,10 @@
     margin: 0 1rem;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    
 
     @media (min-width: 640px) { /* Tablet: 640px ve üstü */
       flex: 0 0 calc(50% - 2rem); /* Tablette her bir item %50 genişlik */
@@ -45,7 +53,7 @@
   &__image {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: responsive;
   }
 
   .slide-text {
@@ -119,14 +127,31 @@
 }
 
 .buttonLeftRight {
-  padding: 4px;
+  padding: 0.60rem 0.20rem;
+  display: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); // Başlangıçta arka plan %50 opacity (gray)
+  opacity: 0.5; // Butonun kendisi %50 opacity
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+  border: none; 
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+
+  // Hover durumunda opacity ve background değişimi
+  &:hover {
+    background-color: rgba(0, 0, 0, 1); // Arka plan %100 opacity (gray)
+    opacity: 1; // Buton %100 opacity
+  }
 }
 
 .circleIndexDiv {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   margin-top: 4px;
 }
 
@@ -135,11 +160,48 @@
   margin-top: 2rem;
   width: 9px;
   height: 9px;
-  background-color: #cbd5e0; /* bg-slate-300 */
+  background-color: #bebebe; 
   border-radius: 50%;
 }
 
 .carousel-dot.active {
-  padding: 5px;
-  background-color: #4a5568; /* bg-slate-600 */
+  padding: 1px;
+  background-color: #3f3f3f; 
+}
+
+.carousel-texts{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  margin-left: 6px;
+  color: #000;
+
+  h3{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 16px;
+    display: -webkit-box; /* Flexbox benzeri bir yapı */
+  -webkit-box-orient: vertical; /* Dikey yönde kutuları ayarla */
+  overflow: hidden; /* Taşan metni gizle */
+  text-overflow: ellipsis; /* 3 nokta ekle */
+  -webkit-line-clamp: 3; /* Gösterilecek maksimum satır sayısı */
+  line-height: 1.5; /* Satır yüksekliğini ayarla */
+  max-height: calc(1.5em * 3); 
+  }
+}
+
+.carousel-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: #444444;
+  color: #ffff;
+  font-size: 14px;
+  border:none;
 }

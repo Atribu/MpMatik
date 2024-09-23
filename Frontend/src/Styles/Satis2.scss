@@ -128,21 +128,22 @@
   }
 
   $circle-count: 18; // Büyük dairedeki toplam yuvarlak sayısı
-  $inner-circle-count: 6; // İç çemberdeki yuvarlak sayısı
-  $radius: 300px; // Büyük dairenin yarıçapı (Genişletilmiş)
-  $inner-radius: 100px; // İç çemberin yarıçapı
-  $circle-size: 100px; // Küçük dairelerin boyutu
-  
-  /* Büyük çember */
-  .big-circle {
-    width: 600px; // Halkanın kapsayacağı alan
+$inner-circle-count: 6; // İç çemberdeki yuvarlak sayısı
+$radius: 300px; // Büyük dairenin yarıçapı
+$inner-radius: 100px; // İç çemberin yarıçapı
+$circle-size: 100px; // Küçük dairelerin boyutu
+
+/* Büyük çember */
+/* Büyük çember */
+.big-circle {
+    width: 600px;
     height: 600px;
     position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rotate 43.32s linear infinite; // Büyük daireyi döndürme animasyonu
+    animation: rotate 43.32s linear infinite;
   
     /* İç çember */
     &::before {
@@ -155,7 +156,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
+      animation: rotate-inner 20s linear infinite;
     }
   }
   
@@ -165,39 +166,53 @@
     height: $circle-size;
     position: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
-    animation: rotate-icon 10s linear infinite; // Küçük dairelerin kendi etrafında dönme animasyonu
-  }
   
-  /* Büyük çemberdeki küçük dairelerin yerleşimi */
-  @for $i from 1 through $circle-count {
+    /* Resimlerin sabit kalması için */
+    img {
+      width: 100%;
+      height: 100%;
+      transform: rotate(0deg);
+    }
+  }
+
+/* Büyük çemberdeki küçük dairelerin yerleşimi */
+@for $i from 1 through $circle-count {
     .ic-#{$i} {
-      transform: rotate(calc(360deg / $circle-count * #{$i})) translate($radius) rotate(calc(-360deg / $circle-count * #{$i}));
+      transform: rotate(calc(360deg / $circle-count * #{$i})) translate($radius) rotate(calc(-360deg / $circle-count * #{$i})); // Dönüşü ters yap
     }
   }
-  
-  /* İç çemberdeki küçük dairelerin yerleşimi */
-  .inner-circle {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 2;
-    animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
-  }
-  
-  @for $i from 1 through $inner-circle-count {
+
+/* İç çemberdeki küçük dairelerin yerleşimi */
+.inner-circle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
+  animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
+}
+
+@for $i from 1 through $inner-circle-count {
     .inner-ic-#{$i} {
-      transform: rotate(calc(360deg / $inner-circle-count * #{$i})) translate($inner-radius) rotate(calc(-360deg / $inner-circle-count * #{$i}));
+      transform: rotate(calc(360deg / $inner-circle-count * #{$i})) translate($inner-radius) rotate(calc(360deg / $inner-circle-count * #{$i})); // İç çemberde düz kalmasını sağla
     }
   }
+
+/* Büyük çemberin dönme animasyonu */
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   
-  /* Büyük çemberin dönme animasyonu */
-  @keyframes rotate {
+  /* İç çemberin dönme animasyonu */
+  @keyframes rotate-inner {
     from {
       transform: rotate(0deg);
     }
@@ -1040,202 +1055,202 @@
 
    
 
-    @-webkit-keyframes rot-ic {
-        from {
-            transform: rotate(0deg) translatey(-60px) rotate(0deg);
-        }
+//     @-webkit-keyframes rot-ic {
+//         from {
+//             transform: rotate(0deg) translatey(-60px) rotate(0deg);
+//         }
 
-        to {
-            transform: rotate(360deg) translatey(-60px) rotate(-360deg);
-        }
-    }
-    @-webkit-keyframes rot-iciki {
-        from {
-            transform: rotate(60deg) translatey(-60px) rotate(-60deg);
-        }
+//         to {
+//             transform: rotate(360deg) translatey(-60px) rotate(-360deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-iciki {
+//         from {
+//             transform: rotate(60deg) translatey(-60px) rotate(-60deg);
+//         }
 
-        to {
-            transform: rotate(420deg) translatey(-60px) rotate(-420deg);
-        }
-    }
-    @-webkit-keyframes rot-icuc {
-        from {
-            transform: rotate(120deg) translatey(-60px) rotate(-120deg);
-        }
+//         to {
+//             transform: rotate(420deg) translatey(-60px) rotate(-420deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-icuc {
+//         from {
+//             transform: rotate(120deg) translatey(-60px) rotate(-120deg);
+//         }
 
-        to {
-            transform: rotate(480deg) translatey(-60px) rotate(-480deg);
-        }
-    }
-    @-webkit-keyframes rot-icdort {
-        from {
-            transform: rotate(180deg) translatey(-60px) rotate(-180deg);
-        }
+//         to {
+//             transform: rotate(480deg) translatey(-60px) rotate(-480deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-icdort {
+//         from {
+//             transform: rotate(180deg) translatey(-60px) rotate(-180deg);
+//         }
 
-        to {
-            transform: rotate(540deg) translatey(-60px) rotate(-540deg);
-        }
-    }
-    @-webkit-keyframes rot-icbes {
-        from {
-            transform: rotate(240deg) translatey(-60px) rotate(-240deg);
-        }
+//         to {
+//             transform: rotate(540deg) translatey(-60px) rotate(-540deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-icbes {
+//         from {
+//             transform: rotate(240deg) translatey(-60px) rotate(-240deg);
+//         }
 
-        to {
-            transform: rotate(600deg) translatey(-60px) rotate(-600deg);
-        }
-    }
-    @-webkit-keyframes rot-icalti {
-        from {
-            transform: rotate(300deg) translatey(-60px) rotate(-300deg);
-        }
+//         to {
+//             transform: rotate(600deg) translatey(-60px) rotate(-600deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-icalti {
+//         from {
+//             transform: rotate(300deg) translatey(-60px) rotate(-300deg);
+//         }
 
-        to {
-            transform: rotate(660deg) translatey(-60px) rotate(-660deg);
-        }
-    }
-    @-webkit-keyframes rot-dis {
-        from {
-            -webkit-transform: rotate(0deg) translatey(-150px) rotate(0deg);
-        }
-        to {
-            -webkit-transform: rotate(360deg) translatey(-150px) rotate(-360deg);
-        }
-    }
-    @-webkit-keyframes rot-disbir {
-        from {
-            -webkit-transform: rotate(20deg) translatey(-150px) rotate(-20deg);
-        }
-        to {
-            -webkit-transform: rotate(380deg) translatey(-150px) rotate(-380deg);
-        }
-    }
-    @-webkit-keyframes rot-disiki {
-        from {
-            -webkit-transform: rotate(40deg) translatey(-150px) rotate(-40deg);
-        }
-        to {
-            -webkit-transform: rotate(400deg) translatey(-150px) rotate(-400deg);
-        }
-    }
-    @-webkit-keyframes rot-disuc {
-        from {
-            -webkit-transform: rotate(60deg) translatey(-150px) rotate(-60deg);
-        }
-        to {
-            -webkit-transform: rotate(420deg) translatey(-150px) rotate(-420deg);
-        }
-    }
-    @-webkit-keyframes rot-disdort {
-        from {
-            -webkit-transform: rotate(80deg) translatey(-150px) rotate(-80deg);
-        }
-        to {
-            -webkit-transform: rotate(440deg) translatey(-150px) rotate(-440deg);
-        }
-    }
-    @-webkit-keyframes rot-disbes {
-        from {
-            -webkit-transform: rotate(100deg) translatey(-150px) rotate(-100deg);
-        }
-        to {
-            -webkit-transform: rotate(460deg) translatey(-150px) rotate(-460deg);
-        }
-    }
-    @-webkit-keyframes rot-disalti {
-        from {
-            -webkit-transform: rotate(120deg) translatey(-150px) rotate(-120deg);
-        }
-        to {
-            -webkit-transform: rotate(480deg) translatey(-150px) rotate(-480deg);
-        }
-    }
-    @-webkit-keyframes rot-disyedi {
-        from {
-            -webkit-transform: rotate(140deg) translatey(-150px) rotate(-140deg);
-        }
-        to {
-            -webkit-transform: rotate(500deg) translatey(-150px) rotate(-500deg);
-        }
-    }
-    @-webkit-keyframes rot-dissekiz {
-        from {
-            -webkit-transform: rotate(160deg) translatey(-150px) rotate(-160deg);
-        }
-        to {
-            -webkit-transform: rotate(520deg) translatey(-150px) rotate(-520deg);
-        }
-    }
-    @-webkit-keyframes rot-disdokuz {
-        from {
-            -webkit-transform: rotate(180deg) translatey(-150px) rotate(-180deg);
-        }
-        to {
-            -webkit-transform: rotate(540deg) translatey(-150px) rotate(-540deg);
-        }
-    }
-    @-webkit-keyframes rot-dison {
-        from {
-            -webkit-transform: rotate(200deg) translatey(-150px) rotate(-200deg);
-        }
-        to {
-            -webkit-transform: rotate(560deg) translatey(-150px) rotate(-560deg);
-        }
-    }
-    @-webkit-keyframes rot-disonbir {
-        from {
-            -webkit-transform: rotate(220deg) translatey(-150px) rotate(-220deg);
-        }
-        to {
-            -webkit-transform: rotate(580deg) translatey(-150px) rotate(-580deg);
-        }
-    }
-    @-webkit-keyframes rot-disoniki {
-        from {
-            -webkit-transform: rotate(240deg) translatey(-150px) rotate(-240deg);
-        }
-        to {
-            -webkit-transform: rotate(600deg) translatey(-150px) rotate(-600deg);
-        }
-    }
-    @-webkit-keyframes rot-disonuc {
-        from {
-            -webkit-transform: rotate(260deg) translatey(-150px) rotate(-260deg);
-        }
-        to {
-            -webkit-transform: rotate(620deg) translatey(-150px) rotate(-620deg);
-        }
-    }
-    @-webkit-keyframes rot-disondort {
-        from {
-            -webkit-transform: rotate(280deg) translatey(-150px) rotate(-280deg);
-        }
-        to {
-            -webkit-transform: rotate(640deg) translatey(-150px) rotate(-640deg);
-        }
-    }
-    @-webkit-keyframes rot-disonbes {
-        from {
-            -webkit-transform: rotate(300deg) translatey(-150px) rotate(-300deg);
-        }
-        to {
-            -webkit-transform: rotate(660deg) translatey(-150px) rotate(-660deg);
-        }
-    }
-    @-webkit-keyframes rot-disonalti {
-        from {
-            -webkit-transform: rotate(320deg) translatey(-150px) rotate(-320deg);
-        }
-        to {
-            -webkit-transform: rotate(680deg) translatey(-150px) rotate(-680deg);
-        }
-    }
-    @-webkit-keyframes rot-disonyedi {
-        from {
-            -webkit-transform: rotate(340deg) translatey(-150px) rotate(-340deg);
-        }
-        to {
-            -webkit-transform: rotate(700deg) translatey(-150px) rotate(-700deg);
-        }
-    }
+//         to {
+//             transform: rotate(660deg) translatey(-60px) rotate(-660deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-dis {
+//         from {
+//             -webkit-transform: rotate(0deg) translatey(-150px) rotate(0deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(360deg) translatey(-150px) rotate(-360deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disbir {
+//         from {
+//             -webkit-transform: rotate(20deg) translatey(-150px) rotate(-20deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(380deg) translatey(-150px) rotate(-380deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disiki {
+//         from {
+//             -webkit-transform: rotate(40deg) translatey(-150px) rotate(-40deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(400deg) translatey(-150px) rotate(-400deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disuc {
+//         from {
+//             -webkit-transform: rotate(60deg) translatey(-150px) rotate(-60deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(420deg) translatey(-150px) rotate(-420deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disdort {
+//         from {
+//             -webkit-transform: rotate(80deg) translatey(-150px) rotate(-80deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(440deg) translatey(-150px) rotate(-440deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disbes {
+//         from {
+//             -webkit-transform: rotate(100deg) translatey(-150px) rotate(-100deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(460deg) translatey(-150px) rotate(-460deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disalti {
+//         from {
+//             -webkit-transform: rotate(120deg) translatey(-150px) rotate(-120deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(480deg) translatey(-150px) rotate(-480deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disyedi {
+//         from {
+//             -webkit-transform: rotate(140deg) translatey(-150px) rotate(-140deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(500deg) translatey(-150px) rotate(-500deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-dissekiz {
+//         from {
+//             -webkit-transform: rotate(160deg) translatey(-150px) rotate(-160deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(520deg) translatey(-150px) rotate(-520deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disdokuz {
+//         from {
+//             -webkit-transform: rotate(180deg) translatey(-150px) rotate(-180deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(540deg) translatey(-150px) rotate(-540deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-dison {
+//         from {
+//             -webkit-transform: rotate(200deg) translatey(-150px) rotate(-200deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(560deg) translatey(-150px) rotate(-560deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disonbir {
+//         from {
+//             -webkit-transform: rotate(220deg) translatey(-150px) rotate(-220deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(580deg) translatey(-150px) rotate(-580deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disoniki {
+//         from {
+//             -webkit-transform: rotate(240deg) translatey(-150px) rotate(-240deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(600deg) translatey(-150px) rotate(-600deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disonuc {
+//         from {
+//             -webkit-transform: rotate(260deg) translatey(-150px) rotate(-260deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(620deg) translatey(-150px) rotate(-620deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disondort {
+//         from {
+//             -webkit-transform: rotate(280deg) translatey(-150px) rotate(-280deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(640deg) translatey(-150px) rotate(-640deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disonbes {
+//         from {
+//             -webkit-transform: rotate(300deg) translatey(-150px) rotate(-300deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(660deg) translatey(-150px) rotate(-660deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disonalti {
+//         from {
+//             -webkit-transform: rotate(320deg) translatey(-150px) rotate(-320deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(680deg) translatey(-150px) rotate(-680deg);
+//         }
+//     }
+//     @-webkit-keyframes rot-disonyedi {
+//         from {
+//             -webkit-transform: rotate(340deg) translatey(-150px) rotate(-340deg);
+//         }
+//         to {
+//             -webkit-transform: rotate(700deg) translatey(-150px) rotate(-700deg);
+//         }
+//     }
 }
