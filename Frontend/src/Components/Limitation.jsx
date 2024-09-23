@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import imgLimit from "../../public/images/mpmatikLimit.png";
 import "../Styles/Limitation.scss";
 import img from "../../public/images/bp.jpg";
+import imgServis from "../../public/images/mpmatik-servis.png"
+import imgMusteri from '../../public/images/mpmatik-musteri-destek.png'
+import imgYakit from '../../public/images/mpmatik-yakit.png'
+import imgFatura from '../../public/images/mpmatik-fatura.png'
+import imgRaporlama from '../../public/images/mpmatik-raporlamasi.png'
 
 const Limitation = () => {
   const [selectedSection, setSelectedSection] = useState('limitlendirme');
@@ -10,11 +15,7 @@ const Limitation = () => {
 
    // Butona tıklayınca tetiklenen fonksiyon
    const handleButtonClick = (buttonName) => {
-    if (activeButton === buttonName) {
-      setActiveButton(null); // Aynı butona tekrar basıldığında kapanması için
-    } else {
-      setActiveButton(buttonName); // Yeni butona basıldığında aktif duruma getirme
-    }
+    setActiveButton(prev => prev === buttonName ? null : buttonName);
   };
 
   // İçeriklerin tanımlandığı veri
@@ -22,32 +23,32 @@ const Limitation = () => {
     limitlendirme: {
       title: 'LİMİTLENDİRME',
       text: 'Araçlarınızın sizin belirleyeceğiniz dönemlerde TL veya LT bazında ne kadar yakıt alabileceğine karar verebiliyor olacaksınız.',
-      img: '../../public/images/mpmatikLimit.png',
+      img: imgLimit,
     },
     yakit: {
       title: 'HATALI YAKIT ALIMINA SON!',
       text: 'BP Taşıtmatik ile fionuzun hatalı ürün alma ihtimali ortadan kalkar. Sistem aracınızın hangi ürün kullandığını bilir, aracınızı pompada tanır ve yanlış ürün ikmali engeller.',
-      img: '../../public/images/mpmatik-yakit.png',
+      img: imgYakit,
     },
     tekFatura: {
       title: 'TEK FATURA İMKANI',
       text: 'Filonuzun tüm akaryakıt alımları için tek bir fatura alırsınız. Sistemden otomatik olarak aktarılan akaryakıt alımınıza ait bilgiler periyodlar halinde faturalanacaktır.',
-      img: '../../public/images/mpmatik-fatura.png',
+      img: imgFatura,
     },
     raporlama: {
       title: 'RAPORLAMA',
       text: 'Araçlarınızın akaryakıt alımıyla ilgili ihtiyacınız olan tüm bilgiler BP Genel Merkezi’nden faturayla birlikte bir rapor halinde size gönderilir. Bu sayede filonuzu kolaylıkla yönetebilirsiniz.',
-      img: '../../public/images/mpmatik-raporlamasi.png',
+      img: imgRaporlama,
     },
     musteriHizmetleri: {
       title: 'MÜŞTERİ HİZMETLERİ SİZİNLE!',
       text: 'Ayrıca dilediğiniz her zaman, karşılıklı bilgi alışverişinde bulunabileceğiniz “Taşıtmatik Müşteri Hizmetleri Servisimiz” hizmetinizde olmaktan mutluluk duyacaktır.',
-      img: '../../public/images/mpmatik-musteri-destek.png',
+      img: imgMusteri,
     },
     servis724: {
       title: '7/24 KESİNTİSİZ SERVİS',
       text: 'BP Taşıtmatik Müşteri Hizmetleri Servisi`nin yanısıra 0212 473 27 27 numaralı telefondan ulaşacağınız Müşteri Danışma Hattı ile 24 saat hizmetinizdeyiz. BP Taşıtmatik sistemi ile merak ettiğiniz konulara 7 gün 24 saat yanıt bulabilir, sistemimizle ilgili her türlü görüş ve önerilerinizi anında bize ulaştırabilirsiniz.',
-      img: '../../public/images/mpmatik-servis.png',
+      img: imgServis,
     },
   }; 
 
@@ -142,19 +143,19 @@ const Limitation = () => {
         </div>
       </div>
 
-      <div className="div-limitsection">
+      <div className="div-limitsectionMobil">
       <div className="div-button">
         {/* LİMİTLENDİRME */}
         <button className="button" onClick={() => handleButtonClick('limit')}>
           <text>LİMİTLENDİRME</text>
         </button>
         {activeButton === 'limit' && (
-          <div className="accordion-content">
+          <div className="accordion-content show">
             <h2 className="title">LİMİTLENDİRME</h2>
             <text>
               Araçlarınızın sizin belirleyeceğiniz dönemlerde TL veya LT bazında ne kadar yakıt alabileceğine karar verebiliyor olacaksınız.
             </text>
-            <img src='../../public/images/mpmatikLimit.png' alt="limit" className="accordion-img" />
+            <img src={imgLimit} alt="limit" className="accordion-img" />
           </div>
         )}
 
@@ -163,10 +164,10 @@ const Limitation = () => {
           <text>YAKIT ALIMI</text>
         </button>
         {activeButton === 'yakit' && (
-          <div className="accordion-content">
+          <div className="accordion-content show">
             <h2 className="title">YAKIT ALIMI</h2>
             <text>Yakıta dair detaylı bilgi burada yer alacak.</text>
-            <img src='../../public/images/mpmatikLimit.png' alt="yakit" className="accordion-img" />
+            <img src={imgYakit} alt="yakit" className="accordion-img" />
           </div>
         )}
 
@@ -175,10 +176,10 @@ const Limitation = () => {
           <text>TEK FATURA</text>
         </button>
         {activeButton === 'fatura' && (
-          <div className="accordion-content">
+          <div className="accordion-content show">
             <h2 className="title">TEK FATURA</h2>
             <text>Tek fatura detayları bu alanda yer alacak.</text>
-            <img src='../../public/images/mpmatikLimit.png' alt="fatura" className="accordion-img" />
+            <img src={imgFatura} alt="fatura" className="accordion-img" />
           </div>
         )}
 
@@ -186,10 +187,10 @@ const Limitation = () => {
           <text>Raporlama</text>
         </button>
         {activeButton === 'raporlama' && (
-          <div className="accordion-content">
+          <div className="accordion-content show">
             <h2 className="title">Raporlama</h2>
             <text>Tek fatura detayları bu alanda yer alacak.</text>
-            <img src='../../public/images/mpmatikLimit.png' alt="raporlama" className="accordion-img" />
+            <img src={imgRaporlama} alt="raporlama" className="accordion-img" />
           </div>
         )}
 
@@ -197,10 +198,10 @@ const Limitation = () => {
           <text>MÜŞTERİ HİZMETLERİ</text>
         </button>
         {activeButton === 'musteriHizmetleri' && (
-          <div className="accordion-content">
+          <div className="accordion-content show">
             <h2 className="title">MÜŞTERİ HİZMETLERİ</h2>
             <text>Tek fatura detayları bu alanda yer alacak.</text>
-            <img src='../../public/images/mpmatikLimit.png' alt="fatura" className="accordion-img" />
+            <img src={imgMusteri} alt="fatura" className="accordion-img" />
           </div>
         )}
 
@@ -208,10 +209,10 @@ const Limitation = () => {
           <text>7/24 SERVİS</text>
         </button>
         {activeButton === 'servis' && (
-          <div className="accordion-content">
+          <div className="accordion-content show">
             <h2 className="title">7/24 SERVİS</h2>
             <text>Tek fatura detayları bu alanda yer alacak.</text>
-            <img src='../../public/images/mpmatikLimit.png' alt="fatura" className="accordion-img" />
+            <img src={imgServis} alt="fatura" className="accordion-img" />
           </div>
         )}
 

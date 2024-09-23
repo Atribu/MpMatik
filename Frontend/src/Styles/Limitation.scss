@@ -225,6 +225,30 @@ text{
   justify-content: center;
   flex-direction: column;
   width: 100vw;
+
+  @media (min-width: 1024px) {
+    visibility: flex;
+  }
+
+  @media (max-width: 1024px) {
+    visibility: flex;
+  }
+}
+
+.div-limitsectionMobil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+
+  @media (min-width: 1024px) {
+    visibility: hidden;
+  }
+
+  @media (max-width: 1024px) {
+    visibility: flex;
+  }
 }
 
 .div-mantext{
@@ -349,12 +373,17 @@ overflow: hidden;
 max-height: 0;
 transition: max-height 0.6s ease, opacity 0.6s ease;
 opacity: 0;
+color: #ffffff;
 }
 
 .accordion-content img {
-width: 100%;
-height: auto;
+width: 150px;
+height: 245px;
 margin-top: 10px;
+object-fit:contain;
+
+
+
 }
 
 .accordion-content h2 {
@@ -371,18 +400,37 @@ max-height: 1000px; /* İçeriğe uygun bir yükseklik değeri */
 opacity: 1;
 }
 
-.buttonMobil {
-background-color: #22872b;
-color: white;
-padding: 15px;
-margin: 10px 0;
-text-align: center;
-cursor: pointer;
-width: 100%;
-}
+.button{
+  background-color: #22872b;
+  align-items: center;
+  justify-content: center;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border:none;
+  width: 90%;
+  text-align: center;
+  font-size: 30;
+  text-transform: uppercase;
 
-.buttonMobil:hover {
-background-color: #1a5c1e;
+  text{
+      text-align: center;
+      font-size: 25;
+      text-transform: uppercase;
+      color: #ffffff;
+  }
+
+  &:hover {
+      background-color: #000000;
+      cursor: pointer; 
+
+      text {
+        color: #ffffff;
+      }
+    }
+
+  
 }
 
 @media (max-width: 768px) {
