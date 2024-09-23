@@ -1,336 +1,392 @@
 .section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #03651a;
-    width: 100vw;
-    font-family:sans-serif; 
-    // height: auto;
-    // @media (max-width: 1024px) {
-    //     height:100vh;
-    //   }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #03651a;
+  width: 100vw;
+  font-family:sans-serif; 
+  // height: auto;
+  // @media (max-width: 1024px) {
+  //     height:100vh;
+  //   }
 }
 
 .div-1{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-align: center;
-    gap:10px;
-    margin: 20px;
-    position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  gap:10px;
+  margin: 20px;
+  position: relative; 
 
-    @media (max-width: 1024px) {
-        flex-direction: row;
-        width: 80%;
-      }
-      @media (min-width: 1024px) {
-        flex-direction: row;
-        width: 80%;
-      }
-    
-      @media (max-width: 768px) {
-        flex-direction: column;
-        width: 100%;
-      }
-        // 768px'den büyük ekranlar için (tablet ve üstü)
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: flex-start; // İçerikleri yukarı hizalayabilirsin.
-  }
+  @media (max-width: 1024px) {
+      flex-direction: row;
+      width: 80%;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      width: 80%;
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
+      // 768px'den büyük ekranlar için (tablet ve üstü)
+@media (min-width: 768px) {
+  flex-direction: row;
+  align-items: flex-start; // İçerikleri yukarı hizalayabilirsin.
+}
 }
 
 .div-text{
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    text-align: start;
-    width: 40%;
-    gap:10px;
-    background: #1A202C;
-    padding:30px 30px;
-    color: #ffffff;
-    position: absolute;
-    bottom: 50%;
-    right: 80px;
-    transform: translateY(50%);
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  width: 40%;
+  gap:10px;
+  background: #1A202C;
+  padding:30px 30px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 50%;
+  right: 80px;
+  transform: translateY(50%);
 
-    
-  @media (max-width: 768px) {
-    width: 80%; //mobil
-    position: relative;
-    bottom: auto;
-    right: auto;
-    transform: translateY(0);
+  
+@media (max-width: 768px) {
+  width: 80%; //mobil
+  position: relative;
+  bottom: auto;
+  right: auto;
+  transform: translateY(0);
+}
+
+  text{
+      color: #ffffff;
   }
 
-    text{
-        color: #ffffff;
-    }
-
-    h2{
-        text-transform: uppercase;
-        
-    }
+  h2{
+      text-transform: uppercase;
+      
+  }
 }
 
 .button{
-    background-color: #22872b;
-    align-items: center;
-    justify-content: center;
-    padding-top:25px;
-    padding-bottom:25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    border:none;
-    width: 375px;
-    text-align: center;
-    font-size: 30;
-    text-transform: uppercase;
+  background-color: #22872b;
+  align-items: center;
+  justify-content: center;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border:none;
+  width: 375px;
+  text-align: center;
+  font-size: 30;
+  text-transform: uppercase;
 
-    text{
-        text-align: center;
-        font-size: 25;
-        text-transform: uppercase;
+  text{
+      text-align: center;
+      font-size: 25;
+      text-transform: uppercase;
+      color: #ffffff;
+  }
+
+  &:hover {
+      background-color: #000000;
+      cursor: pointer; 
+
+      text {
         color: #ffffff;
+      }
     }
 
-    &:hover {
-        background-color: #085e0b;
-        cursor: pointer; 
+    @media (max-width: 1024px) {
+      width: 375px;
+    }
   
-        text {
-          color: #ffffff;
-        }
-      }
-
-      @media (max-width: 1024px) {
-        width: 375px;
-      }
-    
-      @media (max-width: 768px) {
-        width: 90%;
-      }
-    
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  
 }
 
 .buttonBlack{
+  background-color: #22872b;
+  align-items: center;
+  justify-content: center;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 375px;
+  border:none;
+  text-align: center;
+  font-size: 30;
+  text-transform: uppercase;
+  display: none; // Varsayılan olarak gizle
+
+  &:hover {
     background-color: #000000;
-    align-items: center;
-    justify-content: center;
-    padding-top:25px;
-    padding-bottom:25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    width: 375px;
-    border:none;
-    text-align: center;
-    font-size: 30;
-    text-transform: uppercase;
-    display: none; // Varsayılan olarak gizle
-  
-  @media (min-width: 1024px) {
-    display: block; // Ekran genişliği 1024px ve üzerindeyken görünür yap
-  }
-  @media (max-width: 1024px) {
-    width: 375px;
-  }
+    cursor: pointer; 
 
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-
-
-    text{
-        text-align: center;
-        font-size: 25;
-        text-transform: uppercase;
-        color: #ffffff;
+    text {
+      color: #ffffff;
     }
+  }
+
+@media (min-width: 1024px) {
+  display: block; // Ekran genişliği 1024px ve üzerindeyken görünür yap
+}
+@media (max-width: 1024px) {
+  width: 375px;
+}
+
+@media (max-width: 768px) {
+  width: 90%;
+}
+
+
+  text{
+      text-align: center;
+      font-size: 25;
+      text-transform: uppercase;
+      color: #ffffff;
+  }
 }
 
 .buttonBlack2{
-    background-color: #000000;
-    align-items: center;
-    justify-content: center;
-    padding-top:25px;
-    padding-bottom:25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    width: 375px;
-    border:none;
-    text-align: center;
-    font-size: 30;
-    text-transform: uppercase;
-    display: block; // Varsayılan olarak gizle
-  
-  @media (min-width: 1024px) {
-    display: none; // Ekran genişliği 1024px ve üzerindeyken görünür yap
-  }
-  @media (max-width: 1024px) {
-    width: 375px;
-  }
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 375px;
+  border:none;
+  text-align: center;
+  font-size: 30;
+  text-transform: uppercase;
+  display: block; // Varsayılan olarak gizle
 
-  @media (max-width: 768px) {
-    width: 90%;
-  }
+@media (min-width: 1024px) {
+  display: none; // Ekran genişliği 1024px ve üzerindeyken görünür yap
+}
+@media (max-width: 1024px) {
+  width: 375px;
+}
 
-  text{
-    text-align: center;
-    font-size: 25;
-    text-transform: uppercase;
-    color: #ffffff;
+@media (max-width: 768px) {
+  width: 90%;
+}
+
+text{
+  text-align: center;
+  font-size: 25;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 
-    text{
-        text-align: center;
-        font-size: 25;
-        text-transform: uppercase;
-        color: #ffffff;
-    }
+  text{
+      text-align: center;
+      font-size: 25;
+      text-transform: uppercase;
+      color: #ffffff;
+  }
 }
 
 .div-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap:10px;
-    text-transform: uppercase;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap:10px;
+  text-transform: uppercase;
+  margin: 20px;
 
-    @media (max-width: 1024px) {
-        width: 50%;
-      }
-    
-      @media (max-width: 768px) {
-        width: 100%;
-      }
+  @media (max-width: 1024px) {
+      width: 50%;
+    }
+  
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 }
 .div-limitsection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .div-mantext{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    flex-direction: column; // Mobilde column düzeni
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column; // Mobilde column düzeni
 
-    @media (min-width: 768px) { // Tablet boyutu
-      flex-direction: row; // Tablet ve üzeri ekranlar için row düzeni
-    }
-   
-    
+  @media (min-width: 768px) { // Tablet boyutu
+    flex-direction: row; // Tablet ve üzeri ekranlar için row düzeni
+  }
+ 
+  
 }
 
 
 .div-limitman{
-    display: flex;
-    width: 95%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
 
-    @media (max-width: 1024px) {
-        flex-direction: column;
-      }
-    
-      @media (min-width: 1025px) {
-        flex-direction:row-reverse; 
-        width: 82%;
-      }
+  @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  
+    @media (min-width: 1025px) {
+      flex-direction:row-reverse; 
+      width: 82%;
+    }
 }
 
 .div-limittext{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 50%;
-    gap:10px;
-    color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  gap:10px;
+  color: #ffffff;
 
-    @media (max-width: 1024px) {
-        width: 50%;
-      }
-    
-      @media (max-width: 768px) {
-        width: 85%;
-      }
-    
+  @media (max-width: 1024px) {
+      width: 50%;
+    }
+  
+    @media (max-width: 768px) {
+      width: 85%;
+    }
+  
 }
 
 .title {
-    font: size 32px;
-    font-weight: bold;
+  font: size 32px;
+  font-weight: bold;
 
 }
 text{
-    font: size 20px;
-    font-weight: normal;
+  font: size 20px;
+  font-weight: normal;
 
 }
 
 .mp-image {
-  width: 100%; // Varsayılan olarak resim genişliği mobil için tam genişlik
-  height: auto; // Yükseklik otomatik olarak genişliğe göre ayarlanır (aspect ratio korunur)
+width: 100%; // Varsayılan olarak resim genişliği mobil için tam genişlik
+height: auto; // Yükseklik otomatik olarak genişliğe göre ayarlanır (aspect ratio korunur)
 
-  // Mobil ekran boyutları (örneğin 0px - 640px)
-  @media (max-width: 768px) {
-    width: 100%;  // Mobilde tam genişlik
-    height: auto; // Oran korunur
-  }
+// Mobil ekran boyutları (örneğin 0px - 640px)
+@media (max-width: 768px) {
+  width: 100%;  // Mobilde tam genişlik
+  height: auto; // Oran korunur
+}
 
-  // Tablet ekran boyutları (örneğin 641px - 1024px)
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 50%; // Tablette genişliği biraz azaltıyoruz
-    height: auto; // Oran korunur
-  }
+// Tablet ekran boyutları (örneğin 641px - 1024px)
+@media (min-width: 768px) and (max-width: 1024px) {
+  width: 50%; // Tablette genişliği biraz azaltıyoruz
+  height: auto; // Oran korunur
+}
 
-  // Desktop ekran boyutları (örneğin 1025px ve üzeri)
-  @media (min-width: 1025px) {
-    width: 60%; // Desktopta genişlik daha da azalır
-    height: auto; // Oran korunur
-  }
+// Desktop ekran boyutları (örneğin 1025px ve üzeri)
+@media (min-width: 1025px) {
+  width: 60%; // Desktopta genişlik daha da azalır
+  height: auto; // Oran korunur
+}
 }
 
 
 .image-container {
-  width: 100%;
-  
-  @media (min-width: 768px) {
-    width: 50%; // Ekran geniş olduğunda görüntü alanı %50 olacak
-  }
+width: 100%;
+
+@media (min-width: 768px) {
+  width: 50%; // Ekran geniş olduğunda görüntü alanı %50 olacak
+}
 }
 
 .text-container {
-  background-color: #2D3748;
-  padding: 20px;
-  color: #ffffff;
-  width: 100%;
-  
-  @media (min-width: 768px) {
-    width: 50%; // Geniş ekranlarda metin alanı da %50 olacak
-  }
+background-color: #2D3748;
+padding: 20px;
+color: #ffffff;
+width: 100%;
+
+@media (min-width: 768px) {
+  width: 50%; // Geniş ekranlarda metin alanı da %50 olacak
+}
 }
 
 
 .slide-up {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+opacity: 0;
+transform: translateY(100px);
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .slide-up.show {
-  opacity: 1;
-  transform: translateY(0);
+opacity: 1;
+transform: translateY(0);
+}
+
+.accordion-content {
+overflow: hidden;
+max-height: 0;
+transition: max-height 0.6s ease, opacity 0.6s ease;
+opacity: 0;
+}
+
+.accordion-content img {
+width: 100%;
+height: auto;
+margin-top: 10px;
+}
+
+.accordion-content h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.accordion-content text {
+font-size: 16px;
+}
+
+.accordion-content.show {
+max-height: 1000px; /* İçeriğe uygun bir yükseklik değeri */
+opacity: 1;
+}
+
+.buttonMobil {
+background-color: #22872b;
+color: white;
+padding: 15px;
+margin: 10px 0;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.buttonMobil:hover {
+background-color: #1a5c1e;
+}
+
+@media (max-width: 768px) {
+.accordion-content {
+  max-height: 500px; /* Mobil için daha küçük bir yükseklik */
+}
 }

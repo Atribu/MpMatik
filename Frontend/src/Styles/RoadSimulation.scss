@@ -1,11 +1,11 @@
-.containerb, .container2 {
+.containerb  {
     display: flex;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
     justify-content: center;
-    margin-bottom: 150px;
+    background: #191f2c;
 }
 
 .containerb {
@@ -13,9 +13,6 @@
     overflow-x: hidden; /* Yolun taşmasını engelle */
 }
 
-.container2 {
-    width: 80%;
-}
 
 .footer-yol {
     width: 100%;
