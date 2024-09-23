@@ -1,0 +1,203 @@
+.containerb, .container2 {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.containerb {
+    width: 100vw; /* Yol tam ekran */
+    overflow-x: hidden; /* Yolun taşmasını engelle */
+}
+
+.container2 {
+    width: 80%;
+}
+
+.footer-yol {
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden; /* Yol dışarı taşmasın */
+   
+}
+
+.beyazarabam, .maviarabam, .kisakamyonum, .uzunkamyonum {
+    /* Arabaları üst katmana aldık */
+    position: absolute;
+}
+
+/* Yolun ayarları */
+.yol {
+    width: 100vw;
+    height: 80px;
+    background: url("https://www.mptasitmatik.com/wp-content/uploads/mpmatik-yollari.jpg") repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Yolun z-index'ini daha düşük yaptık */
+    overflow-x: hidden;
+    
+}
+
+.benzinlik {
+    display: flex;
+    margin-left: 74%;
+   
+  }
+
+  .benzinlik-image {
+    z-index: 12;
+   
+  }
+
+/* Üst yolda olacak arabalar */
+.maviarabam, .beyazarabam {
+    top: 90px; /* Üst yol hizası */
+    z-index: 9;
+}
+
+/* Alt yolda olacak arabalar */
+.kisakamyonum, .uzunkamyonum {
+    bottom: 0; /* Alt yol hizası */
+    z-index: 10;
+}
+
+/* Arabaların animasyonları */
+.maviarabam {
+    margin-left: -200px;
+    animation: maviAraba 18s infinite ease-in-out;
+    animation-delay: 10s;
+}
+
+.kisakamyonum {
+    margin-left: -300px;
+    animation: kisaKamyon 21s infinite ease-in-out;
+    animation-delay: 7s;
+}
+
+.uzunkamyonum {
+    margin-left: -300px;
+    animation: uzunKamyon 23s infinite ease-in-out;
+    animation-delay: 16s;
+}
+
+.beyazarabam {
+    margin-left: 120%;
+    float: right;
+    animation: beyazAraba 20s infinite ease-in-out;
+    animation-delay: 9s;
+}
+
+/* Keyframe Animasyonları */
+@keyframes maviAraba {
+    0% {
+        margin-left: -200px;
+    }
+    50%, 75% {
+        margin-left: 76%;
+    }
+    100% {
+        margin-left: 120%;
+        margin-right: -200px;
+    }
+}
+
+@keyframes kisaKamyon {
+    0% {
+        margin-left: -300px;
+    }
+    100% {
+        margin-left: 120%;
+        margin-right: -200px;
+    }
+}
+
+@keyframes uzunKamyon {
+    100% {
+        margin-left: -300px;
+    }
+    0% {
+        margin-left: 120%;
+        margin-right: -200px;
+    }
+}
+
+@keyframes beyazAraba {
+    0% {
+        margin-left: 120%;
+        margin-right: -100px;
+    }
+    25%, 30% {
+        margin-left: 77%;
+    }
+    100% {
+        margin-left: -20%;
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1600px) {
+    .containerb {
+        width: 1000px;
+    }
+    .benzinlik {
+        width: 260px;
+        bottom: -4px;
+        right: 50px;
+        z-index: 8;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .containerb {
+        width: 930px;
+    }
+    .beyazarabam, .kisakamyonum, .maviarabam, .uzunkamyonum {
+        width: auto;
+    }
+    .benzinlik {
+        width: 260px;
+        bottom: -4px;
+    }
+    .yol {
+        height: 60px;
+        background-size: auto 100%;
+    }
+    .footer-yol {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .containerb {
+        width: 800px;
+    }
+    .yol {
+        height: 65px;
+        background-size: auto 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .containerb {
+        width: 96%;
+    }
+    .benzinlik {
+        right: 40px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .benzinlik {
+        width: 180px;
+        right: 0;
+    }
+    .beyazarabam, .kisakamyonum, .maviarabam, .uzunkamyonum {
+        height: 40px;
+    }
+}
