@@ -43,8 +43,8 @@ const ContactForm = () => {
   return (
     <form className='form'>
       <div className='div'>
-        <text className='h2'>BP TAŞITMATİK</text>
-        <text className='h3'>kurumsal başvuru formu</text>
+        <p className='h2'>BP TAŞITMATİK</p>
+        <p className='h3'>kurumsal başvuru formu</p>
       </div>
       <section className='input-section'>
         <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />
@@ -164,7 +164,7 @@ const ContactForm = () => {
         Ben robot değilim
       </label>
       
-      <button className='green-button '><text>Gönder</text></button>
+      <button className='green-button '><p>Gönder</p></button>
       
     </form>
   )

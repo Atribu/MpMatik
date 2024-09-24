@@ -55,7 +55,7 @@ const HomeCarousel = () => {
                 <div className="custom-text-1">
                   <h2>Her zaman yenilikçi <br></br> her zaman kaliteli hizmet</h2>
                   <p className="custom-text">Filonuzun akaryakıt alımları mevlana petrol güvencesi ve <span>BP Taşıtmatik</span> sistemi ile kontrol altında </p>
-                  <button className="custom-button"><text>Kolay Başvuru</text></button>
+                  <button className="custom-button"><p>Kolay Başvuru</p></button>
                 </div>
               )}
               {index === 1 && (
@@ -63,7 +63,7 @@ const HomeCarousel = () => {
                   <h2 className="custom-header"><span>Filo</span>nuza Özel Çözümler</h2>
                   <p className="custom-text">BP Filo Kart sistemi taşeron araçlarının ödeme yapmadan anlaşmalı BP istasyonlarından yakıt almasını sağlar.</p>
                   <p className="custom-text">BP Filo Kart kullanan şirketler, tedarikçi veya taşeronlarına yapacakları ödemeleri akaryakıt üzerinden yaparak, yapmış oldukları ödemelerden akaryakıt iskonto tutarları kadar prim elde ederler.</p>
-                  <button className="custom-button"><text>Kolay Başvuru</text></button>
+                  <button className="custom-button"><p>Kolay Başvuru</p></button>
                   
                 </div>
               )}

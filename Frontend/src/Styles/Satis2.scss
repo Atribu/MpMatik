@@ -25,7 +25,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: start;
     height: 100%;
     z-index:2; 
@@ -38,11 +38,11 @@
 
       @media (min-width: 1024px) {
         flex-direction: row;
-        width: 80%;
-        gap:0px
+        width: 85%;
+        gap:20px
       }
 
-      p,text{
+      p{
         color: #2e3645;
         font-weight: 500;
         line-height: 1.6;
@@ -63,7 +63,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     gap:10px;
     position: relative; 
 
@@ -71,7 +71,7 @@
         width: 90%;
       }
       @media (min-width: 1024px) {
-        width: 40%;
+        width: 38%;
       }
 
   }
@@ -128,100 +128,99 @@
   }
 
   $circle-count: 18; // Büyük dairedeki toplam yuvarlak sayısı
-$inner-circle-count: 6; // İç çemberdeki yuvarlak sayısı
-$radius: 300px; // Büyük dairenin yarıçapı
-$inner-radius: 100px; // İç çemberin yarıçapı
-$circle-size: 100px; // Küçük dairelerin boyutu
-
-/* Büyük çember */
-/* Büyük çember */
-.big-circle {
-    width: 600px;
-    height: 600px;
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: rotate 43.32s linear infinite;
+  $inner-circle-count: 6; // İç çemberdeki yuvarlak sayısı
+  $radius: 300px; // Büyük dairenin yarıçapı
+  $inner-radius: 100px; // İç çemberin yarıçapı
+  $circle-size: 100px; // Küçük dairelerin boyutu
   
-    /* İç çember */
-    &::before {
-      content: "";
-      position: absolute;
-      width: $circle-size;
-      height: $circle-size;
-      border-radius: 50%;
-      background-color: transparent;
+  /* Büyük çember */
+  /* Büyük çember */
+  .big-circle {
+      width: 600px;
+      height: 600px;
+      position: relative;
+      margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: rotate-inner 20s linear infinite;
+      animation: rotate 43.32s linear infinite;
+    
+      /* İç çember */
+      &::before {
+        content: "";
+        position: absolute;
+        width: $circle-size;
+        height: $circle-size;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: rotate-inner 20s linear infinite;
+      }
     }
-  }
+    
+    /* Küçük yuvarlaklar */
+    .ic {
+      width: $circle-size;
+      height: $circle-size;
+      position: absolute;
+      background-repeat: no-repeat;
+    
+      /* Resimlerin sabit kalması için */
+      img {
+        width: 100%;
+        height: 100%;
+        transform: rotate(0deg);
+      }
+    }
   
-  /* Küçük yuvarlaklar */
-  .ic {
-    width: $circle-size;
-    height: $circle-size;
+  /* Büyük çemberdeki küçük dairelerin yerleşimi */
+  @for $i from 1 through $circle-count {
+      .ic-#{$i} {
+        transform: rotate(calc(360deg / $circle-count * #{$i})) translate($radius) rotate(calc(-360deg / $circle-count * #{$i})); // Dönüşü ters yap
+      }
+    }
+  
+  /* İç çemberdeki küçük dairelerin yerleşimi */
+  .inner-circle {
+    width: 300px;
+    height: 300px;
     position: absolute;
     background-repeat: no-repeat;
-  
-    /* Resimlerin sabit kalması için */
-    img {
-      width: 100%;
-      height: 100%;
-      transform: rotate(0deg);
-    }
-  }
-
-/* Büyük çemberdeki küçük dairelerin yerleşimi */
-@for $i from 1 through $circle-count {
-    .ic-#{$i} {
-      transform: rotate(calc(360deg / $circle-count * #{$i})) translate($radius) rotate(calc(-360deg / $circle-count * #{$i})); // Dönüşü ters yap
-    }
-  }
-
-/* İç çemberdeki küçük dairelerin yerleşimi */
-.inner-circle {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 2;
-  animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
-}
-
-@for $i from 1 through $inner-circle-count {
-    .inner-ic-#{$i} {
-      transform: rotate(calc(360deg / $inner-circle-count * #{$i})) translate($inner-radius) rotate(calc(360deg / $inner-circle-count * #{$i})); // İç çemberde düz kalmasını sağla
-    }
-  }
-
-/* Büyük çemberin dönme animasyonu */
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  
-  /* İç çemberin dönme animasyonu */
-  @keyframes rotate-inner {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    background-size: cover;
+    background-position: center center;
+    z-index: 2;
+    animation: rotate-inner 20s linear infinite; // İç çemberi döndürme animasyonu
   }
   
-  /* İç çemberin döndürülme animas
+  @for $i from 1 through $inner-circle-count {
+      .inner-ic-#{$i} {
+        transform: rotate(calc(360deg / $inner-circle-count * #{$i})) translate($inner-radius) rotate(calc(360deg / $inner-circle-count * #{$i})); // İç çemberde düz kalmasını sağla
+      }
+    }
+  
+  /* Büyük çemberin dönme animasyonu */
+  @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    
+    /* İç çemberin dönme animasyonu */
+    @keyframes rotate-inner {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
   
   
 
