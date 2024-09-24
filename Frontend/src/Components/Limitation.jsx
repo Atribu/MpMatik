@@ -103,7 +103,7 @@ const Limitation = () => {
           <div className="div-mantext">
             <div className="div-limittext">
               <h2 className="title">{sectionContent[selectedSection].title}</h2>
-              <text>
+              <text className="text">
               {sectionContent[selectedSection].text}
               </text>
             </div>
@@ -116,27 +116,27 @@ const Limitation = () => {
             ></img>
           </div>
           <div className="div-button">
-            <button className="button"
+            <button className="buttonLim"
              onClick={() => setSelectedSection('limitlendirme')}
             >
               <text>LİMİTLENDİRME</text>
             </button>
 
-            <button className="button"
+            <button className="buttonLim"
              onClick={() => setSelectedSection('yakit')}
             >
               <text>YAKIT ALIMI</text>
             </button>
-            <button className="button"  onClick={() => setSelectedSection('tekFatura')}>
+            <button className="buttonLim"  onClick={() => setSelectedSection('tekFatura')}>
               <text>TEK FATURA</text>
             </button>
-            <button className="button"  onClick={() => setSelectedSection('raporlama')}>
+            <button className="buttonLim"  onClick={() => setSelectedSection('raporlama')}>
               <text>RAPORLAMA</text>
             </button>
-            <button className="button"  onClick={() => setSelectedSection('musteriHizmetleri')}>
+            <button className="buttonLim"  onClick={() => setSelectedSection('musteriHizmetleri')}>
               <text>MÜŞTERİ HİZMETLERİ</text>
             </button>
-            <button className="button"  onClick={() => setSelectedSection('servis724')}>
+            <button className="buttonLim"  onClick={() => setSelectedSection('servis724')}>
               <text>7/24 SERVİS</text>
             </button>
           </div>

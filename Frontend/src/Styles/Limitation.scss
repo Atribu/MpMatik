@@ -75,16 +75,16 @@
   }
 }
 
-.button{
+.buttonLim{
   background-color: #22872b;
   align-items: center;
   justify-content: center;
-  padding-top:25px;
-  padding-bottom:25px;
+  padding-top:30px;
+  padding-bottom:30px;
   padding-left: 100px;
   padding-right: 100px;
   border:none;
-  width: 375px;
+  width: 385px;
   text-align: center;
   font-size: 30;
   text-transform: uppercase;
@@ -106,7 +106,7 @@
     }
 
     @media (max-width: 1024px) {
-      width: 375px;
+      width: 385px;
     }
   
     @media (max-width: 768px) {
@@ -254,7 +254,7 @@ text{
 .div-mantext{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100vw;
   flex-direction: column; // Mobilde column düzeni
 
@@ -309,7 +309,7 @@ text{
 }
 text{
   font: size 20px;
-  font-weight: normal;
+  font-weight: lighter;
 
 }
 

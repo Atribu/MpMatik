@@ -3,14 +3,12 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    width: 100vw; /* Yol tam ekran */
+    overflow-x: hidden; /* Yolun taşmasını engelle */
     align-items: center;
     justify-content: center;
     background: #191f2c;
-}
-
-.containerb {
-    width: 100vw; /* Yol tam ekran */
-    overflow-x: hidden; /* Yolun taşmasını engelle */
+    
 }
 
 
@@ -139,9 +137,7 @@
 
 /* Media Queries */
 @media only screen and (max-width: 1600px) {
-    .containerb {
-        width: 1000px;
-    }
+
     .benzinlik {
         width: 260px;
         bottom: -4px;
@@ -151,9 +147,7 @@
 }
 
 @media only screen and (max-width: 1500px) {
-    .containerb {
-        width: 930px;
-    }
+    
     .beyazarabam, .kisakamyonum, .maviarabam, .uzunkamyonum {
         width: auto;
     }
@@ -171,9 +165,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .containerb {
-        width: 800px;
-    }
+  
     .yol {
         height: 65px;
         background-size: auto 100%;
@@ -181,9 +173,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .containerb {
-        width: 96%;
-    }
     .benzinlik {
         right: 40px;
     }

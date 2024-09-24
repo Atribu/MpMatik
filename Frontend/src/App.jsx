@@ -34,7 +34,7 @@ const App = () => {
                <Route path="/iletisim" element={<Contact />} />
            </Routes>
          </main>
-         <Footer />
+         {/* <Footer /> */}
      </BrowserRouter>
     </>
   )
