@@ -1,7 +1,29 @@
-import React, { useState }  from 'react'
+import React, { useState,useEffect }  from 'react'
 import "../Styles/ContactFormGray.scss";
 
 const ContactForm = () => {
+  useEffect(() => {
+    // kayarak gelme
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    // Gözlemlemek istediğiniz elemanları seçin
+    const hiddenElements = document.querySelectorAll('.slide-upSatis');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup işlemi: Bileşen kaldırıldığında gözlemlemeyi bırakır
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []); 
+  
     const [isChecked, setIsChecked] = useState(false);
 
     const handleCheckboxChange = () => {
@@ -42,7 +64,7 @@ const ContactForm = () => {
 
   return (
     <form className='formGray'>
-      <div className='divGray'>
+      <div className='divGray slide-upSatis'>
         <p className='h2Gray'>TEKLİF AL</p>
         <section className='input-sectionGray'>
         <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />

@@ -40,7 +40,7 @@ const Satis1 = () => {
             <h2>Toptan Akaryakıt Satışı</h2>
             <p >Mevlana Petrol, toptan akaryakıt konusunda firmaların profesyonel çözüm ortağı olup, toplu akaryakıt tüketimi olan şirket ve kuruluşların, bu konudaki ihtiyaçlarını giderir.
 Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve müşteri memnuniyeti olduğu bilinciyle, her zaman ve her yerde kesintisiz enerji kaynağı anlayışıyla, müşterilerine ihtiyacı olan ürünleri en iyi hizmetle sunan Mevlana Petrol, ilgili tesisatlarından temin ettiği akaryakıtları, mühürlü olarak, ürün teslim fişi, kantar fişi, analiz raporu ile birlikte teslim adresine sevk eder.</p>
-            <button className='buttonMore'><p>DAHA FAZLA BİLGİ AL</p></button>
+            <button className='buttonMore'><span>DAHA FAZLA BİLGİ AL</span></button>
         </div>
 
         <div className='subContainer2'>

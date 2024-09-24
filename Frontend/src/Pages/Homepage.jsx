@@ -7,6 +7,8 @@ import BlogSection from '../Components/BlogSection'
 import RoadSimulation from '../Components/RoadSimulation'
 import ContactForm2 from '../Components/ContactForm2'
 import Background from '../Components/Background'
+import EBülten from '../Components/EBülten'
+import CirclePart from '../Components/CirclePart'
 
 
 const Homepage = () => {
@@ -15,10 +17,12 @@ const Homepage = () => {
       <MainCarousel/>
       <Limitation/>
       <Satis1/>
-      <Satis2/>
+      {/* <Satis2/> */}
+      <CirclePart/>
       <BlogSection/>
       <ContactForm2/>
       <Background/>
+      <EBülten/>
       <RoadSimulation/>
     </div>
   )

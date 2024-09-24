@@ -82,7 +82,7 @@
     align-items: center;
     justify-content: center;
     text-align: start;
-    margin: 20px;
+    margin: 0px;
     position: relative; 
     @media (max-width: 1024px) {
         width: 90%;
@@ -110,7 +110,7 @@
     padding-right: 30px;
     cursor: pointer;
 
-    text{
+    span{
         font-size:18px;
         color: #ffffff;
     }
@@ -139,11 +139,14 @@
       width: 600px;
       height: 600px;
       position: relative;
-      margin: 0 auto;
+      margin: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
       animation: rotate 43.32s linear infinite;
+      @media (max-width: 500px) { // Tablet boyutu
+        display: none; // Tablet ve üzeri ekranlar için row düzeni
+      }
     
       /* İç çember */
       &::before {

@@ -24,6 +24,7 @@ const Header1 = () => {
 
   return (
     <header className={`sticky-header ${isSticky ? 'is-sticky' : ''}`}>
+      <section>
       <Link>
         <img 
           src={isSticky ? '/Logo/bp-logo-beyazimsi.png' : '/Logo/bp-logo-kendi.png'} 
@@ -38,6 +39,7 @@ const Header1 = () => {
         <Link to='/'>HAKKIMIZDA</Link>
         <Link to='/'>İLETİŞİM</Link>
       </nav>
+      </section>
     </header>
   );
 }

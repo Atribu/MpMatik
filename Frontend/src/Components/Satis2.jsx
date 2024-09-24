@@ -76,7 +76,7 @@ const Satis2 = () => {
 Hem toptan hem de Taşıtmatik satışlarını beraber yaparak, ihale kapsamında çoklu hizmetler sunabilmekte. Esnek ödeme koşulları çerçevesinde optimal alış veriş imkanları ortaya koyabilmektedir.
 
 Bu sayede büyük montanlı alım yapmak isteyen özel sektör kuruluşları ile başta Antalya olmak üzere Tüm Türkiye’de ki kamu kuruluşlarının, akaryakıt ihtiyaçlarını karşılamak amaçlı akaryakıt ihalelerine katılım sağlamakta ve alınan ihaleler başarılı bir şekilde sonuçlandırılmaktadır.</p>
-        <button className='buttonMore2'><p>DAHA FAZLA BİLGİ AL</p></button>
+        <button className='buttonMore2'><span>DAHA FAZLA BİLGİ AL</span></button>
     </div>
 
     <div className="big-circle">
