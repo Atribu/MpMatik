@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
-import "../Style/Footer.scss"
+import "../Styles/Footer.scss"
 
 const Footer = () => {
   return (

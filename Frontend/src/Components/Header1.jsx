@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import "../Style/Header1.scss";
+import "../Styles/Header1.scss";
 
 const Header1 = () => {
   const [isSticky, setIsSticky] = useState(false);
