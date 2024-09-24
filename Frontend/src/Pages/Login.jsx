@@ -46,7 +46,7 @@ const Login = () => {
                 <label htmlFor='password'>Şifre</label>
                 <input id='password' type='password' name='password' onChange={handleChange} />
 
-                <button type='submit'>{ wait ? "Giriş Yap" : "Lütfen Bekleyin..." }</button>
+                <button type='submit'>{ wait ? "Giriş Yap" : "Lütfen Bekleyin.."}</button>
             </form>
         </section>
     );
