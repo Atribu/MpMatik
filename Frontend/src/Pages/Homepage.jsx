@@ -17,8 +17,7 @@ const Homepage = () => {
       <MainCarousel/>
       <Limitation/>
       <Satis1/>
-      {/* <Satis2/> */}
-      <CirclePart/>
+      <Satis2/>
       <BlogSection/>
       <ContactForm2/>
       <Background/>

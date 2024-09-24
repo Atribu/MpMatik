@@ -79,18 +79,35 @@ Bu sayede büyük montanlı alım yapmak isteyen özel sektör kuruluşları ile
         <button className='buttonMore2'><span>DAHA FAZLA BİLGİ AL</span></button>
     </div>
 
-    <div className="big-circle">
-      {/* Büyük dairedeki 18 küçük daire */}
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`ic ic-${index + 1}`}
-          style={{ backgroundImage: `url(${image})` }}
-        ></div>
-      ))}
+   <div className='mainDivNew slide-upSatis2'>
+   <div className='circleDiv  '>
+        <div className='ic'></div>
+        <div className='ic2'></div>
+        <div className='ic3'></div>
+        <div className='ic4'></div>
+        <div className='ic5'></div>
+        <div className='ic6'></div>
+        <div className='dis'></div>
+        <div className='dis1'></div>
+        <div className='dis2'></div>
+        <div className='dis3'></div>
+        <div className='dis4'></div>
+        <div className='dis5'></div>
+        <div className='dis6'></div>
+        <div className='dis7'></div>
+        <div className='dis8'></div>
+        <div className='dis9'></div>
+        <div className='dis10'></div>
+        <div className='dis11'></div>
+        <div className='dis12'></div>
+        <div className='dis13'></div>
+        <div className='dis14'></div>
+        <div className='dis15'></div>
+        <div className='dis16'></div>
+        <div className='dis17'></div>
 
-
-    </div>
+      </div>
+   </div>
 
   </div>
 </section>

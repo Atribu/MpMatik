@@ -10,7 +10,7 @@ const ContactForm = () => {
 
     const [selectedCity, setSelectedCity] = useState('Şehir Seçiniz*');
     const [isOpen, setIsOpen] = useState(false);
-    const cities = ['İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Antalya'];
+    const cities = ['İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Antalya','İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Antalya' ];
     const handleSelect = (city) => {
       setSelectedCity(city);
       setIsOpen(false);

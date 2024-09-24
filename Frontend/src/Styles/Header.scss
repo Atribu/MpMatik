@@ -9,7 +9,7 @@
     img {
         width: 90%;
         height: 5vh;
-        margin-left: 50%;
+        margin-left: 60%;
     }
 
     nav {
@@ -24,9 +24,6 @@
         text-decoration: none;
         padding: 5%;
         font-size: 20px;
-        @media (max-width: 768px) { // Tablet boyutu
-            display: none; // Tablet ve üzeri ekranlar için row düzeni
-          }
     }
 
     div {
@@ -35,13 +32,6 @@
         gap: 20px;
         margin: 1% 5%;
         padding: 0;
-        @media (max-width: 768px) { // Tablet boyutu
-            display: none; // Tablet ve üzeri ekranlar için row düzeni
-          }
-
-          @media (min-width: 768px) and (max-width: 1024px) { // Tablet boyutu
-            gap: 8px;
-          }
       }
 
       .button1 {
