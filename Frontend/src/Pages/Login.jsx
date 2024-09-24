@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
-import {useDispatch, useSelector} from 'react-redux'
+import React, {useState} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loginError, loginStart, loginSuccess } from '../redux/userSlice';
 
 const Login = () => {
     const [form, setForm] = useState({});
-
-    const [wait, setWait] = useSelector((state) => state.user);
+    const wait = useSelector((state) => state.user);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -14,12 +13,13 @@ const Login = () => {
         setForm({
             ...form,
             [e.target.id]: e.target.value
-        })
-    }
+        });
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         dispatch(loginStart());
-        const response = await fetch("/Backend/giris/giris", {
+        const response = await fetch("/api/giris/giris", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -27,28 +27,29 @@ const Login = () => {
             body: JSON.stringify(form)
         });
         const data = await response.json();
-        if(data.success===false) {
+        if (data.success === false) {
             dispatch(loginError(data.message));
-            Error(data.message);
+            alert(data.message);
             return;
         }
         dispatch(loginSuccess(data));
-        navigate("/panel")
-    }
-  return (
-    <section>
-        <h1>Giriş Yap</h1>
-        <form>
-            <label htmlFor='username'>Kullancı Adı</label>
-            <input id='username' type='text' name='username' />
+        navigate("/panel");
+    };
 
-            <label htmlFor='username'>Şifre</label>
-            <input id='password' type='password' name='password' />
+    return (
+        <section>
+            <h1>Giriş Yap</h1>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor='username'>Kullanıcı Adı</label>
+                <input id='username' type='text' name='username' onChange={handleChange} />
 
-            <button type='submit'>{ wait ? "Bekleyiniz..." : "Giriş Yap" }</button>
-        </form>
-    </section>
-  )
-}
+                <label htmlFor='password'>Şifre</label>
+                <input id='password' type='password' name='password' onChange={handleChange} />
 
-export default Login
+                <button type='submit'>{ wait ? "Giriş Yap" : "Lütfen Bekleyin..." }</button>
+            </form>
+        </section>
+    );
+};
+
+export default Login;

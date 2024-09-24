@@ -21,12 +21,8 @@ const userSchema = new mongo.Schema({
     {
         type: String,
         required: true,
-    },
-    photo:
-    {
-        type: String
     }
-});
+})   
 
 const User = mongo.model("User", userSchema);
 export default User;

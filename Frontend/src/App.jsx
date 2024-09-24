@@ -15,6 +15,8 @@ import BlogDuzenle from './Pages/BlogDuzenle.jsx'
 import Bloglar from './Pages/Bloglar.jsx'
 import YeniBlogEkle from './Pages/YeniBlogEkle.jsx'
 import Footer from './Components/Footer.jsx'
+import Login from './Pages/Login.jsx'
+import Register from './Pages/Register.jsx'
 
 const App = () => {
   return (
@@ -25,6 +27,7 @@ const App = () => {
           <main>
                 <Routes>
                       <Route path="/" element={<Homepage />} />
+                      <Route path="/giris" element={<Login />} />
                       <Route path="/panel" element={<Panel />}>
                             <Route path="bloglar" element={<Bloglar />} />
                             <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
