@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon Backend/index.js",
-    "start": "node Backend/index.js"
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
   },
   "type": "module",
   "keywords": [],

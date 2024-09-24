@@ -1,7 +1,8 @@
 import express, { request } from "express";
 import mongo from "mongoose";
+import loginRegister from "./routes/loginRegister.js";
 
-mongo.connect("mongodb+srv://seo4dgtlface:8ie5pSIEzzeqlaFS@mpmatik.6o7id.mongodb.net/MPmatik?retryWrites=true&w=majority&appName=MPmatik")
+mongo.connect("mongodb+srv://seo4dgtlface:8ie5pSIEzzeqlaFS@mpmatik.6o7id.mongodb.net/mpmatik?retryWrites=true&w=majority&appName=mpmatik")
 .then(()=>{
     console.log("Bağlandı sorun yok...");
 })
@@ -15,6 +16,8 @@ exp.use(express.json());
 exp.listen(3000, () => {
     console.log("Port Açıldı. Sorun yok");
 });
+
+exp.use("/api/giris", loginRegister);
 
 exp.use((error, request, response, next) => {
     const statusCode = error.statusCode || 500;
