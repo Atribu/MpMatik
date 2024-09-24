@@ -121,7 +121,7 @@
     padding-right: 30px;
     cursor: pointer;
 
-    p{
+    span{
         font-size:18px;
     }
   }
@@ -164,14 +164,14 @@
     overflow: hidden;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
     background-color: #1A202C;
-    padding: 0 10%;
-    box-sizing: border-box;
-    width: 90%;
+    padding: 0 2%;
+    width: 86%;
   }
   
   .content.open {
     max-height: 200px; /* İçeriğin yüksekliğini buradan ayarlayabilirsiniz */
-    padding: 10px 10%; /* İçerik açıldığında padding ekleyin */
+    padding: 2%; /* İçerik açıldığında padding ekleyin */
+    width: 86%;
   }
 
   .button-container {

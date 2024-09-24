@@ -4,18 +4,27 @@
     justify-content:baseline;
     background-color: rgba(45, 55, 72, 0.9); 
     flex-direction: column;
-    width: 33.33vw; 
     gap:20px;
     text-align: center;
     font-family:sans-serif; 
 
     @media (min-width: 1024px) {
+      width: 60%; 
+      padding: 30px;
+      padding-bottom: 60px;
+      
+    }
+
+    @media (max-width: 768px) {
         width: 70%; 
-        height: 724px; 
+        padding: 30px;
+        padding-bottom: 60px;
+        
       }
     
       @media (max-width: 768px) {
         width: 90%;  
+        padding: 15px;
         height: 540px;
       }
 }
@@ -26,26 +35,52 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 90%;
-    gap:10px;
+    padding: 20px;
     text-transform: uppercase;
-    margin: 20px;
+    @media (min-width: 768px) {
+      width: 50%; 
+      gap:20px;
+   
+    }
+    @media (max-width: 768px) {
+      width: 90%;  
+  
+    }
 }
 .h2{
     font-size: 30px;
     color: #ffffff;
+    line-height: normal;
+    margin:0px;
+    white-space: nowrap;
+    
 }
 
 .h3{
     font-size: 20px;
     color: #ffffff;
+    white-space: nowrap;
 }
 
 .input-section{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4%;
+
+    input{
+      position: relative;
+    display: inline-block;
+    width: 50%; 
+    gap:2rem;
+
+    &:placeholder{
+      color: #ffffff;
+    }
+    
+    }
 }
 
 input {
@@ -57,8 +92,7 @@ input {
     border-radius: 4px;       
     width: 50vw;              
     height: 50px;
-    display: inline-block;
-    box-sizing: border-box;    // Padding ve border ile uyumlu genişlik hesaplama
+    display: inline-block; // Padding ve border ile uyumlu genişlik hesaplama
   
     // Placeholder için stil
     &.placeholder {
@@ -129,11 +163,10 @@ input {
   }
 
   .green-button {
-    width: 90%;
+    width: 100%;
     background-color: #4caf50;
     color: #ffffff;
-    padding-top:20px;
-    padding-bottom:20px;
+    
     border:none;
     border-radius: 5px;
     
@@ -203,21 +236,52 @@ input {
       overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Hafif gölge
   
-      // Liste öğeleri için stil
+      
       &__option {
-        padding: 10px 15px; // Y ekseninde 10px, X ekseninde 15px padding
+        padding: 10px 15px; 
         cursor: pointer;
         font-family:sans-serif; 
-        font-size: 14px; // Font boyutu
-        color: #333; // Metin rengi
-        transition: background-color 0.3s, padding 0.3s; // Geçiş efektleri
+        font-size: 24px; 
+        color: #333; 
+        transition: background-color 0.3s, padding 0.3s; 
   
         &:hover {
-          background-color: #f0f0f0; // Hover sırasında arka plan rengi
-          padding: 12px 15px; // Hover sırasında padding artışı
+          background-color: #f0f0f0; 
+          padding: 12px 15px; 
         }
       }
     }
+  }
+
+  .city-select__dropdown{
+    position: absolute;
+      top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #424853;
+      z-index: 10; // Dropdown'ın üstte kalmasını sağlar
+      max-height: 150px; 
+      overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: start;
+
+  }
+
+  .city-select__option{
+    padding: 5px 10px; 
+        cursor: pointer;
+        font-family:sans-serif; 
+        font-size: 16px; 
+        color: #ffffff; 
+        transition: background-color 0.3s, padding 0.3s; 
+  
+        &:hover {
+          background-color: #4f755f; 
+           
+         
+        }
   }
   
   

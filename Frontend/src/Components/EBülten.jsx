@@ -3,9 +3,9 @@ import '../Styles/RoadSimulation.scss'; // Sass dosyanızı burada i
 
 const EBülten = () => {
   return (
-    <div>
+    <section className=''>
       
-    </div>
+    </section>
   )
 }
 

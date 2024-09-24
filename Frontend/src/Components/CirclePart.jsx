@@ -1,5 +1,5 @@
-import React, { useState,useEffect }  from 'react'
-import "../Styles/Satis2.scss"
+import React from 'react'
+import "../Styles/Circle.scss"
 
 const images = [
     "https://www.mptasitmatik.com/wp-content/uploads/afyon-emniyet.png",
@@ -29,58 +29,10 @@ const images = [
     
   ];
 
-  const innerImages = [
-
-    "https://www.mptasitmatik.com/wp-content/uploads/muratpasa-bel.png",
-    "https://www.mptasitmatik.com/wp-content/uploads/cesme-belediyesi.png",
-    "https://www.mptasitmatik.com/wp-content/uploads/canakkale-ozel-il.png",
-    "https://www.mptasitmatik.com/wp-content/uploads/sosyal-guvenlik-kurumu.png",
-    "https://www.mptasitmatik.com/wp-content/uploads/aksu-bel.png",
-    "https://www.mptasitmatik.com/wp-content/uploads/usak-ozel-il.png",
-    
-  ];
-
-const Satis2 = () => {
-    const innerImages = images.slice(6);
-
-    useEffect(() => {
-        // kayarak gelme
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('show');
-            } else {
-              entry.target.classList.remove('show');
-            }
-          });
-        });
-    
-        // Gözlemlemek istediğiniz elemanları seçin
-        const hiddenElements = document.querySelectorAll('.slide-upSatis2');
-        hiddenElements.forEach((el) => observer.observe(el));
-    
-        // Cleanup işlemi: Bileşen kaldırıldığında gözlemlemeyi bırakır
-        return () => {
-          hiddenElements.forEach((el) => observer.unobserve(el));
-        };
-      }, []); 
-
+const CirclePart = () => {
   return (
-    <section className='bg-container ' >
-    <div className='overlay2'></div>
-  <div className='container2 '>
-    <div className='subContainerText slide-upSatis2'>
-        <h2>İhaleli Akaryakıt Satışı</h2>
-        <p >Yılların verdiği tecrübe, birikimli ve deneyimli kadrosu ile Mevlana Petrol, katıldığı ihaleli akaryakıt satışı ile tüm resmi kurum ve kuruluşlara, özel sektöre Taşıtmatik veya toptan akaryakıt satışı yaparak bu anlamda da pratik çözümler üretip, proje destek hizmetleri sağlamaktadır.
-
-Hem toptan hem de Taşıtmatik satışlarını beraber yaparak, ihale kapsamında çoklu hizmetler sunabilmekte. Esnek ödeme koşulları çerçevesinde optimal alış veriş imkanları ortaya koyabilmektedir.
-
-Bu sayede büyük montanlı alım yapmak isteyen özel sektör kuruluşları ile başta Antalya olmak üzere Tüm Türkiye’de ki kamu kuruluşlarının, akaryakıt ihtiyaçlarını karşılamak amaçlı akaryakıt ihalelerine katılım sağlamakta ve alınan ihaleler başarılı bir şekilde sonuçlandırılmaktadır.</p>
-        <button className='buttonMore2'><span>DAHA FAZLA BİLGİ AL</span></button>
-    </div>
-
-   <div className='mainDivNew slide-upSatis2'>
-   <div className='circleDiv  '>
+    <section className='mainDiv'>
+      <div className='circleDiv'>
         <div className='ic'></div>
         <div className='ic2'></div>
         <div className='ic3'></div>
@@ -107,11 +59,8 @@ Bu sayede büyük montanlı alım yapmak isteyen özel sektör kuruluşları ile
         <div className='dis17'></div>
 
       </div>
-   </div>
-
-  </div>
-</section>
+    </section>
   )
 }
 
-export default Satis2
+export default CirclePart

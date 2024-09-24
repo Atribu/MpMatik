@@ -2,7 +2,6 @@ import React, { useEffect, useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import '../Styles/BlogCarousel.scss';
-import "../Styles/BlogSection.scss"
 import img1 from "../../public/images/bp-tasitmatik-hizmeti-veren-istasyonlar.jpg"
 import img2 from "../../public/images/bp-tasitmatik-sik-sorulan-sorular.jpg"
 import img3 from "../../public/images/ulusal-tasit-tanima-sistemi.jpg"
@@ -22,6 +21,28 @@ const titles = ["BP Taşıtmatik Hizmeti Veren İstasyonlar","BP Taşıtmatik S�
 const texts = [istasyon,sss,ulusal,musteri,mptasit,avantaj];
 
 const BlogSection = () => {
+  useEffect(() => {
+    // kayarak gelme
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    // Gözlemlemek istediğiniz elemanları seçin
+    const hiddenElements = document.querySelectorAll('.slide-upSatis');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup işlemi: Bileşen kaldırıldığında gözlemlemeyi bırakır
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []); 
+
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
@@ -60,8 +81,9 @@ const BlogSection = () => {
     <section className='blogGreenSec'>
        
       <div className='blog-container'>
-         <div className=" blog-carousel">
-      <p className="blog-carousel__title">BLOG YAZILARI</p>
+      <p className="blog-carousel__title slide-upSatis">BLOG YAZILARI</p>
+         <div className=" blog-carousel slide-upSatis">
+      
       <div className="blog-carousel__carousel" ref={emblaRef}>
         <div className="blog-carousel__carousel-container">
           {images.map((image, index) => (

@@ -6,11 +6,12 @@
   background: #03651a;
   width:100%;
   font-family:sans-serif; 
-  box-sizing: border-box;
-  // height: auto;
-  // @media (max-width: 1024px) {
-  //     height:100vh;
-  //   }
+
+  gap:60px;
+
+  @media (max-width: 1024px) {
+      gap:70px
+    }
 }
 
 .div-1{
@@ -24,7 +25,7 @@
 
   @media (max-width: 1024px) {
       flex-direction: row;
-      width: 80%;
+      width: 90%;
     }
     @media (min-width: 1024px) {
       flex-direction: row;
@@ -53,9 +54,22 @@
   padding:30px 30px;
   color: #ffffff;
   position: absolute;
-  bottom: 50%;
-  right: 80px;
+
   transform: translateY(50%);
+
+  @media (min-width: 1024px) {
+    bottom: 50%;
+  right: 80px;
+    
+  }
+
+  @media (max-width: 1024px) {
+    width: 50%; //mobil
+    top:40px;
+    right: 0;
+    transform: translateY(0);
+    
+  }
 
   
 @media (max-width: 768px) {
@@ -336,7 +350,7 @@ height: auto; // Yükseklik otomatik olarak genişliğe göre ayarlanır (aspect
 
 // Tablet ekran boyutları (örneğin 641px - 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
-  width: 50%; // Tablette genişliği biraz azaltıyoruz
+  width: 75%; // Tablette genişliği biraz azaltıyoruz
   height: auto; // Oran korunur
 }
 

@@ -10,6 +10,15 @@ import beyazaraba from "../../public/images/beyazaraba.png";
 const RoadSimulation = () => {
   return (
     <div className="containerb">
+      <div className='divEbülten'>
+        <h2>
+        E-Bültene Kaydol</h2>
+        <p>E-Mail bültenimize kaydolarak MP Taşıtmatik ile ilgili tüm yenilik ve haberleri alabilirsiniz.</p>
+      <div className='divInput'>
+        <input ></input>
+        <button>ABONE OL</button>
+      </div>
+      </div>
       <div className="footer-yol">
         {/* Yol */}
         <div className="yol" />
