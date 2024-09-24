@@ -43,7 +43,7 @@ const ContactForm = () => {
   return (
     <form className='formGray'>
       <div className='divGray'>
-        <text className='h2Gray'>TEKLİF AL</text>
+        <p className='h2Gray'>TEKLİF AL</p>
         <section className='input-sectionGray'>
         <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />
         <input type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required />
@@ -151,7 +151,7 @@ const ContactForm = () => {
     </div>
       </section>
       
-      <button className='green-buttonGray '><text>Gönder</text></button>
+      <button className='green-buttonGray '><p>Gönder</p></button>
       </div>
       
       

@@ -75,7 +75,7 @@ const Limitation = () => {
   }, []); 
   
   return (
-    <section className="section">
+    <section className="sectionLim">
       <div className="div-1 slide-up">
         <img
           className="mp-image"
@@ -87,12 +87,12 @@ const Limitation = () => {
         ></img>
         <div className="div-text">
           <h2>BP TAŞITMATİK Ne İşe Yarar?</h2>
-          <text>
+          <p>
             <span>BP TAŞITMATİK</span>, BP’nin filolara özel geliştirdiği
             çözümümüz.Bu otomasyon sistemiyle, akaryakıtınızı aracınızdan
             çıkmadan alıp, ikmal sırasında herhangi bir ödeme yapmaksızın
             akaryakıt giderlerinizi tam olarak kontrol altına alabilirsiniz.
-          </text>
+          </p>
         </div>
       </div>
 
@@ -103,9 +103,9 @@ const Limitation = () => {
           <div className="div-mantext">
             <div className="div-limittext">
               <h2 className="title">{sectionContent[selectedSection].title}</h2>
-              <text className="text">
+              <p className="p">
               {sectionContent[selectedSection].text}
-              </text>
+              </p>
             </div>
             <img
               src={sectionContent[selectedSection].img}
@@ -119,99 +119,102 @@ const Limitation = () => {
             <button className="buttonLim"
              onClick={() => setSelectedSection('limitlendirme')}
             >
-              <text>LİMİTLENDİRME</text>
+              <p>LİMİTLENDİRME</p>
             </button>
 
             <button className="buttonLim"
              onClick={() => setSelectedSection('yakit')}
             >
-              <text>YAKIT ALIMI</text>
+              <p>YAKIT ALIMI</p>
             </button>
             <button className="buttonLim"  onClick={() => setSelectedSection('tekFatura')}>
-              <text>TEK FATURA</text>
+              <p>TEK FATURA</p>
             </button>
             <button className="buttonLim"  onClick={() => setSelectedSection('raporlama')}>
-              <text>RAPORLAMA</text>
+              <p>RAPORLAMA</p>
             </button>
             <button className="buttonLim"  onClick={() => setSelectedSection('musteriHizmetleri')}>
-              <text>MÜŞTERİ HİZMETLERİ</text>
+              <p>MÜŞTERİ HİZMETLERİ</p>
             </button>
             <button className="buttonLim"  onClick={() => setSelectedSection('servis724')}>
-              <text>7/24 SERVİS</text>
+              <p>7/24 SERVİS</p>
             </button>
           </div>
         </div>
       </div>
 
-      <div className="div-limitsectionMobil">
+
+{/* mobil */}
+
+      <div className="div-limitsectionMobil slide-up">
       <div className="div-button">
         {/* LİMİTLENDİRME */}
-        <button className="button" onClick={() => handleButtonClick('limit')}>
-          <text>LİMİTLENDİRME</text>
+        <button className="buttonLim" onClick={() => handleButtonClick('limit')}>
+          <p>LİMİTLENDİRME</p>
         </button>
         {activeButton === 'limit' && (
           <div className="accordion-content show">
             <h2 className="title">LİMİTLENDİRME</h2>
-            <text>
+            <p>
               Araçlarınızın sizin belirleyeceğiniz dönemlerde TL veya LT bazında ne kadar yakıt alabileceğine karar verebiliyor olacaksınız.
-            </text>
+            </p>
             <img src={imgLimit} alt="limit" className="accordion-img" />
           </div>
         )}
 
         {/* YAKIT ALIMI */}
-        <button className="button" onClick={() => handleButtonClick('yakit')}>
-          <text>YAKIT ALIMI</text>
+        <button className="buttonLim" onClick={() => handleButtonClick('yakit')}>
+          <p>YAKIT ALIMI</p>
         </button>
         {activeButton === 'yakit' && (
           <div className="accordion-content show">
             <h2 className="title">YAKIT ALIMI</h2>
-            <text>Yakıta dair detaylı bilgi burada yer alacak.</text>
+            <p>Yakıta dair detaylı bilgi burada yer alacak.</p>
             <img src={imgYakit} alt="yakit" className="accordion-img" />
           </div>
         )}
 
         {/* TEK FATURA */}
-        <button className="button" onClick={() => handleButtonClick('fatura')}>
-          <text>TEK FATURA</text>
+        <button className="buttonLim" onClick={() => handleButtonClick('fatura')}>
+          <p>TEK FATURA</p>
         </button>
         {activeButton === 'fatura' && (
           <div className="accordion-content show">
             <h2 className="title">TEK FATURA</h2>
-            <text>Tek fatura detayları bu alanda yer alacak.</text>
+            <p>Tek fatura detayları bu alanda yer alacak.</p>
             <img src={imgFatura} alt="fatura" className="accordion-img" />
           </div>
         )}
 
-<button className="button" onClick={() => handleButtonClick('raporlama')}>
-          <text>Raporlama</text>
+<button className="buttonLim" onClick={() => handleButtonClick('raporlama')}>
+          <p>Raporlama</p>
         </button>
         {activeButton === 'raporlama' && (
           <div className="accordion-content show">
             <h2 className="title">Raporlama</h2>
-            <text>Tek fatura detayları bu alanda yer alacak.</text>
+            <p>Tek fatura detayları bu alanda yer alacak.</p>
             <img src={imgRaporlama} alt="raporlama" className="accordion-img" />
           </div>
         )}
 
-        <button className="button" onClick={() => handleButtonClick('musteriHizmetleri')}>
-          <text>MÜŞTERİ HİZMETLERİ</text>
+        <button className="buttonLim" onClick={() => handleButtonClick('musteriHizmetleri')}>
+          <p>MÜŞTERİ HİZMETLERİ</p>
         </button>
         {activeButton === 'musteriHizmetleri' && (
           <div className="accordion-content show">
             <h2 className="title">MÜŞTERİ HİZMETLERİ</h2>
-            <text>Tek fatura detayları bu alanda yer alacak.</text>
+            <p>Tek fatura detayları bu alanda yer alacak.</p>
             <img src={imgMusteri} alt="fatura" className="accordion-img" />
           </div>
         )}
 
-<button className="button" onClick={() => handleButtonClick('servis')}>
-          <text>7/24 SERVİS</text>
+<button className="buttonLim" onClick={() => handleButtonClick('servis')}>
+          <p>7/24 SERVİS</p>
         </button>
         {activeButton === 'servis' && (
           <div className="accordion-content show">
             <h2 className="title">7/24 SERVİS</h2>
-            <text>Tek fatura detayları bu alanda yer alacak.</text>
+            <p>Tek fatura detayları bu alanda yer alacak.</p>
             <img src={imgServis} alt="fatura" className="accordion-img" />
           </div>
         )}
