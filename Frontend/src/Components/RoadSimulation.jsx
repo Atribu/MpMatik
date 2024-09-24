@@ -20,6 +20,7 @@ const RoadSimulation = () => {
             src={benzinlik}
             alt="Benzinlik"
             className="benzinlik-image"
+            
           />
         </div>
 
