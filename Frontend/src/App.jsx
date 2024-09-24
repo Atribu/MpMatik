@@ -16,14 +16,23 @@ import Bloglar from './Pages/Bloglar.jsx'
 import YeniBlogEkle from './Pages/YeniBlogEkle.jsx'
 import Footer from './Components/Footer.jsx'
 import Login from './Pages/Login.jsx'
-import Register from './Pages/Register.jsx'
+import { useSelector } from 'react-redux'
 
 const App = () => {
+      const { activeUser } = useSelector((state) => state.user);
   return (
    <>
       <BrowserRouter>
-          <Header />
-          <Header1 />
+            {
+                  activeUser ? (
+                        <Header1 />
+                  ) : (
+                        <>
+                         <Header />
+                         <Header1 />
+                        </>
+                  )
+            }
           <main>
                 <Routes>
                       <Route path="/" element={<Homepage />} />
@@ -35,7 +44,14 @@ const App = () => {
                       </Route>
                 </Routes>
           </main>
-          <Footer />
+          {
+            activeUser ? (
+                  ""
+            ) : (
+                  <Footer />
+            )
+          }
+          
       </BrowserRouter>
    </>
 

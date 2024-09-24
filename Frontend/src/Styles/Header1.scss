@@ -1,3 +1,44 @@
+.sticky-header-activeuser {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px; 
+  background-color: black;
+  box-sizing: border-box;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  transition: background-color 0.3s ease, height 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 8vh;
+    margin-left: 60%;
+    transition: height 0.3s ease;
+  }
+
+  nav {
+    display: flex;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 17px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
+
 .sticky-header {
   display: flex;
   margin: 0 auto;
@@ -41,8 +82,49 @@
 
 
 .is-sticky {
-  background-color: #24A31D; 
-  
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px; 
+  background-color: #3AA31D;
+  box-sizing: border-box;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  transition: background-color 0.3s ease, height 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 8vh;
+    margin-left: 60%;
+    transition: height 0.3s ease;
+  }
+
+  nav {
+    display: flex;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 17px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
+
+.is-panel-header {
+  background-color: black;
+
   img {
     height: 6vh; 
   }
