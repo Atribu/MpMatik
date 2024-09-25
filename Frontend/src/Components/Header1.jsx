@@ -53,7 +53,6 @@ const Header1 = () => {
         }
         
       </nav>
-      </section>
     </header>
   );
 }

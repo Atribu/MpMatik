@@ -17,6 +17,7 @@ import YeniBlogEkle from './Pages/YeniBlogEkle.jsx'
 import Footer from './Components/Footer.jsx'
 import Login from './Pages/Login.jsx'
 import { useSelector } from 'react-redux'
+import ToptanAkaryakit from './Pages/ToptanAkaryakit.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -36,8 +37,10 @@ const App = () => {
           <main>
                 <Routes>
                       <Route path="/" element={<Homepage />} />
+                      <Route path='/toptan-akaryakit' element={<ToptanAkaryakit/>}/>
                       <Route path="/giris" element={<Login />} />
                       <Route path="/panel" element={<Panel />}>
+                      
                             <Route path="bloglar" element={<Bloglar />} />
                             <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                             <Route path="blog-duzenle/:url" element={<BlogDuzenle />} />

@@ -15,8 +15,8 @@
       
     }
 
-    @media (max-width: 768px) {
-        width: 70%; 
+    @media (min-width: 768px) {
+        width: 50%; 
         padding: 30px;
         padding-bottom: 60px;
         
@@ -70,43 +70,55 @@
     width: 100%;
     gap: 4%;
 
-    input{
-      position: relative;
-    display: inline-block;
-    width: 50%; 
-    gap:2rem;
-
-    &:placeholder{
-      color: #ffffff;
-    }
     
-    }
 }
 
-input {
-    font-size: 16px;           
-    font-family:sans-serif; 
-    color: #333;               
-    padding: 10px;             
-    border: 1px solid #ccc;    
-    border-radius: 4px;       
-    width: 50vw;              
-    height: 50px;
-    display: inline-block; // Padding ve border ile uyumlu genişlik hesaplama
+.inputForm{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  font-family:sans-serif; 
+  font-size: 16px; 
+  color: #333; // Metin rengi
+  height: 25px;
   
-    // Placeholder için stil
-    &.placeholder {
-        font-style: normal;  
-        color: #999; 
-      }
-  
-    // Odaklanma (focus) durumunda stil
-    &:focus {
-      outline: none;           // Varsayılan outline kaldırılır
-      border-color: #4caf50;   // Odaklanınca kenar rengi değişir
-      box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); // Hafif bir gölge verilir
-    }
+  &.placeholder {
+    font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
+    color: #999; // Placeholder için farklı renk kullanabilirsin
   }
+
+
+}
+
+// input {
+//     font-size: 16px;           
+//     font-family:sans-serif; 
+//     color: #333;                          
+//     border: 1px solid #ccc;    
+//     border-radius: 4px;       
+//     width: 50vw;              
+//     height: 50px;
+//     display: inline-block; // Padding ve border ile uyumlu genişlik hesaplama
+  
+//     // Placeholder için stil
+//     &.placeholder {
+//         font-style: normal;  
+//         color: #999; 
+//       }
+  
+//     // Odaklanma (focus) durumunda stil
+//     &:focus {
+//       outline: none;           // Varsayılan outline kaldırılır
+//       border-color: #4caf50;   // Odaklanınca kenar rengi değişir
+//       box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); // Hafif bir gölge verilir
+//     }
+//   }
   
 
 .checkbox-container {

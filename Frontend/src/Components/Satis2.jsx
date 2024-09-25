@@ -71,9 +71,9 @@ const Satis2 = () => {
   <div className='container2 '>
     <div className='subContainerText slide-upSatis2'>
         <h2>İhaleli Akaryakıt Satışı</h2>
-        <p >Yılların verdiği tecrübe, birikimli ve deneyimli kadrosu ile Mevlana Petrol, katıldığı ihaleli akaryakıt satışı ile tüm resmi kurum ve kuruluşlara, özel sektöre Taşıtmatik veya toptan akaryakıt satışı yaparak bu anlamda da pratik çözümler üretip, proje destek hizmetleri sağlamaktadır.
+        <p >Yılların verdiği tecrübe, birikimli ve deneyimli kadrosu ile Mevlana Petrol, katıldığı <span className='spanBolt'> ihaleli akaryakıt</span> satışı ile tüm resmi kurum ve kuruluşlara, özel sektöre Taşıtmatik veya toptan akaryakıt satışı yaparak bu anlamda da pratik çözümler üretip, proje destek hizmetleri sağlamaktadır.<br></br>
 
-Hem toptan hem de Taşıtmatik satışlarını beraber yaparak, ihale kapsamında çoklu hizmetler sunabilmekte. Esnek ödeme koşulları çerçevesinde optimal alış veriş imkanları ortaya koyabilmektedir.
+Hem toptan hem de Taşıtmatik satışlarını beraber yaparak, ihale kapsamında çoklu hizmetler sunabilmekte. Esnek ödeme koşulları çerçevesinde optimal alış veriş imkanları ortaya koyabilmektedir.<br></br>
 
 Bu sayede büyük montanlı alım yapmak isteyen özel sektör kuruluşları ile başta Antalya olmak üzere Tüm Türkiye’de ki kamu kuruluşlarının, akaryakıt ihtiyaçlarını karşılamak amaçlı akaryakıt ihalelerine katılım sağlamakta ve alınan ihaleler başarılı bir şekilde sonuçlandırılmaktadır.</p>
         <button className='buttonMore2'><span>DAHA FAZLA BİLGİ AL</span></button>
