@@ -8,8 +8,6 @@ import RoadSimulation from '../Components/RoadSimulation'
 import ContactForm2 from '../Components/ContactForm2'
 import Background from '../Components/Background'
 import EBülten from '../Components/EBülten'
-import CirclePart from '../Components/CirclePart'
-
 
 const Homepage = () => {
   return (
@@ -18,7 +16,7 @@ const Homepage = () => {
       <Limitation/>
       <Satis1/>
       <Satis2/>
-      <BlogSection/>
+      <BlogSection />
       <ContactForm2/>
       <Background/>
       <EBülten/>

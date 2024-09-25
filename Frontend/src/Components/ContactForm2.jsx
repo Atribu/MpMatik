@@ -63,7 +63,7 @@ const ContactForm = () => {
     };
 
   return (
-    <form className='formGray'>
+    <form id="basvuru" className='formGray'>
       <div className='divGray slide-upSatis'>
         <p className='h2Gray'>TEKLİF AL</p>
         <section className='input-sectionGray'>

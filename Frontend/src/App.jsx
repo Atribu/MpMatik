@@ -73,6 +73,7 @@ const App = () => {
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="blog-duzenle/:url" element={<BlogDuzenle />} />
+
                       </Route>
                 </Routes>
           </main>

@@ -47,12 +47,12 @@ const ContactForm = () => {
         <p className='h3'>kurumsal başvuru formu</p>
       </div>
       <section className='input-section'>
-        <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />
-        <input type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required />
+        <input className='inputForm' type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />
+        <input className='inputForm' type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required />
       </section>
       <section className='input-section'>
-        <input type="text" id="name" name="name" placeholder='Telefon*' required />
-        <input type="text" id="firmaname" name="firmaname" placeholder='Email*' required />
+        <input className='inputForm' type="text" id="name" name="name" placeholder='Telefon*' required />
+        <input className='inputForm' type="text" id="firmaname" name="firmaname" placeholder='Email*' required />
       </section>
       <section className='input-section'>
       <div className="city-select">

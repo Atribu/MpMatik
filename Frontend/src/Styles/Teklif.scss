@@ -12,11 +12,11 @@
     font-family:sans-serif; 
     
     @media (max-width: 1024px) {
-        height: 100vh;
+        height: min-content;
       }
 
       @media (min-width: 1024px) {
-        height: 700px;
+        height: 100vh;
       }
   }
 
@@ -49,7 +49,7 @@
       @media (min-width: 1024px) {
         flex-direction: row;
         width: 80%;
-        gap:0px
+        gap:40px
       }
 
       p{
@@ -59,14 +59,11 @@
         font-size: 17px;
       }
 
-      h2{
-        font-size: 32px;
+      span{
         font-weight: bold;
-        line-height: 1.4;
-        color: #ffffff;
-        font-weight: 500;
-        line-height: 1.5;
-    }
+      }
+
+   
   }
 
   .subContainer1{
@@ -82,7 +79,7 @@
         width: 90%;
       }
       @media (min-width: 1024px) {
-        width: 40%;
+        width: 50%;
       }
 
   }
@@ -100,12 +97,12 @@
       }
 
       @media (min-width: 1024px) {
-        width: 60%;
+        width: 50%;
       }
 
   }
 
-  .buttonMore{
+  .buttonTeklif{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,16 +114,17 @@
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
     cursor: pointer;
 
     span{
         font-size:18px;
+        font-weight: 500;
     }
   }
 
-  .buttonsGray{
+  .buttonsGrayTeklif{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -141,6 +139,7 @@
     padding-bottom: 30px;
     white-space: nowrap;
     width: 90%;
+    gap:20px;
      border-left: 2px solid #259c1c;
      font-size: 18px;
 
