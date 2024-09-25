@@ -19,14 +19,22 @@ const Header = () => {
       <nav>
         <Link to="/"><FaPhoneSquareAlt/></Link>
         <Link to="/"><FaWhatsapp/></Link>
-        <Link to="/"><FaInstagram/></Link>
-        <Link to="/"><FaFacebook/></Link>
-        <Link to="/"><FaXTwitter/></Link>
-        <Link to="/"><FaYoutube/></Link>
+        <a
+          href="https://www.instagram.com/mptasitmatik/" target="_blank" rel="noopener noreferrer"> <FaInstagram />
+        </a>
+        <a
+          href="https://www.facebook.com/mptasitmatik/" target="_blank" rel="noopener noreferrer"> <FaFacebook />
+        </a>
+        <a
+          href="https://www.twitter.com/mptasitmatik/" target="_blank" rel="noopener noreferrer"> <FaXTwitter />
+        </a>
+        <a
+          href="https://www.youtube.com/@MPtasitmatik" target="_blank" rel="noopener noreferrer"> <FaYoutube />
+        </a>
       </nav>
       <div>
-      <Link className="button1">Hemen Başvur</Link>
-      <Link className="button2">Kolay Ödeme</Link>
+      <Link to="/hemen-basvur" className="button1">Hemen Başvur</Link>
+      <Link to="/kolay-odeme" className="button2">Kolay Ödeme</Link>
       </div>
     </header>
   );
