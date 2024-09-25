@@ -31,9 +31,11 @@ const textsArray= ["Toptan akaryakıt satışı, enerji sektörünün taşıt sa
   "Teknolojik İlerlemelerin Rolü: Akıllı teknolojilerin gelişimi, toptan akaryakıt satışını daha da optimize etme fırsatları sunabilir. İnternet ofisi (IoT) sensörleri ve veri analitiği, depolama ve tedarik zinciri yönetimini daha verimli hale getirebilir. Ayrıca, müşteri deneyimini geliştirmek için akıllı ödeme sistemleri ve mobil uygulamaların kullanılması daha yaygın hale gelebilir. Akaryakıt istasyonları, müşterilerinin taleplerini daha iyi anlamak ve karşılamak için bu teknolojileri kullanarak gelecekte daha rekabetçi olabilirler."
 ];
 
+
 const ToptanAkaryakit = () => {
   return (
     <div>
+
       <MainBackground header="TOPTAN AKARYAKIT"/>
       <Teklif/>
       <TextSection headers={headersArray} text={textsArray}/>
@@ -42,6 +44,7 @@ const ToptanAkaryakit = () => {
       <Background/>
       <EBülten/>
       <RoadSimulation/>
+
     </div>
   )
 }

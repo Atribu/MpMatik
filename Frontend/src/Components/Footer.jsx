@@ -6,6 +6,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
 import "../Styles/Footer.scss"
 
 const Footer = () => {
@@ -20,21 +22,22 @@ const Footer = () => {
                         Çok yakında yayınlanacak olan mobil uygulamamız ile tüm işlemlerinize çok hızlı bir şekilde ulaşabileceksiniz.
                 </p>
                 <div className="social-icons">
-                        <Link to="/" className="icon whatsapp">
-                                <FaWhatsapp size={18} />
-                        </Link>
-                        <Link to="/" className="icon instagram">
-                                <FaInstagram size={18} />
-                        </Link>
-                        <Link to="/" className="icon facebook">
-                                <FaFacebook size={18} />
-                        </Link>
-                        <Link to="/" className="icon twitter">
-                                <FaXTwitter size={18} />
-                        </Link>
-                        <Link to="/" className="icon youtube">
-                                <FaYoutube size={18} />
-                        </Link>
+                        <a
+                                href="https://www.instagram.com/mptasitmatik/" className="icon instagram" target="_blank" rel="noopener noreferrer"><FaInstagram size={19} />
+                        </a>
+                        <a 
+                                href="https://www.facebook.com/mptasitmatik/" className='icon facebook' target='_blank' rel='nooper noreferrer'><FaFacebook size={19}/>
+                        </a>
+                        <a 
+                                href="https://www.twitter.com/mptasitmatik/" className='icon twitter' target='_blank' rel='nooper noreferrer'><FaXTwitter size={19}/>
+                        </a>
+                        <a 
+                                href="https://www.youtube.com/@MPtasitmatik" className='icon youtube' target='_blank' rel='nooper noreferrer'><FaYoutube size={19}/>
+                        </a>
+                        <a 
+                                href="https://www.linkedin.com/company/mpmatik/posts/?feedView=all" className='icon linkedln' target='_blank' rel='nooper noreferrer'><FaLinkedin size={19}/>
+                        </a>
+
                 </div>
 
                 <section>
@@ -45,26 +48,26 @@ const Footer = () => {
         <div className='div-iki'>
                 <h3>BP Taşıtmatik</h3>
                 <ul>
-                        <li>Ana Sayfa</li>
-                        <li>Kolay Başvuru</li>
-                        <li>Toptan Akaryakıt</li>
-                        <li>İhaleli Akaryakıt</li>
-                        <li>Hakkımızda</li>
-                        <li>İletişim</li>
-                        <li>Referanslar</li>
-                        <li>Kullanım Koşulları</li>
-                        <li>Gizlilik Politikası</li>
+                        <li><Link to="/">Ana Sayfa</Link></li>
+                        <li><Link to="/#basvuru">Kolay Başvuru</Link></li>
+                        <li><Link to="/toptan-akaryakit">Toptan Akaryakıt</Link></li>
+                        <li><Link to="/ihaleli-akaryakit">İhaleli Akaryakıt</Link></li>
+                        <li><Link to="/hakkimizda">Hakkımızda</Link></li>
+                        <li><Link to="/iletisim">İletişim</Link></li>
+                        <li><Link to="/referanslar">Referanslar</Link></li>
+                        <li><Link to="/kullanim-kosullari">Kullanım Koşulları</Link></li>
+                        <li><Link to="/gizlilik-politikasi">Gizlilik Politikası</Link></li>
                 </ul>    
         </div>
         <div className='div-uc'>
                 <h3>Faydalı Bilgiler</h3>
                 <ul>
-                        <li>BP Taşıtmatik Nedir?</li>
-                        <li>BP Taşıtmatik Nasıl Çalışır?</li>
-                        <li>BP Taşıtmatik Müşteri Hizmetleri</li>
-                        <li>BP Taşıtmatik Avantajları Nelerdir?</li>
-                        <li>BP Taşıtmatik Hizmeti Veren İstasyonlar</li>
-                        <li>Taşıt Akaryakıt Tanıma Sistemi Nedir?</li>
+                        <li><Link to="/">BP Taşıtmatik Nedir?</Link></li>
+                        <li><Link to="/">BP Taşıtmatik Nasıl Çalışır?</Link></li>
+                        <li><Link to="/">BP Taşıtmatik Müşteri Hizmetleri</Link></li>
+                        <li><Link to="/">BP Taşıtmatik Avantajları Nelerdir?</Link></li>
+                        <li><Link to="/">BP Taşıtmatik Hizmeti Veren İstasyonlar</Link></li>
+                        <li><Link to="/">Taşıt Akaryakıt Tanıma Sistemi Nedir?</Link></li>
                 </ul>
         </div>
         <div className='div-dort'>

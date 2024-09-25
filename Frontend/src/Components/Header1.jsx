@@ -26,7 +26,7 @@ const Header1 = () => {
 
   return (
     <header className={`${activeUser ? 'sticky-header-activeuser' : isSticky ? 'is-sticky' : "sticky-header"}`}>
-      <Link>
+      <Link to="/">
         <img 
           src={activeUser ? "/Logo/dgtlface.jpeg" : isSticky ? '/Logo/bp-logo-beyazimsi.png' : '/Logo/bp-logo-kendi.png'} 
           alt='Logo' 
@@ -42,12 +42,12 @@ const Header1 = () => {
              </>   
           ) : (
               <>
-                <Link to='/'>TOPTAN AKARYAKIT</Link>
-                <Link to='/'>İHALELİ AKARYAKIT</Link>
-                <Link to='/'>NASIL ÇALIŞIR</Link>
-                <Link to='/'>REFERANSLAR</Link>
-                <Link to='/'>HAKKIMIZDA</Link>
-                <Link to='/'>İLETİŞİM</Link>
+                <Link to='/toptan-akaryakit'>TOPTAN AKARYAKIT</Link>
+                <Link to='/ihaleli-akaryakit'>İHALELİ AKARYAKIT</Link>
+                <Link to='/nasil-calisir'>NASIL ÇALIŞIR</Link>
+                <Link to='/referanslar'>REFERANSLAR</Link>
+                <Link to='/hakkimizda'>HAKKIMIZDA</Link>
+                <Link to='/iletisim'>İLETİŞİM</Link>
               </>
           )
         }
