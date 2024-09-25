@@ -40,7 +40,7 @@ const images = [
     
   ];
 
-const Satis2 = ({texts, button}) => {
+const Teklif2 = () => {
     const innerImages = images.slice(6);
 
     useEffect(() => {
@@ -71,10 +71,11 @@ const Satis2 = ({texts, button}) => {
   <div className='container2 '>
     <div className='subContainerText slide-upSatis2'>
         <h2>İhaleli Akaryakıt Satışı</h2>
-        {texts.map((text, index) => (
-        <p key={index}>{text}</p>  
-      ))}
-        <button className='buttonMore2'><span>{button}</span></button>
+        <p>
+        Mevlana Petrol, akaryakıt sektöründe edindiği köklü deneyim ve sağlam geçmişi ile müşterilerine yalnızca akaryakıt tedariki sağlamakla kalmıyor, aynı zamanda projelerine destek oluyor. Yıllar içinde elde ettiği tecrübe ve sektördeki geniş bilgi birikimi, müşterilerimize özel ve özelleştirilmiş çözümler sunma yeteneğimizi güçlendiriyor.</p>
+        <p>Firmamız, Türkiye’nin dört bir yanındaki resmi kurumlar, belediyeler ve özel sektör firmalarının ihaleli akaryakıt ihtiyaçlarını karşılamak için birinci sınıf akaryakıt ürünleri sunmaktadır. Bu ürünler, yüksek kalite standartlarına uygun olarak temin edilmekte ve taşıtmatik sistemimizle kesintisiz bir şekilde tedarik edilmektedir.</p>
+        
+        <button className='buttonMore2'><span>TEKLİF AL</span></button>
     </div>
 
    <div className='mainDivNew slide-upSatis2'>
@@ -112,4 +113,4 @@ const Satis2 = ({texts, button}) => {
   )
 }
 
-export default Satis2
+export default Teklif2
