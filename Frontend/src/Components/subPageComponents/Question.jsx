@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TasitTanımaSection = () => {
+const Question = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const TasitTanımaSection = () => {
   )
 }
 
-export default TasitTanımaSection
+export default Question

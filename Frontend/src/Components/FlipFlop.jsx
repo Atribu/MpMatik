@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect}  from 'react'
 import "../Styles/FlipFlop.scss"
 import yakittasarrufusistem from "../../public/images/yakit-tasarrufu-sistem.jpg"
 import maliyetkontrolusistem from "../../public/images/maliyet-kontrolu-sistem.jpg"
@@ -48,10 +48,32 @@ const cardData = [
 ]
 
 const FlipFlop = () => {
+    useEffect(() => {
+        // kayarak gelme
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        });
+    
+        // Gözlemlemek istediğiniz elemanları seçin
+        const hiddenElements = document.querySelectorAll('.slide-up');
+        hiddenElements.forEach((el) => observer.observe(el));
+    
+        // Cleanup işlemi: Bileşen kaldırıldığında gözlemlemeyi bırakır
+        return () => {
+          hiddenElements.forEach((el) => observer.unobserve(el));
+        };
+      }, []);
+
   return (
     <section className='flip-flop-section'>
         <h1>BP Taşıtmatik Avantajları</h1>
-        <div className='carousel'>
+        <div className='carousel slide-up'>
             {cardData.map((card) =>(
                 <div className='card' key={card.id}>
                     <div className='card-inner'>
