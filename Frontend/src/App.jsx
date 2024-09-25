@@ -33,6 +33,7 @@ import BpTasitmatikHizmetiVerenIstasyonlar from './blogPages/BpTasitmatikHizmeti
 import TasitAkaryakitTanimaSistemiNedir from './blogPages/TasitAkaryakitTanimaSistemiNedir.jsx'
 import HemenBasvur from './Pages/HemenBasvur.jsx'
 import KolayOdeme from './Pages/KolayOdeme.jsx'
+import NasilCalısır from './Pages/NasilCalısır.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -54,6 +55,7 @@ const App = () => {
                       <Route path="/" element={<Homepage />} />
                       <Route path="/toptan-akaryakit" element={<ToptanAkaryakit />} />
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
+                      <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
                       <Route path="hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />

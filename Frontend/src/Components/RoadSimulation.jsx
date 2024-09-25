@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import '../Styles/RoadSimulation.scss'; // Sass dosyanızı burada import ediyorsunuz
 import benzinlik from "../../public/images/bp-mp-istasyonu.png";
 import maviaraba from "../../public/images/maviaraba.png";
@@ -8,9 +8,32 @@ import beyazaraba from "../../public/images/beyazaraba.png";
 
 
 const RoadSimulation = () => {
+  useEffect(() => {
+    // kayarak gelme
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    // Gözlemlemek istediğiniz elemanları seçin
+    const hiddenElements = document.querySelectorAll('.slide-up');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup işlemi: Bileşen kaldırıldığında gözlemlemeyi bırakır
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
+
   return (
     <div className="containerb">
-      <div className='divEbülten'>
+      <div className='divEbülten slide-up'>
         <h2>
         E-Bültene Kaydol</h2>
         <p>E-Mail bültenimize kaydolarak MP Taşıtmatik ile ilgili tüm yenilik ve haberleri alabilirsiniz.</p>
@@ -19,7 +42,7 @@ const RoadSimulation = () => {
         <button>ABONE OL</button>
       </div>
       </div>
-      <div className="footer-yol">
+      <div className="footer-yol slide-up">
         {/* Yol */}
         <div className="yol" />
 

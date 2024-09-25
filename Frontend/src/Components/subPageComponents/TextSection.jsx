@@ -1,10 +1,12 @@
 import React from 'react'
 import "../../Styles/TextSection.scss"
 
-const TextSection = ({headers,text}) => {
+const TextSection = ({headers,text,list1,list2}) => {
+
+
   return (
       <section className='mainTextDiv'>
-        <div className='divtext-iki'>
+        <div className='divtext-ikiakaryakit'>
         <h2>{headers[0]}</h2>
         <p>{text[0]}</p>
         <p>{text[1]}</p>
@@ -13,27 +15,23 @@ const TextSection = ({headers,text}) => {
         <p>{text[2]}</p>
 
         <ul>
-          <li>{text[3]}</li>
-          <li>{text[4]}</li>
-          <li>{text[5]}</li>
-          <li>{text[6]}</li>
-          <li>{text[7]}</li>
+        {list1.map((item, index) => (
+        <li key={index}>{item}</li> 
+      ))}
         </ul>
 
         <h2>{headers[2]}</h2>
-        <p>{text[8]}</p>
+        <p>{text[3]}</p>
 
         <il>
-          <li>{text[9]}</li>
-          <li>{text[10]}</li>
-          <li>{text[11]}</li>
-          <li>{text[12]}</li>
-          <li>{text[13]}</li>
+        {list2.map((item, index) => (
+        <li key={index}>{item}</li> 
+      ))}
         </il>
 
         <h2>{headers[3]}</h2>
-        <p>{text[14]}</p>
-        <p>{text[15]}</p>
+        <p>{text[4]}</p>
+        <p>{text[5]}</p>
         </div>
 
       </section>

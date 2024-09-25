@@ -74,7 +74,7 @@ const Teklif = () => {
         >
           <IoIosCard size={20}/>
           ÖDEME KOLAYLIĞI
-          {activeContent === 'content1' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
+          {activeContent === 'content2' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
         </button>
         <div
           className={`content ${activeContent === 'content2' ? 'open' : ''}`}
@@ -89,7 +89,7 @@ const Teklif = () => {
           onClick={() => handleClick('content3')}
         > <MdCheck size={20}/>
           KUSURSUZ HİZMET
-          {activeContent === 'content1' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
+          {activeContent === 'content3' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
         </button>
         <div
           className={`content ${activeContent === 'content3' ? 'open' : ''}`}
