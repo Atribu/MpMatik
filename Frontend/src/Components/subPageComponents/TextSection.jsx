@@ -6,7 +6,7 @@ const TextSection = ({headers,text,list1,list2}) => {
 
   return (
       <section className='mainTextDiv'>
-        <div className='divtext-iki'>
+        <div className='divtext-ikiakaryakit'>
         <h2>{headers[0]}</h2>
         <p>{text[0]}</p>
         <p>{text[1]}</p>

@@ -1,0 +1,282 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    background-color: #191f2c; 
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+    font-family:sans-serif; 
+    border-radius: 10px;
+
+    @media (min-width: 1024px) {
+      width: 60%; 
+      padding: 30px;
+      padding-bottom: 60px;
+      
+    }
+
+    @media (min-width: 768px) {
+        width: 50%; 
+        padding: 30px;
+        padding-bottom: 60px;
+        
+      }
+    
+      @media (max-width: 768px) {
+        width: 90%;  
+        padding: 15px;
+        height: 540px;
+      }
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    @media (min-width: 768px) {
+      width: 50%; 
+      gap:20px;
+   
+    }
+    @media (max-width: 768px) {
+      width: 90%;  
+  
+    }
+}
+.h2{
+    font-size: 30px;
+    color: #ffffff;
+    line-height: normal;
+    margin:0px;
+    white-space: nowrap;
+    
+}
+
+.h3{
+    font-size: 20px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4%;
+
+    
+}
+
+.inputForm{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  font-family:sans-serif; 
+  font-size: 16px; 
+  color: #333; // Metin rengi
+  height: 25px;
+
+  
+  &.placeholder {
+    font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
+    color: #999; // Placeholder için farklı renk kullanabilirsin
+  }
+
+
+}
+  
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    color: #ffff;
+  
+    .checkbox-input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    .checkbox-custom {
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 4px;
+      margin-right: 8px;
+      transition: background-color 0.3s ease;
+    }
+  
+    // Checked durumunda renk değişimi
+    .checkbox-input:checked ~ .checkbox-custom {
+      background-color: #4caf50; // Check durumunda yeşil arka plan
+    }
+  
+    // Hover'da stil değişimi
+    &:hover .checkbox-custom {
+      background-color: #ddd;
+    }
+  
+    // İşaretli durumda bir işaret ekleyelim
+    .checkbox-input:checked ~ .checkbox-custom::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 3px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .submitButton {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    background-color: #4caf50;
+    color: #ffffff;
+    border:none;
+    border-radius: 4px;
+    height: 43px;
+    
+    p{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+      background-color: #1b9d20;
+      cursor: pointer; 
+
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+
+
+
+  .city-select {
+    position: relative;
+    display: inline-block;
+    width: 50%; 
+    
+  
+    &__input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      font-family:sans-serif; 
+      font-size: 16px; 
+      color: #333; // Metin rengi
+      height: 25px;
+      
+      &.placeholder {
+        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
+        color: #999; // Placeholder için farklı renk kullanabilirsin
+      }
+  
+  
+      .arrow {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #333; // Ok işareti rengi
+        margin-left: 10px;
+      }
+    }
+  
+    &__dropdown {
+      position: absolute;
+      top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      z-index: 10; // Dropdown'ın üstte kalmasını sağlar
+      max-height: 150px; // Maksimum yükseklik
+      overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Hafif gölge
+  
+      
+      &__option {
+        padding: 10px 15px; 
+        cursor: pointer;
+        font-family:sans-serif; 
+        font-size: 24px; 
+        color: #333; 
+        transition: background-color 0.3s, padding 0.3s; 
+  
+        &:hover {
+          background-color: #f0f0f0; 
+          padding: 12px 15px; 
+        }
+      }
+    }
+  }
+
+  .city-select__dropdown{
+    position: absolute;
+      top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #424853;
+      z-index: 10; // Dropdown'ın üstte kalmasını sağlar
+      max-height: 150px; 
+      overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: start;
+
+  }
+
+  .city-select__option{
+    padding: 5px 10px; 
+        cursor: pointer;
+        font-family:sans-serif; 
+        font-size: 16px; 
+        color: #ffffff; 
+        transition: background-color 0.3s, padding 0.3s; 
+  
+        &:hover {
+          background-color: #4f755f; 
+           
+         
+        }
+  }
+  
+  
+  
