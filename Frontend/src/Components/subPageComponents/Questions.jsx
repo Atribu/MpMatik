@@ -41,7 +41,7 @@ const Questions = () => {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content2" ? "active" : ""
@@ -65,7 +65,7 @@ const Questions = () => {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content3" ? "active" : ""
@@ -91,7 +91,7 @@ const Questions = () => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content4" ? "active" : ""
@@ -114,7 +114,7 @@ const Questions = () => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content5" ? "active" : ""

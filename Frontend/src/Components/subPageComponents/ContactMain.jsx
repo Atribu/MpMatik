@@ -20,7 +20,7 @@ const ContactMain = () => {
         <div className='divHalfContact'>
             <h2>BP TAŞITMATİK</h2>
             <p>BP Taşıtmatik sistemini tercih eden referanslar arasında sizde yerinizi alın! Firmanıza özel komisyon oranlarıyla hemen BP Taşıtmatik’e geç, kampanyalı fiyatlardan faydalan.</p>
-            <img  src={image} alt='referances' width={300} height={118} />
+            <img   src={image} alt='referances' width={300} height={118} />
 
             <div className='callbuttons-div'>
                 <button onClick={openWhatsApp} className='buttonWhatsapp'><LiaWhatsapp size={25}/> +90 530 918 20 80</button>

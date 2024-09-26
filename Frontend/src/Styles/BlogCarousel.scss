@@ -85,7 +85,8 @@
   }
 
   &__item {
-    flex: 0 0 100%; /* Mobilde tam genişlik */
+    flex: 0 0 auto; /* Mobilde tam genişlik */
+    width: 100%;
     margin: 0 1rem;
     position: relative;
     display: flex;
@@ -93,20 +94,22 @@
     justify-content: center;
     cursor: pointer;
     
-
     @media (min-width: 640px) { /* Tablet: 640px ve üstü */
-      flex: 0 0 calc(50% - 2rem); /* Tablette her bir item %50 genişlik */
+      width:calc(50% - 2rem); /* Tablette her bir item %50 genişlik */
     }
 
     @media (min-width: 1024px) { /* Desktop: 1024px ve üstü */
-      flex: 0 0 calc(33.33% - 2rem); /* Masaüstünde her bir item %33.33 genişlik */
+     width: calc(33.33% - 2rem); /* Masaüstünde her bir item %33.33 genişlik */
     }
+
+  
   }
 
   &__image {
     width: 100%;
     height: auto;
-    object-fit: responsive;
+    object-fit: cover;
+    
   }
 
   .slide-text {

@@ -43,9 +43,9 @@ useEffect(() => {
         };
 
         const intervalTimes = {
-            customer: 1, // Hızlı saymak için düşük değerler
-            bpStation: 50,
-            mpStation: 200,
+            customer: 0.00001, // Hızlı saymak için düşük değerler
+            bpStation: 10,
+            mpStation: 100,
         };
 
         const intervals = {};
@@ -71,6 +71,7 @@ useEffect(() => {
 
   return (
     <section className="mainDivQuestions">
+
       <div className="divQue-gray">
         <h2>RAKAMLARLA MP TAŞITMATİK</h2>
         <div className="numerical-values" ref={sectionRef}>
@@ -89,10 +90,12 @@ useEffect(() => {
                 <p>MP İstasyon</p>
             </div>
         </div>
+
+
         <h2>SIK SORULAN SORULAR</h2>
         <div className="line-div"></div>
 
-        <div>
+        <div className="questions-div">
           <div className="question-container">
             <button
               className={`questionGray ${
@@ -115,7 +118,7 @@ useEffect(() => {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content2" ? "active" : ""
@@ -138,7 +141,7 @@ useEffect(() => {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content3" ? "active" : ""
@@ -161,7 +164,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content4" ? "active" : ""
@@ -185,7 +188,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content5" ? "active" : ""
@@ -208,7 +211,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content6" ? "active" : ""
@@ -231,7 +234,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content7" ? "active" : ""
@@ -254,7 +257,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content8" ? "active" : ""
@@ -277,7 +280,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content9" ? "active" : ""
@@ -300,7 +303,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content10" ? "active" : ""

@@ -46,7 +46,7 @@ const BasicContactForm = () => {
     </div>
       </section>
       <section className='input-section'>
-        <textarea className='inputForm' type="text" id="mesaj" name="mesaj" required placeholder='Mesaj*' />
+        <textarea className='inputFormMessage' type="text" id="mesaj" name="mesaj" required placeholder='Mesaj*' />
       </section>
       <button className='submitButton'><p>Gönder</p></button>
       
