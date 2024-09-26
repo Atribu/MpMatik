@@ -29,7 +29,7 @@ const AboutGreenSection = () => {
   return (
     <section className='mainDiv'>
       <div className='divtext-green slide-up'>
-        <div><img src={logo} alt='logo' width={350} height={91.23}/></div>
+        <div className='divLogo'><img src={logo} alt='logo' width={350} height={91.23}/></div>
         <h3>BP Taşıtmatik Nedir?</h3>
         <p> BP Taşıtmatik, sürücülere akaryakıt alımlarını kolaylaştıran ve daha avantajlı hale getiren bir hizmettir. Taşıtmatik kart sahipleri, BP istasyonlarında kolayca ödeme yapabilir, aynı zamanda özel indirimler ve avantajlardan yararlanabilirler. BP Taşıtmatik ile yakıt masraflarınızı daha iyi yönetebilir ve işlerinizi daha verimli hale getirebilirsiniz.</p>
 

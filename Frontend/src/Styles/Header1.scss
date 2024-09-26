@@ -25,6 +25,7 @@
     box-sizing: border-box;
 
     a {
+     
       color: white;
       text-decoration: none;
       padding: 10px;
@@ -45,7 +46,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 40px; 
+  
   background-color: #f3f3f3;
   box-sizing: border-box;
   position: sticky; 
@@ -66,6 +67,10 @@
     box-sizing: border-box;
 
     a {
+      @media (min-width: 1024px) {
+        display: flex;
+      }
+      display: none;
       color: black;
       text-decoration: none;
       padding: 10px;
@@ -108,6 +113,11 @@
     box-sizing: border-box;
 
     a {
+      @media (min-width: 1024px) {
+        display: flex;
+      }
+      display: none;
+      
       color: white;
       text-decoration: none;
       padding: 10px;

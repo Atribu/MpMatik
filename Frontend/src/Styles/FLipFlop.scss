@@ -1,13 +1,49 @@
 .flip-flop-section {
+  display: flex;
     text-align: center;
-    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    h2{
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
   }
   
   .carousel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; /* Kartlar arasındaki boşluğu azalttık */
-    justify-items: center;
+    @media (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px; 
+      justify-items: center;
+      align-items: center;
+      width: 90%;
+    }
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px; 
+      justify-items: center;
+      align-items: center;
+      width: 80%;
+    }
+
+    @media (max-width: 769px) {
+       display: flex;
+    flex-direction: column;
+    gap:15px;
+    width: 80%; display: flex;
+    flex-direction: column;
+    gap:15px;
+    width: 80%;
+    }
   }
   
   .card {
@@ -21,7 +57,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    transition: transform 1.3s;
     transform-style: preserve-3d;
   }
   
@@ -52,16 +88,45 @@
     flex-direction: column;
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
+    color: #fff;
+  }
+
+  .card-back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
   }
   
   .card-back-content {
     transform: rotateY(0deg);
+    z-index: 10;
   }
   
-  .card-back h2,
+  .card-back h3,
   .card-back p {
+    z-index: 10;
     margin: 10px 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .card-back h3{
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .card-back p{
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: normal;
+  }
+
+  .greenEffect{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 152, 24, .64); //#009818A3;
   }
 
   .slide-up {

@@ -22,11 +22,15 @@
     color: #ffffff;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 95%;
           }
     
         @media (min-width: 1024px) {
             width: 90%
+          }
+
+          @media (min-width: 1455px) {
+            width: 1440px
           }
 
     h3{
@@ -54,6 +58,14 @@
       span{
         font-weight: bold;
       }
+}
+
+.divLogo{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonApply{
