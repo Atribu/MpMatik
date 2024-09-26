@@ -17,21 +17,18 @@
     height: 100%;
     z-index:2; 
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
-    @media (max-width: 1024px) {
-        flex-direction: column;
-        width: 100%;
-        gap:30px
-      }
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 90%; // Varsayılan olarak 90%
 
-      @media (min-width: 1024px) {
-        flex-direction: row;
-        width: 75%;
-        gap:50px;
-        
-      }
+    @media (min-width: 1024px) and (max-width: 1455px) {
+      width: 85%; // 1024px ile 1455px arasında genişlik %95 olacak
+    }
+  
+    @media (min-width: 1455px) {
+      width: 1440px; 
+    }
+    
      
   }
 
@@ -43,15 +40,16 @@
     text-align: start;
     height: min-content;
     color: #ffffff;
-    width: 90%; // Varsayılan olarak 90%
 
-    @media (min-width: 1024px) and (max-width: 1455px) {
-      width: 85%; // 1024px ile 1455px arasında genişlik %95 olacak
-    }
-  
-    @media (min-width: 1455px) {
-      width: 1440px; 
-    }
+    @media (max-width: 1024px) {
+        width: 90%;
+        gap:30px
+      }
+
+      @media (min-width: 1024px) {
+        width: 50%;
+        gap:10px
+      }
 
       p{
         font-weight: 300;
@@ -92,7 +90,7 @@
     text-transform: uppercase;
 }
 
-  .buttonApply{
+  .buttonApplyy{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,8 +104,76 @@
     padding-left: 30px;
     padding-right: 30px;
     cursor: pointer;
+    font-size:18px;
+    line-height: normal;
 
-    span{
-        font-size:18px;
-    }
   }
+
+  .social-icons {
+    height: min-content;
+    display: flex;
+    gap: 10px;  
+}
+
+.icon {
+    padding: 10px;
+    border-radius: 50%; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.instagram {
+    background-color: #C13584;
+    color: #fff;
+}
+
+.facebook {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.youtube {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.linkedln{
+    background-color: #0077B5;
+    color: #fff;
+} 
+
+.tiktok{
+    background-color: #000000;
+    color: #fff;
+} 
+
+.tumbler{
+    background-color: #001834;
+    color: #fff;
+    padding:5px;
+} 
+
+.pinterest{
+    background-color: #e62c20;
+    color: #fff;
+} 
+
+.vimeo{
+    background-color: #1eb7e8;
+    color: #fff;
+} 
+
+.icon:hover {
+    opacity: 0.8; 
+}
