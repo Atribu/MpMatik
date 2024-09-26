@@ -72,7 +72,7 @@ const FlipFlop = () => {
 
   return (
     <section className='flip-flop-section'>
-        <h1>BP Taşıtmatik Avantajları</h1>
+        <h2>BP Taşıtmatik Avantajları</h2>
         <div className='carousel slide-up'>
             {cardData.map((card) =>(
                 <div className='card' key={card.id}>
@@ -80,9 +80,11 @@ const FlipFlop = () => {
                         <div className='card-front'>
                             <img src={card.image} alt={`Resim ${card.id}`} />
                         </div>
-                        <div className='card-back'>
+                        <div className='card-back' >
+                            <img src={card.image} alt={`Resim ${card.id}`} />
+                            <div className='greenEffect'></div>
                             <div className='card-back-content'>
-                                <h2>{card.title}</h2>
+                                <h3>{card.title}</h3>
                                 <p>{card.description}</p>
                             </div>
                         </div>    
