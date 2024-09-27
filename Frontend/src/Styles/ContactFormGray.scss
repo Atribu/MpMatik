@@ -74,24 +74,19 @@ input {
     border: 1px solid white;    
     border-radius: 4px;       
     width: 50vw;              
-    height: 50px;
+    height: 30px;
     display: inline-block;
     
-    background: transparent;  // Padding ve border ile uyumlu genişlik hesaplama
-    color: #ffffff; 
+    background: transparent;  
   
-    // Placeholder için stil
     &.placeholder {
         font-style: normal;
-        color: #ffffff; 
+        color: #ffffff !important; 
         
       }
   
-    // Odaklanma (focus) durumunda stil
     &:focus {
-      outline: none;           // Varsayılan outline kaldırılır
-      border-color: #4caf50;   // Odaklanınca kenar rengi değişir
-      box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); // Hafif bir gölge verilir
+      outline: none;          
     }
   }
   
@@ -141,12 +136,12 @@ input {
       background: transparent;
       font-family:sans-serif; 
       font-size: 16px; 
-      color: #fff; // Metin rengi
+      color: #fff; 
       height: 25px;
       
       &.placeholder {
-        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-        color: #ffffff; // Placeholder için farklı renk kullanabilirsin
+        font-style: normal; 
+        color: #ffffff !important; 
       }
   
   
@@ -155,25 +150,24 @@ input {
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #ffffff; // Ok işareti rengi
+        border-top: 5px solid #ffffff; 
         margin-left: 10px;
       }
     }
   
     &__dropdown {
       position: absolute;
-      top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
+      top: 100%; 
       left: 0;
       width: 100%;
       border: 1px solid #ccc;
       border-radius: 4px;
       background-color: #fff;
-      z-index: 10; // Dropdown'ın üstte kalmasını sağlar
-      max-height: 150px; // Maksimum yükseklik
-      overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Hafif gölge
+      z-index: 10; 
+      max-height: 150px; 
+      overflow-y: auto; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   
-      // Liste öğeleri için stil
       &__option {
         padding: 10px 15px; // Y ekseninde 10px, X ekseninde 15px padding
         cursor: pointer;
@@ -183,8 +177,8 @@ input {
         transition: background-color 0.3s, padding 0.3s; // Geçiş efektleri
   
         &:hover {
-          background-color: #f0f0f0; // Hover sırasında arka plan rengi
-          padding: 12px 15px; // Hover sırasında padding artışı
+          background-color: #f0f0f0; 
+          padding: 12px 15px; 
         }
       }
     }

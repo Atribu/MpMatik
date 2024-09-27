@@ -41,7 +41,7 @@ const ContactForm = () => {
     };
 
   return (
-    <form className='form'>
+    <form className='formCarousel'>
       <div className='div'>
         <p className='h2'>BP TAŞITMATİK</p>
         <p className='h3'>kurumsal başvuru formu</p>

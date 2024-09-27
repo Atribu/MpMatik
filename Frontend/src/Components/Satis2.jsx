@@ -78,7 +78,7 @@ const Satis2 = ({texts, button}) => {
     </div>
 
    <div className='mainDivNew slide-upSatis2'>
-   <div className='circleDiv  '>
+   {/* <div className='circleDiv  '> */}
         <div className='ic'></div>
         <div className='ic2'></div>
         <div className='ic3'></div>
@@ -104,7 +104,7 @@ const Satis2 = ({texts, button}) => {
         <div className='dis16'></div>
         <div className='dis17'></div>
 
-      </div>
+      {/* </div> */}
    </div>
 
   </div>

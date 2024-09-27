@@ -1,7 +1,7 @@
 .flip-flop-section {
   display: flex;
     text-align: center;
-    padding-top: 40px;
+    margin-top: 40px;
     padding-bottom: 80px;
     width: 100%;
     align-items: center;
@@ -81,7 +81,7 @@
   
   .card-back {
     background-color: #f8f8f8;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); 
     display: flex;
     align-items: center;
     justify-content: center;

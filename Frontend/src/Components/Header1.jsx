@@ -34,18 +34,21 @@ const Header1 = () => {
    <>
       <header className={`${activeUser ? 'sticky-header-activeuser' : isSticky ? 'is-sticky' : "sticky-header"}`}>
        
+       <section className='sectionHeader'>
        <div className='mobile-icons'>
-       {isSticky ?  <FaBars size={20} color='#fff' onClick={toggleSidebar}/>  : <FaBars size={20} color='#4e534c' onClick={toggleSidebar}/>}
+       {isSticky ?  <FaBars size={25} color='#fff' onClick={toggleSidebar}/>  : <FaBars size={20} color='#4e534c' onClick={toggleSidebar}/>}
        </div>
 
       <Link to="/">
         <img 
           src={activeUser ? "/Logo/dgtlface.jpeg" : isSticky ? '/Logo/bp-logo-beyazimsi.png' : '/Logo/bp-logo-kendi.png'} 
           alt='Logo' 
+          width={60}
+          height={79.64}
         />       
       </Link>
       <div className='mobile-icons'>
-      {isSticky ?  <FaMagnifyingGlass size={20} color='#fff'/>  : <FaMagnifyingGlass size={20} color='#4e534c'/>}
+      {isSticky ?  <FaMagnifyingGlass size={25} color='#fff'/>  : <FaMagnifyingGlass size={20} color='#4e534c'/>}
       </div>
 
       <nav>
@@ -69,6 +72,7 @@ const Header1 = () => {
         }
         
       </nav>
+       </section>
       
     </header>
 

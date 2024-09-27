@@ -1,6 +1,6 @@
 import React, { useState,useEffect, useRef  } from "react";
 import "../../Styles/Questions.scss";
-import { MdArrowBackIosNew } from "react-icons/md";
+import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
 
 const SSS = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -103,7 +103,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content1")}
             >
-             {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+             {activeContent ==="content1" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
              Taşıt akaryakıt tanıma sistemi nedir?
             </button>
             <div className="line-div"></div>
@@ -125,7 +125,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content2")}
             >
-                {activeContent ==="content2" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+               {activeContent ==="content2" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Bu sistem nasıl çalışır ve hangi teknolojileri kullanır?
 
             </button>
@@ -148,7 +148,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content3")}
             >
-                {activeContent ==="content3" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                {activeContent ==="content3" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Taşıt akaryakıt tanıma sistemi hangi avantajları sunar?
             </button>
             <div className="line-div"></div>
@@ -171,7 +171,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content4")}
             >
-                {activeContent ==="content4" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                 {activeContent ==="content4" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Nasıl bir kurulum süreci gereklidir?
 
             </button>
@@ -195,7 +195,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content5")}
             >
-                {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                {activeContent ==="content5" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Hangi tür araçlar için uygun bir çözümdür?
             </button>
             <div className="line-div"></div>
@@ -218,7 +218,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content6")}
             >
-                {activeContent ==="content6" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+               {activeContent ==="content6" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Sistem nasıl yakıt tasarrufu sağlar ve nasıl verimlilik artırır?
             </button>
             <div className="line-div"></div>
@@ -241,7 +241,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content7")}
             >
-                {activeContent ==="content7" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+               {activeContent ==="content7" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Kullanıcılar nasıl kayıt olabilir ve sistemi nasıl kullanabilir?
             </button>
             <div className="line-div"></div>
@@ -264,7 +264,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content8")}
             >
-                {activeContent ==="content8" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                {activeContent ==="content8" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Akaryakıt tanıma sistemi ile ilgili güvenlik önlemleri nelerdir?
             </button>
             <div className="line-div"></div>
@@ -287,7 +287,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content9")}
             >
-                {activeContent ==="content9" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                {activeContent ==="content9" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Sistem arızaları veya kesintileri durumunda ne gibi önlemler alınmıştır?
             </button>
             <div className="line-div"></div>
@@ -310,7 +310,7 @@ useEffect(() => {
               }`}
               onClick={() => handleClick("content10")}
             >
-                {activeContent ==="content10" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                {activeContent ==="content10" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
                 Bu sistemle ilgili maliyetler ve geri dönüş süresi nedir?
             </button>
             <div className="line-div"></div>

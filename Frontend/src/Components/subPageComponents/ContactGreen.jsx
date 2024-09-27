@@ -18,8 +18,6 @@ const ContactGreen = () => {
             <p>Firmamızın taşıt akaryakıt tanıma sistemi, modern teknolojiyle donatılmış etkili bir çözümdür. Araç sahiplerine ve işletmelere yakıt alımlarını kolaylaştırarak zaman ve çaba tasarrufu sağlar. Otomatik plaka ve pompa tanıma özellikleri sayesinde kullanıcılar anında işlem yapabilir. Bu sistem, verimliliği artırırken hatalı işlemleri minimize eder ve yakıt giderlerini izlemeyi basit hale getirir. Gerçek zamanlı veri analizi ile yakıt tüketimini daha iyi anlamak ve yönetmek mümkündür. Müşteri memnuniyetini ve işletme verimliliğini yükseltmek için tasarlanmış yenilikçi bir çözümdür.</p>
             <button className='buttonApplyy'>HEMEN BAŞVUR</button>
         </div>
-
-
         <div className='half2'>
             <img src={image} alt='referances' width={315} height={525.56} />
             <h2 >sosyal medya'da BİZ!</h2>
