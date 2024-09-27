@@ -3,7 +3,17 @@
     width: 100%;
     gap: 2px;
     background-color: #2C3440;
-    
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+ 
+}
+
+.sectionFooter{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
 
     @media (max-width: 1024px) { 
         flex-direction: column; 
@@ -12,17 +22,17 @@
       @media (min-width: 1024px) {
         flex-direction: row; 
       }
+
 }
 
 .div-bir {
-    
     display: flex;
     flex-direction: column;
-    padding: 10px;
     align-items: center;
+    justify-content: center;
 
     @media (max-width: 1024px) { 
-        width: 98%;
+        width: 100%;
       }
 
       @media (min-width: 1024px) { 
@@ -46,29 +56,32 @@
               }
         
               @media (min-width: 1024px) { 
-                width: 100%;
-                height: 100%;
+                  width: 300px;
+                  height: 51px;
               }
         }
     }
     
 
     p {
+        width: 95%;
         color: white;
         font-size: 17px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     div {
+        width: 100%;
         display: flex;
         height: auto;
         gap: 10px;
-        
         align-items: center;
+        justify-content: start;
         
     }
 
     .social-icons {
+        width: 70%;
         height: 100px;
         display: flex;
         gap: 10px;  
@@ -119,7 +132,7 @@
     section {
         display: flex;
         gap: 10%;
-        padding: 5%;
+        padding: 2%;
         justify-content: center;
         align-items: center;
         white-space: nowrap;
@@ -159,24 +172,27 @@
     
 
 .div-iki {
-    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    align-items: start;
+    justify-content: center;
+    
 
     @media (max-width: 1024px) { 
-        width: 98%;
+        width: 50%;
+        align-items: start;
       }
 
       @media (min-width: 1024px) { 
-        width: 25%; 
+        width: 90%; 
+        align-items: center;
       }
 
     h3 {
         color: white;
-        margin-right: 15%;
+        width: 100%;
+        margin-right: 7%;
         font-size: 22px;
         font-weight: 700;
         line-height: 1.7;
@@ -184,7 +200,63 @@
     }
 
     ul {
-        
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 17px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        li {
+            list-style-type: disc;
+            list-style-position: inside;
+            list-style-position: outside;
+            text-indent: -15px;
+            padding-left: 0px;
+            cursor: pointer;
+            padding: 5px;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}
+
+.div-uc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+      }
+
+      @media (min-width: 1024px) {
+        width: 25%; 
+      }
+
+    h3 {
+        color: white;
+        font-size: 22px;
+        margin-right: 15%;
+        font-weight: 700;
+        line-height: 1.7;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    ul {
+       
         color: white;
         font-size: 17px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -208,75 +280,36 @@
             }
         }
     }
-
-
-}
-
-.div-uc {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 10px;
-
-    @media (max-width: 1024px) { // Tablet boyutu
-        width: 98%;// Tablet ve üzeri ekranlar için row düzeni
-      }
-
-      @media (min-width: 1024px) { // Tablet boyutu
-        width: 25%; // Tablet ve üzeri ekranlar için row düzeni
-      }
-
-    h3 {
-        color: white;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 1.7;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    ul {
-       
-        color: white;
-        font-size: 17px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-        li {
-            padding: 5px 0; /* Üst ve alt boşluk */
-            list-style-type: disc; /* Nokta işaretleyici */
-            list-style-position: inside; /* Noktanın metin hizasında olması */
-            cursor: pointer;
-
-            a{
-                color: white;
-                text-decoration: none;
-            }
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
 }
 
 .div-dort {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
     justify-content: center;
     align-items: center;
+    height:100%;
+    background:#2C3440;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+      }
+
+      @media (min-width: 1024px) { 
+        width: 25%;
+      }
+}
+
+.divdort-iki{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    height: min-content;
+    padding: 10px;
     background-color: #364154;
-    height:max-content;
-
-    @media (max-width: 1024px) { // Tablet boyutu
-        width: 98%;// Tablet ve üzeri ekranlar için row düzeni
-      }
-
-      @media (min-width: 1024px) { // Tablet boyutu
-        width: 25%; // Tablet ve üzeri ekranlar için row düzeni
-      }
-    
+    border-radius: 20px;
+    margin-top: 10%;
 
     img {
         width: 100%;
@@ -314,5 +347,21 @@
 
         
     }
+}
+
+.divikiuc{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+      }
+
+      @media (min-width: 1024px) { 
+        width: 50%;
+      }
 
 }

@@ -13,9 +13,10 @@ import "../Styles/Footer.scss"
 const Footer = () => {
   return (
     <footer className='footer-main'>
-        <div className='div-bir'>  
+       <section className='sectionFooter'>
+       <div className='div-bir'>  
                 <Link>
-                        <img src='../../Logo/mpmatik-footer-logo.png' alt='' width="200" height="50" />               
+                        <img src='../../Logo/mpmatik-footer-logo.png' alt='' width={200} height={50} />               
                 </Link>
                 <p>
                         BP kalitesi ve deneyimi ile tanışmak ve Taşıtmatik sistemine geçmek için bizimle iletişime geçin. 
@@ -45,6 +46,7 @@ const Footer = () => {
                         <Link className='button-kolay'>Kolay Ödeme</Link>
                 </section>
         </div>
+        <div className='divikiuc'>
         <div className='div-iki'>
                 <h3>BP Taşıtmatik</h3>
                 <ul>
@@ -59,7 +61,7 @@ const Footer = () => {
                         <li><Link to="/gizlilik-politikasi">Gizlilik Politikası</Link></li>
                 </ul>    
         </div>
-        <div className='div-uc'>
+        <div className='div-iki'>
                 <h3>Faydalı Bilgiler</h3>
                 <ul>
                         <li><Link to="/">BP Taşıtmatik Nedir?</Link></li>
@@ -70,8 +72,11 @@ const Footer = () => {
                         <li><Link to="/">Taşıt Akaryakıt Tanıma Sistemi Nedir?</Link></li>
                 </ul>
         </div>
+
+        </div>
         <div className='div-dort'>
-            <Link>
+           <div className='divdort-iki'>
+           <Link>
                         <img src='/images/ana-sayfa-banner.jpg' alt='Görsel' width="200" height="100" />            
             </Link>
             <h2>
@@ -84,7 +89,9 @@ const Footer = () => {
             <Link className='button-oku'>
                         Daha Fazla Oku
             </Link>
+           </div>
         </div>
+       </section>
     </footer>
   )
 }

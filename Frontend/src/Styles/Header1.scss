@@ -1,12 +1,10 @@
 .sticky-header-activeuser {
   display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
   width: 100%;
-  padding: 10px 40px; 
   background-color: black;
-  box-sizing: border-box;
   position: sticky; 
   top: 0; 
   z-index: 1000; 
@@ -20,12 +18,15 @@
   }
 
   nav {
-    display: flex;
     white-space: nowrap;
-    box-sizing: border-box;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    display: none;
+
 
     a {
-     
+     display: flex;
       color: white;
       text-decoration: none;
       padding: 10px;
@@ -40,15 +41,28 @@
   }
 }
 
+.sectionHeader{
+  display: flex;
+  width: 90%;
+  max-width: 1440px;
+  padding: 10px 40px; 
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sticky-header {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  // padding:10px 0px;
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
   
   background-color: #f3f3f3;
-  box-sizing: border-box;
   position: sticky; 
   top: 0; 
   z-index: 1000; 
@@ -56,21 +70,22 @@
 
   img {
     width: 100%;
-    height: 8vh;
-    margin-left: 60%;
+    height: 7vh;
     transition: height 0.3s ease;
+    // @media (min-width: 1024px) {
+    //   margin-left: 60%;
+    // }
   }
 
   nav {
-    display: flex;
     white-space: nowrap;
-    box-sizing: border-box;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    display: none;
 
     a {
-      @media (min-width: 1024px) {
-        display: flex;
-      }
-      display: none;
+      display: flex;
       color: black;
       text-decoration: none;
       padding: 10px;
@@ -88,36 +103,35 @@
 
 .is-sticky {
   display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px 40px; 
-  background-color: #3AA31D;
-  box-sizing: border-box;
+  background-color: #26a31c;
   position: sticky; 
   top: 0; 
   z-index: 1000; 
   transition: background-color 0.3s ease, height 0.3s ease;
 
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
+
   img {
     width: 100%;
-    height: 8vh;
-    margin-left: 60%;
+    height: 8.5vh;
     transition: height 0.3s ease;
+
   }
 
   nav {
-    display: flex;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    display: none;
     white-space: nowrap;
-    box-sizing: border-box;
 
     a {
-      @media (min-width: 1024px) {
-        display: flex;
-      }
-      display: none;
-      
+    display: flex;
       color: white;
       text-decoration: none;
       padding: 10px;
@@ -147,3 +161,103 @@
     }
   }
 }
+
+/* Sidebar stilleri */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 100%;
+  color: white;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  background-color: #080c0f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  &.open {
+    left: 0; /* Sidebar açık olduğunda ekranın solunda yer alır */
+  }
+
+  .sidebar-content {
+    padding: 15px 10px;
+
+    .close-btn {
+      background-color: transparent;
+      color: white;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 60px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 45px 30px;
+      text-transform: uppercase;
+      text-align: start;
+      align-items: start;
+      justify-content: center;
+
+      a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        
+      }
+    }
+  }
+}
+
+.line{
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #212528;
+}
+
+.button1side {
+  text-decoration: none;
+  color: #fff;
+  background-color: #24A31D;
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-weight: 400;
+  font-size: 32px;
+  border: none;
+  transition-duration: .5s;
+      &:hover {
+          background-color: darkgreen;
+          transition-duration: .5s;
+      }
+  }
+
+  .button2side {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F4780A;
+  padding: 20px 40px;
+  border-radius: 32px;
+  font-weight: 400;
+  font-size: 40px;
+  border: none;
+  transition-duration: .5s;
+
+      &:hover {
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+          transition-duration: .5s;
+      }
+  }
+
+  .mobile-icons{
+    display: none; /* Mobil için ikonları gizliyoruz */
+
+    @media (max-width: 1023px) {
+      display: flex;
+      width: fit-content;
+      justify-content: center;
+      align-items: center;
+    }
+  }

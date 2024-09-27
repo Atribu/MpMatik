@@ -137,12 +137,13 @@
   }
 
   .mainDivNew{
-    height: 100%;
+    height: 812px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    
     
 
     @media (max-width: 1100px) {
@@ -156,16 +157,13 @@
 }
 
   .circleDiv{
-    height: 800px;
+    height: min-content;
     width: 100%;
-    display: flex;
     flex-direction: column;
     position: relative;
     margin-left: 20px;
-    position: absolute;
-    top:50%;
+    top: 0%;
     transform: translateY(-35%);
-    left:0;
     
   
 }

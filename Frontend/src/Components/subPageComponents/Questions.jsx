@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../Styles/Questions.scss";
-import { MdArrowBackIosNew } from "react-icons/md";
+import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
 
 const Questions = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -23,7 +23,7 @@ const Questions = () => {
               }`}
               onClick={() => handleClick("content1")}
             >
-             {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+             {activeContent ==="content1" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
               BP Taşıtmatik Nedir?
             </button>
             <div className="line-div"></div>
@@ -41,14 +41,14 @@ const Questions = () => {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content2" ? "active" : ""
               }`}
               onClick={() => handleClick("content2")}
             >
-                {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+               {activeContent ==="content2" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
               BP Taşıtmatik Kart Nasıl Alınır?
             </button>
             <div className="line-div"></div>
@@ -65,14 +65,14 @@ const Questions = () => {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content3" ? "active" : ""
               }`}
               onClick={() => handleClick("content3")}
             >
-                {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+                {activeContent ==="content3" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
               BP Taşıtmatik Kartı Nerede Kullanabilirim?
             </button>
             <div className="line-div"></div>
@@ -91,14 +91,14 @@ const Questions = () => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content4" ? "active" : ""
               }`}
               onClick={() => handleClick("content4")}
             >
-                {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+             {activeContent ==="content4" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
               BP Taşıtmatik Kartı ile Hangi Avantajları Elde Edebilirim?
             </button>
             <div className="line-div"></div>
@@ -114,14 +114,14 @@ const Questions = () => {
             </div>
           </div>
 
-          <div className="button-container">
+          <div className="question-container">
             <button
               className={`questionGray ${
                 activeContent === "content5" ? "active" : ""
               }`}
               onClick={() => handleClick("content5")}
             >
-                {activeContent ==="content1" ? <MdArrowBackIosNew className="rotating-iconActive"/> : <MdArrowBackIosNew className="rotating-icon"/>}
+               {activeContent ==="content5" ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20}/>}
               Kartımı Kaybedersem Ne Yapmalıyım?
             </button>
             <div className="line-div"></div>

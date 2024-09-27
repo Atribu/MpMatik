@@ -77,6 +77,8 @@ const BlogSection = () => {
     return () => emblaApi.off("select", onSelect);
   }, [emblaApi, onSelect]);
 
+
+
   return (
     <section className='blogGreenSec'>
        
@@ -90,10 +92,9 @@ const BlogSection = () => {
             <div className="blog-carousel__item" key={index}>
               <img
                 className="blog-carousel__image"
+                style={{objectFit:'cover'}}
                 src={image}
                 alt={`Slide ${index + 1}`}
-                width={image.width}
-                height={image.height}
               />
               <div className="carousel-texts">
                <h3>{titles[index]}</h3>

@@ -38,7 +38,7 @@ const RoadSimulation = () => {
         E-Bültene Kaydol</h2>
         <p>E-Mail bültenimize kaydolarak MP Taşıtmatik ile ilgili tüm yenilik ve haberleri alabilirsiniz.</p>
       <div className='divInput'>
-        <input ></input>
+        <input type='email' id='email' name='email' placeholder='E-Mail' required></input>
         <button>ABONE OL</button>
       </div>
       </div>

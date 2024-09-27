@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "../Styles/Header.scss"
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -32,7 +31,7 @@ const Header = () => {
           href="https://www.youtube.com/@MPtasitmatik" target="_blank" rel="noopener noreferrer"> <FaYoutube />
         </a>
       </nav>
-      <div>
+      <div className="">
       <Link to="/hemen-basvur" className="button1">Hemen Başvur</Link>
       <Link to="/kolay-odeme" className="button2">Kolay Ödeme</Link>
       </div>
