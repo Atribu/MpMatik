@@ -1,6 +1,12 @@
 import React from 'react'
 import Header from "./Components/Header.jsx"
+import Satis1 from './Components/Satis1.jsx'
+import Satis2 from './Components/Satis2.jsx'
 import Header1 from './Components/Header1.jsx'
+import BlogSection from './Components/BlogSection.jsx'
+import Limitation from './Components/Limitation.jsx'
+import MainCarousel from './Components/MainCarousel.jsx'
+import RoadSimulation from './Components/RoadSimulation.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage.jsx'
@@ -19,7 +25,7 @@ import Contact from './Pages/Contact.jsx'
 import Referances from './Pages/Referances.jsx'
 import KullanimKosullari from './Pages/KullanimKosullari.jsx'
 import GizlilikPolitikasi from './Pages/GizlilikPolitikasi.jsx'
-import BpTasitmatikNedir from './blogPages/bpTasitmatikNedir.jsx'
+import BpTasitmatikNedir from './blogPages/BpTasitmatikNedir.jsx'
 import BpTasitmatikNasilCalisir from './blogPages/BpTasitmatikNasilCalisir.jsx'
 import BpTasitmatikMusteriHizmetleri from './blogPages/BpTasitmatikMusteriHizmetleri.jsx'
 import BpTasitmatikAvantajlariNelerdir from './blogPages/BpTasitmatikAvantajlariNelerdir.jsx'
@@ -28,6 +34,7 @@ import TasitAkaryakitTanimaSistemiNedir from './blogPages/TasitAkaryakitTanimaSi
 import HemenBasvur from './Pages/HemenBasvur.jsx'
 import KolayOdeme from './Pages/KolayOdeme.jsx'
 import NasilCalısır from './Pages/NasilCalısır.jsx'
+import Page404 from './Pages/Page404.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -50,6 +57,7 @@ const App = () => {
                       <Route path="/toptan-akaryakit" element={<ToptanAkaryakit />} />
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
+                      <Route path="/*" element={<Page404 />} />
                       <Route path="hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />
