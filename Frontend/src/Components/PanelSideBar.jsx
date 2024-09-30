@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { NavLink, Outlet } from 'react-router-dom'
 import { logOutError, logOutStart, logOutSuccess } from '../redux/userSlice';
+import "../Styles/Panel.scss"
 
 const PanelSideBar = () => {
         const dispatch = useDispatch();
@@ -18,7 +19,7 @@ const PanelSideBar = () => {
         }
     
   return (
-    <section>
+    <section className='SideBar'>
         <aside>
             <nav>
                 <NavLink to="/panel">Panel</NavLink>

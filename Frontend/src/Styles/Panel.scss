@@ -1,0 +1,123 @@
+section.SideBar {
+    display: flex;
+    flex-direction: row;
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10%;
+        background-color: black;
+        padding: 15px;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 100%;
+            gap:10px;
+
+            a {
+                display: flex;
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 10px;
+                padding: 10px;
+
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 15px;
+
+        section.blog-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 70%;
+            height: 100%;
+            padding: 15px;
+
+            form.blog-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                padding: 15px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                }
+
+                div.Image-Yukle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    width: 100%;
+                    border: none;
+                }
+
+               
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 10%;
+                    border-radius: 10px;
+                    padding: 10px;
+                    background-color: black;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+    }
+ }
+}
+
+.Panel-Blog-Yukle {
+    display: flex;
+    width: 50%;
+    max-width: 360px;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 11px;
+
+}
+
+.Panel-Blog-Yukle-Label{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    width: 10%;
+    white-space: nowrap;
+}
+
+.Panel-Blog-Yukle-Div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}

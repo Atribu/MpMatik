@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Styles/Main.scss"
 import Header from "./Components/Header.jsx"
 import Satis1 from './Components/Satis1.jsx'
 import Satis2 from './Components/Satis2.jsx'
@@ -67,7 +68,6 @@ const App = () => {
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
                       <Route path='/kayit-ol' element={<Register />} />
                       <Route path="/giris" element={<Login />} />
-                      <Route path="bloglar" element={<Bloglar />} />
                                     <Route path="/bp-tasitmatik-nedir?" element={<BpTasitmatikNedir/>} />
                                     <Route path="/bp-tasitmatik-nasıl-calisir?" element={<BpTasitmatikNasilCalisir/>} />
                                     <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BpTasitmatikMusteriHizmetleri/>} />
@@ -76,7 +76,8 @@ const App = () => {
                                     <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} /> 
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
-                                    <Route path="blog-duzenle/:url" element={<BlogDuzenle />} />
+                                    <Route path="blog-duzenle" element={<BlogDuzenle />} />
+                                    <Route path="bloglar" element={<Bloglar />} />
 
                       </Route>
                 </Routes>
