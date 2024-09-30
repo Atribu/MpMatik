@@ -1,0 +1,64 @@
+.LoginRegister {
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 5%;
+        background-color: #f3f3f3;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: min-content;
+        gap: 2%;
+        width: 30%;
+        background-color: #f3f3f3;
+        border-radius: 20px;
+        padding: 1%;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        input {
+            width: 70%;
+            height: 5%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        button {
+            margin-top: 5%;
+            margin-bottom: 4%;
+            width: 15%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+                background-color: #3AA31D;
+            }
+        }
+    }
+}

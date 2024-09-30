@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loginError, loginStart, loginSuccess } from '../redux/userSlice';
+import "../Styles/LoginRegister.scss";
 
 const Login = () => {
     const [form, setForm] = useState({});
@@ -37,9 +38,10 @@ const Login = () => {
     };
 
     return (
-        <section>
-            <h1>Giriş Yap</h1>
+        <section className='LoginRegister'>
+            
             <form onSubmit={handleSubmit}>
+            <h1>Giriş Yap</h1>
                 <label htmlFor='username'>Kullanıcı Adı</label>
                 <input id='username' type='text' name='username' onChange={handleChange} />
 
