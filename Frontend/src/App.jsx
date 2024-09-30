@@ -34,6 +34,7 @@ import TasitAkaryakitTanimaSistemiNedir from './blogPages/TasitAkaryakitTanimaSi
 import HemenBasvur from './Pages/HemenBasvur.jsx'
 import KolayOdeme from './Pages/KolayOdeme.jsx'
 import NasilCalısır from './Pages/NasilCalısır.jsx'
+import Page404 from './Pages/Page404.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -56,6 +57,7 @@ const App = () => {
                       <Route path="/toptan-akaryakit" element={<ToptanAkaryakit />} />
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
+                      <Route path="/*" element={<Page404 />} />
                       <Route path="hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />

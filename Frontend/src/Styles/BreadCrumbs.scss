@@ -1,0 +1,28 @@
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .breadcrumb-item {
+    margin-right: 5px;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
+  
+  .breadcrumb-item::after {
+    content: '/';
+    margin-left: 5px;
+  }
+  
+  .breadcrumb-item:last-child::after {
+    content: '';
+  }
+  
