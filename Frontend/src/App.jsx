@@ -30,6 +30,7 @@ import HemenBasvur from './Pages/HemenBasvur.jsx'
 import KolayOdeme from './Pages/KolayOdeme.jsx'
 import NasilCalısır from './Pages/NasilCalısır.jsx'
 import Page404 from './Pages/Page404.jsx'
+import WhatsApp from './Components/WhatsApp.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -53,7 +54,7 @@ const App = () => {
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
                       <Route path="/*" element={<Page404 />} />
-                      <Route path="hakkimizda" element={<About />} />
+                      <Route path="/hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />
                       <Route path="/iletisim" element={<Contact />} />
@@ -80,9 +81,15 @@ const App = () => {
             activeUser ? (
                   ""
             ) : (
+                  <>
+                  <WhatsApp />
                   <Footer />
+                  </>
+                  
             )
+            
           }
+          
           
       </BrowserRouter>
    </>
