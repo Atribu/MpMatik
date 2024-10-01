@@ -1,13 +1,7 @@
 import React from 'react'
 import "./Styles/Main.scss"
 import Header from "./Components/Header.jsx"
-import Satis1 from './Components/Satis1.jsx'
-import Satis2 from './Components/Satis2.jsx'
 import Header1 from './Components/Header1.jsx'
-import BlogSection from './Components/BlogSection.jsx'
-import Limitation from './Components/Limitation.jsx'
-import MainCarousel from './Components/MainCarousel.jsx'
-import RoadSimulation from './Components/RoadSimulation.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage.jsx'
