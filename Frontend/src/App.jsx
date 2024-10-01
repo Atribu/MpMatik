@@ -31,6 +31,8 @@ import KolayOdeme from './Pages/KolayOdeme.jsx'
 import NasilCalısır from './Pages/NasilCalısır.jsx'
 import Page404 from './Pages/Page404.jsx'
 import WhatsApp from './Components/WhatsApp.jsx'
+import { FaZ } from 'react-icons/fa6'
+import BlogMusteriHizmetleri from './Pages/BlogMusteriHizmetleri.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -63,6 +65,7 @@ const App = () => {
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
                       <Route path='/kayit-ol' element={<Register />} />
                       <Route path="/giris" element={<Login />} />
+                      <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/>
                                     <Route path="/bp-tasitmatik-nedir?" element={<BpTasitmatikNedir/>} />
                                     <Route path="/bp-tasitmatik-nasıl-calisir?" element={<BpTasitmatikNasilCalisir/>} />
                                     <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BpTasitmatikMusteriHizmetleri/>} />
