@@ -2,6 +2,7 @@ import React from 'react';
 import { SiWhatsapp } from "react-icons/si";
 import { FaPhone } from "react-icons/fa";
 import "../Styles/WhatsApp.scss"
+import { HiMiniCreditCard } from "react-icons/hi2";
 
 const Whatsapp = () => {
 
@@ -17,15 +18,22 @@ const Whatsapp = () => {
     <div className='whatsapp-container'>
       <div className='whatsapp-button-container'>
         <button className="ecenin-butonu" onClick={openWhatsApp}>
-          <SiWhatsapp size={40} className='whatsapp-icon'/>
+          <SiWhatsapp size={30} className='whatsapp-icon'/>
+        </button>
+      </div>
+
+      <div className='card-button-container'>
+        <button className="ecenin-butonu" onClick={openWhatsApp}>
+          <HiMiniCreditCard size={30} className='whatsapp-icon'/>
+        </button>
+      </div>
+
+      <div className='basvur-button-container'>
+        <button className="ecenin-butonu" onClick={openWhatsApp}>
+          <span>Hemen <br></br> Başvur</span>
         </button>
       </div>
       
-      <div className='phone-button-container'>
-        <a href="tel:+90 530 918 20 80">
-          <FaPhone size={40} className='phone-icon'/>
-        </a>
-      </div>
     </div>
   );
 }
