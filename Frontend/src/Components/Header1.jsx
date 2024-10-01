@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "../Styles/Header1.scss";
 import { useSelector } from 'react-redux';
 import { FaBars,FaMagnifyingGlass } from "react-icons/fa6";
+import DgtlLogo from "../../public/Logo/DgtlLogo"
 
 const Header1 = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -40,12 +41,20 @@ const Header1 = () => {
        </div>
 
       <Link to="/">
-        <img 
-          src={activeUser ? "/Logo/dgtlface.jpeg" : isSticky ? '/Logo/bp-logo-beyazimsi.png' : '/Logo/bp-logo-kendi.png'} 
+      {activeUser ? <DgtlLogo className="flex items-center justify-center" width={200} height={50}/> : isSticky ? 
+      <img 
+          src='/Logo/bp-logo-beyazimsi.png' 
           alt='Logo' 
           width={60}
           height={79.64}
-        />       
+        />    :  
+        <img 
+        src= '/Logo/bp-logo-kendi.png'
+        alt='Logo' 
+        width={60}
+        height={79.64}
+      />   } 
+           
       </Link>
       <div className='mobile-icons'>
       {isSticky ?  <FaMagnifyingGlass size={25} color='#fff'/>  : <FaMagnifyingGlass size={20} color='#4e534c'/>}
