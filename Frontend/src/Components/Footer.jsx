@@ -41,7 +41,7 @@ const Footer = () => {
 
                 </div>
 
-                <section>
+                <section className='sec-footer-button'>
                         <Link className='button-basvuru'>Hemen Başvur</Link>
                         <Link className='button-kolay'>Kolay Ödeme</Link>
                 </section>
