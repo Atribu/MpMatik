@@ -33,6 +33,7 @@ import Page404 from './Pages/Page404.jsx'
 import WhatsApp from './Components/WhatsApp.jsx'
 import { FaZ } from 'react-icons/fa6'
 import BlogMusteriHizmetleri from './Pages/BlogMusteriHizmetleri.jsx'
+import BlogDetay from "./Pages/BlogDetay"
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -74,8 +75,9 @@ const App = () => {
                                     <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} /> 
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
-                                    <Route path="blog-duzenle" element={<BlogDuzenle />} />
+                                    <Route path="bloglar/blog-duzenle/:id" element={<BlogDuzenle />} />
                                     <Route path="bloglar" element={<Bloglar />} />
+                                    <Route path="bloglar/:id" element={<BlogDetay/>} />
 
                       </Route>
                 </Routes>

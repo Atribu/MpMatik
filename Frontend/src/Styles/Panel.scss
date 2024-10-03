@@ -7,8 +7,9 @@ section.SideBar {
         flex-direction: column;
         align-items: center;
         width: 10%;
-        background-color: black;
+        background-color: #0e0c1b;
         padding: 15px;
+        height: 100vh;
 
         nav {
             display: flex;
@@ -37,7 +38,7 @@ section.SideBar {
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: gray;
+        background-color: #6b81a5;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         padding: 15px;

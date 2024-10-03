@@ -1,192 +1,194 @@
-import React, { useEffect, useState } from 'react'
-import "../Styles/Panel.scss"
-import { app } from '../firebase.js'
-import { useSelector } from 'react-redux';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import "../Styles/BlogDetay.scss";
 
 const BlogDuzenle = () => {
-
-  const {activeUser} = useSelector((state)=>state.user);
-
-  const [form, setForm] = useState([]);
-  const [error, setError] = useState(false);
-  const [wait, setWait] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [thumbnail, setThumbnail] = useState(undefined);
-  const [imageError, setImageError] = useState(false);
-  const [progressBar, setProgressBar] = useState(0);
-  
-  useEffect (() => {
-    setForm({
-      ...form,
-      author: activeUser._id,
-    })
-  },[])
-  
-
-  const handleFormChange = (e) => {
-    if(e.target.id === "title")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value,
-            url: e.target.value.toLocaleLowerCase("en-us").split(" ").join("-")
-        });
-    else if(e.target.id === "subTitle")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "subTitle1")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        }); 
-    else if(e.target.id === "subTitle2")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "subTitle3")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "subTitle4")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "url")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value,
-            url: e.target.value.toLocaleLowerCase("en-us").split(" ").join("-")
-        });
-    else if(e.target.id === "contentTitle")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "contentSubTitle")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "contentSubTitle1")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "contentSubTitle2")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "contentSubTitle3")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else if(e.target.id === "contentSubTitle4")
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    else {
-        setForm({
-            ...form,
-            [e.target.id]: e.target.value
-        });
-    }      
-}
-
-const handleFormSubmit = async (e) => {
-  e.preventDefault();
-  setError(false)
-  setWait(true)
-
-  setForm({
-    ...form,
-    author: activeUser._id,
+  const { id } = useParams();  // URL'den id parametresini alıyoruz
+  const navigate = useNavigate();  // Güncelleme sonrası yönlendirme için
+  const [blog, setBlog] = useState({
+    title: '',
+    subTitle: '',
+    contentTitle: '',
+    contentSubTitle: '',
+    url: '',
+    author: '',
+    thumbnail: '',
+    // Diğer gerekli alanlar...
   });
-  try {
-    const response = await fetch("/api/blog/duzenle",{
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form)
-    })
-    const data = await response.json();
-    if(data.success===false){
-      setError(data.message);
-      return;
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // ID'ye göre blog verisini backend'den çekme
+    const fetchBlog = async () => {
+      try {
+        const response = await fetch(`/api/blog/${id}`);
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.message || 'Blog verisi alınamadı');
+        }
+
+        setBlog(data);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    };
+
+    fetchBlog();
+  }, [id]);
+
+  // Form alanında değişiklikleri işleyen fonksiyon
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setBlog((prevBlog) => ({
+      ...prevBlog,
+      [name]: value,
+    }));
+  };
+
+  // Blog güncelleme fonksiyonu
+  const handleUpdate = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(`/api/blog/duzenle/${id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(blog), // Blog verilerini günceller
+      });
+
+      const data = await response.json();
+
+      if (data.success === false) {
+        console.log("Güncelleme başarısız");
+        return;
+      }
+
+      alert("Blog başarıyla güncellendi!");
+      navigate('/panel/bloglar'); // Güncelleme sonrası bloglar sayfasına yönlendirme
+    } catch (err) {
+      console.log("Hata:", err.message);
     }
-    setSuccess("Veri Başarılı Bir Şekilde Yüklendi");
-    setWait(false);
-  } catch (error) {
-      setError(error)
-      setWait(false)
-  }
-}
+  };
 
-    console.log(form)
+  if (loading) return <div>Yükleniyor...</div>;
+  if (error) return <div>{error}</div>;
+
   return (
-    <section className='blog-section'>
-      <h1>Blog Düzenle</h1>
-      <form className='blog-form'onSubmit={handleFormSubmit}>
-        <div className='Image-Yukle'>
-        <label className="Panel-Blog-Yukle-Label" htmlFor="Image">Resim Yükle</label>
-          <input className='Panel-Blog-Yukle' type="file" accept='image/*' />
-        </div>
-        <div className='Panel-Blog-Yukle-Div'>
-          <label className="Panel-Blog-Yukle-Label"  htmlFor="title">Başlık</label>
-          <input className='Panel-Blog-Yukle' type="text" id='title' onChange={handleFormChange}/>
+    <div className="detay-div">
+      <div className="div-ic">
+        <h1>Blog Düzenle</h1>
+        <form className="blog-form" onSubmit={handleUpdate}>
+          <div className="form-group">
+            <label>Başlık:</label>
+            <input
+              type="text"
+              name="title"
+              value={blog.title}
+              onChange={handleChange}
+            />
+          </div>
 
-          <label className="Panel-Blog-Yukle-Label"  htmlFor="subTitle">İçerik</label>
-          <input className='Panel-Blog-Yukle' type="text" id='contentTitle' onChange={handleFormChange}/>
+          <div className="form-group">
+            <label>Alt Başlık:</label>
+            <input
+              type="text"
+              name="subTitle"
+              value={blog.subTitle}
+              onChange={handleChange}
+            />
+          </div>
 
-        </div>  
-        <div>  
-          <label className="Panel-Blog-Yukle-Label"  htmlFor="subTitle">Alt Başlık</label>
-          <input className='Panel-Blog-Yukle' type="text" id='subTitle' onChange={handleFormChange}/>
-          
-          <label className="Panel-Blog-Yukle-Label"  htmlFor="contentSubTitle">İçerik</label>
-          <input className='Panel-Blog-Yukle' type="text" id='contentSubTitle' onChange={handleFormChange}/>
-        </div>  
-        <div>
-          <label className="Panel-Blog-Yukle-Label" htmlFor="subTitle1">Alt Başlık 1</label>
-          <input className='Panel-Blog-Yukle' type="text" id="subTitle1" onChange={handleFormChange}/>
+          {/* Diğer alt başlıklar */}
+          {[...Array(4)].map((_, i) => (
+            <div className="form-group" key={i}>
+              <label>{`Alt Başlık ${i + 1}:`}</label>
+              <input
+                type="text"
+                name={`subTitle${i + 1}`}
+                value={blog[`subTitle${i + 1}`] || ''}
+                onChange={handleChange}
+              />
+            </div>
+          ))}
 
-          <label className="Panel-Blog-Yukle-Label" htmlFor="contentSubTitle1">İçerik</label>
-          <input className='Panel-Blog-Yukle' type="text" id='contentSubTitle1' onChange={handleFormChange}/>
-        </div>
-        <div>
-          <label className="Panel-Blog-Yukle-Label" htmlFor="subTitle2">Alt Başlık 2</label>
-          <input className='Panel-Blog-Yukle' type="text" id="subTitle2" onChange={handleFormChange}/>
+          <div className="form-group">
+            <label>İçerik Başlığı:</label>
+            <input
+              type="text"
+              name="contentTitle"
+              value={blog.contentTitle}
+              onChange={handleChange}
+            />
+          </div>
 
-          <label className="Panel-Blog-Yukle-Label" htmlFor="contentSubTitle2">İçerik</label>
-          <input className='Panel-Blog-Yukle' type="text" id='contentSubTitle2' onChange={handleFormChange}/>
-        </div>
-        <div>
-          <label className="Panel-Blog-Yukle-Label" htmlFor="subTitle3">Alt Başlık 3</label>
-          <input className='Panel-Blog-Yukle' type="text" id="subTitle3" onChange={handleFormChange}/>
+          <div className="form-group">
+            <label>İçerik Alt Başlığı:</label>
+            <input
+              type="text"
+              name="contentSubTitle"
+              value={blog.contentSubTitle}
+              onChange={handleChange}
+            />
+          </div>
 
-          <label className="Panel-Blog-Yukle-Label" htmlFor="contentSubTitle3">İçerik</label>
-          <input className='Panel-Blog-Yukle' type="text" id='contentSubTitle3' onChange={handleFormChange}/>
-        </div>
-        <div>
-          <label className="Panel-Blog-Yukle-Label" htmlFor="subTitle4">Alt Başlık 4</label>
-          <input className='Panel-Blog-Yukle' type="text" id="subTitle4" onChange={handleFormChange}/>
+          {/* İçerik alt başlıkları */}
+          {[...Array(4)].map((_, i) => (
+            <div className="form-group" key={i}>
+              <label>{`İçerik Alt Başlık ${i + 1}:`}</label>
+              <input
+                type="text"
+                name={`contentSubTitle${i + 1}`}
+                value={blog[`contentSubTitle${i + 1}`] || ''}
+                onChange={handleChange}
+              />
+            </div>
+          ))}
 
-          <label className="Panel-Blog-Yukle-Label" htmlFor="contentSubTitle4">İçerik</label>
-          <input className='Panel-Blog-Yukle' type="text" id='contentSubTitle4' onChange={handleFormChange}/>
-        </div>
+          <div className="form-group">
+            <label>URL:</label>
+            <input
+              type="text"
+              name="url"
+              value={blog.url}
+              onChange={handleChange}
+            />
+          </div>
 
-        <button type='submit'>{wait ? "Bekleyiniz..." : "Kaydet"}</button>
+          <div className="form-group">
+            <label>Yazar:</label>
+            <input
+              type="text"
+              name="author"
+              value={blog.author}
+              onChange={handleChange}
+            />
+          </div>
 
-      </form>
-    </section>
-  )
-}
+          <div className="form-group">
+            <label>Thumbnail:</label>
+            <input
+              type="text"
+              name="thumbnail"
+              value={blog.thumbnail}
+              onChange={handleChange}
+            />
+            <img
+              src={blog.thumbnail}
+              alt="thumbnail"
+              className="thumbnail-image"
+            />
+          </div>
 
-export default BlogDuzenle
+          <button type="submit" className="update-button">Güncelle</button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default BlogDuzenle;

@@ -28,3 +28,24 @@ export const listeleBlog = async (request, response, next) => {
         next(error)
     }
 }
+
+export const blogById = async (request, response, next) => {
+    try {
+      const blog = await Blog.findById(request.params.id);
+      if (!blog) {
+        return response.status(404).json({ success: false, message: 'Blog bulunamadı' });
+      }
+      return response.status(200).json(blog);
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  export const blogSil = async (request, response, next) => {
+    try {
+        const blog = await Blog.findByIdAndDelete(request.params.id);
+        response.status(200).json("Başarıyla Silindi");
+    } catch (error) {
+        next(error);
+    }
+}

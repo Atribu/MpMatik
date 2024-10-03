@@ -133,7 +133,7 @@ const handleFormSubmit = async (e) => {
   return (
     <section className='blog-section'>
       <h1>Yeni Blog Ekle</h1>
-      <form className='blog-form'onSubmit={handleFormSubmit}>
+      <form className='blog-form' onSubmit={handleFormSubmit}>
         <div className='Image-Yukle'>
         <label className="Panel-Blog-Yukle-Label" htmlFor="Image">Resim Yükle</label>
           <input className='Panel-Blog-Yukle' type="file" accept='image/*' />
