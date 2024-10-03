@@ -59,9 +59,15 @@ console.log(list);
               <td>{item.title}</td>
               <td>{item.url}</td>
               <td>
-                <Link to={`${item._id}`} className="action-link">
+                <Link to={`${item._id}`} className="buttonGörüntüle">
                   Görüntüle
                 </Link>
+                
+                 {/* Düzenle Linki */}
+                 <Link to={`/panel/bloglar/blog-duzenle/${item._id}`} className=" buttonDüzenle">
+                  Düzenle
+                </Link>
+
                 <button className='buttonSil' type='button' onClick={()=>handleBlogDelete(item._id)}>Sil</button>
                 {/* <button className='buttonSil' type='button' onClick={()=>{
                                 const tempList = [...list];

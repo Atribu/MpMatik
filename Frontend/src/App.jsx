@@ -75,7 +75,7 @@ const App = () => {
                                     <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} /> 
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
-                                    <Route path="blog-duzenle" element={<BlogDuzenle />} />
+                                    <Route path="bloglar/blog-duzenle/:id" element={<BlogDuzenle />} />
                                     <Route path="bloglar" element={<Bloglar />} />
                                     <Route path="bloglar/:id" element={<BlogDetay/>} />
 
