@@ -34,6 +34,7 @@ import WhatsApp from './Components/WhatsApp.jsx'
 import { FaZ } from 'react-icons/fa6'
 import BlogMusteriHizmetleri from './Pages/BlogMusteriHizmetleri.jsx'
 import BlogDetay from "./Pages/BlogDetay"
+import BlogDuzenle from './Pages/BlogDuzenle.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -77,6 +78,7 @@ const App = () => {
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
                                     <Route path="bloglar" element={<Bloglar />} />
+                                    <Route path="bloglar/blog-duzenle/:id" element={<BlogDuzenle />} />
                                     <Route path="bloglar/:id" element={<BlogDetay/>} />
 
                       </Route>
