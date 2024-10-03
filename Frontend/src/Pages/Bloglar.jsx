@@ -64,7 +64,7 @@ console.log(list);
                 </Link>
                 
                  {/* Düzenle Linki */}
-                 <Link to={`/panel/bloglar/blog-duzenle/${item._id}`} className=" buttonDüzenle">
+                 <Link to={`/panel/bloglar/blog-duzenle/${item._id}`} className="buttonDüzenle">
                   Düzenle
                 </Link>
 
