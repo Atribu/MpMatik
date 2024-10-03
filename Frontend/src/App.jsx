@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage.jsx'
 import Panel from './Pages/Panel.jsx'
-import BlogDuzenle from './Pages/BlogDuzenle.jsx'
+import BlogDuzenlePage from './Pages/BlogDuzenlePage.jsx'
 import Bloglar from './Pages/Bloglar.jsx'
 import YeniBlogEkle from './Pages/YeniBlogEkle.jsx'
 import Footer from './Components/Footer.jsx'
@@ -75,7 +75,7 @@ const App = () => {
                                     <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} /> 
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
-                                    <Route path="bloglar/blog-duzenle/:id" element={<BlogDuzenle />} />
+                                    <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
                                     <Route path="bloglar" element={<Bloglar />} />
                                     <Route path="bloglar/:id" element={<BlogDetay/>} />
 
