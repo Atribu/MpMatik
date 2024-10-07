@@ -2,6 +2,7 @@ import express, { request } from "express";
 import mongo from "mongoose";
 import loginRegister from "./routes/loginRegister.js";
 import blogRoute from "./routes/blog.js"
+import userRoute from "./routes/user.js"
 
 mongo.connect("mongodb+srv://seo4dgtlface:8ie5pSIEzzeqlaFS@mpmatik.6o7id.mongodb.net/mpmatik?retryWrites=true&w=majority&appName=mpmatik")
 .then(()=>{
@@ -19,7 +20,9 @@ exp.listen(3000, () => {
 });
 
 exp.use("/api/giris", loginRegister);
-exp.use("/api/blog", blogRoute)
+exp.use("/api/blog", blogRoute);
+exp.use("/api/user", userRoute);
+
 
 exp.use((error, request, response, next) => {
     const statusCode = error.statusCode || 500;
