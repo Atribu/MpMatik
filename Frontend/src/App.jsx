@@ -79,8 +79,8 @@ const App = () => {
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
                                     <Route path="bloglar" element={<Bloglar />} />
-                                    <Route path="bloglar/blog-duzenle/:id" element={<BlogDuzenle />} />
-                                    <Route path="bloglar/:id" element={<BlogDetay/>} />
+                                    <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
+                                    <Route path="bloglar/:url" element={<BlogDetay/>} />
 
                       </Route>
                       <Route path='/:url' element={<BlogDetails/>}/>

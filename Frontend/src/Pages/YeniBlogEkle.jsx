@@ -27,6 +27,14 @@ const YeniBlogEkle = () => {
     })
   },[])
 
+  useEffect (() => {
+    if(thumbnail){
+      console.log("thumbnail");
+      handleUploadThumbnail(thumbnail);
+    }
+  },[thumbnail])
+
+
   const handleUploadThumbnail  = (image) =>{
     setWait(true);
 
@@ -51,6 +59,7 @@ const YeniBlogEkle = () => {
           image:downloadURL,
         })
       })
+      setWait(false);
     }
     
     )
@@ -164,15 +173,20 @@ const handleFormSubmit = async (e) => {
   }
 }
 
-    console.log(form)
+    console.log(form);
+
   return (
     <section className='blog-section'>
       <h1>Yeni Blog Ekle</h1>
       <form className='blog-form' onSubmit={handleFormSubmit}>
+       <div className='dısImgDiv'>
+       {form.thumbnail && <img className ="imgThumbnail" src={form.thumbnail} alt="thumbnail" />}
+       </div>
         <div className='Image-Yukle'>
         <label className="Panel-Blog-Yukle-Label" htmlFor="Image">Resim Yükle</label>
-          <input className='Panel-Blog-Yukle' type="file" accept='image/*' />
+          <input className='Panel-Blog-Yukle' type="file" id='thumbnail' accept='image/*' onChange={(e)=>setThumbnail(e.target.files[0])} disabled={wait && "disable"} />
         </div>
+
         <div className='Panel-Blog-Yukle-Div'>
           <label className="Panel-Blog-Yukle-Label"  htmlFor="title">Başlık</label>
           <input className='Panel-Blog-Yukle' type="text" id='title' onChange={handleFormChange}/>

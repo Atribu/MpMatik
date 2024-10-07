@@ -10,15 +10,19 @@
   
   .breadcrumb-item a {
     text-decoration: none;
-    color: #007bff;
+    color: #4A5568;
+    font-size: 14.45px;
   }
   
   .breadcrumb-item.active {
-    color: #6c757d;
+    color: #4A5568;
+    text-transform: capitalize;
+    font-size: 14.45px;
+    
   }
   
   .breadcrumb-item::after {
-    content: '/';
+    content: '>>';
     margin-left: 5px;
   }
   

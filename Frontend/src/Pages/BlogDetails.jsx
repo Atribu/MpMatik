@@ -2,8 +2,9 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import "../Styles/BlogDetails.scss";
 import Page404 from './Page404';
-import Satis1 from '../Components/Satis1';
+import logo from "../../public/Logo/mp-matik-favicon.png"
 import MainBackground from '../Components/subPageComponents/MainBackground';
+import BreadCrumbs from '../Components/BreadCrumbs';
 
 const BlogDetails = () => {
  const {url} =useParams();
@@ -42,9 +43,17 @@ const BlogDetails = () => {
       {blogArray.map((item, index) => (
         <div className='div-ic'
         key={index}>
+            <span className='greenText'>MEVLANA PETROL</span>
           <h1>{item.title}</h1>
+
+          <div className='logo-div'>
+            <img src={logo} alt="logo" className='img-logo'/>
+            <span>MP Taşıtmatik</span>
+          </div>
+          <BreadCrumbs/>
+
           <p>{item.contentTitle}</p>
-          <MainBackground/>
+          <MainBackground header="" img={item.image}/>
           <h2>{item.subTitle}</h2>
           <p>{item.contentSubTitle}</p>
 
