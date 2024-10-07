@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import "../Styles/Panel.scss"
+import {
+  getDownloadURL,
+  getStorage,
+  ref,
+  uploadBytesResumable,
+} from "firebase/storage";
 import { app } from '../firebase.js'
 import { useSelector } from 'react-redux';
 
 const YeniBlogEkle = () => {
-
   const {activeUser} = useSelector((state)=>state.user);
-
   const [form, setForm] = useState([]);
   const [error, setError] = useState(false);
   const [wait, setWait] = useState(false);
@@ -14,6 +18,7 @@ const YeniBlogEkle = () => {
   const [thumbnail, setThumbnail] = useState(undefined);
   const [imageError, setImageError] = useState(false);
   const [progressBar, setProgressBar] = useState(0);
+  const [images, setImages] = useState([]);
   
   useEffect (() => {
     setForm({
@@ -21,6 +26,36 @@ const YeniBlogEkle = () => {
       author: activeUser._id,
     })
   },[])
+
+  const handleUploadThumbnail  = (image) =>{
+    setWait(true);
+
+    const storage = getStorage(app);
+    const fileName = new Date().getTime()+image.name;
+    const storageRef = ref(storage,fileName);
+    const uploadImage = uploadBytesResumable(storageRef,image);
+
+    uploadImage.on("state_changed",(snapshot)=>{
+      const progress = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+      setProgressBar(Math.round(progress));
+    },
+    (error)=>{
+      setImageError(error);
+      setWait(false);
+    },
+    ()=>{
+      getDownloadURL(uploadImage.snapshot.ref).then((downloadURL)=>{
+        setForm({
+          ...form,
+          thumbnail: downloadURL,
+          image:downloadURL,
+        })
+      })
+    }
+    
+    )
+  }
+
   
 
   const handleFormChange = (e) => {

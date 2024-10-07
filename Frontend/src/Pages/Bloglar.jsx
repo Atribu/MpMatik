@@ -59,7 +59,7 @@ console.log(list);
               <td>{item.title}</td>
               <td>{item.url}</td>
               <td>
-                <Link to={`${item._id}`} className="buttonGörüntüle">
+                <Link to={`${item.url}`} className="buttonGörüntüle">
                   Görüntüle
                 </Link>
                 

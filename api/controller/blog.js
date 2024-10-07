@@ -29,9 +29,9 @@ export const listeleBlog = async (request, response, next) => {
     }
 }
 
-export const blogById = async (request, response, next) => {
+export const blogGetir = async (request, response, next) => {
     try {
-      const blog = await Blog.findById(request.params.id);
+      const blog = await Blog.findOne({url:request.params.url});
       if (!blog) {
         return response.status(404).json({ success: false, message: 'Blog bulunamadı' });
       }
