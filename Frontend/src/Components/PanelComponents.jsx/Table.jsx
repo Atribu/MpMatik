@@ -21,7 +21,7 @@ const Table = ({head, body, searchable}) => {
         {
             searchable && <input type="search" defaultValue={search} placeholder='Arama Yap' onChange={e => setSearch(e.target.value)} />
         }
-        <table className='.blog-table'>
+        <table className='blog-table'>
             {
                 head && head.length>0 && (
                     <thead>
@@ -58,9 +58,17 @@ const Table = ({head, body, searchable}) => {
                                         items.map((item, index) => (
                                             <td key={index}>
                                                 {
-                                                    (typeof item) == "string" ? (
-                                                        item.search("jpeg")!=1 ? (<img src={item} alt='Görsel' width="200" height="100" />) : (item)
-                                                    ) : (item)
+                                                    Array.isArray(item) ? (
+                                                        item.map((subItem, subIndex) => (
+                                                            <React.Fragment key={subIndex}>{subItem}</React.Fragment>
+                                                        ))
+                                                    ) : (
+                                                        (typeof item === "string" && item.match(/\.(jpeg|jpg|gif|png)$/i)) ? (
+                                                            <img src={item} alt='Görsel' width="200" height="100" />
+                                                        ) : (
+                                                            item
+                                                        )
+                                                    )
                                                 }
                                             </td>
                                         ))

@@ -21,7 +21,13 @@ const userSchema = new mongo.Schema({
     {
         type: String,
         required: true,
+    },
+    accessLevel:
+    {
+        type: String,
+        default: 3
     }
+
 })   
 
 const User = mongo.model("User", userSchema);
