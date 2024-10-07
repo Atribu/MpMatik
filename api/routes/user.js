@@ -4,6 +4,6 @@ import { getirUsers, silUsers } from "../controller/user.js";
 const router = exp.Router();
 
 router.get("/getir", getirUsers);
-router.delete("/delete/:_id", silUsers)
+router.delete("/delete/:id", silUsers)
 
 export default router;
