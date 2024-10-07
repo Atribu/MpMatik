@@ -36,6 +36,7 @@ import BlogMusteriHizmetleri from './Pages/BlogMusteriHizmetleri.jsx'
 import BlogDetay from "./Pages/BlogDetay"
 import BlogDuzenle from './Pages/BlogDuzenle.jsx'
 import BlogDetails from './Pages/BlogDetails.jsx'
+import Users from './Pages/Users.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -79,6 +80,7 @@ const App = () => {
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
                                     <Route path="bloglar" element={<Bloglar />} />
+
                                     <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
                                     <Route path="bloglar/:url" element={<BlogDetay/>} />
 
