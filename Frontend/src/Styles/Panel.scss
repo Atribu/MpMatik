@@ -72,6 +72,8 @@ section.SideBar {
                     justify-content: start;
                     width: 100%;
                     border: none;
+
+                    
                 }
 
                
@@ -121,4 +123,20 @@ section.SideBar {
     flex-direction: row;
     width: 100%;
     gap: 10px;
+}
+
+.imgThumbnail{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 200px;
+    height: auto;
+}
+
+.dısImgDiv{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: auto;
 }

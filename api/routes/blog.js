@@ -4,7 +4,7 @@ import { blogGetir, blogSil, duzenleBlog, listeleBlog, yeniBlog } from "../contr
 const router = exp.Router();
 
 router.post("/yeni", yeniBlog);
-router.put("/duzenle/:id", duzenleBlog);
+router.put("/duzenle/:url", duzenleBlog);
 router.get("/liste", listeleBlog);
 router.get("/:url", blogGetir);
 router.delete("/delete/:id", blogSil)

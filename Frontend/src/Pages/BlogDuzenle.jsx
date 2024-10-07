@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import "../Styles/BlogDetay.scss";
 
 const BlogDuzenle = () => {
-  const { id } = useParams();  // URL'den id parametresini alıyoruz
-  const navigate = useNavigate();  // Güncelleme sonrası yönlendirme için
+  const { url } = useParams(); 
+  const navigate = useNavigate();  
   const [blog, setBlog] = useState({
     title: '',
     subTitle: '',
@@ -13,16 +13,16 @@ const BlogDuzenle = () => {
     url: '',
     author: '',
     thumbnail: '',
-    // Diğer gerekli alanlar...
+   
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // ID'ye göre blog verisini backend'den çekme
+  
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`/api/blog/${id}`);
+        const response = await fetch(`/api/blog/${url}`);
         const data = await response.json();
 
         if (!response.ok) {
@@ -38,22 +38,34 @@ const BlogDuzenle = () => {
     };
 
     fetchBlog();
-  }, [id]);
+  }, [url]);
 
-  // Form alanında değişiklikleri işleyen fonksiyon
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setBlog((prevBlog) => ({
-      ...prevBlog,
-      [name]: value,
-    }));
+  
+    setBlog((prevBlog) => {
+      // Eğer değişen alan title ise, url'yi de güncelle
+      if (name === "title") {
+        return {
+          ...prevBlog,
+          [name]: value,
+          url: value.toLocaleLowerCase("en-US").split(" ").join("-") // URL formatına çevirme
+        };
+      }
+  
+      // Diğer alanlar için sadece mevcut değeri güncelle
+      return {
+        ...prevBlog,
+        [name]: value,
+      };
+    });
   };
+  
 
-  // Blog güncelleme fonksiyonu
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`/api/blog/duzenle/${id}`, {
+      const response = await fetch(`/api/blog/duzenle/${url}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import "../Styles/BlogDetay.scss";
 
 const BlogDetay = () => {
-  const { id } = useParams();  // URL'den id parametresini alıyoruz
+  const { url } = useParams();  // URL'den id parametresini alıyoruz
   const [blog, setBlog] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,7 +12,7 @@ const BlogDetay = () => {
     // ID'ye göre blog verisini backend'den çekme
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`/api/blog/${id}`);
+        const response = await fetch(`/api/blog/${url}`);
         const data = await response.json();
 
         if (!response.ok) {
@@ -28,7 +28,7 @@ const BlogDetay = () => {
     };
 
     fetchBlog();
-  }, [id]);
+  }, [url]);
 
   if (loading) return <div>Yükleniyor...</div>;
   if (error) return <div>{error}</div>;
