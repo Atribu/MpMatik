@@ -35,6 +35,7 @@ import { FaZ } from 'react-icons/fa6'
 import BlogMusteriHizmetleri from './Pages/BlogMusteriHizmetleri.jsx'
 import BlogDetay from "./Pages/BlogDetay"
 import BlogDuzenle from './Pages/BlogDuzenle.jsx'
+import BlogDetails from './Pages/BlogDetails.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -82,6 +83,7 @@ const App = () => {
                                     <Route path="bloglar/:id" element={<BlogDetay/>} />
 
                       </Route>
+                      <Route path='/:url' element={<BlogDetails/>}/>
                 </Routes>
           </main>
           {
