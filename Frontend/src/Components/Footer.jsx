@@ -78,7 +78,7 @@ const Footer = () => {
         <div className='div-dort'>
            <div className='divdort-iki'>
            <Link>
-                        <img src='/images/ana-sayfa-banner.jpg' alt='Görsel' width="200" height="100" />            
+                        <img src='/images/ana-sayfa-banner.jpg' alt='Görsel' width={200} height={200} />            
             </Link>
             <h2>
                         Taşıt Tanıma Sistemi
@@ -94,8 +94,8 @@ const Footer = () => {
         </div>
        </section>
        <div className='dgtlface'>
-                Powered by - <Link to="https://www.dgtlface.com/">< DgtlLogo width="100" height="100">""</DgtlLogo></Link> 
-       </div>
+                Powered by - <Link to="https://www.dgtlface.com/" target='_blank'><DgtlLogo width="100" height="100" /></Link>
+        </div>
     </footer>
   )
 }
