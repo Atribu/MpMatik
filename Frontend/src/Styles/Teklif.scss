@@ -1,193 +1,195 @@
 .background-container {
-    display: flex;
-    width: 100%;
-    padding-top:20px;
-    padding-bottom: 20px;
-    background-image: url('/images/tanker-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; 
-    align-items: center;
-    justify-content: center;
-    font-family:sans-serif; 
-    
-    @media (max-width: 1024px) {
-        height: min-content;
-      }
-
-      @media (min-width: 1024px) {
-        height: min-content;
-      }
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Yarı şeffaf siyah */
-    z-index: 1; /* Üzerinde içerik olacak */
-  }
-
-  .container {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    height: 100%;
-    z-index:2; 
-    height: auto;
-    
-    @media (max-width: 1024px) {
-        flex-direction: column;
-        width: 100%;
-        gap:30px
-      }
-
-      @media (min-width: 1024px) {
-        flex-direction: row;
-        width: 80%;
-        gap:40px
-      }
-
-      p{
-        color: #ffffff;
-        font-weight: 500;
-        line-height: 1.6;
-        font-size: 17px;
-      }
-
-      span{
-        font-weight: bold;
-      }
-
-   
-  }
-
-  .subContainer1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    gap:10px;
-    position: relative; 
-
-    @media (max-width: 1024px) {
-        width: 90%;
-      }
-      @media (min-width: 1024px) {
-        width: 50%;
-      }
-
-  }
-
-  .subContainer2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    margin: 20px;
-    position: relative; 
-    @media (max-width: 1024px) {
-        width: 90%;
-      }
-
-      @media (min-width: 1024px) {
-        width: 50%;
-      }
-
-  }
-
-  .buttonTeklif{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color:#259c1c;
-    border:none;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
-    cursor: pointer;
-
-    span{
-        font-size:18px;
-        font-weight: 500;
+  display: flex;
+  width: 100%;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-image: url('/images/tanker-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  align-items: center;
+  justify-content: center;
+  font-family:sans-serif; 
+  
+  @media (max-width: 1024px) {
+      height: min-content;
     }
-  }
 
-  .buttonsGrayTeklif{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    text-align: start;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color:#1A202C;
-    border:none;
-    border-radius: 3px;
-    padding-left: 10%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    white-space: nowrap;
-    width: 90%;
-    gap:20px;
-     border-left: 2px solid #259c1c;
-     font-size: 18px;
+    @media (min-width: 1024px) {
+      height: min-content;
+    }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Yarı şeffaf siyah */
+  z-index: 1; /* Üzerinde içerik olacak */
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  height: 100%;
+  z-index:2; 
+  height: auto;
+  
+  @media (max-width: 1024px) {
+      flex-direction: column;
+      width: 100%;
+      gap:30px
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      width: 80%;
+      gap:40px
+    }
 
     p{
-        font-size:18px;
-        line-height: 24px;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 1.6;
+      font-size: 17px;
     }
 
-    &:hover {
-        background-color: #259c1c;
-        cursor: pointer; 
-      }
+    span{
+      font-weight: bold;
+    }
+
+ 
+}
+
+.subContainer1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap:10px;
+  position: relative; 
+
+  @media (max-width: 1024px) {
+      width: 90%;
+    }
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+
+}
+
+.subContainer2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  margin: 20px;
+  position: relative; 
+  @media (max-width: 1024px) {
+      width: 90%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+
+}
+
+.buttonTeklif{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color:#259c1c;
+  border:none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  cursor: pointer;
+
+  span{
+      font-size:18px;
+      font-weight: 500;
+  }
+}
+
+.buttonsGrayTeklif{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: start;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color:#1A202C;
+  border:none;
+  border-radius: 3px;
+  padding-left: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  white-space: nowrap;
+  width: 90%;
+  gap:20px;
+   border-left: 2px solid #259c1c;
+   font-size: 18px;
+
+  p{
+      font-size:18px;
+      line-height: 24px;
   }
 
-  .buttonsGray.active {
-    background-color: #259c1c; /* Aktif butonun rengi */
-    border-left: 2px solid #1a202c; /* Aktif butonun sol kenarı rengi */
-  }
+  &:hover {
+      background-color: #259c1c;
+      cursor: pointer; 
+    }
+}
 
-  .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-    background-color: #1A202C;
-    padding: 0 2%;
-    width: 86%;
-  }
-  
-  .content.open {
-    max-height: 200px; /* İçeriğin yüksekliğini buradan ayarlayabilirsiniz */
-    padding: 2%; /* İçerik açıldığında padding ekleyin */
-    width: 86%;
-  }
+.buttonsGray.active {
+  background-color: #259c1c; /* Aktif butonun rengi */
+  border-left: 2px solid #1a202c; /* Aktif butonun sol kenarı rengi */
+}
 
-  .button-container {
-    position: relative;
-    width: 100%;
-  }
+.contentButtons {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  background-color: #1A202C;
+  width: 100%; 
+  box-sizing: border-box; 
+  padding: 0% 10%; 
+}
 
-  .slide-upSatis {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .slide-upSatis.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+.contentButtons.open {
+  display: flex;
+  max-height: 200px;
+  padding: 2% 10%; 
+  width: 100% !important; 
+  background: #1A202C;
+}
+
+.button-container {
+  position: relative;
+  width: 100%;
+}
+
+.slide-upSatis {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-upSatis.show {
+  opacity: 1;
+  transform: translateY(0);
+}

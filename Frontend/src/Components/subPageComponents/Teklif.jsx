@@ -60,7 +60,7 @@ const Teklif = () => {
          {activeContent === 'content1' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
         </button>
         <div
-          className={`content ${activeContent === 'content1' ? 'open' : ''}`}
+          className={`contentButtons ${activeContent === 'content1' ? 'open' : ''}`}
           id='content1'
         >
           <p>Mevlana Petrol, siparişlerini en geç 24 saat içerisinde teslimini gerçekleştirerek müşterilerinin iş akışını sorunsuz devam etmesini sağlamaktadır.
@@ -77,7 +77,7 @@ const Teklif = () => {
           {activeContent === 'content2' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
         </button>
         <div
-          className={`content ${activeContent === 'content2' ? 'open' : ''}`}
+          className={`contentButtons ${activeContent === 'content2' ? 'open' : ''}`}
           id='content2'
         >
           <p>Mevlana Petrol müşterileri aldıkları ürünün faturasını ve tüm resmi evraklarını aynı gün eksiksiz olarak alır ve finans uzmanı personelleri ile sorunsuz bir şekilde ödemesini gerçekleştirir.</p>
@@ -92,7 +92,7 @@ const Teklif = () => {
           {activeContent === 'content3' ?  <BiMinus size={30}/> :  <BiPlus size={30}/>}
         </button>
         <div
-          className={`content ${activeContent === 'content3' ? 'open' : ''}`}
+          className={`contentButtons ${activeContent === 'content3' ? 'open' : ''}`}
           id='content3'
         >
           <p>Mevlana Petrol ile çalışma kararı alan tüm müşterilerimizin öncelikle ürün sevkiyatı yapılmadan önce akaryakıt tanklarının temizliğini titizlik ile profesyonel ekibimiz tarafından temizlenmektedir. Eğerki tank, pompa veya otomasyon ekipmanlarında bir sorun var ise gerekli yönlendirmeler ile onarımları ayrıca sağlanmaktadır.</p>
