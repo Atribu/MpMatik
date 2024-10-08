@@ -12,8 +12,6 @@ const GrayMatik = () => {
             <p>BP Taşıtmatik sistemini tercih eden referanslar arasında sizde yerinizi alın! Firmanıza özel komisyon oranlarıyla hemen BP Taşıtmatik’e geç, kampanyalı fiyatlardan faydalan.</p>
             <img className="imageRes" src={image} alt='referances' width={image.width} height={image.height} />
         </div>
-
-
         <div className='divHalfForm'>
           <BasicContactForm/>
         </div>

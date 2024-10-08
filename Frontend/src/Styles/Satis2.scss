@@ -17,6 +17,8 @@
       @media (min-width: 1024px) {
         height: min-content;
         min-height: 812px;
+        padding-top: 10px;
+        padding-bottom: 20px;
       }
   }
 
@@ -142,7 +144,7 @@
   }
 
   .mainDivNew{
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;

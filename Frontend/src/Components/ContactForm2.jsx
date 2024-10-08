@@ -84,7 +84,7 @@ const ContactForm = () => {
         <span className="arrow"></span>
       </div>
       {isOpen && (
-        <div className="city-selectGray__dropdown">
+        <div className="city-select__dropdown">
           {cities.map((city, index) => (
             <div 
               key={index} 
