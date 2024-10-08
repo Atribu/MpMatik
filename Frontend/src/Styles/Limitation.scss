@@ -65,7 +65,7 @@
   }
 
   @media (max-width: 1024px) {
-    width: 50%; //mobil
+    width: 50%; 
     top:40px;
     right: 0;
     transform: translateY(0);
@@ -74,7 +74,7 @@
 
   
 @media (max-width: 767px) {
-  width: 80%; //mobil
+  width: 80%; 
   position: relative;
   bottom: auto;
   right: auto;
@@ -87,6 +87,14 @@
 
   h2{
       text-transform: uppercase;
+
+      span{
+        color: #369a35;
+        @media (min-width: 1024px) {
+        color: #ffffff;
+          
+        }
+      }
       
   }
 }
@@ -102,19 +110,20 @@
 
   p{
       text-align: center;
-      font-size: 25;
+      font-size: 17px;
       text-transform: uppercase;
       color: #ffffff;
+      font-weight: normal;
   }
 
-  &:hover {
-      background-color: #000000;
-      cursor: pointer; 
+  // &:hover {
+  //     background-color: #000000;
+  //     cursor: pointer; 
 
-      text {
-        color: #ffffff;
-      }
-    }
+  //     text {
+  //       color: #ffffff;
+  //     }
+  //   }
 
     @media (min-width: 1281px) {
       width: 385px;
@@ -142,6 +151,11 @@
       padding-bottom: 20px;
     }
   
+}
+
+.buttonLim.active {
+  background-color: #000; // Aktif olduğunda siyah arka plan
+  color: #fff; // Aktif olduğunda beyaz metin rengi
 }
 
 .buttonBlack{
@@ -232,7 +246,7 @@
   text-align: center;
   gap:10px;
   text-transform: uppercase;
-  margin: 20px;
+  margin: 20px 0px;
 
   @media (max-width: 1024px) {
       width: 50%;
@@ -303,7 +317,7 @@
   
     @media (min-width: 1025px) {
       flex-direction:row-reverse; 
-      width: 90%;
+      width: 100%;
       display: flex;
     }
 }
@@ -329,12 +343,13 @@
 }
 
 .title {
-  font: size 32px;
+  font: size 28px;
   font-weight: bold;
+  line-height: 1.2;
 
 }
 text{
-  font: size 20px;
+  font: size 17px;
   font-weight: lighter;
 
 }

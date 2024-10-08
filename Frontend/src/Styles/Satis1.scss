@@ -1,4 +1,4 @@
-.background-container {
+.background-containerSatis {
     display: flex;
     width: 100%;
     height: 700px;
@@ -16,7 +16,7 @@
       }
 
       @media (min-width: 1024px) {
-        height: 700px;
+        height: 740px;
       }
   }
 
@@ -26,8 +26,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Yarı şeffaf siyah */
-    z-index: 1; /* Üzerinde içerik olacak */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
   }
 
   .container {
@@ -69,20 +69,36 @@
     }
   }
 
-  .subContainer1{
+  .subContainer1Toptan{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: start;
+    text-align: left;
     gap:10px;
     position: relative; 
 
     @media (max-width: 1024px) {
-        width: 90%;
+        width: 96% ;
       }
       @media (min-width: 1024px) {
         width: 40%;
+      }
+
+      h2{
+        height: 1vh;
+        line-height: 1.2;
+        font-size: 30.564px;
+        font-weight: 700;
+
+      }
+
+      p{
+        font-size: 17px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.6;
+
       }
 
   }
@@ -105,7 +121,7 @@
 
   }
 
-  .buttonMore{
+  .buttonMoreSatis1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,9 +136,12 @@
     padding-left: 30px;
     padding-right: 30px;
     cursor: pointer;
+    
 
     span{
         font-size:18px;
+        font-weight: 300 ;
+       
     }
   }
 
@@ -156,23 +175,26 @@
   }
 
   .buttonsGray.active {
-    background-color: #259c1c; /* Aktif butonun rengi */
-    border-left: 2px solid #1a202c; /* Aktif butonun sol kenarı rengi */
+    background-color: #259c1c; 
+    border-left: 2px solid #1a202c;
   }
 
-  .content {
+  .contentButtons {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
     background-color: #1A202C;
-    padding: 0 2%;
-    width: 86%;
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0% 10%; 
   }
   
-  .content.open {
-    max-height: 200px; /* İçeriğin yüksekliğini buradan ayarlayabilirsiniz */
-    padding: 2%; /* İçerik açıldığında padding ekleyin */
-    width: 86%;
+  .contentButtons.open {
+    display: flex;
+    max-height: 200px;
+    padding: 2% 10%; 
+    width: 100% !important; 
+    background: #1A202C;
   }
 
   .button-container {

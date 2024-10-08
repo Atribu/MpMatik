@@ -35,15 +35,15 @@ const Satis1 = () => {
   return (
     <section className='background-container ' >
         <div className='overlay'></div>
-      <div className='container slide-upSatis'>
-        <div className='subContainer1'>
+      <div className='container '>
+        <div className='subContainer1 slide-upSatis'>
             <h2>Toptan Akaryakıt Satışı</h2>
             <p >Mevlana Petrol, toptan akaryakıt konusunda firmaların profesyonel çözüm ortağı olup, toplu akaryakıt tüketimi olan şirket ve kuruluşların, bu konudaki ihtiyaçlarını giderir.
 Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve müşteri memnuniyeti olduğu bilinciyle, her zaman ve her yerde kesintisiz enerji kaynağı anlayışıyla, müşterilerine ihtiyacı olan ürünleri en iyi hizmetle sunan Mevlana Petrol, ilgili tesisatlarından temin ettiği akaryakıtları, mühürlü olarak, ürün teslim fişi, kantar fişi, analiz raporu ile birlikte teslim adresine sevk eder.</p>
-            <button className='buttonMore'><span>DAHA FAZLA BİLGİ AL</span></button>
+            <button className='buttonMoreSatis1'><span>DAHA FAZLA BİLGİ AL</span></button>
         </div>
 
-        <div className='subContainer2'>
+        <div className='subContainer2 slide-upSatis'>
       <div className='button-container'>
         <button
            className={`buttonsGray ${activeContent === 'content1' ? 'active' : ''}`}
@@ -52,7 +52,7 @@ Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve m�
           GÜVENLİK NAKLİYE
         </button>
         <div
-          className={`content ${activeContent === 'content1' ? 'open' : ''}`}
+          className={`contentButtons ${activeContent === 'content1' ? 'open' : ''}`}
           id='content1'
         >
           <p>Mevlana Petrol, siparişlerini en geç 24 saat içerisinde teslimini gerçekleştirerek müşterilerinin iş akışını sorunsuz devam etmesini sağlamaktadır.
@@ -67,7 +67,7 @@ Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve m�
           ÖDEME KOLAYLIĞI
         </button>
         <div
-          className={`content ${activeContent === 'content2' ? 'open' : ''}`}
+          className={`contentButtons ${activeContent === 'content2' ? 'open' : ''}`}
           id='content2'
         >
           <p>Mevlana Petrol müşterileri aldıkları ürünün faturasını ve tüm resmi evraklarını aynı gün eksiksiz olarak alır ve finans uzmanı personelleri ile sorunsuz bir şekilde ödemesini gerçekleştirir.</p>
@@ -81,7 +81,7 @@ Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve m�
           KUSURSUZ HİZMET
         </button>
         <div
-          className={`content ${activeContent === 'content3' ? 'open' : ''}`}
+          className={`contentButtons ${activeContent === 'content3' ? 'open' : ''}`}
           id='content3'
         >
           <p>Mevlana Petrol ile çalışma kararı alan tüm müşterilerimizin öncelikle ürün sevkiyatı yapılmadan önce akaryakıt tanklarının temizliğini titizlik ile profesyonel ekibimiz tarafından temizlenmektedir. Eğerki tank, pompa veya otomasyon ekipmanlarında bir sorun var ise gerekli yönlendirmeler ile onarımları ayrıca sağlanmaktadır.</p>

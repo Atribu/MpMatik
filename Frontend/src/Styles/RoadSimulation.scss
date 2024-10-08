@@ -24,17 +24,20 @@
     text-shadow: 2px 2px 3px rgba(45,55,72,0.55);
 
     h2{
-        font-size: 3rem;
+        font-size: 36px;
         line-height: 1.2;
         font-weight: 400;
         margin-bottom: 0.5rem;
+        padding:0% 4%;
+       
     }
 
     p{
         font-size: 17px;
         font-weight: normal;
         line-height: 1.6;
-        padding:10px;
+        padding:0% 4%;
+        text-align: center;
     }
 }
 
@@ -67,7 +70,7 @@
         height: 50px;
 
         @media (max-width: 769px) {
-            width: 90%;
+            width: 85%;
           }
     
           @media (min-width: 769px) {
@@ -88,7 +91,7 @@
         text-transform: uppercase;
 
         @media (max-width: 769px) {
-            width: 90%;
+            width: 80%;
           }
     
           @media (min-width: 769px) {
@@ -149,6 +152,10 @@
 
   .benzinlik-image {
     z-index: 12;
+    @media (max-width: 769px) {
+        width: 50%;
+        height: 50%;
+      }
    
   }
 
