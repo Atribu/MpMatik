@@ -46,7 +46,6 @@ const BlogSection = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
-    startIndex: 0,
   });
 
   const [curr, setCurr] = useState(0);
