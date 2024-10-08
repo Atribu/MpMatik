@@ -24,6 +24,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    
 
     .custom-text-1,
   .custom-text-2 {
@@ -52,11 +53,12 @@
     line-height: 1.4;
 
     @media (max-width: 768px) {
-      top: 50%;
+      top: 20%;
       left: 50%;
-      transform: translate(-50%, -50%); // Tam ortalama için
-      width: 90%; // Mobilde genişliği ekranın %90'ına çekiyoruz
-      justify-content: center; // Mobilde ortalanmış içerik
+      transform: translate(-50%, -50%); 
+      width: 90%; 
+      justify-content: space-around; 
+      align-items: center;
     }
   }
 
@@ -68,8 +70,9 @@
     background-color: transparent;
     line-height: 1.4;
     @media (max-width: 768px) {
-      top: 70%;
+      top: 20%;
       left: 50%;
+      padding: 20px 30px;
       right: auto; // `right` değerini kaldırıyoruz
       transform: translate(-50%, -50%); // Tam ortalama için
       width: 90%; // Mobilde genişliği ekranın %90'ına çekiyoruz

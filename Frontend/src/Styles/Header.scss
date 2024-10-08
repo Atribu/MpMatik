@@ -5,28 +5,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (min-width: 1024px) {
         display: flex;
-      }
-      display: none;
+      
 
     img {
-        width: 90%;
+        width: 100%;
         height: 5vh;
         margin-left: 60%;
+        @media (max-width: 1024px) {
+            margin-left: 10%;
+            width: 90px;
+            height: auto;
+          }
     }
 
     nav {
         display:flex;
         position: absolute;
         right: 50%;
-        transform:translateX(0%)
+        transform:translateX(0%);
+        gap:10px;
+        @media (max-width: 1024px) {
+            right: 3%;
+          }
     }
 
     nav a {
         color: white;
         text-decoration: none;
-        padding: 5%;
         font-size: 20px;
     }
 
