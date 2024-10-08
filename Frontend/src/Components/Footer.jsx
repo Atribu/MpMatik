@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import DgtlLogo from "../../public/Logo/DgtlLogo.jsx"
 
 import "../Styles/Footer.scss"
 
@@ -24,19 +25,19 @@ const Footer = () => {
                 </p>
                 <div className="social-icons">
                         <a
-                                href="https://www.instagram.com/mptasitmatik/" className="icon instagram" target="_blank" rel="noopener noreferrer"><FaInstagram size={19} />
+                                href="https://www.instagram.com/mptasitmatik/" className="icon instagram" target="_blank" rel="noopener noreferrer"><FaInstagram size={100} />
                         </a>
                         <a 
-                                href="https://www.facebook.com/mptasitmatik/" className='icon facebook' target='_blank' rel='nooper noreferrer'><FaFacebook size={19}/>
+                                href="https://www.facebook.com/mptasitmatik/" className='icon facebook' target='_blank' rel='nooper noreferrer'><FaFacebook size={100}/>
                         </a>
                         <a 
-                                href="https://www.twitter.com/mptasitmatik/" className='icon twitter' target='_blank' rel='nooper noreferrer'><FaXTwitter size={19}/>
+                                href="https://www.twitter.com/mptasitmatik/" className='icon twitter' target='_blank' rel='nooper noreferrer'><FaXTwitter size={100}/>
                         </a>
                         <a 
-                                href="https://www.youtube.com/@MPtasitmatik" className='icon youtube' target='_blank' rel='nooper noreferrer'><FaYoutube size={19}/>
+                                href="https://www.youtube.com/@MPtasitmatik" className='icon youtube' target='_blank' rel='nooper noreferrer'><FaYoutube size={100}/>
                         </a>
                         <a 
-                                href="https://www.linkedin.com/company/mpmatik/posts/?feedView=all" className='icon linkedln' target='_blank' rel='nooper noreferrer'><FaLinkedin size={19}/>
+                                href="https://www.linkedin.com/company/mpmatik/posts/?feedView=all" className='icon linkedln' target='_blank' rel='nooper noreferrer'><FaLinkedin size={100}/>
                         </a>
 
                 </div>
@@ -92,6 +93,9 @@ const Footer = () => {
            </div>
         </div>
        </section>
+       <div className='dgtlface'>
+                Powered by - <Link to="https://www.dgtlface.com/">< DgtlLogo width="100" height="100">""</DgtlLogo></Link> 
+       </div>
     </footer>
   )
 }
