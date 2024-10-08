@@ -6,6 +6,7 @@
   background: #03651a;
   width:100%;
   font-family:sans-serif; 
+  padding-bottom: 35px;
 
   gap:60px;
 
@@ -17,7 +18,7 @@
 .div-1{
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   text-align: center;
   gap:10px;
   margin-top: 20px;
@@ -29,7 +30,7 @@
     }
     @media (min-width: 1024px) {
       flex-direction: row;
-      width: 100%;
+      width: 98%;
       max-width: 1440px;
     }
   
@@ -265,12 +266,14 @@
   visibility: flex;
 
   @media (min-width: 1024px) {
-    width: 100%;
+    width: 98%;
       max-width: 1440px;
+    
   }
 
   @media (max-width: 1024px) {
     width: 95%;
+   
   }
 }
 
