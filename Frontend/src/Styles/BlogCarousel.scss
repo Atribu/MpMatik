@@ -28,19 +28,12 @@
   text-align: start;
   gap:10px;
   position: relative; 
+  width: 100%;
   
 
-  // @media (max-width: 1024px) {
-  //     width: 100%;
-  //     flex-direction: column;
-  //   }
-  //   @media (min-width: 1024px) {
-  //     width: 80%;
-  //     flex-direction: row;
-  //   }
 }
 
-.blog-carousel__title{
+.blog-carouseltitle{
   font-size: 25px;
     text-transform: uppercase;
     color: #ffff;
@@ -61,7 +54,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   @media (max-width: 1024px) {
-      width: 80%;
+      width: 90% !important;
       gap: 10px;
 
     }
@@ -93,21 +86,22 @@
 
   &__item {
     flex: 0 0 auto;
-    width: calc(80% - 1rem); 
+    width: 100%;
     margin: 0 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     
 
-    @media (min-width: 768px) { /* Tablet: 640px ve üstü */
-      width:calc(50% - 2rem); /* Tablette her bir item %50 genişlik */
+    @media (min-width: 768px) { 
+      width:calc(50% - 2rem); 
     }
 
-    @media (min-width: 1024px) { /* Desktop: 1024px ve üstü */
-     width: calc(33.33% - 2rem); /* Masaüstünde her bir item %33.33 genişlik */
+    @media (min-width: 1024px) {
+     width: calc(33.33% - 2rem); 
     }
 
   

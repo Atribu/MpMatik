@@ -48,6 +48,23 @@ const BlogSection = () => {
     align: "center",
   });
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        emblaApi?.reInit({ align: "start" }); // Ekran genişliği 768px ve üstüyse align:start
+      } else {
+        emblaApi?.reInit({ align: "center" }); // Daha küçük ekranlarda align:center
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Sayfa yüklendiğinde de tetiklenmesi için
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [emblaApi]);
+
+  
+
   const [curr, setCurr] = useState(0);
 
   const scrollPrev = useCallback(() => {
@@ -82,7 +99,7 @@ const BlogSection = () => {
     <section className='blogGreenSec'>
        
       <div className='blog-container'>
-      <p className="blog-carousel__title slide-upSatis">BLOG YAZILARI</p>
+      <p className="blog-carouseltitle slide-upSatis">BLOG YAZILARI</p>
          <div className=" blog-carousel slide-upSatis">
       
       <div className="blog-carousel__carousel" ref={emblaRef}>
