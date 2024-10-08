@@ -14,7 +14,7 @@ const BasicContactForm = () => {
     <form className='form'>
       <div className='div'>
         <p className='h2'>BP TAŞITMATİK</p>
-        <p className='h3'>İLETİŞİM formu</p>
+        <span className='h3'>İLETİŞİM formu</span>
       </div>
       <section className='input-section'>
         <input className='inputForm' type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />

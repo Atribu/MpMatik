@@ -25,6 +25,7 @@
     @media (min-width: 768px) {
         width: 50%; 
         gap:20px;
+        max-width: 668px;
      
       }
     
@@ -93,7 +94,7 @@ input {
 
   .green-buttonGray {
     width: 100%;
-    background-color: #4caf50;
+    background-color: #22872b;
     color: #ffffff;
     // padding-top:10px;
     // padding-bottom:10px;
@@ -106,7 +107,7 @@ input {
     }
 
     &:hover {
-      background-color: #1b9d20;
+      background-color: #03651b;
       cursor: pointer; 
 
       p {
@@ -121,27 +122,25 @@ input {
     position: relative;
     display: inline-block;
     width: 50vw; 
-    gap:2rem;
-    
     
   
     &__input {
       padding: 10px;
-      border: 1px solid #fff;
+      border: 1px solid #ccc;
       border-radius: 4px;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: transparent;
+      background: transparent !important;
       font-family:sans-serif; 
       font-size: 16px; 
-      color: #fff; 
+      color: #ded6d6; // Metin rengi
       height: 25px;
       
       &.placeholder {
-        font-style: normal; 
-        color: #ffffff !important; 
+        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
+        color: #fff; // Placeholder için farklı renk kullanabilirsin
       }
   
   
@@ -150,31 +149,32 @@ input {
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #ffffff; 
+        border-top: 5px solid #333; // Ok işareti rengi
         margin-left: 10px;
       }
     }
   
     &__dropdown {
       position: absolute;
-      top: 100%; 
+      top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
       left: 0;
       width: 100%;
       border: 1px solid #ccc;
       border-radius: 4px;
       background-color: #fff;
-      z-index: 10; 
-      max-height: 150px; 
-      overflow-y: auto; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      z-index: 10; // Dropdown'ın üstte kalmasını sağlar
+      max-height: 150px; // Maksimum yükseklik
+      overflow-y: auto;  // İçerik taşarsa kaydırma çubuğu ekler
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Hafif gölge
   
+      
       &__option {
-        padding: 10px 15px; // Y ekseninde 10px, X ekseninde 15px padding
+        padding: 10px 15px; 
         cursor: pointer;
         font-family:sans-serif; 
-        font-size: 14px; // Font boyutu
-        color: #333; // Metin rengi
-        transition: background-color 0.3s, padding 0.3s; // Geçiş efektleri
+        font-size: 24px; 
+        color: #333; 
+        transition: background-color 0.3s, padding 0.3s; 
   
         &:hover {
           background-color: #f0f0f0; 
