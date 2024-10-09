@@ -7,28 +7,46 @@
     text-align: center;
     height: min-content;
     width: 100%;
+    background: #fff;
 
       h2{
         @media (max-width: 1024px) {
-        font-size: 25px;
-         font-weight: bold;
-         line-height: normal;
+        font-size: 24px;
+         font-weight: 700;
+         line-height: 1.4;
          color: #191f2b;
+         text-align: center ;
           }
     
         @media (min-width: 1024px) {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
         line-height: normal;
         color: #191f2b;
           }
       }
 
-      p,il,ul{
+      p,ul{
         font-size: 17px;
         font-weight: normal;
+        font-style: normal;
         color: #313741;
         line-height: 1.6;
+      
+      }
+
+      ul {
+        display: flex; 
+        flex-direction: column; 
+        padding: 20px; 
+        margin: 0; 
+        text-align: start;
+        align-self: start;
+        
+    }
+
+      p{
+        text-align: start;
       }
 }
 
@@ -37,8 +55,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: start;
     height: min-content;
-    padding: 10px;
-    width: 80%;
+    width: 90%;
+    max-width: 1410px;
 }

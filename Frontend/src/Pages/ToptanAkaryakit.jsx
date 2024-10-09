@@ -40,9 +40,9 @@ const ToptanAkaryakit = () => {
     <div>
 
       <MainBackground header="TOPTAN AKARYAKIT" img={imageMain}/>
-      <Teklif/>
+       <Teklif/>
       <TextSection headers={headersArray} text={textsArray} list1={list1} list2={list2}/>
-      <BlogSection/>
+      <BlogSection/> 
       <ContactForm2/>
       <Background/>
       <EBülten/>

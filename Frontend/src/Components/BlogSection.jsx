@@ -2,6 +2,7 @@ import React, { useEffect, useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import '../Styles/BlogCarousel.scss';
+import { useNavigate } from "react-router-dom";
 import img1 from "../../public/images/bp-tasitmatik-hizmeti-veren-istasyonlar.jpg"
 import img2 from "../../public/images/bp-tasitmatik-sik-sorulan-sorular.jpg"
 import img3 from "../../public/images/ulusal-tasit-tanima-sistemi.jpg"
@@ -20,7 +21,19 @@ const images = [img1, img2, img3,img4,img5,img6];
 const titles = ["BP Taşıtmatik Hizmeti Veren İstasyonlar","BP Taşıtmatik Sık Sorulan Sorular","Ulusal Taşıt Tanıma Sistemi Nedir?","BP Taşıtmatik Müşteri Hizmetleri","Taşıt Tanıma Sistemi","BP Taşıtmatik Avantajları Nelerdir?"];
 const texts = [istasyon,sss,ulusal,musteri,mptasit,avantaj];
 
+
+
 const BlogSection = () => {
+  const navigate = useNavigate();  
+  const urls = [
+    "/bp-taşıtmatik-müşteri-hizmetleri",
+    "/taşıt-tanıma-sistemi",
+    "/taşıt-tanıma-sistemi",
+    "/bp-taşıtmatik-müşteri-hizmetleri",
+    "/bp-taşıtmatik-müşteri-hizmetleri",
+    "/taşıt-tanıma-sistemi",
+  ];
+
   useEffect(() => {
     // kayarak gelme
     const observer = new IntersectionObserver((entries) => {
@@ -105,7 +118,7 @@ const BlogSection = () => {
       <div className="blog-carousel__carousel" ref={emblaRef}>
         <div className="blog-carousel__carousel-container">
           {images.map((image, index) => (
-            <div className="blog-carousel__item" key={index}>
+            <div className="blog-carousel__item" key={index}  onClick={() => navigate(urls[index])} >
               <img
                 className="blog-carousel__image"
                 style={{objectFit:'cover'}}
@@ -115,20 +128,24 @@ const BlogSection = () => {
               <div className="carousel-texts">
                <h3>{titles[index]}</h3>
                <p>{texts[index]}</p>
-               <button className="carousel-buttons">Daha Fazla Bilgi Al</button>
+               <button 
+                      className="carousel-buttons" 
+                    >
+                      Daha Fazla Bilgi Al
+                    </button>
              </div>
             </div>
           ))}
         </div>
-        <div className="carouselbuttondiv">
-          <button className="buttonLeftRight" onClick={scrollPrev} type="button">
+    
+          <button className="buttonLeft" onClick={scrollPrev} type="button">
             <BsChevronLeft size="1.5rem" color="white" />
           </button>
 
-          <button onClick={scrollNext} className="buttonLeftRight">
+          <button onClick={scrollNext} className="buttonRight" type="button">
             <BsChevronRight size="1.5rem" color="white" />
           </button>
-        </div>
+
       </div>
 
       

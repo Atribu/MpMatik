@@ -49,7 +49,8 @@
 
     @media (min-width: 1024px) {
       flex-direction: row;
-      width: 80%;
+      width: 95%;
+      max-width: 1440px;
       gap:40px
     }
 
@@ -155,9 +156,9 @@
     }
 }
 
-.buttonsGray.active {
-  background-color: #259c1c; /* Aktif butonun rengi */
-  border-left: 2px solid #1a202c; /* Aktif butonun sol kenarı rengi */
+.buttonsGrayTeklif.active {
+  background-color: #259c1c; 
+  border-left: 2px solid #1a202c; 
 }
 
 .contentButtons {

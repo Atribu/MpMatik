@@ -19,7 +19,7 @@
 
     @media (max-width: 1024px) {
         width: 90%;
-        gap:30px
+        gap:0px
       }
 
       @media (min-width: 1024px) {
@@ -46,7 +46,6 @@
 
   .divHalfImage{
     display: flex;
-    align-items: center;
     justify-content: center;
     background-size: cover;
     background-position: center;
@@ -57,12 +56,15 @@
         width: 90%;
         gap:30px;
         height: 100%;
+        align-items: center;
       }
 
       @media (min-width: 1024px) {
         width: 50%;
         gap:10px;
         height: 100vh;
+        align-items: start;
+        
       }
   }
 
@@ -70,6 +72,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin-top: 15%;
   }
 
 
@@ -92,7 +95,8 @@
 
       @media (min-width: 1024px) {
         flex-direction: row;
-        width: 80%;
+        width: 95%;
+        max-width: 1440px;
         gap:50px;
         
       }

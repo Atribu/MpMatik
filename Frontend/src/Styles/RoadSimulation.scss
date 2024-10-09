@@ -60,7 +60,7 @@
     
 
     input{
-        padding: 0px;
+        padding: 0px 10px;
         text-align: start;
         border: 1px solid #ffff;
         border-radius: 3px;
@@ -68,13 +68,15 @@
         color: #000;
         font-size: 1rem;
         height: 50px;
+        
 
         @media (max-width: 769px) {
-            width: 85%;
+            width: 80%;
           }
     
           @media (min-width: 769px) {
-            width: 40%;
+            width: 50%;
+            max-width: 542px;
           }
     }
 

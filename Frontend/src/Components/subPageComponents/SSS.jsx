@@ -24,10 +24,10 @@ useEffect(() => {
             const [entry] = entries;
             if (entry.isIntersecting) {
                 setIsVisible(true);
-                observer.disconnect(); // Sadece bir kez tetiklemek için
+                observer.disconnect(); 
             }
         },
-        { threshold: 0.5 } // Görünürlüğün %50'sinde tetikle
+        { threshold: 0.5 } 
     );
     if (sectionRef.current) {
         observer.observe(sectionRef.current);

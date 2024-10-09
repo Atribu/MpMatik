@@ -23,11 +23,11 @@ const TextSection = ({headers,text,list1,list2}) => {
         <h2>{headers[2]}</h2>
         <p>{text[3]}</p>
 
-        <il>
+        <ul>
         {list2.map((item, index) => (
         <li key={index}>{item}</li> 
       ))}
-        </il>
+        </ul>
 
         <h2>{headers[3]}</h2>
         <p>{text[4]}</p>

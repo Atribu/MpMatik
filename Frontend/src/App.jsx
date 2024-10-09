@@ -69,13 +69,13 @@ const App = () => {
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
                       <Route path='/kayit-ol' element={<Register />} />
                       <Route path="/giris" element={<Login />} />
-                      <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/>
+                      {/* <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/>
                                     <Route path="/bp-tasitmatik-nedir?" element={<BpTasitmatikNedir/>} />
                                     <Route path="/bp-tasitmatik-nasıl-calisir?" element={<BpTasitmatikNasilCalisir/>} />
                                     <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BpTasitmatikMusteriHizmetleri/>} />
                                     <Route path="/bp-tasitmatik-avantajlari-nelerdir?" element={<BpTasitmatikAvantajlariNelerdir/>} />
                                     <Route path="/bp-tasitmatik-hizmeti-veren-istasyonlar" element={<BpTasitmatikHizmetiVerenIstasyonlar/>} />
-                                    <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} /> 
+                                    <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} />  */}
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
@@ -93,7 +93,7 @@ const App = () => {
                   ""
             ) : (
                   <>
-                  <WhatsApp />
+                  
                   <Footer />
                   </>
                   
