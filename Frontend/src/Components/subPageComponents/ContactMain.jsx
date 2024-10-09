@@ -19,7 +19,8 @@ const ContactMain = () => {
       <div className='divContact'>
         <div className='divHalfContact'>
             <h2>BP TAŞITMATİK</h2>
-            <p>BP Taşıtmatik sistemini tercih eden referanslar arasında sizde yerinizi alın! Firmanıza özel komisyon oranlarıyla hemen BP Taşıtmatik’e geç, kampanyalı fiyatlardan faydalan.</p>
+            <p>
+            BP Taşıtmatik sistemiyle; araçlarınızın yakıt giderlerinden tasarruf etmek BP kalitesi ile tanışmak ve size özel oranlardan faydalanmak için formu doldurmanız yeterli.</p>
             <img   src={image} alt='referances' width={300} height={118} />
 
             <div className='callbuttons-div'>
