@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import "../Styles/Header1.scss";
 import { useSelector } from 'react-redux';
@@ -9,6 +9,8 @@ const Header1 = () => {
   const [isSticky, setIsSticky] = useState(false);
   const { activeUser } = useSelector((state) => state.user);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const sidebarRef = useRef(null);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +32,28 @@ const Header1 = () => {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+  //       setSidebarOpen(false);
+  //     }
+  //   };
+
+  //   const handleScroll = () => {
+  //     setSidebarOpen(false);
+  //   };
+
+  //   // Tıklama ve scroll eventlerini dinle
+  //   document.addEventListener('mousedown', handleClickOutside);
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   // Cleanup function
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
    <>
@@ -90,17 +114,17 @@ const Header1 = () => {
         <div className="sidebar-content">
           <button className="close-btn" onClick={toggleSidebar}>X</button>
           <nav>
-            <Link to='/toptan-akaryakit'>TOPTAN AKARYAKIT</Link>
+            <Link to='/toptan-akaryakit' onClick={toggleSidebar}>TOPTAN AKARYAKIT</Link>
             <div className='line'></div>
-            <Link to='/ihaleli-akaryakit'>İHALELİ AKARYAKIT</Link>
+            <Link to='/ihaleli-akaryakit' onClick={toggleSidebar}>İHALELİ AKARYAKIT</Link>
             <div className='line'></div>
-            <Link to='/nasil-calisir'>NASIL ÇALIŞIR</Link>
+            <Link to='/nasil-calisir' onClick={toggleSidebar}>NASIL ÇALIŞIR</Link>
             <div className='line'></div>
-            <Link to='/referanslar'>REFERANSLAR</Link>
+            <Link to='/referanslar' onClick={toggleSidebar}>REFERANSLAR</Link>
             <div className='line'></div>
-            <Link to='/hakkimizda'>HAKKIMIZDA</Link>
+            <Link to='/hakkimizda' onClick={toggleSidebar}>HAKKIMIZDA</Link>
             <div className='line'></div>
-            <Link to='/iletisim'>İLETİŞİM</Link>
+            <Link to='/iletisim' onClick={toggleSidebar}>İLETİŞİM</Link>
             <div className='line'></div>
             <Link to="/hemen-basvur" className="button1side">Hemen Başvur</Link>
             <Link to="/kolay-odeme" className="button2side">Kolay Ödeme</Link>
