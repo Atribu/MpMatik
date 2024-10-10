@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import "../Styles/Panel.scss"
 import {
@@ -34,6 +35,22 @@ const YeniBlogEkle = () => {
     }
   },[thumbnail])
 
+  String.prototype.turkishtoEnglish = function () {
+    return this.replaceAll('Ğ','g')
+        .replaceAll('Ü','u')
+        .replaceAll('Ş','s')
+        .replaceAll('I','i')
+        .replaceAll('İ','i')
+        .replaceAll('Ö','o')
+        .replaceAll('Ç','c')
+        .replaceAll('ğ','g')
+        .replaceAll('ü','u')
+        .replaceAll('ş','s')
+        .replaceAll('ı','i')
+        .replaceAll('ö','o')
+        .replaceAll('ç','c');
+  };
+
 
   const handleUploadThumbnail  = (image) =>{
     setWait(true);
@@ -65,14 +82,12 @@ const YeniBlogEkle = () => {
     )
   }
 
-  
-
   const handleFormChange = (e) => {
     if(e.target.id === "title")
         setForm({
             ...form,
             [e.target.id]: e.target.value,
-            url: e.target.value.toLocaleLowerCase("en-us").split(" ").join("-")
+            url: e.target.value.toLocaleLowerCase("en-us").split(" ").join("-").turkishtoEnglish()
         });
     else if(e.target.id === "subTitle")
         setForm({
@@ -103,7 +118,7 @@ const YeniBlogEkle = () => {
         setForm({
             ...form,
             [e.target.id]: e.target.value,
-            url: e.target.value.toLocaleLowerCase("en-us").split(" ").join("-")
+            url: e.target.value.toLocaleLowerCase("en-us").split(" ").join("-").turkishtoEnglish()
         });
     else if(e.target.id === "contentTitle")
         setForm({
