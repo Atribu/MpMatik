@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
@@ -26,12 +27,12 @@ const texts = [istasyon,sss,ulusal,musteri,mptasit,avantaj];
 const BlogSection = () => {
   const navigate = useNavigate();  
   const urls = [
-    "/bp-taşıtmatik-müşteri-hizmetleri",
-    "/taşıt-tanıma-sistemi",
-    "/taşıt-tanıma-sistemi",
-    "/bp-taşıtmatik-müşteri-hizmetleri",
-    "/bp-taşıtmatik-müşteri-hizmetleri",
-    "/taşıt-tanıma-sistemi",
+    "/bp-tasitmatik-hizmeti-veren-istasyonlar",
+    "/tasit-akaryakit-tanima-sistemi-nedir?",
+    "/tasit-akaryakit-tanima-sistemi-nedir?",
+    "/bp-tasitmatik-müsteri-hizmetleri",
+    "/tasit-akaryakit-tanima-sistemi-nedir?",
+    "bp-tasitmatik-avantajlari-nelerdir?",
   ];
 
   useEffect(() => {

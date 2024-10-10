@@ -18,6 +18,22 @@ const BlogDuzenle = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  String.prototype.turkishtoEnglish = function () {
+    return this.replaceAll('Ğ','g')
+        .replaceAll('Ü','u')
+        .replaceAll('Ş','s')
+        .replaceAll('I','i')
+        .replaceAll('İ','i')
+        .replaceAll('Ö','o')
+        .replaceAll('Ç','c')
+        .replaceAll('ğ','g')
+        .replaceAll('ü','u')
+        .replaceAll('ş','s')
+        .replaceAll('ı','i')
+        .replaceAll('ö','o')
+        .replaceAll('ç','c');
+  };
+
   useEffect(() => {
   
     const fetchBlog = async () => {
@@ -49,7 +65,7 @@ const BlogDuzenle = () => {
         return {
           ...prevBlog,
           [name]: value,
-          url: value.toLocaleLowerCase("en-US").split(" ").join("-") // URL formatına çevirme
+          url: value.toLocaleLowerCase("en-US").split(" ").join("-").turkishtoEnglish()
         };
       }
   
