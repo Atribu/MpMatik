@@ -28,11 +28,11 @@ const BlogSection = () => {
   const navigate = useNavigate();  
   const urls = [
     "/bp-tasitmatik-hizmeti-veren-istasyonlar",
-    "/tasit-akaryakit-tanima-sistemi-nedir?",
-    "/tasit-akaryakit-tanima-sistemi-nedir?",
-    "/bp-tasitmatik-müsteri-hizmetleri",
-    "/tasit-akaryakit-tanima-sistemi-nedir?",
-    "bp-tasitmatik-avantajlari-nelerdir?",
+    "/bp-tasitmatik-sik-sorulan-sorular",
+    "/ulusal-tasit-tanima-sistemi-nedir",
+    "/bp-tasitmatik-musteri-hizmetleri",
+    "/tasit-tanima-sistemi",
+    "/bp-tasitmatik-avantajlari-nelerdir",
   ];
 
   useEffect(() => {

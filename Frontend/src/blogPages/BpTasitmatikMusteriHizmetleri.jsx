@@ -4,7 +4,7 @@ import "../Styles/BlogDetails.scss";
 import logo from "../../public/Logo/mp-matik-favicon.png";
 import MainBackground from "../Components/subPageComponents/MainBackground";
 import BreadCrumbs from "../Components/BreadCrumbs";
-import img from "../../public/images/tasitmatik-avantajlari-nelerdir.jpg";
+import img from "../../public/images/bp-tasitmatik-musteri-hizmetleri.jpg";
 import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";

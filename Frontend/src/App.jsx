@@ -21,12 +21,12 @@ import Contact from './Pages/Contact.jsx'
 import Referances from './Pages/Referances.jsx'
 import KullanimKosullari from './Pages/KullanimKosullari.jsx'
 import GizlilikPolitikasi from './Pages/GizlilikPolitikasi.jsx'
-import BpTasitmatikNedir from './blogPages/BpTasitmatikNedir.jsx'
-import BpTasitmatikNasilCalisir from './blogPages/BpTasitmatikNasilCalisir.jsx'
+import BPTasitmatikSikSorulanSorular from './blogPages/BPTasitmatikSikSorulanSorular.jsx'
+import TasitTanimaSistemi from './blogPages/TasitTanimaSistemi.jsx'
 import BpTasitmatikMusteriHizmetleri from './blogPages/BpTasitmatikMusteriHizmetleri.jsx'
 import BpTasitmatikAvantajlariNelerdir from './blogPages/BpTasitmatikAvantajlariNelerdir.jsx'
 import BpTasitmatikHizmetiVerenIstasyonlar from './blogPages/BpTasitmatikHizmetiVerenIstasyonlar.jsx'
-import TasitAkaryakitTanimaSistemiNedir from './blogPages/TasitAkaryakitTanimaSistemiNedir.jsx'
+import UlusalTasitTanimaSistemiNedir from './blogPages/UlusalTasitTanimaSistemiNedir.jsx'
 import HemenBasvur from './Pages/HemenBasvur.jsx'
 import KolayOdeme from './Pages/KolayOdeme.jsx'
 import NasilCalısır from './Pages/NasilCalısır.jsx'
@@ -72,12 +72,12 @@ const App = () => {
                       <Route path='/kayit-ol' element={<Register />} />
                       <Route path="/giris" element={<Login />} />
                       {/* <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/> */}
-                      <Route path="/bp-tasitmatik-nedir?" element={<BpTasitmatikNedir/>} />
-                      <Route path="/bp-tasitmatik-nasıl-calisir?" element={<BpTasitmatikNasilCalisir/>} />
+                      <Route path="/bp-tasitmatik-sik-sorulan-sorular" element={<BPTasitmatikSikSorulanSorular/>} />
+                      <Route path="/tasit-tanima-sistemi" element={<TasitTanimaSistemi/>} />
                       <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BpTasitmatikMusteriHizmetleri/>} />
                       <Route path="/bp-tasitmatik-avantajlari-nelerdir?" element={<BpTasitmatikAvantajlariNelerdir/>} />
                       <Route path="/bp-tasitmatik-hizmeti-veren-istasyonlar" element={<BpTasitmatikHizmetiVerenIstasyonlar/>} />
-                      <Route path="/tasit-akaryakit-tanima-sistemi-nedir?" element={<TasitAkaryakitTanimaSistemiNedir/>} /> 
+                      <Route path="/ulusal-tasit-tanima-sistemi-nedir" element={<UlusalTasitTanimaSistemiNedir/>} /> 
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />

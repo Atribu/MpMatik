@@ -1,17 +1,16 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "../Styles/BlogDetails.scss";
 import logo from "../../public/Logo/mp-matik-favicon.png";
 import MainBackground from "../Components/subPageComponents/MainBackground";
 import BreadCrumbs from "../Components/BreadCrumbs";
-import img from "../../public/images/tasitmatik-avantajlari-nelerdir.jpg";
+import img from "../../public/images/ulusal-tasit-tanima-sistemi.jpg";
 import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
 
-const BpTasitmatikNasilCalisir = () => {
+const UlusalTasitTanimaSistemiNedir = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -23,7 +22,7 @@ const BpTasitmatikNasilCalisir = () => {
       <div className="blog-div">
         <div className="div-ic">
           <span className="greenText">MEVLANA PETROL</span>
-          <h1>Bp Tasitmatik Nasil Calisir</h1>
+          <h1>Ulusal Taşıt Tanıma Sistemi Nedir</h1>
 
           <div className="logo-div">
             <img src={logo} alt="logo" className="img-logo" />
@@ -175,4 +174,4 @@ const BpTasitmatikNasilCalisir = () => {
   );
 }
 
-export default BpTasitmatikNasilCalisir
+export default UlusalTasitTanimaSistemiNedir

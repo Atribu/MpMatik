@@ -4,7 +4,7 @@ import "../Styles/BlogDetails.scss";
 import logo from "../../public/Logo/mp-matik-favicon.png";
 import MainBackground from "../Components/subPageComponents/MainBackground";
 import BreadCrumbs from "../Components/BreadCrumbs";
-import img from "../../public/images/tasitmatik-avantajlari-nelerdir.jpg";
+import img from "../../public/images/bp-tasitmatik-hizmeti-veren-istasyonlar.jpg";
 import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";
@@ -33,22 +33,15 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
           <MainBackground header="" img={img} />
 
           <p>
-            <span className="spanBold">BP Taşıtmatik kartı,</span> sürücülere
-            yakıt alımlarını kolaylaştıran bir ödeme sistemi ve yakıt alım
-            kartıdır. Bu kart sayesinde kullanıcılar, yakıt alımlarını
-            kolaylıkla yapabilir ve birçok avantajdan faydalanabilirler. BP
-            Taşıtmatik kartı, sürücülere özel indirimler, bonus puanlar, ek
-            hizmetler ve araç bakım ve onarım indirimleri gibi bir dizi avantaj
-            sunar. Ayrıca, kart sahipleri güvenli bir şekilde yakıt alımlarını
-            gerçekleştirebilir ve kartlarını kaybettiklerinde hızlı bir şekilde
-            iptal ettirebilirler. BP Taşıtmatik kartı, sürücülerin yakıt
-            alımlarını daha sorunsuz ve avantajlı hale getirmek için
-            tasarlanmıştır. BP Taşıtmatik kullanarak tüm BP istasyonlarından
-            daha verimli şekilde faydalanabilirsiniz. BP’nin sağladığı özel
-            indirimler, kampanyalar, fırsatlar tam size göre! Bu avantajlar
-            akaryakıt taşıt tanıma sistemleri için vazgeçilmezdir. Tüm
-            Türkiye’de hizmet veren BP İstasyonlarımızda BP Taşıtmatik kartını
-            kullanabilir, muhteşem avantajlardan faydalanabilirsiniz.
+             <span className="spanBold">BP Taşıtmatik</span>, BP istasyonlarında sunulan bir hizmettir ve sürücülere bir dizi avantaj sağlar. Bu hizmetle birlikte BP istasyonlarından yakıt alımı daha kolay, hızlı ve avantajlı hale gelir. <span className="spanBold">BP Taşıtmatik kartı,</span> ise sürücülere yakıt alımlarını kolaylaştıran bir ödeme sistemi ve yakıt alım kartıdır. Bu kart sayesinde kullanıcılar, yakıt alımlarını kolaylıkla yapabilir ve birçok avantajdan faydalanabilirler.
+          </p>
+
+          <p>
+          BP Taşıtmatik hizmetini Türkiye’deki bütün BP İstasyonları vermektedir. Türkiye genelinde Taşıtmatik hizmetinden yararlanabilir ve dilediğiniz gibi kullanabilirsiniz. BP Taşıtmatik sistemi sizlerin daha avantajlı yakıt almanızı ve yakıt takibinizi kolaylaştırmak için yaratılmıştır. Sizde BP Taşıtmatik hizmetinden yararlanarak tüm istasyonlardan yakıt alımı yapabilirsiniz.
+          </p>
+          
+          <p>
+          <span className="spanBold">BP Taşıtmatik hizmeti</span>, sürücülere bir dizi kolaylık sunar. Öncelikle, kart sahipleri BP istasyonlarında sadece kartlarını kullanarak yakıt alımı yapabilirler. Nakit veya kredi kartı gibi farklı ödeme yöntemlerine ihtiyaç duymadan, BP Taşıtmatik kartıyla kolayca yakıt alımı gerçekleştirebilirsiniz. Bu da sürücülerin ödemelerini hızlı ve sorunsuz bir şekilde yapmalarını sağlar.
           </p>
 
           <div className="accordion">
@@ -57,104 +50,43 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
               <span className={`arrow ${isOpen ? "open" : ""}`}>&#9662;</span>
             </div>
             <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-              <span> gethtyj htentrh</span>
               <ul>
-                <li>BP Taşıtmatik Farkları Nelerdir?</li>
-                <li>BP Taşıtmatik`in Sunduğu Önemli Avantajlar</li>
-                <li>Özel İndirimler</li>
-                <li>Bonus Puanlar</li>
-                <li>Ek Hizmetler</li>
-                <li>Özel Hizmetler</li>
-                <li>Güvenlik ve Kolaylık</li>
+                <li>BP Taşıtmatik Hizmeti ve Avantajları</li>
+                <li>BP Taşıtmatik Kolay ve Güvenli</li>
+                <li>En Yakın BP'yi Bulun</li>
+                <li>BP İstasyonları Hizmetleri</li>
               </ul>
             </div>
           </div>
 
-          <h2>BP Taşıtmatik Farkları Nelerdir?</h2>
+          <h2>BP Taşıtmatik Hizmeti ve Avantajları</h2>
           <p>
-            BP Taşıtmatik Kartının diğer benzin istasyonu kartlarından farklı
-            bazı özellikleri bulunmaktadır. Öncelikle, BP Taşıtmatik Kartı,
-            sadece BP istasyonlarında geçerlidir ve bu istasyonlarda özel
-            avantajlar sunar. Bu avantajlar arasında yakıt indirimleri, bonus
-            puanlar, ek hizmetler ve araç bakım ve onarım indirimleri
-            bulunmaktadır. Diğer bir fark ise kartın kullanım kolaylığıdır. BP
-            Taşıtmatik Kartı, sürücülere yakıt alımlarını kolaylaştırmak için
-            tasarlanmıştır ve kullanıcılar kartlarını hızlı bir şekilde
-            kullanabilirler. Ayrıca, kart sahipleri kartlarını kaybettiklerinde
-            hızlı bir şekilde iptal ettirebilirler. Bu özellikler, BP Taşıtmatik
-            Kartını diğer benzin istasyonu kartlarından farklı kılarak
-            sürücülere daha fazla kolaylık ve avantaj sunar. BP Taşıtmatik kartı
-            muhakkak kullanılması gereken akaryakıt kontrol kartıdır. Bir çok
-            fırsattan ve avantajdan yararlanmanıza fayda sağlayan bu kart
-            sayesinde diğer taşıt takip kartlarından daha büyük farklara sahip
-            olacaksınız ve en uygun fiyatlarla, en iyi hizmetten
-            yararlanabileceksiniz. Taşıt takip sistemleri her geçen gün daha
-            fazla önem kazanmaktadır. BP Taşıtmatik ise en çok tercih edilen
-            akaryakıt kart takip sistemi olarak dikkat çekmektedir.
+          BP Taşıtmatik hizmeti ayrıca sürücülere çeşitli avantajlar sunar. Kart sahipleri, yakıt alımlarında indirimlerden ve bonus puanlardan faydalanabilirler. BP istasyonlarında yakıt alımı yaptıkça, bonus puanlar kazanabilir ve bu puanları sonraki yakıt alımlarında kullanabilirsiniz. Ayrıca, BP Taşıtmatik kartıyla yapılan her yakıt alımında indirimlerden yararlanabilirsiniz. Bu da sürücülere yakıt masraflarında tasarruf etme imkanı sağlar.
+          </p>
+          <p>
+          <span className="spanBold">BP Taşıtmatik hizmeti veren istasyonlar</span>da ayrıca ek hizmetler sunulur. Araç bakım ve onarım hizmetleri gibi ek hizmetlerden faydalanabilirsiniz. BP Taşıtmatik kartıyla yakıt alırken aynı zamanda aracınızın bakımını da yaptırabilirsiniz. Bu da sürücülerin zaman ve enerji tasarrufu yapmalarını sağlar.
           </p>
 
-          <h2>BP Taşıtmatik’in Sunduğu Önemli Avantajlar</h2>
+          <h2>BP Taşıtmatik Kolay ve Güvenli</h2>
           <p>
-            <span className="spanBold">BP Taşıtmatik kartı,</span> BP tarafından
-            sunulan bir ödeme sistemi ve yakıt alım kartıdır. Bu kart sayesinde
-            kullanıcılar, yakıt alımlarını kolaylıkla yapabilir ve birçok
-            avantajdan faydalanabilirler. İşte BP Taşıtmatik’in sunduğu
-            avantajlardan bazıları:
+          <span className="spanBold">BP Taşıtmatik hizmeti veren istasyonlar</span>, kullanıcılarına güvenli bir alışveriş deneyimi sunar. Kart kullanımı kolay ve güvenlidir. Kartınızı kaybettiğinizde veya çalındığında hızlı bir şekilde iptal ettirebilir ve yeni bir kart talep edebilirsiniz. Böylece kartınızın güvende olduğunu ve kötü niyetli kişilerin kartınızı kullanmasını engelleyebileceğinizi bilirsiniz.
           </p>
+          <p>BP Taşıtmatik hizmeti veren istasyonlar ayrıca sürdürülebilirlik konusunda da önemli bir rol oynar. BP, çevreye duyarlı bir şekilde faaliyet göstermeyi hedefleyen bir şirkettir ve bu hedefi BP Taşıtmatik hizmetiyle desteklemektedir. BP istasyonlarında sunulan yakıtlar çevreye daha az zarar veren ve daha temiz bir yakıt seçeneği sunar. Bu da sürücülerin çevreye duyarlı bir şekilde seyahat etmelerini sağlar.</p>
 
-          <h2>Özel İndirimler</h2>
+          <h2>En Yakın BP’yi Bulun</h2>
           <p>
-            BP Taşıtmatik kart sahipleri, yakıt alımlarında özel indirimlerden
-            yararlanabilirler. BP, düzenli müşterilerine özel olarak tasarlanmış
-            indirimler sunarak sürücülerin yakıt masraflarını düşürmelerine
-            yardımcı olur. Bu sayede sürücüler, yakıt alımlarında önemli ölçüde
-            tasarruf edebilirler.
+          BP, dünya genelinde birçok benzin istasyonuna sahip olan bir akaryakıt ve enerji şirketidir. BP istasyonları, sürücülere bir dizi hizmet ve avantaj sunar. En yakın BP istasyonunu bulmak için birkaç seçenek vardır. İlk olarak, BP’nin resmi web sitesini ziyaret edebilirsiniz. Web sitesinde, “İstasyonlarımızı Bul” kısmından ilgili alana erişebilirsiniz. Ayrıca, BP’nin mobil uygulamasını indirerek de en yakın istasyonu bulabilirsiniz. Mobil uygulama konumunuzu otomatik olarak algılar ve size <span className="spanBold">en yakın BP istasyonları</span>nı gösterir.
           </p>
+          <p>BP istasyonlarında bir dizi hizmet sunulur. Yakıt alımı dışında, BP istasyonlarında mini marketler, kafe ve tuvaletler gibi ek hizmetler de bulunabilir. Bu hizmetler, sürücülerin yakıt alırken ihtiyaç duydukları diğer hizmetleri de karşılamalarını sağlar.</p>
+          <p>BP istasyonlarının kullanımı oldukça basittir. İstasyona varıldığında, yakıt almak istediğiniz pompayı seçmeniz gerekir. Ardından, yakıt türünü seçip pompanın ekranındaki talimatları takip etmeniz yeterlidir. <span className="spanBold">BP Taşıtmatik kartı</span> kullanıyorsanız, kartınızı pompa üzerindeki okuyucuya yerleştirerek ödemenizi gerçekleştirebilirsiniz.</p>
 
-          <h2>Bonus Puanlar</h2>
-          <p>
-            BP Taşıtmatik kartıyla yapılan her yakıt alımı, kart sahiplerine
-            bonus puanlar kazandırır. Bu puanlar daha sonra indirimler, ücretsiz
-            yakıt veya diğer BP ürünlerinde kullanılabilir. Sürücüler, sadakat
-            programı sayesinde ek avantajlar elde edebilir ve daha fazla
-            tasarruf sağlayabilirler.
-          </p>
 
-          <h2>Ek Hizmetler</h2>
+          <h2>BP İstasyonları Hizmetleri</h2>
           <p>
-            BP Taşıtmatik kartıyla birlikte sunulan ek hizmetler, sürücülere
-            büyük kolaylık sağlar. Örneğin, kullanıcılar mobil uygulama
-            üzerinden kart bakiyesini kontrol edebilir, yakıt istasyonlarını
-            bulabilir ve harcamalarını takip edebilir. Böylece, sürücüler yakıt
-            alımlarını daha iyi yönetebilir ve bütçelerini daha etkin bir
-            şekilde kontrol edebilirler.
+          BP istasyonlarında sunulan hizmetler ve avantajlar, sürücüler için birçok fayda sağlar. Yakıt alımlarında indirimlerden ve bonus puanlardan faydalanabilirsiniz. Ayrıca, <span className="spanBold">BP Taşıtmatik kartı</span> kullanarak yapacağınız her yakıt alımında indirimlerden yararlanabilir ve bonus puanlar kazanabilirsiniz. Bu da sürücülere tasarruf imkanı sağlar.
           </p>
+          <p>Sonuç olarak, <span className="spanBold">BP Taşıtmatik hizmeti veren istasyonlar</span> sürücülere bir dizi avantaj sunar. Kart sahipleri, BP istasyonlarında kolaylıkla yakıt alımı yapabilir ve birçok avantajdan faydalanabilirler. Yakıt alımlarında indirimler, bonus puanlar ve ek hizmetler gibi avantajlar sürücülere tasarruf sağlar. Ayrıca, BP Taşıtmatik kartı kullanımı kolay, güvenli ve çevreye duyarlı bir seçenektir. BP Taşıtmatik hizmeti veren istasyonlar sürücülere güvenli, hızlı ve avantajlı bir alışveriş deneyimi sunar.</p>
 
-          <h2>Özel Hizmetler</h2>
-          <p>
-            BP Taşıtmatik kartı sahipleri, anlaşmalı servis noktalarında araç
-            bakım ve onarım hizmetlerinden özel indirimlerden faydalanabilirler.
-            Bu sayede sürücüler, araçlarının bakım ve onarım masraflarında da
-            tasarruf edebilirler. Ayrıca, kart sahiplerine özel olarak sunulan
-            diğer hizmetlerden de yararlanma imkanı bulunmaktadır.
-          </p>
-
-          <h2>Güvenlik ve Kolaylık</h2>
-          <p>
-            BP Taşıtmatik kartı, sürücülere güvenli ve kolay bir ödeme yöntemi
-            sunar. Nakit para taşıma derdi olmadan, kart sahipleri güvenli bir
-            şekilde yakıt alımlarını gerçekleştirebilirler. Ayrıca, kartın
-            kaybolması veya çalınması durumunda hızlı ve etkili bir şekilde
-            kartın iptal edilmesi mümkündür. Bu da sürücülere huzur ve güvenlik
-            sağlar. Sonuç olarak,{" "}
-            <span className="spanBold">BP Taşıtmatik kartı</span> sürücülere
-            birçok avantaj sunan bir ödeme sistemi ve yakıt alım kartıdır. Özel
-            indirimler, bonus puanlar, ek hizmetler ve güvenlik gibi
-            özellikleriyle sürücülerin yakıt alımlarını kolaylaştırırken aynı
-            zamanda ekonomik ve pratik bir seçenek sunar. BP Taşıtmatik,
-            sürücülerin yakıt alımlarını daha sorunsuz ve avantajlı hale
-            getirmek için tasarlanmıştır.
-          </p>
           <div className="divLineLogo">
             <div className="line"></div>
             <img src={logo} alt="logo" width={80} height={80} />

@@ -5,13 +5,13 @@ import "../Styles/BlogDetails.scss";
 import logo from "../../public/Logo/mp-matik-favicon.png";
 import MainBackground from "../Components/subPageComponents/MainBackground";
 import BreadCrumbs from "../Components/BreadCrumbs";
-import img from "../../public/images/tasitmatik-avantajlari-nelerdir.jpg";
+import img from "../../public/images/ana-sayfa-banner.jpg";
 import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
 
-const BpTasitmatikNedir = () => {
+const TasitTanimaSistemi = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -23,7 +23,7 @@ const BpTasitmatikNedir = () => {
       <div className="blog-div">
         <div className="div-ic">
           <span className="greenText">MEVLANA PETROL</span>
-          <h1>BP Taşıtmatik Hizmeti Veren İstasyonlar</h1>
+          <h1>Taşıt Tanıma Sistemi</h1>
 
           <div className="logo-div">
             <img src={logo} alt="logo" className="img-logo" />
@@ -175,4 +175,4 @@ const BpTasitmatikNedir = () => {
   );
 }
 
-export default BpTasitmatikNedir
+export default TasitTanimaSistemi
