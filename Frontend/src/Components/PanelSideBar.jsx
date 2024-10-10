@@ -27,6 +27,7 @@ const PanelSideBar = () => {
                 <NavLink to="/panel/yeni-blog-ekle">Yeni Blog Ekle</NavLink>
                 <NavLink to="/panel/bloglar/duzenle">Blog Düzenle</NavLink>
                 <NavLink to="/panel/users">Kullanıcıları Yönet</NavLink>
+                <NavLink to="/panel/yeni-sayfa-ekle">Sayfa Ekle</NavLink>
                 <a href='#'onClick={handleLogOut}>Çıkış Yap</a>
             </nav>
         </aside>

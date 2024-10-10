@@ -37,6 +37,7 @@ import BlogDetay from "./Pages/BlogDetay"
 import BlogDuzenle from './Pages/BlogDuzenle.jsx'
 import BlogDetails from './Pages/BlogDetails.jsx'
 import Users from './Pages/Users.jsx'
+import SayfaEkle from './panelPages/SayfaEkle.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -83,6 +84,7 @@ const App = () => {
                                     <Route path="users" element={<Users />} />
                                     <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
                                     <Route path="bloglar/:url" element={<BlogDetay/>} />
+                                    <Route path="yeni-sayfa-ekle" element={<SayfaEkle />} />
 
                       </Route>
                       <Route path='/:url' element={<BlogDetails/>}/>
