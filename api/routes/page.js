@@ -3,6 +3,6 @@ import { yeniSayfa } from "../controller/page.js";
 
 const router = exp.Router();
 
-router.post ( "/yeni", yeniSayfa )
+router.post("/yeni", yeniSayfa )
 
 export default router;
