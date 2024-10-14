@@ -23,11 +23,7 @@
 
   .container2 {
     display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-around;
     text-align: start;
-    z-index:2; 
         
     @media (max-width: 769px) {
         flex-direction: column;
@@ -41,6 +37,7 @@
         flex-direction: row;
         width: 90%;
         max-width: 1610px;
+        margin-top: 5%;
         gap:20px;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -77,7 +74,8 @@
       }
       @media (min-width: 1024px) {
         width: 50%;
-        padding: 5% ;
+        padding: 0% 5% ;
+        padding-bottom: 5%;
         
       }
 
