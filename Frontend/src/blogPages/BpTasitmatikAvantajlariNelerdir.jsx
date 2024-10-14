@@ -9,6 +9,8 @@ import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
+import { CiStar } from "react-icons/ci";
+import { TbStarFilled } from "react-icons/tb";
 
 const BlogDetails = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -156,6 +158,16 @@ const BlogDetails = () => {
             sürücülerin yakıt alımlarını daha sorunsuz ve avantajlı hale
             getirmek için tasarlanmıştır.
           </p>
+
+          <div className="starDiv">
+          <div><TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/></div>
+          <p>5/5 - (1 Oy)</p>
+          </div>
+
           <div className="divLineLogo">
             <div className="line"></div>
             <img src={logo} alt="logo" width={80} height={80} />

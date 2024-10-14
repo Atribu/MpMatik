@@ -64,7 +64,7 @@ const ContactForm = () => {
 
   return (
     <form id="basvuru" className='formGray'>
-      <div className='divGray slide-upSatis'>
+      <div id="teklif" className='divGray slide-upSatis'>
         <p className='h2Gray'>TEKLİF AL</p>
         <section className='input-sectionGray'>
         <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />

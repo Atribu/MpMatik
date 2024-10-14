@@ -129,7 +129,7 @@
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    
     background-color:#259c1c;
     border:none;
     border-radius: 5px;
@@ -141,6 +141,10 @@
     font-size:18px;
     font-weight: 300 ;
     
+    a{
+      text-decoration: none;
+      color: #ffffff;
+    }
 
  
   }
@@ -159,7 +163,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     white-space: nowrap;
-    width: 90%;
+    width: 100%;
      border-left: 2px solid #259c1c;
      font-size: 18px;
 
