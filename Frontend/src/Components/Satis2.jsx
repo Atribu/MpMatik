@@ -74,7 +74,7 @@ const Satis2 = ({texts, button}) => {
         {texts.map((text, index) => (
         <p key={index}>{text}</p>  
       ))}
-        <button className='buttonMore2'><span>{button}</span></button>
+        <button className='buttonMore2'><a href='/ihaleli-akaryakit'>{button}</a></button>
     </div>
 
    <div className='mainDivNew slide-upSatis2'>

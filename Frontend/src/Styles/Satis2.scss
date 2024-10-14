@@ -118,10 +118,12 @@
     cursor: pointer;
     min-width: 200px;
 
-    span{
-        font-size:18px;
+    a{
+        text-decoration: none;
         color: #ffffff;
-    }
+        font-size:18px;
+
+      }
   }
 
   .slide-upSatis2 {

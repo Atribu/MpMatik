@@ -8,6 +8,8 @@ import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
+import { CiStar } from "react-icons/ci";
+import { TbStarFilled } from "react-icons/tb";
 
 const BPTasitmatikSikSorulanSorular = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -221,6 +223,14 @@ Sonuç olarak, BP Taşıtmatik montaj işlemi müşteri memnuniyeti odaklı bir 
          <h2>BP Taşıtmatik İle İlgili Daha Fazla Kaynak ve Bilgi Nerede Bulunabilir?</h2>
          <p><span className="spanBold">Mptasitmatik.com</span>, BP Taşıtmatik hizmetlerine erişim, kart başvurusu yapma ve kartın kullanımıyla ilgili detayları içeren bir kaynak olarak hizmet vermektedir. Ayrıca, BP Taşıtmatik ile ilgili son güncellemeleri ve duyuruları da takip edebilirsiniz. Websitemiz, hem mevcut BP Taşıtmatik kullanıcılarına hem de potansiyel yeni kullanıcılara yönelik bilgi sağlama amacı güder. Kaynağımızı kullanarak BP Taşıtmatik hakkında daha fazla bilgi edinebilirsiniz!</p>
 
+         <div className="starDiv">
+          <div><TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/></div>
+          <p>5/5 - (2 Oy)</p>
+          </div>
           <div className="divLineLogo">
             <div className="line"></div>
             <img src={logo} alt="logo" width={80} height={80} />

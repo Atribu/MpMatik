@@ -46,7 +46,7 @@ const Teklif = () => {
             <p>Mevlana Petrol, müşterilerine komple bir çözüm ortağı olmanın ötesine geçerek, müşteri memnuniyetini en üst düzeyde sağlamayı öncelikli hedef olarak belirlemiştir. Firmamız, müşterilerine sunduğu akaryakıt ürünlerini BP, P.Ofisi, Socar ve Tüpraş gibi sektörün önde gelen markalarının kalitesi ve 50 yıllık güvencesiyle sunmaktadır.</p>
             <p>Lojistik ağını her geçen gün güçlendiren Mevlana Petrol, inşaat, hazır beton, madencilik, lojistik, nakliye, vinç işletmeleri, yol müteahhitleri, hafriyat, alt yapı, kum ve taş ocakları, kamu kuruluşları ve tekstil firmaları gibi birçok sektörde faaliyet gösteren firmalara benzin, dizel, fueloil, kalorifer yakıtı, gazyağı gibi akaryakıt kategorilerinde ürünler temin etmektedir. Bu ürünleri, ilgili tesisatlarından mühürlü olarak teslim ederken, ürün teslim fişi, kantar fişi ve analiz raporu gibi belgelerle birlikte müşteri adresine güvenli bir şekilde ulaştırmaktadır.</p>
             <p>Firmanızın <span>toptan akaryakıt</span> ihtiyacını karşılamak ve kaliteli hizmetten yararlanmak istiyorsanız, Mevlana Petrol ile hemen iletişime geçebilirsiniz. Konusunda uzmanlaşmış ekibimiz, size en uygun şartlarda teklif sunacak ve sizi, Mevlana Petrol “Memnun müşteriler ailesine” katılmanız için memnuniyetle karşılayacaktır.</p>
-            <button className='buttonTeklif'><span>TEKLİF AL</span></button>
+            <button className='buttonTeklif'><a href='toptan-akaryakit/#teklif'>TEKLİF AL</a></button>
         </div>
 
         <div className='subContainer2'>

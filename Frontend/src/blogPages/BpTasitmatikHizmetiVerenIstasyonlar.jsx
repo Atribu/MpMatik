@@ -9,6 +9,8 @@ import BlogSection from "../Components/BlogSection";
 import Background from "../Components/Background";
 import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
+import { CiStar } from "react-icons/ci";
+import { TbStarFilled } from "react-icons/tb";
 
 const BpTasitmatikHizmetiVerenIstasyonlar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,9 +51,9 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
               <span>İçerikler</span>
               <span className={`arrow ${isOpen ? "open" : ""}`}>&#9662;</span>
             </div>
-            <div className={`accordion-content ${isOpen ? "open" : ""}`}>
+            <div className={`accordion-content ${isOpen ? "open" : ''}`}>
               <ul>
-                <li>BP Taşıtmatik Hizmeti ve Avantajları</li>
+                <li className="liAccordion">BP Taşıtmatik Hizmeti ve Avantajları</li>
                 <li>BP Taşıtmatik Kolay ve Güvenli</li>
                 <li>En Yakın BP'yi Bulun</li>
                 <li>BP İstasyonları Hizmetleri</li>
@@ -86,6 +88,15 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
           BP istasyonlarında sunulan hizmetler ve avantajlar, sürücüler için birçok fayda sağlar. Yakıt alımlarında indirimlerden ve bonus puanlardan faydalanabilirsiniz. Ayrıca, <span className="spanBold">BP Taşıtmatik kartı</span> kullanarak yapacağınız her yakıt alımında indirimlerden yararlanabilir ve bonus puanlar kazanabilirsiniz. Bu da sürücülere tasarruf imkanı sağlar.
           </p>
           <p>Sonuç olarak, <span className="spanBold">BP Taşıtmatik hizmeti veren istasyonlar</span> sürücülere bir dizi avantaj sunar. Kart sahipleri, BP istasyonlarında kolaylıkla yakıt alımı yapabilir ve birçok avantajdan faydalanabilirler. Yakıt alımlarında indirimler, bonus puanlar ve ek hizmetler gibi avantajlar sürücülere tasarruf sağlar. Ayrıca, BP Taşıtmatik kartı kullanımı kolay, güvenli ve çevreye duyarlı bir seçenektir. BP Taşıtmatik hizmeti veren istasyonlar sürücülere güvenli, hızlı ve avantajlı bir alışveriş deneyimi sunar.</p>
+
+          <div className="starDiv">
+          <div><TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/>
+          <TbStarFilled color="#ffa502" size={30}/></div>
+          <p>5/5 - (4 Oy)</p>
+          </div>
 
           <div className="divLineLogo">
             <div className="line"></div>

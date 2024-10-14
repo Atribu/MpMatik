@@ -12,7 +12,7 @@
 .div-ic{
     display: flex;
     flex-direction: column;
-    align-items: start !important;
+    align-items:start !important ;
     justify-content: start;
     text-align: start;
     width: 90%;
@@ -48,8 +48,18 @@
         line-height: 1.4;
         margin-top: 25px;
         margin-bottom: 0px;
-        
-        
+
+    }
+
+    span{
+      font-weight: 700;
+    }
+
+    li{
+      font-size: 17px;
+      line-height: 1.6;
+      font-weight: normal;
+      font-style: normal;
     }
 }
 
@@ -88,14 +98,14 @@
 }
 
 .accordion {
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    width: 100%;
-    
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    align-items: start;
-  
-    .accordion-header {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: start;
+  color: #181e2a;
+
+  .accordion-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -103,49 +113,62 @@
       cursor: pointer;
       background-color: #ffffff;
       font-weight: bold;
+      color: #181e2a;
 
-      span{
-        font-size: 18.7px;
-        color: #2D3748;
-        font-weight: 700;
+      span {
+          font-size: 18.7px;
+          color: #2D3748;
+          font-weight: 700;
       }
-  
+
       .arrow {
-        font-size: 14px;
-        transition: transform 0.3s ease;
+          font-size: 14px;
+          transition: transform 0.3s ease;
       }
-  
+
       .open {
-        transform: rotate(180deg); /* Ok yönünü tersine çevir */
+          transform: rotate(180deg); 
       }
-    }
-  
-    .accordion-content {
+  }
+
+  .accordion-content {
       max-height: 0;
       transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
       padding: 0 15px;
       background-color: #fff;
       color: #181e2a;
-  
+      overflow: hidden; /* Overflow gizli */
+
       ul {
-        margin: 0;
-        padding: 10px 0;
-        list-style-type: disc;
-        color: #181e2a;
+          margin: 0;
+          padding: 10px 0;
+          list-style-type: disc;
+          color: #181e2a;
       }
-  
+
       li {
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-        font-size: 17px;
-        color: #181e2a;
+          padding: 8px 0;
+          border-bottom: 1px solid #eee;
+          font-size: 17px;
+          color: #181e2a;
+          background: #26A31D;
       }
-  
-      &.open {
-        max-height: 200px; /* İçerik yüksekliği kadar verilebilir */
-        padding: 15px;
-      }
-    }
+  }
+
+  .accordion-content.open {
+      max-height: 300px; /* Yeterince büyük bir değer verin */
+      padding: 15px;
+      background: #1A202C;
+      overflow: visible; /* İçerik açıldığında görünmesini sağlar */
+  }
+}
+
+  .liAccordion {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 17px;
+    color: #181e2a !important;
+    
   }
 
   .divLineLogo{
@@ -195,4 +218,27 @@
   .spanLink{
     color: #26A31D;
     text-decoration: underline;
+  }
+
+  .imgDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .starDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap:15px;
+    p{
+      font-size: 20px;
+    }
   }
