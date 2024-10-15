@@ -17,3 +17,12 @@ export const listeleForm = async (request, response, next) => {
       next(error)
   }
 }
+
+export const formSil = async (request, response, next) => {
+  try {
+      const form = await Form.findByIdAndDelete(request.params.id);
+      response.status(200).json("Başarıyla Silindi");
+  } catch (error) {
+      next(error);
+  }
+}

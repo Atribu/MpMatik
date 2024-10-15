@@ -42,8 +42,7 @@ import Odeme from './Pages/Odeme.jsx'
 import Payment from './panelPages/Payment.jsx'
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
-
-
+import SiteBloglar from './Pages/SiteBloglar.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);

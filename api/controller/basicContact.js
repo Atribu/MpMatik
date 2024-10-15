@@ -18,3 +18,12 @@ export const listeleBasicForm = async (request, response, next) => {
       next(error)
   }
 }
+
+export const basicFormSil = async (request, response, next) => {
+  try {
+      const form = await BasicContact.findByIdAndDelete(request.params.id);
+      response.status(200).json("Başarıyla Silindi");
+  } catch (error) {
+      next(error);
+  }
+}
