@@ -40,9 +40,6 @@ import SayfaEkle from './panelPages/SayfaEkle.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx';
 import Odeme from './Pages/Odeme.jsx'
 import Payment from './panelPages/Payment.jsx'
-import SiteBloglar from "../src/Pages/SiteBloglar.jsx;
-
-
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
 
@@ -107,7 +104,7 @@ const App = () => {
           <ScrollToTop /> {/* ScrollToTop burada ekleniyor */}
                 <Routes>
                       <Route path="/" element={<Homepage />} />
-                      <Route path="/blogs" element={<SiteBloglar />} />
+                      <Route path="/blog" element={<SiteBloglar />} />
                       <Route path="/toptan-akaryakit" element={<ToptanAkaryakit />} />
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>

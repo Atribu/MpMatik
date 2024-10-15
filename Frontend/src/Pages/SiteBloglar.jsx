@@ -2,9 +2,9 @@ import React from 'react'
 
 const SiteBloglar = () => {
   return (
-    <div>
-      
-    </div>
+    <section>
+        
+    </section>
   )
 }
 
