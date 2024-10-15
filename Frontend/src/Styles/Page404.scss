@@ -1,0 +1,62 @@
+.page404-section {
+    display: flex;
+    justify-content: start;
+
+    .page404 
+{
+    display: flex;
+    margin-top: 50px;
+    width: 95%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/public//images/404.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    .page404-h1
+    {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: green;
+        font-size: 700%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .page404-p
+    {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 150%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .page404-Link
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: black;
+        text-decoration: none;
+        font-size: 150%;
+        font-weight: 400;
+        background-color: #F4780A;
+        padding: 15px 30px;
+        border-radius: 30px;
+        transition-duration: 0.5s;
+
+
+        &:hover 
+        {
+            background-color: #F4A00A;
+            transition-duration: 0.5s;
+        }
+    }
+}
+}

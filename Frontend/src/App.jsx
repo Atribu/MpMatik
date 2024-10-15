@@ -40,8 +40,11 @@ import SayfaEkle from './panelPages/SayfaEkle.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx';
 import Odeme from './Pages/Odeme.jsx'
 import Payment from './panelPages/Payment.jsx'
+
+
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
+
 
 
 const App = () => {
@@ -103,11 +106,12 @@ const App = () => {
           <ScrollToTop /> {/* ScrollToTop burada ekleniyor */}
                 <Routes>
                       <Route path="/" element={<Homepage />} />
+                      <Route path="/blogs" element={<SiteBloglar />} />
                       <Route path="/toptan-akaryakit" element={<ToptanAkaryakit />} />
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
                       <Route path="/*" element={<Page404 />} />
-                      <Route path="/odeme" element={<Payment onSubmit={handlePaymentSubmit}/>} />
+                      {/* <Route path="/odeme" element={<Payment onSubmit={handlePaymentSubmit}/>} /> */}
                       <Route path="/hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />
@@ -115,7 +119,7 @@ const App = () => {
                       <Route path="/referanslar" element={<Referances />} />
                       <Route path="/gizlilik-politikasi" element={<GizlilikPolitikasi />} />
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
-                      <Route path='/kayit-ol' element={<Register />} />
+                      {/* <Route path='/kayit-ol' element={<Register />} /> */}
                       <Route path="/giris" element={<Login />} />
                       <Route path="/odeme" element={<Odeme />} />
                       {/* <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/> */}
@@ -139,7 +143,7 @@ const App = () => {
                                     
 
                       </Route>
-                      {<Route path='/:url' element={<BlogDetails/>}/>}
+                      {<Route path='/blog/:url' element={<BlogDetails/>}/>}
                 </Routes>
           </main>
           {
