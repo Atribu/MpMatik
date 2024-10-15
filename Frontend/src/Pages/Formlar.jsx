@@ -55,6 +55,7 @@ console.log(list);
             <th>tüketim</th>
             <th>araç</th>
             <th>zaman</th>
+            <th>Aksiyonlar</th>
           </tr>
         </thead>
         <tbody>
@@ -69,19 +70,19 @@ console.log(list);
               <td>{item.selectedTuketim}</td>
               <td>{item.selectedVehicle}</td>
               <td>{item.createdAt}</td>
-              {/* <td>
-                <Link to={`${item.url}`} className="buttonGörüntüle">
+              <td>
+                {/* <Link to={`${item.url}`} className="buttonGörüntüle">
                   Görüntüle
                 </Link>
                 
                 
                  <Link to={`/panel/bloglar/blog-duzenle/${item.url}`} className="buttonDüzenle">
                   Düzenle
-                </Link>
+                </Link> */}
 
                 <button className='buttonSil' type='button' onClick={()=>handleBlogDelete(item._id)}>Sil</button>
                 
-              </td> */}
+              </td>
             </tr>
           ))}
         </tbody>
