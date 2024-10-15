@@ -31,8 +31,6 @@ import HemenBasvur from './Pages/HemenBasvur.jsx'
 import KolayOdeme from './Pages/KolayOdeme.jsx'
 import NasilCalısır from './Pages/NasilCalısır.jsx'
 import Page404 from './Pages/Page404.jsx'
-import WhatsApp from './Components/WhatsApp.jsx'
-import { FaZ } from 'react-icons/fa6'
 import BlogMusteriHizmetleri from './Pages/BlogMusteriHizmetleri.jsx'
 import BlogDetay from "./Pages/BlogDetay"
 import BlogDuzenle from './Pages/BlogDuzenle.jsx'
@@ -40,6 +38,7 @@ import BlogDetails from './Pages/BlogDetails.jsx'
 import Users from './Pages/Users.jsx'
 import SayfaEkle from './panelPages/SayfaEkle.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx';
+import Odeme from './Pages/Odeme.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -73,6 +72,7 @@ const App = () => {
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
                       <Route path='/kayit-ol' element={<Register />} />
                       <Route path="/giris" element={<Login />} />
+                      <Route path="/odeme" element={<Odeme />} />
                       {/* <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/> */}
                       <Route path="/bp-tasitmatik-sik-sorulan-sorular" element={<BPTasitmatikSikSorulanSorular/>} />
                       <Route path="/tasit-tanima-sistemi" element={<TasitTanimaSistemi/>} />
