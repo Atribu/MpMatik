@@ -5,6 +5,7 @@ import Page404 from './Page404';
 import logo from "../../public/Logo/mp-matik-favicon.png"
 import MainBackground from '../Components/subPageComponents/MainBackground';
 import BreadCrumbs from '../Components/BreadCrumbs';
+import { Link } from "react-router-dom"
 
 const BlogDetails = () => {
  const {url} =useParams();
@@ -73,7 +74,13 @@ const BlogDetails = () => {
       ))}
     </div>
   ) : (
-    <p>No blog data available</p>
+    <div className='pageDetails-div1'>
+        <p className='pageDetails-p'>
+          Bu Blog Sayfası Bulunamadı
+          <Link to="/blog" className='pageDetails-Link'>Buradan Bloglara Dönebilirsiniz</Link>
+        </p>
+    </div>
+   
   )
 }
        </main>
