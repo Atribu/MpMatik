@@ -40,6 +40,9 @@ import SayfaEkle from './panelPages/SayfaEkle.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx';
 import Odeme from './Pages/Odeme.jsx'
 import Payment from './panelPages/Payment.jsx'
+import Formlar from './Pages/Formlar.jsx'
+import BasicFormlar from './Pages/BasicFormlar.jsx'
+
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -130,6 +133,10 @@ const App = () => {
                                     <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
                                     <Route path="bloglar/:url" element={<BlogDetay/>} />
                                     <Route path="yeni-sayfa-ekle" element={<SayfaEkle />} />
+
+                                    <Route path="formlar" element={<Formlar/>}/>
+                                    <Route path="basic-formlar" element={<BasicFormlar/>}/>
+                                    
 
                       </Route>
                       {<Route path='/:url' element={<BlogDetails/>}/>}
