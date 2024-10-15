@@ -26,3 +26,15 @@ export const formSil = async (request, response, next) => {
       next(error);
   }
 }
+
+export const formGetir = async (request, response, next) => {
+  try {
+    const form = await Form.findById(request.params.id);
+    if (!form) {
+      return response.status(404).json({ success: false, message: 'Form bulunamadı' });
+    }
+    return response.status(200).json(form);
+  } catch (error) {
+    next(error);
+  }
+};

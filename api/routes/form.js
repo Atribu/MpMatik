@@ -1,11 +1,12 @@
 // routes/form.js
 import express from "express";
-import { yeniForm,listeleForm,formSil} from "../controller/form.js";
+import { yeniForm,listeleForm,formSil,formGetir} from "../controller/form.js";
 
 const router = express.Router();
 
 router.post("/yeni", yeniForm);
 router.get("/liste", listeleForm);
-router.delete("/delete/:id", formSil)
+router.delete("/delete/:id", formSil);
+router.get("/:id",formGetir);
 
 export default router;
