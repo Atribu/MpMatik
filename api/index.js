@@ -6,8 +6,9 @@ import loginRegister from "./routes/loginRegister.js";
 import blogRoute from "./routes/blog.js";
 import userRoute from "./routes/user.js";
 import pageRouter from "./routes/page.js";
-
+import formRouter from "./routes/form.js";
 import paymentRoutes from './payment.js'
+import basicContactRouter from "./routes/basicContact.js"
 
 
 dotenv.config(); // .env dosyasını kullanabilmek için
@@ -31,6 +32,8 @@ app.use("/api/giris", loginRegister);
 app.use("/api/blog", blogRoute);
 app.use("/api/user", userRoute);
 app.use("/api/page", pageRouter);
+app.use("/api/form", formRouter);
+app.use("/api/basic-contact", basicContactRouter);
 
 app.use('/api/payment', paymentRoutes);
 

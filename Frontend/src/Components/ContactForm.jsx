@@ -15,6 +15,7 @@ const ContactForm = () => {
 
   const [isChecked, setIsChecked] = useState(false);
 
+
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -54,16 +55,21 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res = await fetch('/api/form/yeni', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, isChecked }),
+      });
 
-    if (res.ok) {
-      alert('Form başarıyla gönderildi!');
-    } else {
-      alert('Form gönderilirken hata oluştu.');
+      if (res.ok) {
+        alert('Form başarıyla gönderildi!');
+      } else {
+        alert('Form gönderilirken hata oluştu.');
+      }
+    } catch (error) {
+      console.error('Hata:', error);
+      alert('Form gönderilemedi.');
     }
   };
 
