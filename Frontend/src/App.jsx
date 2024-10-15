@@ -43,6 +43,7 @@ import Payment from './panelPages/Payment.jsx'
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
 import SiteBloglar from './Pages/SiteBloglar.jsx'
+import FormDetay from './Pages/FormDetay.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -108,7 +109,7 @@ const App = () => {
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
                       <Route path="/*" element={<Page404 />} />
-                      {/* <Route path="/odeme" element={<Payment onSubmit={handlePaymentSubmit}/>} /> */}
+                      <Route path="/odeme" element={<Payment onSubmit={handlePaymentSubmit}/>} />
                       <Route path="/hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />
@@ -118,7 +119,7 @@ const App = () => {
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
                       {/* <Route path='/kayit-ol' element={<Register />} /> */}
                       <Route path="/giris" element={<Login />} />
-                      <Route path="/odeme" element={<Odeme />} />
+                      {/* <Route path="/odeme" element={<Odeme />} /> */}
                       {/* <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/> */}
                       <Route path="/bp-tasitmatik-sik-sorulan-sorular" element={<BPTasitmatikSikSorulanSorular/>} />
                       <Route path="/tasit-tanima-sistemi" element={<TasitTanimaSistemi/>} />
@@ -136,6 +137,7 @@ const App = () => {
                                     <Route path="yeni-sayfa-ekle" element={<SayfaEkle />} />
 
                                     <Route path="formlar" element={<Formlar/>}/>
+                                    <Route path="formlar/:id" element={<FormDetay/>} />
                                     <Route path="basic-formlar" element={<BasicFormlar/>}/>
                                     
 
