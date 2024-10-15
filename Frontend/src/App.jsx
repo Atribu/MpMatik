@@ -40,13 +40,9 @@ import SayfaEkle from './panelPages/SayfaEkle.jsx'
 import ScrollToTop from './Components/ScrollToTop.jsx';
 import Odeme from './Pages/Odeme.jsx'
 import Payment from './panelPages/Payment.jsx'
-import SiteBloglar from "../src/Pages/SiteBloglar.jsx;
-
-
+import SiteBloglar from "../src/Pages/SiteBloglar.jsx"
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
-
-
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);

@@ -23,7 +23,7 @@ const BasicFormlar = () => {
 
   const handleBlogDelete = async (id) => {
     try {
-        const response = await fetch (`/api/form/delete/${id}`, {
+        const response = await fetch (`/api/basic-contact/delete/${id}`, {
             method: "DELETE"
         }); 
         const data = await response.json();
@@ -53,6 +53,7 @@ console.log(list);
             <th>şehir</th>
             <th>mesaj</th>
             <th>zaman</th>
+            <th>Aksiyonlar</th>
           </tr>
         </thead>
         <tbody>
@@ -65,19 +66,19 @@ console.log(list);
               <td>{item.selectedCity}</td>
               <td>{item.mesaj}</td>
               <td>{item.createdAt}</td>
-              {/* <td>
-                <Link to={`${item.url}`} className="buttonGörüntüle">
+              <td>
+                {/* <Link to={`${item.url}`} className="buttonGörüntüle">
                   Görüntüle
                 </Link>
                 
                 
                  <Link to={`/panel/bloglar/blog-duzenle/${item.url}`} className="buttonDüzenle">
                   Düzenle
-                </Link>
+                </Link> */}
 
                 <button className='buttonSil' type='button' onClick={()=>handleBlogDelete(item._id)}>Sil</button>
                 
-              </td> */}
+              </td>
             </tr>
           ))}
         </tbody>
