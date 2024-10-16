@@ -67,17 +67,11 @@ console.log(list);
               <td>{item.mesaj}</td>
               <td>{item.createdAt}</td>
               <td>
-                {/* <Link to={`${item.url}`} className="buttonGörüntüle">
+                 <Link to={`${item._id}`} className="buttonGörüntüle">
                   Görüntüle
                 </Link>
-                
-                
-                 <Link to={`/panel/bloglar/blog-duzenle/${item.url}`} className="buttonDüzenle">
-                  Düzenle
-                </Link> */}
-
+  
                 <button className='buttonSil' type='button' onClick={()=>handleBlogDelete(item._id)}>Sil</button>
-                
               </td>
             </tr>
           ))}

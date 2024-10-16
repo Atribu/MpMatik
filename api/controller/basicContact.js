@@ -27,3 +27,16 @@ export const basicFormSil = async (request, response, next) => {
       next(error);
   }
 }
+
+export const basicFormGetir = async (request, response, next) => {
+  try {
+    const form = await BasicContact.findById(request.params.id);
+    if (!form) {
+      return response.status(404).json({ success: false, message: ' İletişim Form bulunamadı' });
+    }
+    return response.status(200).json(form);
+  } catch (error) {
+    next(error);
+  }
+};
+
