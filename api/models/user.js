@@ -24,7 +24,7 @@ const userSchema = new mongo.Schema({
     },
     accessLevel:
     {
-        type: String,
+        type: Number,
         default: 3
     }
 

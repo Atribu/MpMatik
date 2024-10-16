@@ -2,6 +2,18 @@ import React, { useState,useEffect }  from 'react'
 import "../Styles/ContactFormGray.scss";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    firmaname: '',
+    phone: '',
+    email: '',
+    selectedCity: 'Şehir Seçiniz*',
+    selectedProduct: 'Ürün Seçiniz*',
+    selectedTuketim: 'Aylık Tüketim*',
+    selectedVehicle: 'Araç Sayısı*',
+  });
+
+
   useEffect(() => {
     // kayarak gelme
     const observer = new IntersectionObserver((entries) => {
@@ -30,57 +42,86 @@ const ContactForm = () => {
       setIsChecked(!isChecked);
     };
 
-    const [selectedCity, setSelectedCity] = useState('Şehir Seçiniz*');
+
+   
     const [isOpen, setIsOpen] = useState(false);
     const cities = ['İstanbul', 'Ankara', 'İzmir', 'Bursa', 'Antalya'];
     const handleSelect = (city) => {
-      setSelectedCity(city);
+      setFormData({ ...formData, selectedCity: city });
       setIsOpen(false);
     };
 
-    const [selectedProduct, setSelectedProduct] = useState('Ürün Seçiniz*');
+   
     const [isOpenProduct, setIsOpenProduct] = useState(false);
     const products = ['Taşıtmatik', 'Toptan'];
     const handleSelectProduct = (product) => {
-        setSelectedProduct(product);
+      setFormData({ ...formData, selectedProduct: product });
         setIsOpenProduct(false);
     };
 
-    const [selectedTuketim, setSelectedTuketim] = useState('Aylık Tüketim*');
+    
     const [isOpenTuketim, setIsOpenTuketim] = useState(false);
     const tuketims = ['10.000-50.000', '50.000-100.000','100.000-250.000','250.000 ve üzeri'];
     const handleSelectTuketim = (tuketim) => {
-        setSelectedTuketim(tuketim);
+      setFormData({ ...formData, selectedTuketim: tuketim });
         setIsOpenTuketim(false);
     };
 
-    const [selectedVehicle, setSelectedVehicle] = useState('Araç Sayısı*');
+   
     const [isOpenVehicle, setIsOpenVehicle] = useState(false);
     const vehicles = ['10-20', '20-30','30-40','40 ve üzeri'];
     const handleSelectVehicle = (vehicle) => {
-        setSelectedVehicle(vehicle);
+      setFormData({ ...formData, selectedVehicle: vehicle });
         setIsOpenVehicle(false);
     };
 
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        const res = await fetch('/api/form/yeni', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...formData, isChecked }),
+        });
+  
+        if (res.ok) {
+          alert('Form başarıyla gönderildi!');
+        } else {
+          alert('Form gönderilirken hata oluştu.');
+        }
+      } catch (error) {
+        console.error('Hata:', error);
+        alert('Form gönderilemedi.');
+      }
+    };
+
   return (
-    <form id="basvuru" className='formGray'>
+    <form id="basvuru" className='formGray' onSubmit={handleSubmit}>
       <div id="teklif" className='divGray slide-upSatis'>
         <p className='h2Gray'>TEKLİF AL</p>
         <section className='input-sectionGray'>
-        <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' />
-        <input type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required />
+        <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' value={formData.name}
+          onChange={handleChange}/>
+        <input type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required value={formData.firmaname}
+          onChange={handleChange}/>
       </section>
       <section className='input-sectionGray'>
-        <input type="text" id="name" name="name" placeholder='Telefon*' required />
-        <input type="text" id="firmaname" name="firmaname" placeholder='Email*' required />
+        <input type="text" id="phone" name="phone" placeholder='Telefon*' required value={formData.phone}
+          onChange={handleChange}/>
+        <input type="text" id="email" name="email" placeholder='Email*' required value={formData.email}
+          onChange={handleChange}/>
       </section>
       <section className='input-sectionGray'>
       <div className="city-selectGray">
       <div 
-        className={`city-selectGray__input ${selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
+        className={`city-selectGray__input ${formData.selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
       >
-        {selectedCity}
+        {formData.selectedCity}
         <span className="arrow"></span>
       </div>
       {isOpen && (
@@ -101,10 +142,10 @@ const ContactForm = () => {
     {/* product */}
     <div className="city-selectGray">
       <div 
-       className={`city-selectGray__input ${selectedProduct === 'Ürün Seçiniz*' ? 'placeholder' : ''}`} 
+       className={`city-selectGray__input ${formData.selectedProduct === 'Ürün Seçiniz*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpenProduct(!isOpenProduct)}
       >
-        {selectedProduct}
+        {formData.selectedProduct}
         <span className="arrow"></span>
       </div>
       {isOpenProduct && (
@@ -127,10 +168,10 @@ const ContactForm = () => {
       <section className='input-sectionGray'>
       <div className="city-selectGray">
       <div 
-        className={`city-selectGray__input ${selectedTuketim === 'Aylık Tüketim*' ? 'placeholder' : ''}`} 
+        className={`city-selectGray__input ${formData.selectedTuketim === 'Aylık Tüketim*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpenTuketim(!isOpenTuketim)}
       >
-        {selectedTuketim}
+        {formData.selectedTuketim}
         <span className="arrow"></span>
       </div>
       {isOpenTuketim && (
@@ -151,10 +192,10 @@ const ContactForm = () => {
     {/* araç sayısı */}
     <div className="city-selectGray">
       <div 
-        className={`city-selectGray__input ${selectedVehicle === 'Araç Sayısı*' ? 'placeholder' : ''}`} 
+        className={`city-selectGray__input ${formData.selectedVehicle === 'Araç Sayısı*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpenVehicle(!isOpenVehicle)}
       >
-        {selectedVehicle}
+       {formData.selectedVehicle}
         <span className="arrow"></span>
       </div>
       {isOpenVehicle && (

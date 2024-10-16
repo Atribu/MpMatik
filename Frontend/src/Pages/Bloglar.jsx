@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "../Styles/Bloglar.scss"; // SCSS dosyasını bağladık
+import { useSelector } from 'react-redux';
 
 const Bloglar = () => {
   const [list, setList] = useState([]);
+  const [user, setUser] = useState();
+  const { activeUser } = useSelector((state) => state.user);
 
   const getBlogList = async () => {
     const response = await fetch("/api/blog/liste");
@@ -13,15 +16,27 @@ const Bloglar = () => {
       return;
     }
 
-    setList(data); // Blog listesini doldur
+    setList(data); 
   };
-
-  useEffect(() => {
-    getBlogList(); // Component yüklendiğinde blogları al
-  }, []);
+ 
+  const getUserInfo = async () => {
+    try {
+      const response = await fetch("/api/user/me");
+      const data = await response.json();
+      if (data.success === false) return;
+      setUser(data);  
+    } catch (error) {
+      console.error("Kullanıcı bilgisi alınamadı:", error);
+    }
+  };
 
 
   const handleBlogDelete = async (id) => {
+    if (!activeUser || activeUser.accessLevel > 1) {
+      alert("Bu işlemi yapmak için yetkiniz yok!");  
+      return;
+    }
+
     try {
         const response = await fetch (`/api/blog/delete/${id}`, {
             method: "DELETE"
@@ -39,6 +54,20 @@ const Bloglar = () => {
         console.log(error.message)
     }
 }
+
+const handleEditClick = (url) => {
+  if (!activeUser || activeUser.accessLevel > 2) {
+    alert("Bu blogu düzenlemek için yetkiniz yok!");
+    return;
+  }
+  // Yetkili kullanıcı ise düzenleme sayfasına yönlendirme yap
+  window.location.href = `/panel/bloglar/blog-duzenle/${url}`;
+};
+
+useEffect(() => {
+  getBlogList(); // Component yüklendiğinde blogları al
+  getUserInfo(); // Component yüklendiğinde kullanıcıyı al
+}, []);
 console.log(list);
 
   return (
@@ -63,17 +92,27 @@ console.log(list);
                   Görüntüle
                 </Link>
                 
-                 {/* Düzenle Linki */}
+                 {/* Düzenle Linki
                  <Link to={`/panel/bloglar/blog-duzenle/${item.url}`} className="buttonDüzenle">
                   Düzenle
-                </Link>
+                </Link> */}
+                {/* Düzenle Butonu */}
+                <button
+                  className="buttonDüzenle"
+                  type="button"
+                  onClick={() => handleEditClick(item.url)}
+                >
+                  Düzenle
+                </button>
 
-                <button className='buttonSil' type='button' onClick={()=>handleBlogDelete(item._id)}>Sil</button>
-                {/* <button className='buttonSil' type='button' onClick={()=>{
-                                const tempList = [...list];
-                                tempList.splice(index, 1);
-                                setList(tempList)
-                            }}>Sil</button> */}
+                  <button
+                    className="buttonSil"
+                    type="button"
+                    onClick={() => handleBlogDelete(item._id)}
+                  >
+                    Sil
+                  </button>
+                
               </td>
             </tr>
           ))}

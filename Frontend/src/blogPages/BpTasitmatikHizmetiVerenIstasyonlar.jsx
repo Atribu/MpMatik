@@ -54,9 +54,9 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
             <div className={`accordion-content ${isOpen ? "open" : ''}`}>
               <ul>
                 <li className="liAccordion">BP Taşıtmatik Hizmeti ve Avantajları</li>
-                <li>BP Taşıtmatik Kolay ve Güvenli</li>
-                <li>En Yakın BP'yi Bulun</li>
-                <li>BP İstasyonları Hizmetleri</li>
+                <li className="liAccordion">BP Taşıtmatik Kolay ve Güvenli</li>
+                <li className="liAccordion">En Yakın BP'yi Bulun</li>
+                <li className="liAccordion">BP İstasyonları Hizmetleri</li>
               </ul>
             </div>
           </div>

@@ -11,6 +11,20 @@ const Header1 = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const sidebarRef = useRef(null);
+
+  const yetkiFunc=(number)=>{
+    if(number === 1){
+      return "Admin";
+    }
+    if(number === 2){
+      return "Editor";
+    }
+    if(number === 3){
+      return "Kullanıcı";
+    }
+  }
+
+  const yetki = yetkiFunc(activeUser.accessLevel);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -91,6 +105,7 @@ const Header1 = () => {
                 <Link to='/'>Ana Sayfa</Link>
                 <Link to="/panel">Panel</Link>
                 <Link to="/panel/profil">{activeUser.name}</Link>
+                <Link to="/panel/profil">Yetki:{yetki} {activeUser.accessLevel}</Link>
              </>   
           ) : (
               <>

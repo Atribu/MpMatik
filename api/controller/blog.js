@@ -11,20 +11,19 @@ export const yeniBlog = async (request, response, next) => {
 
 export const duzenleBlog = async (request, response, next) => {
     try {
-        // URL parametresinden blog url'sini alıyoruz
-        const blogUrl = request.params.url;
+        // const user = req.user; 
+        // if (!user || user.accessLevel > 0) {
+        //  return res.status(403).json({ message: 'Yetkiniz yok!' }); // Admin değilse
+        // }
 
-        // Blogu url'ye göre bulup güncelliyoruz
+        const blogUrl = request.params.url;
         const blog = await Blog.findOneAndUpdate(
             { url: blogUrl },  // URL'ye göre bulma
             { $set: request.body },  // Güncellenecek veriler
             { new: true }  // Güncellenmiş dokümanı döndür
         );
-
-        // Blog başarıyla güncellendiyse 200 durum kodu ile birlikte gönderiyoruz
         return response.status(200).json(blog);
     } catch (error) {
-        // Hata durumunda next fonksiyonu ile error middleware'ine geçiyoruz
         next(error);
     }
 }
