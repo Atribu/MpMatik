@@ -44,6 +44,7 @@ import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
 import SiteBloglar from './Pages/SiteBloglar.jsx'
 import FormDetay from './Pages/FormDetay.jsx'
+import BasicFormDetay from "./Pages/BasicFormDetay.jsx"
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -139,6 +140,7 @@ const App = () => {
                                     <Route path="formlar" element={<Formlar/>}/>
                                     <Route path="formlar/:id" element={<FormDetay/>} />
                                     <Route path="basic-formlar" element={<BasicFormlar/>}/>
+                                    <Route path="basic-formlar/:id" element={<BasicFormDetay/>}/>
                                     
 
                       </Route>

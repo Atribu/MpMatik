@@ -1,32 +1,44 @@
+.mainSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #6B81A5;
+  width: 95%;
+}
+
+
 .formCarousel {
     display: flex;
     align-items: center;
     justify-content:baseline;
-    background-color: rgba(45, 55, 72, 0.85); 
+    background:#0e0c1b; 
     flex-direction: column;
     gap:20px;
     text-align: center;
     font-family:sans-serif; 
+    width: 50%;
+  //  height: 60%;
 
-    @media (min-width: 1024px) {
-      width: 60%; 
-      padding: 30px;
-      padding-bottom: 60px;
+    // @media (min-width: 1024px) {
+    //   width: 60%; 
+    //   padding: 30px;
+    //   padding-bottom: 60px;
       
-    }
+    // }
 
-    @media (min-width: 768px) {
-        width: 50%; 
-        padding: 30px;
-        padding-bottom: 60px;
+    // @media (min-width: 768px) {
+    //     width: 50%; 
+    //     padding: 30px;
+    //     padding-bottom: 60px;
         
-      }
+    //   }
     
-      @media (max-width: 768px) {
-        width: 90%;  
-        padding: 15px;
-        height: 540px;
-      }
+    //   @media (max-width: 768px) {
+    //     width: 90%;  
+    //     padding: 15px;
+    //     height: 540px;
+    //   }
 }
 
 .divcontact {
@@ -37,16 +49,18 @@
     text-align: center;
     padding: 20px;
     text-transform: uppercase;
+    width: 100%;
+    background:#0e0c1b !important; 
     
-    @media (min-width: 768px) {
-      width: 50%; 
-      gap:20px;
+    // @media (min-width: 768px) {
+    //   width: 50%; 
+    //   gap:20px;
    
-    }
-    @media (max-width: 768px) {
-      width: 90%;  
+    // }
+    // @media (max-width: 768px) {
+    //   width: 90%;  
   
-    }
+    // }
 }
 .h2{
     font-size: 30px;
@@ -54,6 +68,7 @@
     line-height: normal;
     margin:0px;
     white-space: nowrap;
+    
     
 }
 
@@ -69,7 +84,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 4%;
     
 
     input{
@@ -79,27 +93,31 @@
     
 }
 
-.inputForm{
+.inputDiv , .textareaDiv{
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
-  width: 50%;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: transparent;
   font-family:sans-serif; 
   font-size: 16px; 
   color: #333; // Metin rengi
   height:25px;
+  background-color: white;
   
   &.placeholder {
     font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
     color: #999; // Placeholder için farklı renk kullanabilirsin
   }
+}
 
-
+.textareaDiv{
+  min-height: 100px;
+  height: min-content;
 }
 
 // input {
@@ -127,84 +145,6 @@
 //   }
   
 
-.checkbox-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .checkbox-label {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    font-size: 16px;
-    user-select: none;
-    color: #ffff;
-  
-    .checkbox-input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-    }
-  
-    .checkbox-custom {
-      width: 20px;
-      height: 20px;
-      background-color: #ccc;
-      border-radius: 4px;
-      margin-right: 8px;
-      transition: background-color 0.3s ease;
-    }
-  
-    // Checked durumunda renk değişimi
-    .checkbox-input:checked ~ .checkbox-custom {
-      background-color: #4caf50; // Check durumunda yeşil arka plan
-    }
-  
-    // Hover'da stil değişimi
-    &:hover .checkbox-custom {
-      background-color: #ddd;
-    }
-  
-    // İşaretli durumda bir işaret ekleyelim
-    .checkbox-input:checked ~ .checkbox-custom::after {
-      content: "";
-      position: absolute;
-      left: 6px;
-      top: 3px;
-      width: 5px;
-      height: 10px;
-      border: solid white;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-    }
-  }
-
-  .green-button {
-    width: 100%;
-    background-color: #4caf50;
-    color: #ffffff;
-    
-    border:none;
-    border-radius: 5px;
-    
-    p{
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-
-    &:hover {
-      background-color: #1b9d20;
-      cursor: pointer; 
-
-      p {
-        color: #ffffff;
-      }
-    }
-  }
-
-
-
   .city-select {
     position: relative;
     display: inline-block;
@@ -219,7 +159,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #fff !important;
+      background: #fff;
       font-family:sans-serif; 
       font-size: 16px; 
       color: #333; // Metin rengi
@@ -303,12 +243,14 @@
   }
 
   .input-label{
-    width: 90%;
+    width: 50% !important;
     justify-content: center;
     align-items: start;
     display: flex;
     flex-direction: column;
     gap:10px;
+    padding: 10px;
+    background:#0e0c1b !important; 
   }
   
   

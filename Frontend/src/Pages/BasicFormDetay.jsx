@@ -11,7 +11,7 @@ const FormDetay = () => {
   useEffect(() => {
     const fetchForm = async () => {
       try {
-        const response = await fetch(`/api/form/${id}`);
+        const response = await fetch(`/api/basic-contact/${id}`);
         const data = await response.json();
 
         if (!response.ok) {
@@ -70,38 +70,15 @@ const FormDetay = () => {
         />
         </div>
         <div className='input-label'>
-          <label>Firma Adı</label>
-          <input 
-          className='inputDiv' 
-          type="text" 
-          value={form.firmaname} readOnly
-          placeholder={form.firmaname} 
-          required 
-        />
-        </div>
-      </section>
-      <section className='input-section'>
-       <div className='input-label'>
         <label>Şehir</label>
        <input className='inputDiv' type="city" value={form.selectedCity} placeholder={form.selectedCity} readOnly />
        </div>
-        <div className='input-label'>
-          <label>Ürün</label>
-        <input className='inputDiv' type="product" value={form.selectedProduct} placeholder={form.selectedProduct} readOnly />
-        </div>
       </section>
-
       <section className='input-section'>
-       <div className='input-label'>
-        <label>Tüketim</label>
-       <input className='inputDiv' type="tuketim" value={form.selectedTuketim} placeholder={form.selectedTuketim} readOnly />
-       </div>
-
         <div className='input-label'>
-          <label>Taşıt</label>
-        <input className='inputDiv' type="vehicle" value={form.selectedVehicle} placeholder={form.selectedVehicle} readOnly />
+          <label>Mesaj</label>
+        <textarea className='textareaDiv' type="message" value={form.mesaj} placeholder={form.mesaj} readOnly />
         </div>
-
       </section>
 
     </form>
