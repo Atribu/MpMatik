@@ -14,11 +14,10 @@ const UsersDetail = () => {
     accessLevel: ''
     });
 
-    const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-  
     const fetchUser = async () => {
       try {
         const response = await fetch(`/api/user/${id}`);
@@ -41,13 +40,12 @@ const UsersDetail = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setUser((prevUser) => {  
-
-      return {
+    setUser((prevUser) => (
+      {  
         ...prevUser,
         [name]: value,
-      };
-    });
+    }
+    ));
   };
 
 
@@ -59,22 +57,30 @@ const UsersDetail = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(user), // User verilerini günceller
+        body: JSON.stringify(user),
       });
-
+  
+      // Yanıt kontrolü
       const data = await response.json();
-
-      if (data.success === false) {
-        console.log("Güncelleme başarısız");
+  
+      if (!response.ok) {
+        console.error("Güncelleme hatası:", data.message || "Beklenmeyen hata.");
         return;
       }
-
+  
+      if (!data.success) {
+        console.log("Güncelleme başarısız:", data.message);
+        return;
+      }
+  
       alert("User başarıyla güncellendi!");
-      navigate('/panel/users'); 
+      navigate('/panel/users');
     } catch (err) {
-      console.log("Hata:", err.message);
+      console.error("Ağ hatası:", err.message);
     }
   };
+  
+  
 
   if (loading) return <div>Yükleniyor...</div>;
   if (error) return <div>{error}</div>;

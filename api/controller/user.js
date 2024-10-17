@@ -11,18 +11,27 @@ export const getirUsers = async (request, response, next) => {
 
 
 export const duzenleUser = async (request, response, next) => {
-    try {
-        const userId = request.params.id;
-        const user = await User.findOneAndUpdate(
-            { id: userId },  // URL'ye göre bulma
-            { $set: request.body },  // Güncellenecek veriler
-            { new: true }  // Güncellenmiş dokümanı döndür
-        );
-        return response.status(200).json(user);
-    } catch (error) {
-        next(error);
+  try {
+    const userId = request.params.id;
+
+    // ID'yi doğru formatta bulmak için _id kullanalım.
+    const user = await User.findOneAndUpdate(
+      { _id: userId },  // id yerine _id kullanılmalı.
+      { $set: request.body },  
+      { new: true }  // Güncellenen veriyi döndür.
+    );
+
+    if (!user) {
+      return response.status(404).json({ success: false, message: 'Kullanıcı bulunamadı.' });
     }
-}
+
+    return response.status(200).json({ success: true, user });
+  } catch (error) {
+    console.error("Güncelleme hatası:", error.message);
+    return response.status(500).json({ success: false, message: 'Sunucu hatası.' });
+  }
+};
+
 
 export const userIdGetir = async (request, response, next) => {
     try {
