@@ -51,8 +51,8 @@ const BasicContactForm = () => {
     };
 
   return (
-    <form className='form' onSubmit={handleSubmit}>
-      <div className='div'>
+    <form className='formContactForm' onSubmit={handleSubmit}>
+      <div className='divContactForm'>
         <p className='h2'>BP TAŞITMATİK</p>
         <span className='h3'>İLETİŞİM formu</span>
       </div>
@@ -62,7 +62,7 @@ const BasicContactForm = () => {
       </section>
       <section className='input-section'>
         <input className='inputForm' type="text" id="phone" name="phone" placeholder='Telefon*' required  value={formData.phone}  onChange={handleChange}/>
-        <div className="city-select">
+        <div className="city-selecttt">
       <div 
         className={`city-select__input ${formData.selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}

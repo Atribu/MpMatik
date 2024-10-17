@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import "../Styles/Bloglar.scss"; // SCSS dosyasını bağladık
+import "../Styles/Bloglar.scss"; 
+import { useSelector } from 'react-redux';
 
 const Formlar = () => {
   const [list, setList] = useState([]);
+  const { activeUser } = useSelector((state) => state.user);
 
   const getFormList = async () => {
     const response = await fetch("/api/form/liste");
@@ -16,12 +18,12 @@ const Formlar = () => {
     setList(data); // Blog listesini doldur
   };
 
-  useEffect(() => {
-    getFormList(); // Component yüklendiğinde blogları al
-  }, []);
-
-
   const handleBlogDelete = async (id) => {
+    if (!activeUser || activeUser.accessLevel > 1) {
+      alert("Bu işlemi yapmak için yetkiniz yok!");  
+      return;
+    }
+
     try {
         const response = await fetch (`/api/form/delete/${id}`, {
             method: "DELETE"
@@ -39,6 +41,11 @@ const Formlar = () => {
         console.log(error.message)
     }
 }
+
+
+useEffect(() => {
+  getFormList(); // Component yüklendiğinde blogları al
+}, []);
 console.log(list);
 
   return (

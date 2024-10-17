@@ -134,39 +134,33 @@
 
   .accordion-content {
       max-height: 0;
-      transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-      padding: 0 15px;
       background-color: #fff;
       color: #181e2a;
       overflow: hidden; /* Overflow gizli */
+      padding: 0px 2%;
 
       ul {
           margin: 0;
-          padding: 10px 0;
           list-style-type: disc;
           color: #181e2a;
       }
 
-      li {
-          padding: 8px 0;
-          border-bottom: 1px solid #eee;
-          font-size: 17px;
-          color: #181e2a;
-          background: #26A31D;
-      }
   }
 
   .accordion-content.open {
-      max-height: 300px; /* Yeterince büyük bir değer verin */
-      padding: 15px;
-      background: #1A202C;
-      overflow: visible; /* İçerik açıldığında görünmesini sağlar */
+      max-height: 1000px; /* Yeterince büyük bir değer verin */
+      height: min-content;
+      transition: max-height 0.3s ease-in-out 0.3s ease-in-out;
+      background: white;
+      padding: 2%;
+      opacity: 100;
+      padding-top: 0px;
+      padding-bottom: 0px;
   }
 }
 
   .liAccordion {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    padding: 5px 0;
     font-size: 17px;
     color: #181e2a !important;
     

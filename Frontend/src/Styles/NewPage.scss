@@ -1,0 +1,81 @@
+.page-container {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .component {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4a90e2;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    color: white;
+  
+    &-logo {
+      max-height: 50px;
+    }
+  
+    &-menu ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+  
+      li {
+        cursor: pointer;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #ffdd57;
+        }
+      }
+    }
+  }
+  
+  .content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #666;
+    }
+  }
+  
+  .back-link {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    transition: color 0.3s;
+  
+    &:hover {
+      color: #ffdd57;
+    }
+  }
+  

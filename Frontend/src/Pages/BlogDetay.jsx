@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import "../Styles/BlogDetay.scss";
 
 const BlogDetay = () => {
-  const { url } = useParams();  // URL'den id parametresini alıyoruz
+  const { url } = useParams();  
   const [blog, setBlog] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

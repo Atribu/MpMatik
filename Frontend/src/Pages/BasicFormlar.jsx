@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import "../Styles/Bloglar.scss"; // SCSS dosyasını bağladık
+import "../Styles/Bloglar.scss"; 
+import { useSelector } from 'react-redux';
 
 const BasicFormlar = () => {
   const [list, setList] = useState([]);
+  const { activeUser } = useSelector((state) => state.user);
 
   const getFormList = async () => {
     const response = await fetch("/api/basic-contact/liste");
@@ -22,6 +24,11 @@ const BasicFormlar = () => {
 
 
   const handleBlogDelete = async (id) => {
+    if (!activeUser || activeUser.accessLevel > 1) {
+      alert("Bu işlemi yapmak için yetkiniz yok!");  
+      return;
+    }
+    
     try {
         const response = await fetch (`/api/basic-contact/delete/${id}`, {
             method: "DELETE"
