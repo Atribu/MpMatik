@@ -54,7 +54,7 @@ const Users = () => {
               item.email,
               item.accessLevel,
               [
-                <Link className='buttonGörüntüle' to={`/panel/users/duzenle/${item._id}`}>Görüntüle</Link>,
+                <Link className='buttonGörüntüle' to={`${item._id}`}>Görüntüle</Link>,
                 <button className='buttonSil' type='button' onClick={() => handleUserDelete(item._id)}>Sil</button>
               ]
             ]
