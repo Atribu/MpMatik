@@ -39,8 +39,6 @@ const NewPage = () => {
 
   return (
     <main className="page-container">
-      <h1 className="page-title">{page.title}</h1>
-
       {page.components.map((component, index) => (
         <div key={index} className={`component ${component.modulName.toLowerCase()}`}>
           {component.modulName === 'Header' && (

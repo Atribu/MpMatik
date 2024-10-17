@@ -43,13 +43,9 @@ import Payment from './panelPages/Payment.jsx'
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
 import SiteBloglar from './Pages/SiteBloglar.jsx'
-
 import FormDetay from './Pages/FormDetay.jsx';
 import BasicFormDetay from "./Pages/BasicFormDetay.jsx";
 import NewPage from './panelPages/NewPage.jsx'
-
-import FormDetay from './Pages/FormDetay.jsx'
-import BasicFormDetay from "./Pages/BasicFormDetay.jsx"
 import ProfilEditor from './Pages/ProfilEditor.jsx'
 
 
