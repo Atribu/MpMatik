@@ -1,9 +1,9 @@
-import React, { useState, useEffect,useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import "../Styles/Header1.scss";
 import { useSelector } from 'react-redux';
-import { FaBars,FaMagnifyingGlass } from "react-icons/fa6";
-import DgtlLogo from "../../public/Logo/DgtlLogo"
+import { FaBars, FaMagnifyingGlass } from "react-icons/fa6";
+import DgtlLogo from "../../public/Logo/DgtlLogo";
 
 const Header1 = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -12,26 +12,28 @@ const Header1 = () => {
 
   const sidebarRef = useRef(null);
 
-  // const yetkiFunc=(number)=>{
-  //   if(number === 1){
-  //     return "Admin";
-  //   }
-  //   if(number === 2){
-  //     return "Editor";
-  //   }
-  //   if(number === 3){
-  //     return "Kullanıcı";
-  //   }
-  // }
+  const yetkiFunc = (number) => {
+    if (number === 1) {
+      return "Admin";
+    }
+    if (number === 2) {
+      return "Editor";
+    }
+    if (number === 3) {
+      return "Kullanıcı";
+    }
+    return "Bilinmiyor"; // Eğer yetki tanımlı değilse
+  };
 
-  // const yetki = yetkiFunc(activeUser.accessLevel);
-  
+  // activeUser var mı kontrolü
+  const yetki = activeUser ? yetkiFunc(activeUser.accessLevel) : null;
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setIsSticky(true);  
+        setIsSticky(true);
       } else {
-        setIsSticky(false); 
+        setIsSticky(false);
       }
     };
 
@@ -42,90 +44,65 @@ const Header1 = () => {
     };
   }, []);
 
-  // Sidebar açma/kapatma fonksiyonu
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-  //       setSidebarOpen(false);
-  //     }
-  //   };
-
-  //   const handleScroll = () => {
-  //     setSidebarOpen(false);
-  //   };
-
-  //   // Tıklama ve scroll eventlerini dinle
-  //   document.addEventListener('mousedown', handleClickOutside);
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Cleanup function
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
   return (
-   <>
+    <>
       <header className={`${activeUser ? 'sticky-header-activeuser' : isSticky ? 'is-sticky' : "sticky-header"}`}>
-       
-       <section className='sectionHeader'>
-       <div className='mobile-icons'>
-       {isSticky ?  <FaBars size={25} color='#fff' onClick={toggleSidebar}/>  : <FaBars size={20} color='#4e534c' onClick={toggleSidebar}/>}
-       </div>
+        <section className='sectionHeader'>
+          <div className='mobile-icons'>
+            {isSticky ? <FaBars size={25} color='#fff' onClick={toggleSidebar}/> : <FaBars size={20} color='#4e534c' onClick={toggleSidebar}/>}
+          </div>
 
-      <Link to="/">
-      {activeUser ? <DgtlLogo className="flex items-center justify-center" width={200} height={50}/> : isSticky ? 
-      <img 
-          src='/Logo/bp-logo-beyazimsi.png' 
-          alt='Logo' 
-          width={60}
-          height={79.64}
-        />    :  
-        <img 
-        src= '/Logo/bp-logo-kendi.png'
-        alt='Logo' 
-        width={60}
-        height={79.64}
-      />   } 
-           
-      </Link>
-      <div className='mobile-icons'>
-      {isSticky ?  <FaMagnifyingGlass size={25} color='#fff'/>  : <FaMagnifyingGlass size={20} color='#4e534c'/>}
-      </div>
+          <Link to="/">
+            {activeUser ? <DgtlLogo className="flex items-center justify-center" width={200} height={50}/> : isSticky ?
+              <img 
+                src='/Logo/bp-logo-beyazimsi.png' 
+                alt='Logo' 
+                width={60}
+                height={79.64}
+              /> :
+              <img 
+                src='/Logo/bp-logo-kendi.png'
+                alt='Logo' 
+                width={60}
+                height={79.64}
+              />
+            }
+          </Link>
+          <div className='mobile-icons'>
+            {isSticky ? <FaMagnifyingGlass size={25} color='#fff'/> : <FaMagnifyingGlass size={20} color='#4e534c'/>}
+          </div>
 
-      <nav>
-        {
-          activeUser ? (
-             <>
-                <Link to='/'>Ana Sayfa</Link>
-                <Link to="/panel">Panel</Link>
-                <Link to="/panel/profil">{activeUser.name}</Link>
-                <Link to="/panel/profil">Yetki:{yetki} {activeUser.accessLevel}</Link>
-             </>   
-          ) : (
-              <>
-                <Link to='/toptan-akaryakit'>TOPTAN AKARYAKIT</Link>
-                <Link to='/ihaleli-akaryakit'>İHALELİ AKARYAKIT</Link>
-                <Link to='/nasil-calisir'>NASIL ÇALIŞIR</Link>
-                <Link to='/referanslar'>REFERANSLAR</Link>
-                <Link to='/hakkimizda'>HAKKIMIZDA</Link>
-                <Link to='/iletisim'>İLETİŞİM</Link>
-              </>
-          )
-        }
-        
-      </nav>
-       </section>
-      
-    </header>
+          <nav>
+            {
+              activeUser ? (
+                <>
+                  <Link to='/'>Ana Sayfa</Link>
+                  <Link to="/panel">Panel</Link>
+                  <Link to="/panel/profil">{activeUser.name}</Link>
+                  <Link to="/panel/profil">Yetki: {yetki ? yetki  : "Bilinmiyor"}</Link>
+                  <Link to="/panel/">Yetki: {yetki ? activeUser.accessLevel   : "Bilinmiyor"}</Link>
+                </>
+              ) : (
+                <>
+                  <Link to='/toptan-akaryakit'>TOPTAN AKARYAKIT</Link>
+                  <Link to='/ihaleli-akaryakit'>İHALELİ AKARYAKIT</Link>
+                  <Link to='/nasil-calisir'>NASIL ÇALIŞIR</Link>
+                  <Link to='/referanslar'>REFERANSLAR</Link>
+                  <Link to='/hakkimizda'>HAKKIMIZDA</Link>
+                  <Link to='/iletisim'>İLETİŞİM</Link>
+                </>
+              )
+            }
+          </nav>
+        </section>
+      </header>
 
-    {/* Sidebar */}
-    <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+      {/* Sidebar */}
+      <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-content">
           <button className="close-btn" onClick={toggleSidebar}>X</button>
           <nav>
@@ -146,8 +123,7 @@ const Header1 = () => {
           </nav>
         </div>
       </div>
-   </>
-    
+    </>
   );
 }
 
