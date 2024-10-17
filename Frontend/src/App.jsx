@@ -43,9 +43,15 @@ import Payment from './panelPages/Payment.jsx'
 import Formlar from './Pages/Formlar.jsx'
 import BasicFormlar from './Pages/BasicFormlar.jsx'
 import SiteBloglar from './Pages/SiteBloglar.jsx'
+
 import FormDetay from './Pages/FormDetay.jsx';
 import BasicFormDetay from "./Pages/BasicFormDetay.jsx";
 import NewPage from './panelPages/NewPage.jsx'
+
+import FormDetay from './Pages/FormDetay.jsx'
+import BasicFormDetay from "./Pages/BasicFormDetay.jsx"
+import ProfilEditor from './Pages/ProfilEditor.jsx'
+
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
@@ -138,16 +144,19 @@ const App = () => {
                                     <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
                                     <Route path="bloglar/:url" element={<BlogDetay/>} />
                                     <Route path="yeni-sayfa-ekle" element={<SayfaEkle />} />
-
                                     <Route path="formlar" element={<Formlar/>}/>
                                     <Route path="formlar/:id" element={<FormDetay/>} />
                                     <Route path="basic-formlar" element={<BasicFormlar/>}/>
                                     <Route path="basic-formlar/:id" element={<BasicFormDetay/>}/>
+                                    <Route path="profil-duzenle" element={<ProfilEditor />} />
+                                    <Route path="users/:id" element={<ProfilEditor />} />
                                     
 
                       </Route>
+
                       {<Route path='/blog/:url' element={<BlogDetails/>}/>}
                       <Route path='/page/:url' element={<NewPage/>}/>
+
                 </Routes>
           </main>
           {
