@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   
   .page-title {
@@ -15,9 +16,11 @@
   }
   
   .component {
+    display: flex;
     width: 100%;
-    max-width: 800px;
     margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
   }
   
   .header {
@@ -28,6 +31,7 @@
     padding: 1rem 2rem;
     border-radius: 8px;
     color: white;
+    
   
     &-logo {
       max-height: 50px;
@@ -36,24 +40,33 @@
     &-menu ul {
       list-style: none;
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
   
       li {
         cursor: pointer;
         transition: color 0.3s;
+        font-size: 20px;
+        text-transform: uppercase;
   
         &:hover {
-          color: #ffdd57;
+          color: #0e0c1b;
         }
       }
     }
   }
   
   .content {
+    display: flex;
+    width: 60%;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
   
     h2 {
       margin-bottom: 1rem;
@@ -75,7 +88,7 @@
     transition: color 0.3s;
   
     &:hover {
-      color: #ffdd57;
+      color: #0e0c1b;
     }
   }
   

@@ -12,19 +12,19 @@ const Header1 = () => {
 
   const sidebarRef = useRef(null);
 
-  const yetkiFunc=(number)=>{
-    if(number === 1){
-      return "Admin";
-    }
-    if(number === 2){
-      return "Editor";
-    }
-    if(number === 3){
-      return "Kullanıcı";
-    }
-  }
+  // const yetkiFunc=(number)=>{
+  //   if(number === 1){
+  //     return "Admin";
+  //   }
+  //   if(number === 2){
+  //     return "Editor";
+  //   }
+  //   if(number === 3){
+  //     return "Kullanıcı";
+  //   }
+  // }
 
-  const yetki = yetkiFunc(activeUser.accessLevel);
+  // const yetki = yetkiFunc(activeUser.accessLevel);
   
   useEffect(() => {
     const handleScroll = () => {
