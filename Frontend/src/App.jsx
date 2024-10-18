@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage.jsx'
 import Panel from './Pages/Panel.jsx'
 import BlogDuzenlePage from './Pages/BlogDuzenlePage.jsx'
-import Bloglar from './Pages/Bloglar.jsx'
+import BlogListele from './Pages/BlogListele.jsx'
 import YeniBlogEkle from './Pages/YeniBlogEkle.jsx'
 import Footer from './Components/Footer.jsx'
 import Login from './Pages/Login.jsx'
@@ -134,7 +134,7 @@ const App = () => {
                       <Route path="/panel" element={<Panel />}> 
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
-                                    <Route path="bloglar" element={<Bloglar />} />
+                                    <Route path="BlogListele" element={<BlogListele />} />
                                     <Route path="users" element={<Users />} />
                                    
                                     <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
