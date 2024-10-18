@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import "../Styles/NewPage.scss";
-import Page404 from "../Pages/Page404"
+import Page404 from "../Pages/Page404";
 import { Link } from "react-router-dom";
 
 const NewPage = () => {
@@ -13,7 +13,7 @@ const NewPage = () => {
     try {
       const response = await fetch(`/api/page/${url}`);
       const data = await response.json();
-      if (data.success==false) {
+      if (data.success === false) {
         console.log("Burada bir sorun olabilir");
         setError(true);
         return;
@@ -58,6 +58,14 @@ const NewPage = () => {
             <section className="content">
               <h2>{component.inputs.find(input => input.name === 'title')?.value}</h2>
               <p>{component.inputs.find(input => input.name === 'content')?.value}</p>
+              {/* Resim URL'sini al ve görüntüle */}
+              {component.inputs.find(input => input.name === 'image')?.value && (
+                <img 
+                  src={component.inputs.find(input => input.name === 'image').value} 
+                  alt="Yüklenen Resim" 
+                  className="content-image" 
+                />
+              )}
             </section>
           )}
         </div>
