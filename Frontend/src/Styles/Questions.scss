@@ -78,7 +78,7 @@
   }
 
 
-  .content {
+  .contentQuestion {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out, padding 0.5s ease-out;
@@ -87,7 +87,7 @@
     background: #2e3748;
   }
   
-  .content.open{
+  .contentQuestion.open{
     max-height: 200px; /* İçeriğin yüksekliğini buradan ayarlayabilirsiniz */
     padding: 2%; /* İçerik açıldığında padding ekleyin */
     width: 86%;
@@ -97,6 +97,12 @@
   .question-container {
     position: relative;
     width: 98%;
+    max-width: 828px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .questions-div{

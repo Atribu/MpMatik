@@ -108,7 +108,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content1" ? "open" : ""
               }`}
               id="content1"
@@ -131,7 +131,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content2" ? "open" : ""
               }`}
               id="content2"
@@ -153,7 +153,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content3" ? "open" : ""
               }`}
               id="content3"
@@ -177,7 +177,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content4" ? "open" : ""
               }`}
               id="content4"
@@ -200,7 +200,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content5" ? "open" : ""
               }`}
               id="content5"
@@ -223,7 +223,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content6" ? "open" : ""
               }`}
               id="content6"
@@ -246,7 +246,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content7" ? "open" : ""
               }`}
               id="content7"
@@ -269,7 +269,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content8" ? "open" : ""
               }`}
               id="content8"
@@ -292,7 +292,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content9" ? "open" : ""
               }`}
               id="content9"
@@ -315,7 +315,7 @@ useEffect(() => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content10" ? "open" : ""
               }`}
               id="content10"
