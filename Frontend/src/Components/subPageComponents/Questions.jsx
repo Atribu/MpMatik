@@ -28,7 +28,7 @@ const Questions = () => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content1" ? "open" : ""
               }`}
               id="content1"
@@ -53,7 +53,7 @@ const Questions = () => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content2" ? "open" : ""
               }`}
               id="content2"
@@ -77,7 +77,7 @@ const Questions = () => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content3" ? "open" : ""
               }`}
               id="content3"
@@ -103,7 +103,7 @@ const Questions = () => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content4" ? "open" : ""
               }`}
               id="content4"
@@ -126,7 +126,7 @@ const Questions = () => {
             </button>
             <div className="line-div"></div>
             <div
-              className={`content ${
+              className={`contentQuestion ${
                 activeContent === "content5" ? "open" : ""
               }`}
               id="content5"

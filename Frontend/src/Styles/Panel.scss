@@ -49,9 +49,13 @@ section.SideBar {
           display: flex;
           flex-direction: column;
           width: 100%;
-          margin-left: 15px; /* Alt menüyü içeri kaydırmak için */
+          margin-left: 15px;
           margin-top: 5px;
-  
+          max-height: 0; /* Menü kapalıyken görünmeyecek */
+          overflow: hidden;
+          opacity: 0;
+          transition: max-height 0.6s ease, opacity 0.6s ease;
+        
           a {
             display: flex;
             width: 85%;
@@ -61,12 +65,18 @@ section.SideBar {
             border-radius: 10px;
             padding: 7px;
             cursor: pointer;
-  
+            transition: background-color 0.3s, color 0.3s;
+        
             &:hover {
               color: black;
               background-color: white;
             }
           }
+        }
+        
+        .submenu.open {
+          max-height: 500px; /* Menü açıkken yeterli yükseklik */
+          opacity: 1;
         }
       }
     }

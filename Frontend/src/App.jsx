@@ -144,7 +144,7 @@ const App = () => {
                                     <Route path="formlar/:id" element={<FormDetay/>} />
                                     <Route path="basic-formlar" element={<BasicFormlar/>}/>
                                     <Route path="basic-formlar/:id" element={<BasicFormDetay/>}/>
-                                    <Route path="profil-duzenle" element={<ProfilEditor />} />
+                                    <Route path="profil-duzenle/:id" element={<ProfilEditor />} />
                                     <Route path="users/:id" element={<ProfilEditor />} />
                                     
 

@@ -22,7 +22,7 @@ const Header1 = () => {
     if (number === 3) {
       return "Kullanıcı";
     }
-    return "Bilinmiyor"; // Eğer yetki tanımlı değilse
+    return "Bilinmiyor"; 
   };
 
   // activeUser var mı kontrolü

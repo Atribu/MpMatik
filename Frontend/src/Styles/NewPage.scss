@@ -92,3 +92,45 @@
     }
   }
   
+
+  .embla {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousell-wrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   
+    
+  }
+  
+  .carousell-container {
+    display: flex;
+    width: 50%;
+  }
+  
+  .carousell-slide {
+    width: 100%; 
+  }
+  
+  .gallery-image {
+    width: 500px; 
+    height: 500px;
+  }
+
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
