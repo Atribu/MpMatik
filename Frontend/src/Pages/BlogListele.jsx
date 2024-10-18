@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../Styles/Bloglar.scss"; // SCSS dosyasını bağladık
 import { useSelector } from 'react-redux';
 
-const Bloglar = () => {
+const BlogListele = () => {
   const [list, setList] = useState([]);
   const [user, setUser] = useState();
   const { activeUser } = useSelector((state) => state.user);
@@ -122,4 +122,4 @@ console.log(list);
   );
 };
 
-export default Bloglar;
+export default BlogListele;

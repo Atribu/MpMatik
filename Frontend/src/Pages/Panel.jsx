@@ -6,7 +6,8 @@ import { useSelector } from 'react-redux'
 const Panel = () => {
     const {activeUser} = useSelector((state)=>state.user)
 
-    return activeUser ? (<PanelSideBar />) : (<Navigate to="/giris" />)
+       
+    return activeUser ? (<PanelSideBar />) :  (<Navigate to="/giris" />)
   
 }
 

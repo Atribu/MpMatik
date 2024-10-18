@@ -1,47 +1,82 @@
 section.SideBar {
     display: flex;
     flex-direction: row;
-
+  
     aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 10%;
+      background-color: #0e0c1b;
+      padding: 15px;
+      height: 100vh;
+  
+      nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 10%;
-        background-color: #0e0c1b;
-        padding: 15px;
-        height: 100vh;
-
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            width: 100%;
-            gap:10px;
-
-            a {
-                display: flex;
-                text-decoration: none;
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                border-radius: 10px;
-                padding: 10px;
-
-                &:hover {
-                    color: black;
-                    background-color: white;
-                }
-            }
-        }
-    }
-
-    div {
-        display: flex;
+        align-items: flex-start;
         width: 100%;
-        height: 100%;
-        background-color: #6b81a5;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        //padding: 15px;
+        gap: 10px;
+  
+        a,
+        .menu-item {
+          display: flex;
+          align-items: center; /* İkon ve metni yatayda hizalamak için */
+          width: 90%;
+          text-decoration: none;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          border-radius: 10px;
+          padding: 7px;
+          cursor: pointer;
+  
+          &:hover {
+            color: black;
+            background-color: white;
+          }
+        }
+  
+        .menu-item {
+          justify-content: space-between; /* Metin ve ikonu sağa ve sola yaslamak için */
+  
+          .menu-icon {
+            margin-left: 5px; /* Metin ve ikon arasındaki boşluk */
+            font-size: 14px; /* İkon boyutu */
+          }
+        }
+  
+        .submenu {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-left: 15px; /* Alt menüyü içeri kaydırmak için */
+          margin-top: 5px;
+  
+          a {
+            display: flex;
+            width: 85%;
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            padding: 7px;
+            cursor: pointer;
+  
+            &:hover {
+              color: black;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  
+    .SideBar-div {
+      display: flex;
+      width: 100%;
+      background-color: #6b81a5;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
 
         section.blog-section {
             display: flex;
@@ -139,4 +174,10 @@ section.SideBar {
     justify-content: start;
     width: 100%;
     height: auto;
+}
+
+.div-panel-melodi{
+    background-color: #0e0c1b;
+    color: white;
+    cursor: pointer;
 }

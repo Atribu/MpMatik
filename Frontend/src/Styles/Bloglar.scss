@@ -1,6 +1,7 @@
 .blog-list-container {
     padding: 20px;
-    background-color: #f8f9fa;
+    display: flex;
+    width: 100%;
   }
 
   .main-user {
@@ -13,6 +14,7 @@
   
   .blog-table {
     width: 100%;
+    height: 10vh;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
