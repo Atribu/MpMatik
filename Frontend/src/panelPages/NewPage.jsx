@@ -80,9 +80,9 @@ const NewPage = () => {
               <section className="gallery">
                 <h2>Galeri</h2>
                 {component.inputs && component.inputs.length > 0 && component.inputs[0].value ? (
-                  <div className='carousel-wrapper'>
-                    <div className="carousel-container" ref={emblaRef}>
-                      <div className="carousel-slides">
+                  <div className='carousell-wrapper'>
+                    <div className="carousell-container" ref={emblaRef}>
+                      <div className="carousell-slides">
                         {component.inputs[0].value.map((imageUrl, i) => (
                           <div className='carousel-slide' key={i}>
                             <img
