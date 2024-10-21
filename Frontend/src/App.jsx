@@ -47,6 +47,7 @@ import FormDetay from './Pages/FormDetay.jsx';
 import BasicFormDetay from "./Pages/BasicFormDetay.jsx";
 import NewPage from './panelPages/NewPage.jsx'
 import ProfilEditor from './Pages/ProfilEditor.jsx'
+import Dashboard from "./Components/Dashboard.jsx"
 
 
 const App = () => {
@@ -132,6 +133,7 @@ const App = () => {
                       <Route path="/bp-tasitmatik-hizmeti-veren-istasyonlar" element={<BpTasitmatikHizmetiVerenIstasyonlar/>} />
                       <Route path="/ulusal-tasit-tanima-sistemi-nedir" element={<UlusalTasitTanimaSistemiNedir/>} /> 
                       <Route path="/panel" element={<Panel />}> 
+                                    <Route path="dashboard" element={<Dashboard/>}/>
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
                                     <Route path="BlogListele" element={<BlogListele />} />

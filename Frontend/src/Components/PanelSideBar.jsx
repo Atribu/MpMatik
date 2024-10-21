@@ -28,6 +28,7 @@ const PanelSideBar = () => {
       <aside>
         <nav>
           <NavLink to="/panel">Panel</NavLink>
+          <NavLink to="/panel/dashboard">Dashboard</NavLink>
           <div
             className="menu-item"
             onClick={() => setIsBlogMenuOpen(!isBlogMenuOpen)}
