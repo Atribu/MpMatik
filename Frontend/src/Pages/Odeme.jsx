@@ -1,18 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Odeme() {
+  const navigate = useNavigate();
+  const invoiceId = `ORDER_${Date.now()}`;
+  const merchantKey = process.env.REACT_APP_MERCHANT_KEY;
+
   const [formData, setFormData] = useState({
     companyname: '',
     amount: '',
+    cc_holder_name: '',
+    cc_no: '',
+    expiry_month: '',
+    expiry_year: '',
+    cvv: '',
     name: '',
-    number: '',
-    dateM: '',
-    dateY: ''
+    surname: '',
+    merchant_key: '',
+    invoice_id: '',
   });
 
+  useEffect(() => {
+    setFormData((prevData) => ({
+      ...prevData,
+      merchant_key: merchantKey,
+      invoice_id: invoiceId,
+    }));
+  }, [merchantKey, invoiceId]);
+
+  useEffect(() => {
+    console.log('Form Data Güncellendi:', formData);
+  }, [formData]);
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: name === 'amount' ? parseFloat(value) : value,
+    });
+    // console.log('Form Data:', formData); // Bu satırı isterseniz kullanabilirsiniz
   };
 
   const handleSubmit = async (e) => {
@@ -20,20 +47,17 @@ function Odeme() {
     try {
       const response = await axios.post('/api/odeme/yeni', formData);
       console.log('Ödeme Başarılı:', response.data);
+      alert('Ödeme başarılı!');
+      navigate('/odeme-basarili'); // Başarılı ödeme sayfasına yönlendirme
     } catch (error) {
       console.error('Ödeme Hatası:', error);
+      alert('Ödeme sırasında bir hata oluştu.');
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="companyname" placeholder="Şirket Adı" onChange={handleChange} required />
-      <input type="number" name="amount" placeholder="Tutar" onChange={handleChange} required />
-      <input type="text" name="name" placeholder="Kart Sahibi Adı" onChange={handleChange} required />
-      <input type="text" name="number" placeholder="Kart Numarası" onChange={handleChange} required />
-      <input type="text" name="dateM" placeholder="Ay (MM)" onChange={handleChange} required />
-      <input type="text" name="dateY" placeholder="Yıl (YY)" onChange={handleChange} required />
-      <button type="submit">Ödeme Yap</button>
+      {/* Form input alanları */}
     </form>
   );
 }

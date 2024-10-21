@@ -51,45 +51,7 @@ import ProfilEditor from './Pages/ProfilEditor.jsx'
 
 const App = () => {
       const { activeUser } = useSelector((state) => state.user);
-      const handlePaymentSubmit = async (paymentData) => {
-            try {
-              const response = await fetch('/api/payment', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(paymentData),
-              });
-        
-              const result = await response.json();
-              if (result.success) {
-                alert('Ödeme başarılı!');
-              } else {
-                alert('Ödeme başarısız: ' + result.message);
-              }
-            } catch (error) {
-                  if (error.response) {
-                    // Sunucu tarafı hata yanıtı
-                    console.error('Ödeme İşleminde Hata:', error.response.data);
-                    res.status(500).json({
-                      success: false,
-                      message: error.response.data.status_description || 'Ödeme işlemi başarısız.',
-                    });
-                  } else if (error.request) {
-                    // İstek yapıldı ama yanıt alınamadı
-                    console.error('Ödeme İşleminde Hata (istek yapıldı ama yanıt alınamadı):', error.request);
-                    res.status(500).json({
-                      success: false,
-                      message: 'Ödeme işlemi sırasında yanıt alınamadı.',
-                    });
-                  } else {
-                    // Başka bir hata
-                    console.error('Ödeme İşleminde Hata:', error.message);
-                    res.status(500).json({ success: false, message: 'Ödeme işlemi başarısız.' });
-                  }
-                }
-                
-          };
+      
       
   return (
    <>
@@ -113,7 +75,7 @@ const App = () => {
                       <Route path="/ihaleli-akaryakit" element={<IhaleliAkaryakit />} />
                       <Route path='/nasil-calisir' element={<NasilCalısır/>}/>
                       <Route path="/*" element={<Page404 />} />
-                      <Route path="/odeme" element={<Payment onSubmit={handlePaymentSubmit}/>} />
+                      <Route path="/odeme" element={<Payment />} />
                       <Route path="/hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
                       <Route path="/kolay-odeme" element={<KolayOdeme />} />
@@ -135,9 +97,7 @@ const App = () => {
                                     <Route path="yeni-blog-ekle" element={<YeniBlogEkle />} />
                                     <Route path="bloglar/duzenle" element={<BlogDuzenlePage />} />
                                     <Route path="BlogListele" element={<BlogListele />} />
-                                    <Route path="users" element={<Users />} />
-                                   
-                                    <Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
+                                    <Route path="users" element={<Users />} /><Route path="bloglar/blog-duzenle/:url" element={<BlogDuzenle />} />
                                     <Route path="bloglar/:url" element={<BlogDetay/>} />
                                     <Route path="yeni-sayfa-ekle" element={<SayfaEkle />} />
                                     <Route path="formlar" element={<Formlar/>}/>
