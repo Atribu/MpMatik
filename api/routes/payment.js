@@ -19,28 +19,43 @@ console.log('App Secret:', appSecret);
 
 // Hash Key oluşturma fonksiyonu
 function generateHashKey(total, installment, currency_code, merchant_key, invoice_id, app_secret) {
-  const data = `${total}|${installment}|${currency_code}|${merchant_key}|${invoice_id}`;
+  try {
+      const data = total + '|' + installment + '|' + currency_code + '|' + merchant_key + '|' + invoice_id;
+      console.log("Data:", data);
 
-  const iv = crypto.randomBytes(16); // 16 byte IV
-  const password = crypto.createHash('sha1').update(app_secret).digest('hex');
+      const iv = crypto.createHash('sha1').update(String(Math.random())).digest('hex').slice(0, 16);
+      console.log("IV:", iv);
 
-  const salt = crypto.randomBytes(4).toString('hex'); // 4 byte salt
-  const saltWithPassword = crypto.createHash('sha256').update(password + salt).digest();
+      const password = crypto.createHash('sha1').update(app_secret).digest('hex');
+      console.log("Password:", password);
 
-  // Şifreleme işlemi
-  const cipher = crypto.createCipheriv('aes-256-cbc', saltWithPassword, iv);
-  let encrypted = cipher.update(data, 'utf8', 'base64');
-  encrypted += cipher.final('base64');
+      const salt = crypto.createHash('sha1').update(String(Math.random())).digest('hex').slice(0, 4);
+      console.log("Salt:", salt);
 
-  // IV ve salt'ı hex formatında string'e çevir
-  const ivHex = iv.toString('hex').slice(0, 16); // İlk 16 karakter
-  const saltHex = salt; // 4 karakter
+      const salt_with_password = crypto.createHash('sha256').update(password + salt).digest('hex').slice(0, 32);
+      console.log("Salt with Password:", salt_with_password);
 
-  // Mesajı oluştur
-  let msgEncryptedBundle = `${ivHex}:${saltHex}:${encrypted}`;
-  msgEncryptedBundle = msgEncryptedBundle.replace(/\//g, '__');
+      const cipher = crypto.createCipheriv('aes-256-cbc', salt_with_password, iv);
 
-  return msgEncryptedBundle;
+
+      const padded_data = data;
+      console.log("Padded Data:", padded_data);
+
+      let encrypted = cipher.update(padded_data, 'binary', 'base64');
+      encrypted += cipher.final('base64');
+      console.log("Encrypted:", encrypted);
+
+      const msg_encrypted_bundle = iv + ':' + salt + ':' + encrypted;
+      console.log("Message Encrypted Bundle:", msg_encrypted_bundle);
+
+      const msg_encrypted_bundle_replaced = msg_encrypted_bundle.replace('/', '__');
+      console.log("Replaced Bundle:", msg_encrypted_bundle_replaced);
+
+      return msg_encrypted_bundle_replaced;
+  } catch (error) {
+      console.error("Hata:", error);
+      return null;
+  }
 }
 
 router.post('/', async (req, res) => {
