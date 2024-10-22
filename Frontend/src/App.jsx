@@ -79,14 +79,14 @@ const App = () => {
                       <Route path="/odeme" element={<Payment />} />
                       <Route path="/hakkimizda" element={<About />} />
                       <Route path="/hemen-basvur" element={<HemenBasvur />} />
-                      <Route path="/kolay-odeme" element={<KolayOdeme />} />
+                      <Route path="/kolay-odeme" element={<Payment />} />
                       <Route path="/iletisim" element={<Contact />} />
                       <Route path="/referanslar" element={<Referances />} />
                       <Route path="/gizlilik-politikasi" element={<GizlilikPolitikasi />} />
                       <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
                       {/* <Route path='/kayit-ol' element={<Register />} /> */}
                       <Route path="/giris" element={<Login />} />
-                      {/* <Route path="/odeme" element={<Odeme />} /> */}
+                      
                       {/* <Route path="/bp-tasitmatik-musteri-hizmetleri" element={<BlogMusteriHizmetleri/>}/> */}
                       <Route path="/bp-tasitmatik-sik-sorulan-sorular" element={<BPTasitmatikSikSorulanSorular/>} />
                       <Route path="/tasit-tanima-sistemi" element={<TasitTanimaSistemi/>} />
