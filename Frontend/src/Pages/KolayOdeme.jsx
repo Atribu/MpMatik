@@ -28,13 +28,13 @@ const KolayOdeme = () => {
 
           <button  className={`toggle-button ${isActive ? "active" : ""}`}
             onClick={handleClick}>Mevlana Petrol Ltd. Şti Hakkında</button>
-            <div className={`content ${isActive ? "visible" : ""}`}>
-                <p>Bu paragraf, butona tıklandığında görünür olacak.</p>
+            <div className={`contentOdeme ${isActive ? "visible" : ""}`}>
+                <p>1975 yılından bu yana akaryakıt sektöründe faaliyet gösteren Mevlana Petrol Ltd. Şti., müşteri memnuniyetini ve güvenliği ilke edinmiş köklü bir şirkettir. Sektördeki 40 yılı aşkın tecrübemizle, müşterilerimize her zaman en iyi hizmeti sunmaya devam ediyoruz. Güvenilir altyapımız ve güçlü ticari geçmişimiz ile daima yanınızdayız.</p>
             </div>
 
-          <button  className={`toggle-button2 ${isActive2 ? "active" : ""}`}>MPMatik Uygulaması ve Markası</button>
-          <div className={`content2 ${isActive2 ? "visible" : ""}`}>
-        <p>Bu paragraf, butona tıklandığında görünür olacak.</p>
+          <button  className={`toggle-button2 ${isActive2 ? "active" : ""}`} onClick={handleClick2}>MPMatik Uygulaması ve Markası</button>
+          <div className={`contentOdeme2 ${isActive2 ? "visible" : ""}`}>
+        <p>MPMatik, Mevlana Petrol Ltd. Şti.’nin tescilli markası olup, Türkiye genelinde birçok müşterimize sorunsuz ve kaliteli akaryakıt hizmeti sunmaktadır. Gelişmiş teknolojik altyapımız sayesinde, MPMatik uygulamamız üzerinden yapacağınız tüm işlemler hızlı, kolay ve güvenli bir şekilde gerçekleştirilir.</p>
       </div>
 
 

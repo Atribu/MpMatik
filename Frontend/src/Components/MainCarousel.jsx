@@ -5,10 +5,10 @@ import Autoplay from "embla-carousel-autoplay";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "../Styles/MainCarousel.scss";
 import image1 from "../../public/images/mpmatik.jpg";
-import image2 from "../../public/images/mpmatik2.jpg";
+import image2 from "../../public/images/mpmatik-banner-filokart.jpg";
 import image3 from "../../public/images/mpmatik3.jpg";
 import image1mobile from "../../public/images/mpmatik-mobil-banner-istasyon.jpg";
-import image2mobile from "../../public/images/filo-mobil-banner.jpg";
+import image2mobile from "../../public/images/mpmatik-banner-filokart.jpg";
 import image3mobile from "../../public/images/mpmatik-mobil-banner-form.jpg";
 import ContactForm from "./ContactForm";
 

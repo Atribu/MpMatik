@@ -74,8 +74,8 @@ const ContactForm = () => {
   };
 
   return (
-    <form className='formCarousel' onSubmit={handleSubmit}>
-      <div className='divcontact'>
+    <form className='formCarousel-main' onSubmit={handleSubmit}>
+      <div className='divcontact-main'>
         <p className='h2'>BP TAŞITMATİK</p>
         <p className='h3'>Kurumsal Başvuru Formu</p>
       </div>
