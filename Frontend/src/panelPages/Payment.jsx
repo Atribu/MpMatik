@@ -99,7 +99,7 @@ function Payment() {
   };
 
   return (
-    <main className="payment-form-container">
+
       <section className="payment-form-section">
       <div className='divHeader'> <span>Kredi Kartı Bilgileriniz</span></div>
       <form onSubmit={handleSubmit} className='payment-form'>
@@ -181,11 +181,11 @@ function Payment() {
       />
 
       <button type="submit" disabled={loading}>
-        {loading ? 'Ödeme Yapılıyor...' : 'Ödeme Yap'}
+        {loading ? 'Ödeme Yapılıyor...' : 'ÖDE'}
       </button>
     </form>
       </section>
-    </main>
+
   );
 }
 

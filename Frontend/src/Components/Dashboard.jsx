@@ -59,14 +59,31 @@ const Dashboard = () => {
         data: connectionData.dataPoints.map((point) => point.value),
         borderColor: 'rgba(255, 99, 132, 1)',
         fill: false,
+        
       },
     ],
+  };
+
+  const options = {
+    responsive: true,
+    scales: {
+      x: {
+        ticks: {
+          color: 'rgba(0, 128, 0, 1)', // X eksenindeki etiketlerin rengi (yeşil)
+        },
+      },
+      y: {
+        ticks: {
+          color: 'rgba(128, 0, 128, 1)', // Y eksenindeki etiketlerin rengi (mor)
+        },
+      },
+    },
   };
 
   return (
     <div>
       <h2>Network ve Bağlantı Grafiği</h2>
-      <Line data={chartData} />
+      <Line data={chartData} options={options}/>
     </div>
   );
 };
