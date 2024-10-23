@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css'; // SweetAlert2 CSS'i eklemek için
+import '../Styles/PaymentForm.scss';
 
 function Payment() {
   const [formData, setFormData] = useState({
@@ -98,7 +99,11 @@ function Payment() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+
+      <section className="payment-form-section">
+      <div className='divHeader'> <span>Kredi Kartı Bilgileriniz</span></div>
+      <form onSubmit={handleSubmit} className='payment-form'>
+      <label>Firma Adı (Zorunlu Alan)</label>
       <input
         type="text"
         name="companyname"
@@ -108,6 +113,7 @@ function Payment() {
         required
       />
 
+     <label>Ad Soyad</label>
       <input
         type="text"
         name="name"
@@ -117,6 +123,7 @@ function Payment() {
         required
       />
 
+      <label>Kredi Kartı Numarası</label>
       <input
         type="text"
         name="number"
@@ -130,6 +137,7 @@ function Payment() {
 
       <div>
         <label>Son Kullanma Tarihi</label>
+        <div className='divCalendar'>
         <select name="date-m" value={formData['date-m']} onChange={handleChange} required>
           <option value="">Ay</option>
           {[...Array(12)].map((_, i) => (
@@ -143,8 +151,11 @@ function Payment() {
             <option key={i+24} value={(24 + i).toString()}>{(24 + i).toString()}</option>
           ))}
         </select>
+        </div>
       </div>
 
+
+      <label>CVC</label>
       <input
         type="text"
         name="cvc"
@@ -156,6 +167,8 @@ function Payment() {
         title="3 veya 4 haneli CVC kodu girin"
       />
 
+
+      <label>Ödeme Miktarı</label>
       <input
         type="number"
         name="amount"
@@ -168,9 +181,11 @@ function Payment() {
       />
 
       <button type="submit" disabled={loading}>
-        {loading ? 'Ödeme Yapılıyor...' : 'Ödeme Yap'}
+        {loading ? 'Ödeme Yapılıyor...' : 'ÖDE'}
       </button>
     </form>
+      </section>
+
   );
 }
 
