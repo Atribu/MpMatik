@@ -1,0 +1,227 @@
+.cookie-sec{
+    display: flex;
+    position: fixed;
+    inset: auto 0 0 0; 
+    margin: auto;
+    z-index:9999;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    height: 18%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 14%;
+        border-radius: 20px;
+    }
+    
+    @media (min-width: 1024px) {
+        height: 10%;
+        border-radius: 20px;
+       
+    }
+}
+
+.cookie-div{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+    
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        
+    }
+}
+
+.cookie-buttons{
+    border:2px solid green;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    color:white;
+    background:green;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color: green;
+    }
+
+    @media (max-width: 1024px) {
+        white-space:wrap; 
+        font-size: 14px;
+        padding:6px 8px;
+    }
+    
+    @media (min-width: 1024px) {
+        white-space: nowrap;
+        font-size: 16px;
+        padding:10px 16px;
+    }
+
+}
+
+.cookie-buttons-div{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie-text{
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.cookie-manage-div{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.50);
+    z-index: 9999;
+    inset: 0px;
+}
+
+
+.cookie-manage-icdiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background:white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+    @media (max-width: 1024px) {
+        width: 95%;
+        height: 85%;
+    }
+    
+    @media (min-width: 1024px) {
+        width: 40%;
+        height: 750px;
+    }
+}
+
+.crossbutton{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 40px;
+    color: orange;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.manage-text-disdiv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    
+    @media (max-width: 1024px) {
+        width: 95%;
+    }
+    
+    @media (min-width: 1024px) {
+        width: 85%;
+    }
+
+    h4{
+        font-size: 20px;
+        line-height: normal;
+        text-align: center;
+        font-weight: 600;
+        color: green;
+    }
+}
+
+.manage-text-icdiv{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:5px;
+    align-items: center;
+    text-align: start;
+    width: 95%;
+}
+
+.manage-buttons-div{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    @media (max-width: 1024px) {
+        bottom:10px;
+    }
+    
+    @media (min-width: 1024px) {
+        bottom:40px;
+    }
+}
+
+.toggle-text-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        width: 80%;
+    }
+
+}
+
+.toggle-container {
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &.active {
+      background-color: #4caf50; // Aktif olduğunda arka plan rengi değişir
+    }
+  }
+  
+  .toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  
+    &.checked {
+      transform: translateX(25px); // Sağ tarafa kaydır
+    }
+  }
+  
+
