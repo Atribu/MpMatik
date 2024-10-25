@@ -61,14 +61,14 @@ const Header1 = () => {
               <img 
                 src='/Logo/bp-logo-beyazimsi.png' 
                 alt='Logo' 
-                width={60}
-                height={79.64}
+                width={45}
+                height={60}
               /> :
               <img 
                 src='/Logo/bp-logo-kendi.png'
                 alt='Logo' 
-                width={60}
-                height={79.64}
+                width={45}
+                height={60}
               />
             }
           </Link>
