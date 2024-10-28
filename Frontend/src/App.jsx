@@ -48,6 +48,8 @@ import BasicFormDetay from "./Pages/BasicFormDetay.jsx";
 import NewPage from './panelPages/NewPage.jsx'
 import ProfilEditor from './Pages/ProfilEditor.jsx'
 import Dashboard from "./Components/Dashboard.jsx"
+import Whatsapp from './Components/WhatsApp.jsx'
+import CookiePopup from './Components/CookiePopup.jsx'
 
 
 const App = () => {
@@ -123,7 +125,8 @@ const App = () => {
                   ""
             ) : (
                   <>
-                  
+                  <CookiePopup/>
+                  <Whatsapp/>
                   <Footer />
                   </>
                   
