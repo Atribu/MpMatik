@@ -11,6 +11,7 @@ import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
 import { CiStar } from "react-icons/ci";
 import { TbStarFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet";
 
 const BpTasitmatikHizmetiVerenIstasyonlar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,11 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
   };
 
   return (
+   <>
+   <Helmet>
+   <title>BP Taşıtmatik Hizmeti Veren İstasyonlar - BP Taşıtmatik</title>
+   <meta name="description" content="BP Taşıtmatik, BP istasyonlarında sunulan bir hizmettir ve sürücülere bir dizi avantaj sağlar. Bu hizmetle birlikte BP istasyonlarından yakıt alımı daha" />
+   </Helmet>
     <main className="">
       <div className="blog-div">
         <div className="div-ic">
@@ -114,6 +120,7 @@ const BpTasitmatikHizmetiVerenIstasyonlar = () => {
       <RoadSimulation/>
       </div>
     </main>
+   </>
   );
 }
 

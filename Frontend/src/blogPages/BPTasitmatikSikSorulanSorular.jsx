@@ -10,6 +10,7 @@ import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
 import { CiStar } from "react-icons/ci";
 import { TbStarFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet";
 
 const BPTasitmatikSikSorulanSorular = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,12 @@ const BPTasitmatikSikSorulanSorular = () => {
   };
 
   return (
+   <>
+   <Helmet>
+   <title>BP Taşıtmatik Sık Sorulan Sorular - BP Taşıtmatik</title>
+   <meta name="description" content="BP Taşıtmatik, BP (British Petroleum) tarafından sunulan bir akaryakıt kartı ve yakıt yönetim hizmetidir. Bu hizmet, işletmelerin filo araçlarının yakıt" />
+   </Helmet>
+
     <main className="">
       <div className="blog-div">
         <div className="div-ic">
@@ -247,6 +254,7 @@ Sonuç olarak, BP Taşıtmatik montaj işlemi müşteri memnuniyeti odaklı bir 
       <RoadSimulation/>
       </div>
     </main>
+   </>
   );
 }
 

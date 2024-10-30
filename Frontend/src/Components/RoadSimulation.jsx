@@ -34,8 +34,7 @@ const RoadSimulation = () => {
   return (
     <div className="containerb">
       <div className='divEbülten slide-up'>
-        <h2>
-        E-Bültene Kaydol</h2>
+        <h3> E-Bültene Kaydol</h3>
         <p>E-Mail bültenimize kaydolarak MP Taşıtmatik ile ilgili tüm yenilik ve haberleri alabilirsiniz.</p>
       <div className='divInput'>
         <input type='email' id='email' name='email' placeholder='E-Mail' required></input>

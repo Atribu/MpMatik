@@ -11,6 +11,7 @@ import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
 import { CiStar } from "react-icons/ci";
 import { TbStarFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet";
 
 const UlusalTasitTanimaSistemiNedir = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,11 @@ const UlusalTasitTanimaSistemiNedir = () => {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>Ulusal Taşıt Tanıma Sistemi Nedir? - BP Taşıtmatik</title>
+    <meta name="description" content="Ulusal Taşıt Tanıma Sistemi (UTTS), bir ülkenin karayolu trafiğini daha etkin bir şekilde yönetmek, denetlemek ve izlemek amacıyla kullanılan bir teknoloji ve" />
+    </Helmet>
     <main className="">
       <div className="blog-div">
         <div className="div-ic">
@@ -144,7 +150,7 @@ const UlusalTasitTanimaSistemiNedir = () => {
       <Background/> 
       <RoadSimulation/>
       </div>
-    </main>
+    </main></>
   );
 }
 

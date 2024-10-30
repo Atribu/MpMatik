@@ -70,7 +70,7 @@ const Satis2 = ({texts, button}) => {
     <div className='overlay2'></div>
   <div className='container2 '>
     <div className='subContainerText slide-upSatis2'>
-        <h2>İhaleli Akaryakıt Satışı</h2>
+        <h3>İhaleli Akaryakıt Satışı</h3>
         {texts.map((text, index) => (
         <p key={index}>{text}</p>  
       ))}

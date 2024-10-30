@@ -11,6 +11,7 @@ import RoadSimulation from "../Components/RoadSimulation";
 import ContactForm2 from "../Components/ContactForm2";
 import { CiStar } from "react-icons/ci";
 import { TbStarFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,12 @@ const BlogDetails = () => {
 
 
   return (
+   <>
+   <Helmet>
+   <title>BP Taşıtmatik Avantajları Nelerdir? - BP Taşıtmatik</title>
+   <meta name="description" content="BP Taşıtmatik kartı, sürücülere yakıt alımlarını kolaylaştıran bir ödeme sistemi ve yakıt alım kartıdır. Bu kart sayesinde kullanıcılar, yakıt alımlarını" />
+   </Helmet>
+
     <main className="">
       <div className="blog-div">
         <div className="div-ic">
@@ -184,6 +191,7 @@ const BlogDetails = () => {
       <RoadSimulation/>
       </div>
     </main>
+   </>
   );
 };
 

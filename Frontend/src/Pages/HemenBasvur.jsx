@@ -8,6 +8,7 @@ import RoadSimulation from '../Components/RoadSimulation'
 import ContactForm2 from '../Components/ContactForm2'
 import Background from '../Components/Background'
 import EBülten from '../Components/EBülten'
+import { Helmet } from 'react-helmet'
 
 const textSatis2=["Yılların verdiği tecrübe, birikimli ve deneyimli kadrosu ile Mevlana Petrol, katıldığı ihaleli akaryakıt satışı ile tüm resmi kurum ve kuruluşlara, özel sektöre Taşıtmatik veya toptan akaryakıt satışı yaparak bu anlamda da pratik çözümler üretip, proje destek hizmetleri sağlamaktadır.",
   "Hem toptan hem de Taşıtmatik satışlarını beraber yaparak, ihale kapsamında çoklu hizmetler sunabilmekte. Esnek ödeme koşulları çerçevesinde optimal alış veriş imkanları ortaya koyabilmektedir.",
@@ -16,6 +17,11 @@ const textSatis2=["Yılların verdiği tecrübe, birikimli ve deneyimli kadrosu 
 const buttonSatis2="DAHA FAZLA BİLGİ AL";
 const HemenBasvur = () => {
   return (
+    <>
+    <Helmet>
+    <title>BP Taşıtmatik Hemen Başvur - BP Taşıtmatik</title>
+    <meta name="description" content="BP TAŞITMATİK, BP tarafından geliştirilen özel bir filo yönetimi çözümüdür. Bu otomasyon sistemi sayesinde, aracınızdan inmeden akaryakıt alabilir ve ikmal" />
+    </Helmet>
     <div>
       <Basvur/>
       <Limitation/>
@@ -27,6 +33,7 @@ const HemenBasvur = () => {
       <EBülten/>
       <RoadSimulation/>
     </div>
+    </>
   )
 }
 

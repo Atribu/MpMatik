@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/CookiePopup.scss";
+import { Link } from "react-router-dom";
 
 const CookiePopup = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,17 +25,15 @@ const CookiePopup = () => {
       <section className="cookie-sec">
         <div className="cookie-div">
           <p className="cookie-text">
-            We use Cookies: We use our own and third-party cookies to
-            personalize content and to analyze web traffic. Read more about
-            cookies
+          Çerezleri kullanıyoruz: İçeriği kişiselleştirmek ve web trafiğini analiz etmek için kendi çerezlerimizi ve üçüncü taraf çerezlerini kullanıyoruz. Çerezler hakkında daha fazla bilgi edinin
           </p>
           <div className="cookie-buttons-div">
             <button className="cookie-buttons" onClick={handleClose}>
-              Deny All Cookies
+             Tüm Çerezleri Reddet
             </button>
 
             <button onClick={handleModalToggle} className="cookie-buttons">
-              Manage Cookie Preferences
+            Çerez Tercihlerini Yönetin
             </button>
             {isModalOpen && (
               <div className="cookie-manage-div">
@@ -46,29 +45,27 @@ const CookiePopup = () => {
                     &times;
                   </button>
                   <div className="manage-text-disdiv">
-                    <h4>Manage Cookie Preferences</h4>
+                    <h4>Çerez Tercihlerini Yönetin</h4>
                     <div className="manage-text-icdiv">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempore non sapiente itaque adipisci explicabo sed,
-                        debitis magnam animi nulla sunt saepe delectus! Quis
-                        culpa sunt corrupti quisquam accusamus. Quod, fugit?
+                      Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi
+                        (“Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ”)
+                         tarafından işletilen (“Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+                          Limited Şirketi ”) web sitesini ziyaret edenlerin (“ziyaretçi”) kişisel verilerini 6698
+                           sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca işlemekte ve gizliliğini
+                            korumaktayız. Bu Web Sitesi Gizlilik ve Çerez Politikası (“Politika”) ile ziyaretçilerin
+                             kişisel verilerinin işlenmesi, çerez politikası ve internet sitesi gizlilik ilkeleri
+                              belirlenmektedir. 
                       </p>
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Expedita quaerat reiciendis et obcaecati magnam,
-                        voluptates necessitatibus, architecto consequuntur quas
-                        facilis maiores quos. Delectus, accusamus aliquam? Culpa
-                        consectetur voluptates asperiores corrupti facilis
-                        quisquam dolore, voluptatum vero deleniti optio libero
-                        rerum iusto.
-                      </p>
+
                      <div className="toggle-text-div">
                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Distinctio commodi illo labore omnis et
-                        voluptatibus consectetur aliquam sint voluptates sequi!
+                     Web sitemizin ziyaretçiler tarafından en verimli şekilde faydalanılması için çerezler
+                      kullanılmaktadır. Çerezler tercih edilmemesi halinde tarayıcı ayarlarından silinebilir ya da
+                       engellenebilir. Ancak bu web sitemizin performansını olumsuz etkileyebilir. Ziyaretçi tarayıcıdan
+                        çerez ayarlarını değiştirmediği sürece bu sitede çerez kullanımını kabul ettiği varsayılır.
                       </p>
+
 
                       <div
                         className={`toggle-container ${
@@ -83,13 +80,17 @@ const CookiePopup = () => {
                       </div>
                      </div>
 
+                          <Link className="link-cookie" to="/gizlilik-politikasi"> 
+                          <button onClick={handleModalToggle} className="cookie-buttons">Detaylı Bilgi</button>
+                          </Link>
+
 
                       <div className="manage-buttons-div">
                         <button className="cookie-buttons">
                           Confirm My Choices
                         </button>
                         <button className="cookie-buttons">
-                          Accept All Cookies
+                        Tüm Çerezleri Kabul Et
                         </button>
                       </div>
 
@@ -99,7 +100,7 @@ const CookiePopup = () => {
               </div>
             )}
 
-            <button className="cookie-buttons">Accept All Cookies</button>
+            <button className="cookie-buttons">Tüm Çerezleri Kabul Et</button>
           </div>
         </div>
       </section>

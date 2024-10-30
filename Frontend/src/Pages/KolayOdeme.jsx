@@ -5,6 +5,7 @@ import ContactForm2 from '../Components/ContactForm2'
 import Background from '../Components/Background'
 import Payment from "../panelPages/Payment"
 import "../Styles/PaymentForm.scss"
+import { Helmet } from 'react-helmet'
 
 const KolayOdeme = () => {
   const [isActive, setIsActive] = useState(false); 
@@ -19,6 +20,12 @@ const KolayOdeme = () => {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>Kolay Ödeme #3 - BP Taşıtmatik</title>
+    <meta name="description" content="www.mptasitmatik.com web sitemizden ve MPMatik akıllı uygulamamız üzerinden Mevlana Petrol Ltd. Şti. adına kredi kartı ile yapacağınız tüm ödemeler %100" />
+    </Helmet>
+
     <main className='main-div-odeme'>
       <div className='div-odeme'>
         <Payment/>
@@ -48,7 +55,7 @@ const KolayOdeme = () => {
       <ContactForm2/>
       <Background/> 
       <RoadSimulation/>
-    </main>
+    </main></>
     
 
   )
