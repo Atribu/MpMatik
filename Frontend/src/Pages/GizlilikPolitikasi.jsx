@@ -20,7 +20,7 @@ const GizlilikPolitikasi = () => {
   // Butonlara göre gösterilecek içerikler
   const contents = [
     <div className="content-box">
-      <p>Kişisel verilerinizin şirketimiz tarafından işlenmiş olması halinde taleplerinizi iletmek üzere <span>“İletişim Formunu”</span> kullanarak başvuruda bulanabilirsiniz.</p>
+      <p>Kişisel verilerinizin şirketimiz tarafından işlenmiş olması halinde taleplerinizi iletmek üzere <p className="spanunderline">“İletişim Formunu”</p> kullanarak başvuruda bulanabilirsiniz.</p>
     </div>,
 
     <div className="content-box">
@@ -33,57 +33,57 @@ const GizlilikPolitikasi = () => {
      <p>Şirket çalışanlarına, çalışan adaylarına, stajyerlere, ürün ve hizmet alanlara, potansiyel müşterilere, ortaklara, ziyaretçilere, tedarikçilere ve diğer üçüncü kişilere ait kişisel veriler bu politika kapsamındadır. </p>
      <p>Şirketin sahip olduğu ya da şirket tarafından yönetilen kişisel verilerin işlendiği tüm kayıt ortamları ve kişisel veri işlenmesine yönelik faaliyetlerde bu politika uygulanır.</p>
      <h5>MADDE 3- TANIMLAR</h5>
-     <div>
+     <div className="row-div">
       <h5>Alıcı grubu</h5>
       <p> : Veri sorumlusu tarafından kişisel verilerin aktarıldığı gerçek veya tüzel kişi kategorisi.</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Açık rıza</h5>
       <p> : Belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rıza</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Anonim Hale Getirme</h5>
       <p> : Kişisel verilerin, başka verilerle eşleştirilerek dahi hiçbir surette kimliği belirli veya belirlenebilir bir gerçek kişiyle ilişkilendirilemeyecek hale getirilmesi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Çalışan</h5>
       <p>  : Şirket personeli</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Elektronik ortam  </h5>
       <p> : Kişisel verilerin elektronik aygıtlar ile oluşturulabildiği, okunabildiği, değiştirilebildiği ve yazılabildiği ortamlar</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Elektronik olmayan ortam</h5>
       <p>  : Elektronik ortamların dışında kalan tüm yazılı, basılı, görsel vb. diğer ortamlar</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Hizmet sağlayıcı </h5>
       <p>    : Şirket ile belirli bir sözleşme çerçevesinde hizmet sağlayan gerçek veya tüzel kişi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>İlgili kişi</h5>
       <p> : Kişisel verisi işlenen gerçek kişi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>İlgili kullanıcı</h5>
       <p>  :Verilerin teknik olarak depolanması, korunması ve yedeklenmesinden sorumlu olan kişi ya da birim hariç olmak üzere veri sorumlusu organizasyonu içerisinde veya veri sorumlusundan aldığı yetki ve talimat doğrultusunda kişisel verileri işleyen kişiler</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>İmha</h5>
       <p> : Kişisel verilerin silinmesi, yok edilmesi veya anonim hale getirilmesi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Kanun</h5>
       <p>  : 6698 Sayılı Kişisel Verilerin Korunması Kanunu</p>
     </div>
@@ -93,79 +93,79 @@ const GizlilikPolitikasi = () => {
       <p>  : Tamamen veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla işlenen kişisel verilerin bulunduğu her türlü ortam</p>
     </div>
 
-    <div>
+    <div  className="row-div">
       <h5>Kişisel veri</h5>
       <p> : Kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Kişisel veri işleme envanteri</h5>
       <p>  :Veri sorumlularının iş süreçlerine bağlı olarak gerçekleştirmekte oldukları kişisel verileri işleme faaliyetlerini; kişisel verileri işleme amaçları ve hukuki sebebi, veri kategorisi, aktarılan alıcı grubu ve veri konusu kişi grubuyla ilişkilendirerek oluşturdukları ve kişisel verilerin işlendikleri amaçlar için gerekli olan azami muhafaza edilme süresini, yabancı ülkelere aktarımı öngörülen kişisel verileri ve veri güvenliğine ilişkin alınan tedbirleri açıklayarak detaylandırdıkları envanter</p>
     </div>
 
-    <div>
+    <div  className="row-div">
       <h5>Kişisel verilerin işlenmesi</h5>
       <p> : Kişisel verilerin tamamen veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla elde edilmesi, kaydedilmesi, depolanması, saklanması, değiştirilmesi, yeniden düzenlenmesi, açıklanması, aktarılması, devralınması, elde edilebilir hale getirilmesi, sınıflandırılması ya da kullanılmasının engellenmesi gibi veriler üzerinde gerçekleştirilen her türlü işlem</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Kurul</h5>
       <p> : Kişisel Verileri Koruma Kurulu</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Özel nitelikli kişisel veri</h5>
       <p>   : Kişilerin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya diğer inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkûmiyeti ve güvenlik tedbirleriyle ilgili verileri ile biyometrik ve genetik verileri</p>
     </div>
    
-    <div>
+    <div className="row-div">
       <h5>Periyodik imha</h5>
       <p>  : Kanunda yer alan kişisel verilerin işlenme şartlarının tamamının ortadan kalkması durumunda kişisel verileri saklama ve imha politikasında belirtilen ve tekrar eden aralıklarla resen gerçekleştirilecek silme, yok etme veya anonim hale getirme işlemi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Politika</h5>
       <p>  : Kişisel Verileri Saklama ve İmha Politikası</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Şirket</h5>
       <p>  : Kişisel Verileri Saklama ve İmha Politikası</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Politika</h5>
       <p>   : Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama </p>
     </div>
 
     <p>İnşaat Ticaret Limited Şirketi  (İşyeri/sorumlu unvanı yazılacak)</p>
 
-    <div>
+    <div className="row-div">
       <h5>Veri işleyen </h5>
       <p>    : Veri sorumlusunun verdiği yetkiye dayanarak veri sorumlusu adına kişisel verileri işleyen gerçek veya tüzel kişi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Veri kayıt sistemi  </h5>
       <p>   : Kişisel verilerin belirli kriterlere göre yapılandırılarak işlendiği kayıt sistemi </p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Veri sorumlusu </h5>
       <p>   : Kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasında ve yönetilmesinden sorumlu gerçek veya tüzel kişi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Veri sorumluları sicil bilgi sistemi  </h5>
       <p>    : Veri sorumlularının Sicile başvuruda ve Sicile ilişkin ilgili diğer işlemlerde kullanacakları, internet üzerinden erişilebilen, Başkanlık tarafından oluşturulan ve yönetilen bilişim sistemi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>VERBİS </h5>
       <p>      : Veri Sorumluları Sicil Bilgi Sistemi</p>
     </div>
 
-    <div>
+    <div className="row-div">
       <h5>Yönetmelik </h5>
       <p> Yönetmelik</p>
     </div>
@@ -250,10 +250,97 @@ const GizlilikPolitikasi = () => {
     <h5>EK TABLO: 1 Saklama ve imha süreçleri görev dağılımı</h5>
     </div>,
 
-    <div className="content-box">Üçüncü butonun içeriği. Kısa bir içerik.</div>,
+    <div className="content-box">
+      <h3>KVKK POLİTİKASI</h3>
+      <h4>MEVLANA PETROL ÜRÜNLERI TURIZM TAŞIMACILIK PAZARLAMA İNŞAAT TICARET LIMITED ŞIRKETI</h4>
+      <h4>KİŞİSEL VERİLERİN KORUNMASI VE İŞLENMESİ POLİTİKASI</h4>
+      <p><span>Hedef Kitle:</span> Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi Tarafından kişisel verileri işlenen tüm gerçek kişiler</p>
+      <p><span>Hazırlayan:</span> Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi Kişisel Verilerin Korunması Komitesi</p>
+      <p><span>Versiyon:</span> 1.0</p>
+      <p><span>Onaylayan:</span> Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi tarafından onaylanmıştır.</p>
+      <h4>İÇİNDEKİLER</h4>
+      <h4>MEVLANA PETROL ÜRÜNLERI TURIZM TAŞIMACILIK PAZARLAMA İNŞAAT TICARET LIMITED ŞIRKETI</h4>
+      <h4>KİŞİSEL VERİLERİN KORUNMASI VE İŞLENMESİ POLİTİKASI</h4>
+      <h5>1. GİRİŞ</h5>
+      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi (“Şirket”) olarak Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi</p>
+      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi yürüttüğü faaliyetlerde kişisel verilerin korunmasına önem vermekte ve iş ve işlemlerinde öncelikleri arasında kabul etmektedir. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi Kişisel Verilerin Korunması ve İşlenmesi Politikası (“Politika”), 6698 sayılı Kişisel Verilerin Korunması Kanunu’nca (“Kanun”) belirlenen kişisel veri işleme usul ve esaslarının Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi organizasyon ve iş süreçlerinin uyumuna yönelik temel düzenlemedir. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi bu Politika prensipleri doğrultusunda, üst düzey sorumluluk ve bilinciyle kişisel verileri işlemekte ve korumakta, kişisel veri sahiplerini bilgilendirerek gerekli şeffaflığı sağlamaktadır.</p>
+      <h5>2. AMAÇ</h5>
+      <p>Bu Politikanın amacı, Kanun ve ilgili diğer mevzuat ile öngörülen usul ve esasları, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi organizasyon ve süreçlerine uyumlulaştırılarak, faaliyetlerinde etkin bir şekilde uygulanmasını sağlamaktır. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi kişisel verilerin işlenmesi ve korunması için bu Politika ile her türlü idari ve teknik önlemleri almakta, gerekli iç prosedürler oluşturmakta, farkındalığı arttırmakta, bilincin sağlanması için gerekli tüm eğitimleri yapmaktadır. Hissedarlar, yetkililer, çalışanlar ve iş ortaklarının Kanun süreçlerine uyumları için, gerekli tüm önlemler alınmakta, uygun ve etkin denetim mekanizmaları kurulmaktadır.</p>
+      <h6>1.2.Kapsam</h6>
+      <p>Politika, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi iş süreçlerinde otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla elde edilen bütün kişisel verileri kapsamaktadır.</p>
+      <h7>1.2.1.Dayanak</h7>
+      <p>Politika, Kanun ve ilgili mevzuata dayanmaktadır. Kişisel veriler, 5179 sayılı Gıdaların Üretimi, Tüketimi ve Denetlenmesine Dair Kanun Hükmünde Kararnamenin Değiştirilerek Kabulü Hakkında Kanun, Gıda ve Gıda İle Temasta Bulunan Madde ve Malzemelerin Piyasa Gözetimi, Kontrolü ve Denetimi İle İşyeri Sorumluluklarına Dair Yönetmelik, 6502 sayılı Tüketicinin Korunması Hakkında Kanun, 1774 sayılı Kimlik Bildirme Kanununu, 4857 sayılı İş Kanunu, 6331 İş Sağlığı ve Güvenliği Kanunu, 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu, 4447 sayılı İşsizlik Sigortası Kanunu, 6102 sayılı Türk Ticaret Kanunu, 213 sayılı Vergi Usul Kanunu ve diğer ilgili mevzuattan kaynaklanan kaynaklanan yasal yükümlülükleri yerine getirmek için işlenmektedir.</p>
+      <p>Yürürlükteki mevzuat ve Politika arasında uyumsuzluk olduğu hallerde yürürlükteki mevzuat uygulanır. İlgili mevzuat tarafından öngörülen düzenlemeler, Politika ile Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi uygulamalarına dönüştürülmektedir.</p>
+    </div>,
     <div className="content-box">dört butonun içeriği. Kısa bir içerik.</div>,
     <div className="content-box">beş butonun içeriği. Kısa bir içerik.</div>,
-    <div className="content-box">altı butonun içeriği. Kısa bir içerik.</div>,
+    <div className="content-box">
+      <h3>GİZLİLİK VE ÇEREZ POLİTİKASI</h3>
+      <h4>MEVLANA PETROL ÜRÜNLERİ TURİZM TAŞIMACILIK PAZARLAMA İNŞAAT TİCARET LİMİTED ŞİRKETİ </h4>
+      <h4>WEB SİTESİ GİZLİLİK VE ÇEREZ POLİTİKASI</h4>
+      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi  (“Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ”) tarafından işletilen (“Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ”) web sitesini ziyaret edenlerin (“ziyaretçi”) kişisel verilerini 6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca işlemekte ve gizliliğini korumaktayız. Bu Web Sitesi Gizlilik ve Çerez Politikası (“Politika”) ile ziyaretçilerin kişisel verilerinin işlenmesi, çerez politikası ve internet sitesi gizlilik ilkeleri belirlenmektedir. </p>
+      <p>Çerezler (cookies), küçük bilgileri saklayan küçük metin dosyalarıdır. Çerezler, ziyaret ettiğiniz internet siteleri tarafından, tarayıcılar aracılığıyla cihazınıza veya ağ sunucusuna depolanır. İnternet sitesi tarayıcınıza yüklendiğinde, çerezler cihazınızda saklanır. Çerezler, internet sitesinin düzgün çalışmasını, daha güvenli hale getirilmesini, daha iyi kullanıcı deneyimi sunmasını sağlar. Oturum ve yerel depolama alanları da çerezlerle aynı amaç için kullanılır. İnternet sitemizde çerez bulunmamakta, oturum ve yerel depolama alanları çalışmaktadır.</p>
+      <p>Web sitemizin ziyaretçiler tarafından en verimli şekilde faydalanılması için çerezler kullanılmaktadır. Çerezler tercih edilmemesi halinde tarayıcı ayarlarından silinebilir ya da engellenebilir. Ancak bu web sitemizin performansını olumsuz etkileyebilir. Ziyaretçi tarayıcıdan çerez ayarlarını değiştirmediği sürece bu sitede çerez kullanımını kabul ettiği varsayılır.</p>
+      <ol>
+        <li>Kişisel Verilerin İşlenme Amacı
+        <p>Web sitemizi ziyaret etmeniz dolayısıyla elde edilen kişisel verileriniz aşağıda sıralanan amaçlarla Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi  tarafından Kanun’un 5. ve 6. maddelerine uygun olarak işlenmektedir:</p>
+        <ul>
+          <li>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi  tarafından yürütülen ticari faaliyetlerin yürütülmesi için gerekli çalışmaların yapılması ve buna bağlı iş süreçlerinin gerçekleştirilmesi,</li>
+          <li>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi  tarafından sunulan ürün ve hizmetlerden ilgili kişileri faydalandırmak için gerekli çalışmaların yapılması ve ilgili iş süreçlerinin gerçekleştirilmesi,</li>
+          <li>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi  tarafından sunulan ürün ve hizmetlerin ilgili kişilerin beğeni, kullanım alışkanlıkları ve ihtiyaçlarına göre özelleştirilerek ilgili kişilere önerilmesi ve tanıtılması.</li>
+        </ul>
+        </li>
+      </ol>
+
+      <ol>
+        <li>Kişisel Verilerin Aktarıldığı Taraflar ve Aktarım Amacı
+        <p>Web sitemizi ziyaret etmeniz dolayısıyla elde edilen kişisel verileriniz, kişisel verilerinizin işlenme amaçları doğrultusunda, iş ortaklarımıza, tedarikçilerimize kanunen yetkili kamu kurumlarına ve özel kişilere Kanun’un 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları kapsamında aktarılabilmektedir.</p>
+        </li>
+      </ol>
+
+      <ol>
+        <li>Kişisel Verilerin Toplanma Yöntemi</li>
+        <p>Çerezler, ziyaret edilen internet siteleri tarafından tarayıcılar aracılığıyla cihaza veya ağ sunucusuna depolanan küçük metin dosyalarıdır. Web sitemiz ziyaret edildiğinde, ziyaretçinin izniyle web sitemize ek olarak google.com, facebook.com, twitter.com, instagram.com, linkedin.com, youtube.com alanlarına da çerezler uygulanmaktadır.</p>
+      </ol>
+
+      <ol>
+        <li>Çerezleri Kullanım Amacı</li>
+        <p>Web sitemiz birinci ve üçüncü taraf çerezleri kullanır. Birinci taraf çerezleri çoğunlukla web sitesinin doğru şekilde çalışması için gereklidir, kişisel verilerinizi tutmazlar. Üçüncü taraf çerezleri, web sitemizin performansını, etkileşimini, güvenliğini, reklamları ve sonucunda daha iyi bir hizmet sunmak için kullanılır. Kullanıcı deneyimi ve web sitemizle gelecekteki etkileşimleri hızlandırmaya yardımcı olur. Bu kapsamda çerezler;</p>
+        <p>İstatistikler: Bu çerezler, web sitesine gelen ziyaretçi sayısı, benzersiz ziyaretçi sayısı, web sitesinin hangi sayfalarının ziyaret edildiği, ziyaretin kaynağı vb. bilgileri depolar. Bu veriler, web sitesinin ne kadar iyi performans gösterdiğini ve analiz etmemize yardımcı olur.</p>
+        <p>Pazarlama: Web sitemiz reklam veriyor. Bu çerezler, size gösterdiğimiz reklamları sizin için anlamlı olacak şekilde kişiselleştirmek için kullanılır. Bu çerezler ayrıca bu reklam kampanyalarının verimliliğini takip etmemize yardımcı olur. Bu çerezlerde depolanan bilgiler, üçüncü taraf reklam sağlayıcıları tarafından size tarayıcıdaki diğer web sitelerinde reklam göstermek için de kullanılabilir.</p>
+        <p>İşlevsel: Bunlar, web sitemizdeki bazı önemli olmayan işlevlere yardımcı olan çerezlerdir. Bu işlevler arasında videolar gibi içerik yerleştirme veya web sitesindeki içerikleri sosyal medya platformlarında paylaşma yer alır.</p>
+        <p>Tercihler: Bu çerezler ayarlarınızı kaydetmemize ve dil tercihleri gibi tarama tercihlerinizi belirlememize yardımcı olur, böylece web sitesine gelecekteki ziyaretlerinizde daha iyi ve verimli bir deneyime sahip olursunuz.</p>
+      </ol>
+
+      <h4>Teknik olarak web sitemizde kullanılan çerez türleri aşağıdaki tabloda gösterilmektedir.</h4>
+      tabloo
+
+      <span>Web sitemizde çerez kullanılmasının başlıca amaçları aşağıda sıralanmaktadır:</span>
+
+      <ul>
+        <li>İnternet sitesinin işlevselliğini ve performansını arttırmak yoluyla sizlere sunulan hizmetleri geliştirmek,</li>
+        <li>İnternet Sitesini iyileştirmek ve İnternet Sitesi üzerinden yeni özellikler sunmak ve sunulan özellikleri sizlerin tercihlerine göre kişiselleştirmek,</li>
+        <li>İnternet Sitesinin, Sizin ve Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ’ın hukuki ve ticari güvenliğinin teminini sağlamak.</li>
+      </ul>
+
+      <ol>
+        <li>Çerez Tercihlerini Kontrol Etme</li>
+        <p>Farklı tarayıcılar web siteleri tarafından kullanılan çerezleri engellemek ve silmek için farklı yöntemler sunar. Çerezleri engellemek / silmek için tarayıcı ayarları değiştirilmelidir. Tanımlama bilgilerinin nasıl yönetileceği ve silineceği hakkında daha fazla bilgi edinmek için www.allaboutcookies.org adresini ziyaret edilebilir. Ziyaretçi, tarayıcı ayarlarını değiştirerek çerezlere ilişkin tercihlerini kişiselleştirme imkânına sahiptir. </p>
+      </ol>
+
+      <ol>
+        <li>Veri Sahiplerinin Hakları</li>
+        <p>Kanunun “ilgili kişinin haklarını düzenleyen” 11. maddesi kapsamındaki talepleri, Politika’da düzenlendiği şekilde, ayrıntısını http://www.karatascam.com/kisisel-verilerin-korunmasi adresinden ulaşabileceğiniz Başvuru Formunu’nu Karataş Cam’a ileterek yapabilir.  Talebin niteliğine göre en kısa sürede ve en geç otuz gün içinde başvuruları ücretsiz olarak sonuçlandırılır; ancak işlemin ayrıca bir maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarafından belirlenecek tarifeye göre ücret talep edilebilir.</p>
+      </ol>
+
+      <ol>
+        <li>Politika’nın Yürürlüğü</li>
+        <p>Bu Politika yayınlandığı tarihte yürürlüğe girer. Politika’nın tümünün veya belirli maddelerinin yenilenmesi halinde Politika’nın yürürlük tarihi revize edilir.</p>
+      </ol>
+
+      <span>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi  Kişisel Verilerin Korunması ve İşlenmesi Politikası, Kişisel Veri Saklama ve İmha Politikası, Başvuru Formu için “Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ” adresinden ulaşabilirsiniz.</span>
+    
+    </div>,
   ];
 
   return (

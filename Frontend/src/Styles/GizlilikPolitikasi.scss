@@ -82,10 +82,19 @@
         color: #2d3747;
 
         span{
-            text-decoration: underline;
+            font-weight: bold;
         }
 
     }
 
 
   }
+
+  .spanunderline{
+    text-decoration: underline;
+}
+
+.row-div{
+  display: flex;
+  flex-direction: row;
+}
