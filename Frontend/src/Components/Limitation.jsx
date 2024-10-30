@@ -102,7 +102,7 @@ const Limitation = () => {
         <div className="div-limitman slide-up">
           <div className="div-mantext">
             <div className="div-limittext">
-              <h2 className="title">{sectionContent[selectedSection].title}</h2>
+              <h3 className="title">{sectionContent[selectedSection].title}</h3>
               <p className="p">
               {sectionContent[selectedSection].text}
               </p>
@@ -154,7 +154,7 @@ const Limitation = () => {
         </button>
         {activeButton === 'limit' && (
           <div className="accordion-content show">
-            <h2 className="title">LİMİTLENDİRME</h2>
+            <h3 className="title">LİMİTLENDİRME</h3>
             <p>
               Araçlarınızın sizin belirleyeceğiniz dönemlerde TL veya LT bazında ne kadar yakıt alabileceğine karar verebiliyor olacaksınız.
             </p>
@@ -168,7 +168,7 @@ const Limitation = () => {
         </button>
         {activeButton === 'yakit' && (
           <div className="accordion-content show">
-            <h2 className="title">YAKIT ALIMI</h2>
+            <h3 className="title">YAKIT ALIMI</h3>
             <p>BP Taşıtmatik ile fionuzun hatalı ürün alma ihtimali ortadan kalkar. Sistem aracınızın hangi ürün kullandığını bilir, aracınızı pompada tanır ve yanlış ürün ikmali engeller.</p>
             <img src={imgYakit} alt="yakit" className="accordion-img" />
           </div>
@@ -180,7 +180,7 @@ const Limitation = () => {
         </button>
         {activeButton === 'fatura' && (
           <div className="accordion-content show">
-            <h2 className="title">TEK FATURA</h2>
+            <h3 className="title">TEK FATURA</h3>
             <p>Filonuzun tüm akaryakıt alımları için tek bir fatura alırsınız. Sistemden otomatik olarak aktarılan akaryakıt alımınıza ait bilgiler periyodlar halinde faturalanacaktır.</p>
             <img src={imgFatura} alt="fatura" className="accordion-img" />
           </div>
@@ -191,7 +191,7 @@ const Limitation = () => {
         </button>
         {activeButton === 'raporlama' && (
           <div className="accordion-content show">
-            <h2 className="title">Raporlama</h2>
+            <h3 className="title">Raporlama</h3>
             <p>Araçlarınızın akaryakıt alımıyla ilgili ihtiyacınız olan tüm bilgiler BP Genel Merkezi’nden faturayla birlikte bir rapor halinde size gönderilir. Bu sayede filonuzu kolaylıkla yönetebilirsiniz.</p>
             <img src={imgRaporlama} alt="raporlama" className="accordion-img" />
           </div>
@@ -202,7 +202,7 @@ const Limitation = () => {
         </button>
         {activeButton === 'musteriHizmetleri' && (
           <div className="accordion-content show">
-            <h2 className="title">MÜŞTERİ HİZMETLERİ</h2>
+            <h3 className="title">MÜŞTERİ HİZMETLERİ</h3>
             <p>Ayrıca dilediğiniz her zaman, karşılıklı bilgi alışverişinde bulunabileceğiniz “Taşıtmatik Müşteri Hizmetleri Servisimiz” hizmetinizde olmaktan mutluluk duyacaktır.</p>
             <img src={imgMusteri} alt="fatura" className="accordion-img" />
           </div>
@@ -213,7 +213,7 @@ const Limitation = () => {
         </button>
         {activeButton === 'servis' && (
           <div className="accordion-content show">
-            <h2 className="title">7/24 SERVİS</h2>
+            <h3 className="title">7/24 SERVİS</h3>
             <p>BP Taşıtmatik Müşteri Hizmetleri Servisi`nin yanısıra 0212 473 27 27 numaralı telefondan ulaşacağınız Müşteri Danışma Hattı ile 24 saat hizmetinizdeyiz. BP Taşıtmatik sistemi ile merak ettiğiniz konulara 7 gün 24 saat yanıt bulabilir, sistemimizle ilgili her türlü görüş ve önerilerinizi anında bize ulaştırabilirsiniz.</p>
             <img src={imgServis} alt="fatura" className="accordion-img" />
           </div>

@@ -7,10 +7,16 @@ import Background from '../Components/Background'
 import EBülten from '../Components/EBülten'
 import FlipFlop from '../Components/FlipFlop'
 import TasitTanimaSection from '../Components/subPageComponents/TasitTanimaSection'
+import { Helmet } from 'react-helmet'
 
 const NasilCalısır = () => {
   return (
-    <div>
+   <>
+   <Helmet>
+   <title>BP Taşıtmatik Nasıl Çalışır? - BP Taşıtmatik</title>
+   <meta name="description" content="Taşıtmatik, araçların yakıt alımını otomatik olarak yöneten bir teknolojidir. Araçların plakalarını otomatik tanıyarak ve pompa tanıma özellikleri sayesinde" />
+   </Helmet>
+   <div>
       <MainBackground header="NASIL ÇALIŞIR" img="images/nasil-calisir-kapak.jpg"/>
       <TasitTanimaSection/>
       <FlipFlop/>
@@ -20,6 +26,7 @@ const NasilCalısır = () => {
       <EBülten/>
       <RoadSimulation/>
     </div>
+   </>
   )
 }
 

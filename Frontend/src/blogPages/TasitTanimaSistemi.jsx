@@ -22,6 +22,7 @@ import img9 from "../../public/images/blog/tasit-tanima-sistemi-ne-demek.jpg"
 import img10 from "../../public/images/blog/tasit-tanima-sisteminin-onemi.jpg"
 import { CiStar } from "react-icons/ci";
 import { TbStarFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet";
 
 
 const TasitTanimaSistemi = () => {
@@ -32,6 +33,12 @@ const TasitTanimaSistemi = () => {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>Taşıt Tanıma Sistemi - BP Taşıtmatik</title>
+    <meta name="description" content="Taşıt Tanıma Sistemi, motorlu araçların yakıt tüketimini ve kullanımını otomatik olarak kaydeden bir teknoloji sistemidir. Bu sistem, araçların hangi yakıtı" />
+    </Helmet>
+    
     <main className="">
       <div className="blog-div">
         <div className="div-ic">
@@ -92,7 +99,7 @@ const TasitTanimaSistemi = () => {
           <p>Sonuç olarak,<span> Taşıt Tanıma Sistemi</span>, akaryakıt alımlarını hızlandırmak, verimliliği artırmak, güvenliği sağlamak ve müşteri deneyimini geliştirmek için güçlü bir araçtır. Bu sistem, akaryakıt istasyonlarına ve sürücülere bir dizi avantaj sunar ve günümüzün hızlı ve rekabetçi iş dünyasında büyük bir öneme sahiptir.</p>
           <div className="imgDiv"> <img src={img4} alt="bp " width={500} height={500}></img></div>
 
-          <h2> Neden Taşıt Tanıma Sistemi Kullanmalısın?</h2>
+          <h3> Neden Taşıt Tanıma Sistemi Kullanmalısın?</h3>
           <p><span>Taşıt Tanıma Sistemi (TTS)</span>, bir dizi avantaj sunan bir teknoloji sistemidir ve neden kullanmanız gerektiğine dair üç önemli neden bulunmaktadır.</p>
             <p><span>1. Yakıt Verimliliği ve Maliyet Tasarrufu:</span> Taşıt Tanıma Sistemi, araçlarınızın yakıt tüketimini izler ve kaydeder. Bu, araçlarınızın ne kadar yakıt kullandığını ve hangi yakıt türünün tercih edildiğini takip etmenizi sağlar. Bu verilere dayanarak, kullanım alışkanlıklarınızı ve operasyon süreçlerinizi optimize edebilirsiniz. Yakıt verimliliği artırıldığında, maliyetler azalır ve işletme kârlılığını artırır. Ayrıca, yakıt israfını önlemek, çevresel açıdan da sürdürülebilirliği teşvik eder.</p>
             <p><span>2. Veri İzleme ve Analizi:</span> Taşıt Tanıma Sistemi, araçların yakıt tüketimi verilerini anlık olarak kaydeder ve uzaktan izleme imkanı sunar. Bu, araç filosu sahipleri için büyük bir avantajdır, çünkü tüm araçların performansını merkezi bir platformdan takip edebilirler. Veri analizi yaparak, araçların bakım ihtiyaçlarını belirleyebilir ve potansiyel sorunları önceden tespit edebilirsiniz. Bu, araçların uzun ömürlü olmasını ve işletmenizin verimliliğini artırmanızı sağlar.</p>
@@ -100,7 +107,7 @@ const TasitTanimaSistemi = () => {
             <p><span>Taşıt Tanıma Sistemi</span>‘nin bu avantajları, hem bireysel araç sahipleri hem de işletmeler için finansal, operasyonel ve çevresel açılardan önemli faydalar sunar. Bu nedenle, TTS’nin kullanılması, daha iyi bir yakıt yönetimi, işletme verimliliği ve güvenlik sağlar.</p>
             <div className="imgDiv"> <img src={img10} alt="bp " width={500} height={500}></img></div>
 
-            <h2>Taşıt Tanıma Sistemi (TTS)’nin Önemi</h2>
+            <h3>Taşıt Tanıma Sistemi (TTS)’nin Önemi</h3>
             <p><span>Taşıt Tanıma Sistemi (TTS)</span>, günümüzde akaryakıt istasyonlarında yaygın olarak kullanılan bir teknolojidir. TTS, araçların kimliklerini tanımlama, izleme ve yönetme amacı taşır. Bu teknoloji, sürücülere ve işletmelere çok önemli avantajlar sunar. Taşıt Tanıma Sistemi’nin önemi, aşağıdaki beş ana maddeyle açıklanabilir:</p>
             <ol>
               <li><span>Yakıt Tasarrufu:</span> TTS, araçların yakıt tüketimini izler ve kaydeder. Bu, sürücülere yakıt verimliliğini artırma ve tasarruf etme fırsatı sunar. Veriler, gereksiz yakıt israfını önlemeye yardımcı olur ve bu da hem bireysel araç sahipleri hem de işletmeler için maliyet tasarrufu demektir.</li>
@@ -112,7 +119,7 @@ const TasitTanimaSistemi = () => {
             <p>Sonuç olarak, <span>Taşıt Tanıma Sistemi</span>, indirimli yakıt, yakıt tasarrufu, güvenlik, veri izleme, işletme verimliliği ve hız gibi önemli avantajlar sunarak araç sahipleri ve işletmeler için vazgeçilmez bir teknoloji haline gelmiştir. Bu sistemler, sürücülerin ve işletmelerin daha verimli, güvenli ve ekonomik bir şekilde araçlarını kullanmalarına olanak tanır.</p>
             <div className="imgDiv"> <img src={img5} alt="bp " width={500} height={500}></img></div>
 
-            <h2>Taşıt Tanıma Sistemi Avantajları</h2>
+            <h3>Taşıt Tanıma Sistemi Avantajları</h3>
             <p><span>Taşıt Tanıma Sistemleri (TTS)</span>, araçların kimliklerini belirleme, izleme ve yönetme amacıyla kullanılan teknolojilerdir ve birden fazla avantaja sahiptir. TTS ile indirimli yakıt alabilir, daha az gider ile günlük yakıt ihtiyacınızı karşılayabilirsiniz. İşte TTS’nin sunduğu avantajlardan bazıları:</p>
             <ol>
               <li><span>Yakıt Verimliliği ve Maliyet Tasarrufu: </span> Taşıt Tanıma Sistemi, araçların yakıt tüketimini izler ve kaydeder. Bu, araç sahiplerine ve filo yöneticilerine araçların ne kadar yakıt kullandığını ve yakıt verimliliğini izleme olanağı sağlar. Bu veriler sayesinde, gereksiz yakıt israfı önlenir ve yakıt maliyetleri azalır. Hem bireysel araç sahipleri hem de ticari filo sahipleri için bu, önemli maliyet tasarrufları sağlar. Ayrıca, bu veriler işletmelerin çevresel sürdürülebilirliği artırmalarına da yardımcı olur.</li>
@@ -124,7 +131,7 @@ const TasitTanimaSistemi = () => {
             <p>Taşıt Tanıma Sistemi’nin bu avantajları, hem bireysel araç sahipleri hem de işletmeler için önemli faydalar sunar. Yakıt verimliliği, indirimli yakıt, güvenlik, veri izleme, işletme verimliliği ve hız gibi avantajlar, TTS’nin giderek daha popüler hale gelmesine neden olmaktadır.</p>
             <div className="imgDiv"> <img src={img2} alt="bp " width={500} height={500}></img></div>
 
-            <h2>En Yaygın Taşıt Tanıma Sistemleri</h2>
+            <h3>En Yaygın Taşıt Tanıma Sistemleri</h3>
             <p>Benzin istasyonları için yaygın taşıt tanıma sistemleri, genellikle kendi özel müşterileri ve iş ihtiyaçları için geliştirilen sistemlerdir. Bu nedenle benzin istasyonları arasında farklı taşıt tanıma sistemleri kullanılabilir. Taşıt Tanıma Sistemleri arasında en verimli olanı ise <span className="spanLink">BP Taşıtmatik</span> sistemidir. Genel olarak, benzin istasyonları aşağıdaki gibi kendilerine ait taşıt tanıma sistemlerini kullanmaktadırlar:</p>
             <ol>
               <li><span>BP Taşıtmatik:</span> BP, filo yönetimi ve taşıt tanıma hizmetlerini sunan BP Taşıtmatik adlı bir hizmet sunar. Bu hizmet, filo sahiplerinin akaryakıt kullanımını izlemelerine ve yönetmelerine yardımcı olur. Tüm istasyonların sunduğu hizmetlere ek öne çıkan fırsatları, sağladığı iskontolar ve kullanım kolaylığı ile en çok talep edilen taşıt tanıma sistemi hizmetidir.</li>
@@ -137,7 +144,7 @@ const TasitTanimaSistemi = () => {
             <p>Her bir benzin istasyonunun kendine özgü bir <span>taşıt tanıma sistemi</span> veya işbirliği sağlayıcısı olabilir. İstasyonların bu hizmetleri sunma şekli ve markaları farklılık gösterebilir. Bu nedenle her bir benzin istasyonu için kullanılan taşıt tanıma sistemi detayları ile ilgili bilgi almak için bizimle <span className="spanLink">iletişim</span>‘e geçebilirsiniz.</p>
             <div className="imgDiv"> <img src={img1} alt="bp " width={500} height={500}></img></div>
 
-            <h2>BP Taşıtmatik Nedir?</h2>
+            <h3>BP Taşıtmatik Nedir?</h3>
             <p>BP Taşıtmatik, BP’nin Türkiye’deki akaryakıt istasyonlarında kullanılan bir taşıt tanıma ve ödeme sistemi olarak hizmet vermektedir. Bu sistem, müşterilere akaryakıt alımlarını hızlandırma, ödeme işlemlerini kolaylaştırma ve aynı zamanda avantajlı kampanyalardan yararlanma fırsatı sunar.</p>
             <ol>
               <li>Hızlı İşlem: BP Taşıtmatik kart veya halka sahipleri, BP istasyonlarına gelip yakıt alırken özel okuyucular aracılığıyla hızlı bir şekilde işlem yapabilirler. Bu, bekleme süresini önemli ölçüde azaltır ve müşterilere zaman kazandırır.</li>
@@ -153,19 +160,19 @@ const TasitTanimaSistemi = () => {
             <p><span className="spanLink">BP Taşıtmatik</span>, BP istasyonlarına özgü bir hizmettir ve BP müşterilerine akaryakıt alımlarını daha pratik hale getirme imkanı sunar. Müşteriler, BP Taşıtmatik kartları veya halkaları ile daha hızlı ve avantajlı alışveriş yapabilirler.</p>
             <div className="imgDiv"> <img src={img3} alt="bp " width={500} height={500}></img></div>
 
-            <h2>Neden BP Taşıtmatik?</h2>
+            <h3>Neden BP Taşıtmatik?</h3>
             <p>BP Taşıtmatik’i tercih etmek, hızlı ve güvenli akaryakıt alımları için mükemmel bir seçenektir. BP Taşıtmatik kart veya halka kullanarak, akaryakıt alımlarınızı saniyeler içinde tamamlayabilir, özel kampanyalardan yararlanabilir ve güvenli ödeme işlemlerinin tadını çıkarabilirsiniz.</p>
             <p>Hızlı ve pratik bir şekilde akaryakıt almak isteyenler için <span className="spanLink">BP Taşıtmatik</span>, bekleme sürelerini minimumda tutar ve işlem hızını maksimumda tutar. Özellikle yoğun zamanlarda ve hızlı bir mola vermek istediğinizde, <span>BP Taşıtmatik</span> sizin için ideal bir çözümdür.</p>
             <p>Özel kampanyalardan yararlanarak akaryakıt alımlarınızda tasarruf edebilirsiniz. Güvenlik ve hızı bir arada sunan <span>BP Taşıtmatik</span> ile akaryakıt alışverişlerinizi daha keyifli hale getirebilirsiniz. BP Taşıtmatik, hız ve güvenliğin ön planda olduğu bir akaryakıt alım deneyimi sunar.</p>
             <div className="imgDiv"> <img src={img6} alt="bp " width={500} height={500}></img></div>
 
-            <h2>Taşıt Tanıma Sistemi ve BP Taşıtmatik</h2>
+            <h3>Taşıt Tanıma Sistemi ve BP Taşıtmatik</h3>
             <p><span>Taşıt Tanıma Sistemi (TTS)</span>, akaryakıt alımlarını hızlandıran ve kolaylaştıran özel bir sistemdir. Taşıt Tanıma Sistemi, araçların tanımlanmasını ve akaryakıt alımlarının izlenmesini sağlayan bir teknoloji türünü ifade eder. BP Taşıtmatik ise BP istasyonlarında kullanılan bir Taşıt Tanıma Sistemi örneğidir.</p>
             <p>BP Taşıtmatik, müşterilere BP istasyonlarında hızlı ve sorunsuz bir akaryakıt alım deneyimi sunar. Müşteriler, BP Taşıtmatik kartlarını veya halkalarını kullanarak ödemelerini hızla gerçekleştirebilirler. Bu, bekleme süresini minimumda tutar ve müşterilere zaman kazandırır. Ayrıca, BP Taşıtmatik kullanıcıları özel kampanyalardan ve indirimlerden faydalanabilirler, bu da akaryakıt alımlarında tasarruf sağlar.<span> En iyi Taşıt Tanıma Sistemi BP Taşıtmatik’e aittir</span> ve müşteriler tarafından en çok tercih edilendir.</p>
             <p>BP Taşıtmatik aynı zamanda akaryakıt alımlarını daha güvenli hale getirir. Araçların kimlikleri tanımlanır ve izlenir, böylece izinsiz erişim engellenir. Bu, müşterilere daha güvenli bir alışveriş deneyimi sunar. <span>Taşıt Tanıma Sistemi ve BP Taşıtmatik</span>, akaryakıt alımlarını hızlandırma, maliyetleri düşürme ve güvenliği artırma amacı taşıyan yenilikçi çözümlerdir. Bu sistemler, hem bireysel araç sahipleri hem de filo yöneticileri için büyük avantajlar sunar.</p>
             <div className="imgDiv"> <img src={img8} alt="bp " width={500} height={500}></img></div>
             
-            <h2>Taşıt Tanıma Nasıl Takılıyor?</h2>
+            <h3>Taşıt Tanıma Nasıl Takılıyor?</h3>
             <p><span>Taşıt Tanıma Sistemi (TTS)</span> donanımı araçlara takmak oldukça basittir ve genellikle kart, anahtarlık veya halka kullanılır. Bu cihazlar, araca monte edilebileceği gibi seçeceğiniz hizmete göre monte gerektirmez. Eğer halka sistemini kullanmak istiyorsanız, BP Taşıtmatik’in belirlediği montaj yerlerinde veya akaryakıt istasyonlarında kurulumu gerçekleştirebilirsiniz.</p>
             <p>Montaj işlemi sırasında, cihazın doğru bir şekilde konumlandırılması önemlidir. Bu, donanımın okuma cihazları tarafından kolayca algılanabilmesini sağlar. Ardından, donanımın çalışır durumda olduğundan emin olmak için bir test yapılır. <span>Taşıt Tanıma Sistemi</span> takıldığında, TTS donanımı araç kimliği tespit edilmesine olanak tanır ve akaryakıt alımı işlemlerini hızlandırır, indirimli yakıt almanızı sağlar.</p>
 
@@ -194,6 +201,7 @@ const TasitTanimaSistemi = () => {
       <RoadSimulation/>
       </div>
     </main>
+    </>
   );
 }
 

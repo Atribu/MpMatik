@@ -30,10 +30,10 @@ const AboutGreenSection = () => {
     <section className='mainDiv'>
       <div className='divtext-green slide-up'>
         <div className='divLogo'><img src={logo} alt='logo' width={350} height={91.23}/></div>
-        <h3>BP Taşıtmatik Nedir?</h3>
+        <h2>BP Taşıtmatik Nedir?</h2>
         <p> BP Taşıtmatik, sürücülere akaryakıt alımlarını kolaylaştıran ve daha avantajlı hale getiren bir hizmettir. Taşıtmatik kart sahipleri, BP istasyonlarında kolayca ödeme yapabilir, aynı zamanda özel indirimler ve avantajlardan yararlanabilirler. BP Taşıtmatik ile yakıt masraflarınızı daha iyi yönetebilir ve işlerinizi daha verimli hale getirebilirsiniz.</p>
 
-        <h3>Neden mptasitmatik.com?</h3>
+        <h2>Neden mptasitmatik.com?</h2>
         <p>Mptasitmatik.com, BP Taşıtmatik hizmetlerini daha erişilebilir hale getirmek ve sürücülerimize en iyi deneyimi sunmak için kurulmuştur. İnternet üzerinden hızlı ve güvenli bir şekilde BP Taşıtmatik kart başvurusu yapabilir ve kartınızı hemen kullanmaya başlayabilirsiniz. Ayrıca, BP Taşıtmatik kartınızı yönetmek ve kampanyalardan haberdar olmak için kullanabileceğiniz bir dizi çevrimiçi araç sunuyoruz.</p>
         
         <h3>Nasıl Çalışırız?</h3>

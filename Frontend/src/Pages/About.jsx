@@ -12,8 +12,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Mevlana Petrol | Hakkımızda</title>
-        <meta name="description" content="Mptaşıtmatik olarak, Araç taşıt tanıma sistemlerinnde öncü bir kuruluşuz. Misyonumuz, müşterilerimize en kaliteli hizmetleri sunarak beklentilerini aşmaktır. Detaylar için web sitemizi ziyaret edin." />
+        <title>BP Taşıtmatik Hakkımızda - BP Taşıtmatik</title>
+        <meta name="description" content="Türkiye'nin önde gelen akaryakıt ve petrol ürünleri tedarikçilerinden biri olarak sizlere hizmet vermekten gurur duyuyoruz. BP Taşıtmatik ürünleri konusundaki" />
         <meta name='keywords' content='Mptaşıtmatik, Hakkımızda, Akaryakıt, Hizmet, Güvenli' />
         <meta name="author" content="Mptaşıtmatik" />
       </Helmet>

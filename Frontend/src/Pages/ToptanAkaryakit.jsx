@@ -8,6 +8,7 @@ import MainBackground from '../Components/subPageComponents/MainBackground';
 import Teklif from '../Components/subPageComponents/Teklif';
 import TextSection from '../Components/subPageComponents/TextSection';
 import imageMain from '../../public/images/toptan-satis.jpg'
+import { Helmet } from 'react-helmet';
 
 const headersArray=["TOPTAN AKARYAKIT SATIŞI NEDİR?","TOPTAN AKARYAKIT SATIŞININ AVANTAJLARI NELERDİR?","TOPTAN AKARYAKIT SATIŞININ SÜRECİ NASIL İŞLER?","TOPTAN AKARYAKIT SATIŞINDA GELECEĞE BAKIŞ"];
 const textsArray= ["Toptan akaryakıt satışı, enerji sektörünün taşıt sahiplerinden endüstriyel işletmelere kadar geniş bir yelpazede müşterilere hizmet veren önemli bir ticaret işlemidir. Bu işlem, büyük miktarda akaryakıtın alım-satımını içerir ve enerji tedarik zincirinin kritik bir bileşenidir. Akaryakıt tedarikçileri, rafinerilerden veya depolardan akaryakıt ürünlerini toptan satmak için özel altyapı ve kaynaklara sahiptirler. Bu ürünler, daha sonra akaryakıt istasyonlarına ve endüstriyel kullanıcılara ulaştırılır.",
@@ -37,8 +38,12 @@ const list2 =[
 
 const ToptanAkaryakit = () => {
   return (
+    <>
+    <Helmet>
+    <title>Toptan Akaryakıt Satışı - BP Taşıtmatik</title>
+    <meta name="description" content="Toptan Akaryakıt Satışında Lideriz! Yüksek kaliteli akaryakıt ürünleri sunarak, işinizin enerji, yakıt ve toptan ihtiyaçlarını karşılıyoruz." />
+    </Helmet>
     <div>
-
       <MainBackground header="TOPTAN AKARYAKIT" img={imageMain}/>
        <Teklif/>
       <TextSection headers={headersArray} text={textsArray} list1={list1} list2={list2}/>
@@ -47,8 +52,8 @@ const ToptanAkaryakit = () => {
       <Background/>
       <EBülten/>
       <RoadSimulation/>
-
     </div>
+    </>
   )
 }
 
