@@ -47,6 +47,7 @@ const CookiePopup = () => {
   return (
     isVisible && (
       <section className="cookie-sec">
+        <div className="blur-div"></div>
         <div className="cookie-div">
           <p className="cookie-text">
             <span className="spanBold">Çerezleri kullanıyoruz:</span> İçeriği

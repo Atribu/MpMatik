@@ -12,9 +12,16 @@
   padding-top: 0px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 50%;
   max-width: 550px;
   border-radius: 2%;
+
+  @media (min-width: 1024px) {
+    width: 60%;
+   }
+
+   @media (max-width: 1024px) {
+    width: 95%;
+   }
 
   .payment-form {
     display: flex;
@@ -99,11 +106,19 @@
 
 .div-odeme{
   display: flex;
-  flex-direction: row;
-  width: 90%;
   align-items: center;
   justify-content: space-around;
   min-height: 80vh;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    width: 90%;
+   }
+
+   @media (max-width: 1024px) {
+    flex-direction: column;
+    width: 95%;
+   }
 }
 
 .main-div-odeme{

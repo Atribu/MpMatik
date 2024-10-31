@@ -79,8 +79,8 @@ const App = () => {
               <Route path="/odeme" element={<Payment />} />
               <Route path="/hakkimizda" element={<About />} />
               <Route path="/hemen-basvur" element={<HemenBasvur />} />
-              <Route path="/kolay-odeme" element={<Payment />} />
-              <Route path="/kolay-odemeee" element={<KolayOdeme />} />
+              {/* <Route path="/kolay-odeme" element={<Payment />} /> */}
+              <Route path="/kolay-odeme" element={<KolayOdeme />} />
               <Route path="/iletisim" element={<Contact />} />
               <Route path="/referanslar" element={<Referances />} />
               <Route
