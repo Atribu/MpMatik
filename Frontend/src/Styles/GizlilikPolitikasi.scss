@@ -127,7 +127,7 @@
 
 .custom-table th, 
 .custom-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #2d3747;
   padding: 8.5px;
   text-align: left;
   height: 50px;
@@ -151,10 +151,7 @@
 }
 
 thead tr {
-  background-color: #24a31f;
-  color: white;
+  background-color: #ffffff;
+  color: #2d3747;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #ffffff;
-}

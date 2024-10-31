@@ -994,7 +994,6 @@ const GizlilikPolitikasi = () => {
           </tr>
         </tbody>
       </table>
-      
     </div>,
 
     // ÜÇÜNCÜ BUTONN!!
@@ -1262,220 +1261,1169 @@ const GizlilikPolitikasi = () => {
       </table>
       <h4>2. Kişisel Verilerin Korunması Konuları</h4>
       <h5>1. işisel Verilerin GüvenliğininSağlanması</h5>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel verilerin hukuka aykırı açıklanmasını, erişimini, aktarılmasını veya başka şekillerde oluşabilecek güvenlik sorunlarını önlemek için, kişisel verinin niteliğine göre, Kanun’un 12. maddesinde öngörülen gerekli önlemleri almaktadır. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, Kişisel Verileri Koruma Kurumu tarafından yayımlanmış olan rehberlere uygun olarak gerekli kişisel veri güvenlik seviyesini sağlamak için tedbirler almakta, denetimler gerçekleştirmektedir.</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel verilerin hukuka aykırı açıklanmasını,
+        erişimini, aktarılmasını veya başka şekillerde oluşabilecek güvenlik
+        sorunlarını önlemek için, kişisel verinin niteliğine göre, Kanun’un 12.
+        maddesinde öngörülen gerekli önlemleri almaktadır. Mevlana Petrol
+        Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi,
+        Kişisel Verileri Koruma Kurumu tarafından yayımlanmış olan rehberlere
+        uygun olarak gerekli kişisel veri güvenlik seviyesini sağlamak için
+        tedbirler almakta, denetimler gerçekleştirmektedir.
+      </p>
       <h5>2. Özel Nitelikli Kişisel VerilerinKorunması</h5>
-      <p>Özel nitelikte olan, kişilere ait ırk, etnik köken, siyasi düşünce, felsefi inanç, din, mezhep veya diğer inançlar, kılık ve kıyafet, dernek, vakıf ya da sendika üyeliği, sağlık, cinsel hayat, ceza mahkûmiyeti, güvenlik tedbirleriyle ilgili veriler ile biyometrik ve genetik verilerin korunmasına yönelik alınan önlemler özenle uygulanmakta ve gerekli denetimler yapılmaktadır.</p>
-      <h5>3. KişiselVerilerin Korunmasıveİşlenmesi Bilincinin Geliştirilmesi</h5>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel verilerin hukuka uygun işlenmesini, erişilmesini, verilerin muhafazası ve hakları kullanmaya yönelik bilincin geliştirilmesi için ilgililere gerekli eğitimleri verir.</p>
-      <p>Çalışanların kişisel verileri koruma bilincini arttırmak için, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi gerekli iş süreçlerini oluşturur, ihtiyaç duyulması halinde danışmanlardan destek alır. Uygulamada karşılaşılan eksiklikler ve eğitimlerin sonucu Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi yönetimi tarafından değerlendirilir. Yapılan bu değerlendirmeler ile ilgili mevzuattaki değişikliklere bağlı ihtiyaç duyulması halinde yeni eğitimler düzenlenir.</p>
+      <p>
+        Özel nitelikte olan, kişilere ait ırk, etnik köken, siyasi düşünce,
+        felsefi inanç, din, mezhep veya diğer inançlar, kılık ve kıyafet,
+        dernek, vakıf ya da sendika üyeliği, sağlık, cinsel hayat, ceza
+        mahkûmiyeti, güvenlik tedbirleriyle ilgili veriler ile biyometrik ve
+        genetik verilerin korunmasına yönelik alınan önlemler özenle
+        uygulanmakta ve gerekli denetimler yapılmaktadır.
+      </p>
+      <h5>
+        3. KişiselVerilerin Korunmasıveİşlenmesi Bilincinin Geliştirilmesi
+      </h5>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel verilerin hukuka uygun işlenmesini,
+        erişilmesini, verilerin muhafazası ve hakları kullanmaya yönelik
+        bilincin geliştirilmesi için ilgililere gerekli eğitimleri verir.
+      </p>
+      <p>
+        Çalışanların kişisel verileri koruma bilincini arttırmak için, Mevlana
+        Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited
+        Şirketi gerekli iş süreçlerini oluşturur, ihtiyaç duyulması halinde
+        danışmanlardan destek alır. Uygulamada karşılaşılan eksiklikler ve
+        eğitimlerin sonucu Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama
+        İnşaat Ticaret Limited Şirketi yönetimi tarafından değerlendirilir.
+        Yapılan bu değerlendirmeler ile ilgili mevzuattaki değişikliklere bağlı
+        ihtiyaç duyulması halinde yeni eğitimler düzenlenir.
+      </p>
 
       <h3>3. KİŞİSEL VERİLERİN İŞLENMESİ</h3>
       <h3>3.1 Kişisel Verilerin Mevzuata Uygun İşlenmesi</h3>
-      <p>Kişisel veriler aşağıda sayılan ilkeler doğrultusunda mevzuata uygun işlenir.</p>
+      <p>
+        Kişisel veriler aşağıda sayılan ilkeler doğrultusunda mevzuata uygun
+        işlenir.
+      </p>
       <h5>1. Hukuka ve Dürüstlük Kuralına Uygun İşleme</h5>
-      <p>Kişisel veriler, iş süreçlerinin gerektirdiği ölçüde, bunlarla sınırlı, kişilerin temel hak ve özgürlüklerine zarar vermeden, hukuka ve dürüstlük kuralına uygun olarak işlenir.</p>
+      <p>
+        Kişisel veriler, iş süreçlerinin gerektirdiği ölçüde, bunlarla sınırlı,
+        kişilerin temel hak ve özgürlüklerine zarar vermeden, hukuka ve
+        dürüstlük kuralına uygun olarak işlenir.
+      </p>
       <h5>2. Kişisel Verilerin Güncel ve Doğru ve Olmasını Sağlama</h5>
-      <p>İşlenen kişisel veriler, güncel ve doğru tutmak için gerekli önlemler alınmakta ve plan ve programlı çalışılmaktadır.</p>
+      <p>
+        İşlenen kişisel veriler, güncel ve doğru tutmak için gerekli önlemler
+        alınmakta ve plan ve programlı çalışılmaktadır.
+      </p>
       <h5>3. Belirli, Açık ve Meşru Amaçlarla İşleme </h5>
-      <p>Kişisel veriler, yürütülen iş süreçlerinde belirlenen ve açıklanan meşru amaçlara bağlı işlenmektedir .</p>
+      <p>
+        Kişisel veriler, yürütülen iş süreçlerinde belirlenen ve açıklanan meşru
+        amaçlara bağlı işlenmektedir .
+      </p>
       <h5>4. İşlendikleriAmaçlaBağlantılı,SınırlıveÖlçülüOlma</h5>
-      <p>Kişisel veriler, iş süreçlerinin gerektirdiği nitelik ve ölçüde toplamakta, belirlenen amaçlara bağlı, sınırlı işlenmektedir.</p>
+      <p>
+        Kişisel veriler, iş süreçlerinin gerektirdiği nitelik ve ölçüde
+        toplamakta, belirlenen amaçlara bağlı, sınırlı işlenmektedir.
+      </p>
       <h5>5. GerekliOlanSüreKadarMuhafaza Etme</h5>
-      <p>Kişisel veriler, ilgili mevzuatta öngörülen ve kişisel verileri işleme amacı için gerekli olan en az süre kadar muhafaza edilmektedir. Öncelikle, ilgili mevzuatta kişisel verilerin saklanması için bir süre öngörülmüş ise bu süreye, öngörülmemiş ise kişisel veriler işlendikleri amaç için gerekli olan süre kadar muhafaza edilmektedir. Kişisel veriler saklama sürelerinin sonunda periyodik imha sürelerine veya veri sahibi başvurusuna uygun olarak, uygun yöntemlerle (silme, yok etme veya anonimleştirme) imha edilmektedir.</p>
-      
+      <p>
+        Kişisel veriler, ilgili mevzuatta öngörülen ve kişisel verileri işleme
+        amacı için gerekli olan en az süre kadar muhafaza edilmektedir.
+        Öncelikle, ilgili mevzuatta kişisel verilerin saklanması için bir süre
+        öngörülmüş ise bu süreye, öngörülmemiş ise kişisel veriler işlendikleri
+        amaç için gerekli olan süre kadar muhafaza edilmektedir. Kişisel veriler
+        saklama sürelerinin sonunda periyodik imha sürelerine veya veri sahibi
+        başvurusuna uygun olarak, uygun yöntemlerle (silme, yok etme veya
+        anonimleştirme) imha edilmektedir.
+      </p>
+
       <h3>3.2. Kişisel Verilerin İşlenme Şartları</h3>
-      <p>Kişisel veri, sahibinin açık rıza vermesi veya aşağıda belirtilen diğer bir veya birden fazla şarta dayanarak işlenir.</p>
+      <p>
+        Kişisel veri, sahibinin açık rıza vermesi veya aşağıda belirtilen diğer
+        bir veya birden fazla şarta dayanarak işlenir.
+      </p>
       <h5>1. Kişisel Veri Sahibinin Açık RızasınınBulunması</h5>
-      <p>Kişisel verilerin işlenmesi veri sahibinin açık rızasıyla yapılır. Kişisel veri sahibinin açık rızası: belirli bir konuda bilgilendirilerek ve özgür iradesi alınarak gerçekleşir.</p>
+      <p>
+        Kişisel verilerin işlenmesi veri sahibinin açık rızasıyla yapılır.
+        Kişisel veri sahibinin açık rızası: belirli bir konuda bilgilendirilerek
+        ve özgür iradesi alınarak gerçekleşir.
+      </p>
       <h5>2. Kişisel Veri Sahibinin Açık Rızasının Bulunmaması</h5>
-      <p>Aşağıda sıralanan şartlarından herhangi birinin bulunması durumunda veri sahibinin açık rızasına gerek kalmaksızın kişisel veriler işlenebilir.</p>
+      <p>
+        Aşağıda sıralanan şartlarından herhangi birinin bulunması durumunda veri
+        sahibinin açık rızasına gerek kalmaksızın kişisel veriler işlenebilir.
+      </p>
       <h5>3. Kanunlarda Açıkça Düzenlenmesi</h5>
-      <p>Kanunlarda kişisel verilerin işlenmesine ilişkin açık bir düzenleme bulunması halinde kişisel veriler, veri sahibinin rızası alınmadan işlenebilir.</p>
-      <h5>4. Fiili İmkânsızlık Sebebiyle İlgilinin Açık Rızasının Alınamaması</h5>
-      <p>Fiili imkânsızlık nedeniyle, rızasını açıklayamayacak durumda olan veya rızasına geçerlilik tanınamayacak olan kişinin, kendisinin ya da başka bir kişinin hayatı veya beden bütünlüğünü korumak için, kişisel verisinin işlenmesi zorunlu olması durumunda veri sahibinin kişisel verileri işlenebilir.</p>
+      <p>
+        Kanunlarda kişisel verilerin işlenmesine ilişkin açık bir düzenleme
+        bulunması halinde kişisel veriler, veri sahibinin rızası alınmadan
+        işlenebilir.
+      </p>
+      <h5>
+        4. Fiili İmkânsızlık Sebebiyle İlgilinin Açık Rızasının Alınamaması
+      </h5>
+      <p>
+        Fiili imkânsızlık nedeniyle, rızasını açıklayamayacak durumda olan veya
+        rızasına geçerlilik tanınamayacak olan kişinin, kendisinin ya da başka
+        bir kişinin hayatı veya beden bütünlüğünü korumak için, kişisel
+        verisinin işlenmesi zorunlu olması durumunda veri sahibinin kişisel
+        verileri işlenebilir.
+      </p>
       <h5>5. Sözleşmenin Kurulması veya İfasıyla Doğrudan İlgi Olması</h5>
-      <p>Kişisel verilerin işlenmesi, veri sahibinin taraf olduğu bir sözleşmenin kurulması veya ifasıyla doğrudan ilgiliyse veri sahibinin kişisel verileri işlenebilir.</p>
+      <p>
+        Kişisel verilerin işlenmesi, veri sahibinin taraf olduğu bir sözleşmenin
+        kurulması veya ifasıyla doğrudan ilgiliyse veri sahibinin kişisel
+        verileri işlenebilir.
+      </p>
       <h5>6.Hukuki Yükümlülüğün Yerine Getirilmesi </h5>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi hukuki yükümlülükleri yerine getirirken, kişisel veri işleme zorunlu olması halinde veri sahibinin kişisel verileri işlenebilir.</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi hukuki yükümlülükleri yerine getirirken, kişisel veri
+        işleme zorunlu olması halinde veri sahibinin kişisel verileri
+        işlenebilir.
+      </p>
       <h5>7. Kişisel Veri Sahibinin Kişisel Verisini Alenileştirmesi</h5>
-      <p>Kişisel verisini alenileştiren veri sahiplerine ait kişisel veriler, alenileştirme amacıyla sınırlı olarak, kişisel verileri işlenebilir.</p>
+      <p>
+        Kişisel verisini alenileştiren veri sahiplerine ait kişisel veriler,
+        alenileştirme amacıyla sınırlı olarak, kişisel verileri işlenebilir.
+      </p>
       <h5>8. Bir Hakkın Tesisi veya Korunması için Zorunlu Veri İşleme</h5>
-      <p>Veri işleme bir hakkın tesisi, kullanılması veya korunması için zorunlu ise veri sahibinin kişisel verileri işlenebilir.</p>
+      <p>
+        Veri işleme bir hakkın tesisi, kullanılması veya korunması için zorunlu
+        ise veri sahibinin kişisel verileri işlenebilir.
+      </p>
       <h4>Meşru Menfaat için Zorunlu Veri İşleme</h4>
-      <p>Kişisel veri sahibinin temel hak ve özgürlüklerine zarar vermemek koşuluyla, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi meşru menfaatleri için veri işlemenin zorunlu olması durumunda veri sahibinin kişisel verileri işlenebilir.</p>
+      <p>
+        Kişisel veri sahibinin temel hak ve özgürlüklerine zarar vermemek
+        koşuluyla, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+        Ticaret Limited Şirketi meşru menfaatleri için veri işlemenin zorunlu
+        olması durumunda veri sahibinin kişisel verileri işlenebilir.
+      </p>
       <h3>3.3. Özel Nitelikli Kişisel Verilerin İşlenmesi</h3>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi özel nitelikli kişisel verileri, Kanun ve Politika’da belirlenen ilkelere uygun, Kurul’un belirlediği yöntemlerle gerekli her türlü idari ve teknik önlemleri alarak, aşağıdaki usul ve esaslarla işler:</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi özel nitelikli kişisel verileri, Kanun ve Politika’da
+        belirlenen ilkelere uygun, Kurul’un belirlediği yöntemlerle gerekli her
+        türlü idari ve teknik önlemleri alarak, aşağıdaki usul ve esaslarla
+        işler:
+      </p>
       <ol>
-        <li>Sağlık ve cinsel hayat dışındaki özel nitelikli kişisel veriler,kanunlarda işlenmesine ilişkin açıkça bir hüküm olması durumunda veri sahibinin açık rızası aranmadan işlenebilir. Kanunlarda açıkça öngörülmeyen hallerde veri sahibinin açık rızası alınır.</li>
-        <li>Sağlık ve cinsel hayata ilişkin özel nitelikli kişisel veriler, sır saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve kuruluşlar tarafından: kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi amacıyla, veri sahibinin açık rızası aranmaksızın işlenebilir. Aksi halde veri sahibinin açık rızası alınır.</li>
+        <li>
+          Sağlık ve cinsel hayat dışındaki özel nitelikli kişisel
+          veriler,kanunlarda işlenmesine ilişkin açıkça bir hüküm olması
+          durumunda veri sahibinin açık rızası aranmadan işlenebilir. Kanunlarda
+          açıkça öngörülmeyen hallerde veri sahibinin açık rızası alınır.
+        </li>
+        <li>
+          Sağlık ve cinsel hayata ilişkin özel nitelikli kişisel veriler, sır
+          saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve
+          kuruluşlar tarafından: kamu sağlığının korunması, koruyucu hekimlik,
+          tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık
+          hizmetleri ile finansmanının planlanması ve yönetimi amacıyla, veri
+          sahibinin açık rızası aranmaksızın işlenebilir. Aksi halde veri
+          sahibinin açık rızası alınır.
+        </li>
       </ol>
 
       <h3>3.4. Kişisel Veri Sahibinin Aydınlatılması</h3>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel veri sahiplerini, hangi amaçlarla kişisel verilerinin işlendiği, hangi amaçlarla kimlerle paylaşıldığı, hangi yöntemlerle toplandığı, hukuki sebebi ve veri sahiplerinin kişisel verilerinin işlenmesinde sahip olduğu hakları konularında, ilgili mevzuata uygun şekilde bilgilendirir. Bu bakımdan kişisel verilerinin korunmasını, Politika’daki esaslar çerçevesinde hazırlanan diğer politika belgeleri ve aydınlatma metinlerine bağlı yürütülmektedir.</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel veri sahiplerini, hangi amaçlarla kişisel
+        verilerinin işlendiği, hangi amaçlarla kimlerle paylaşıldığı, hangi
+        yöntemlerle toplandığı, hukuki sebebi ve veri sahiplerinin kişisel
+        verilerinin işlenmesinde sahip olduğu hakları konularında, ilgili
+        mevzuata uygun şekilde bilgilendirir. Bu bakımdan kişisel verilerinin
+        korunmasını, Politika’daki esaslar çerçevesinde hazırlanan diğer
+        politika belgeleri ve aydınlatma metinlerine bağlı yürütülmektedir.
+      </p>
       <h3>3.5. Kişisel Verilerin Aktarılması</h3>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel veri işleme amaçları doğrultusunda, gerekli güvenlik önlemlerini alarak, kişisel verileri ve özel nitelikli kişisel verileri üçüncü kişilere (üçüncü kişi şirketlere, grup şirketlerine, üçüncü gerçek kişilere) hukuka uygun olarak aktarabilir. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi aktarma işlemlerini, Kanun’un 8. maddesinde öngörülen düzenlemelere uygun şekilde işlemleri gerçekleştirir.</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel veri işleme amaçları doğrultusunda, gerekli
+        güvenlik önlemlerini alarak, kişisel verileri ve özel nitelikli kişisel
+        verileri üçüncü kişilere (üçüncü kişi şirketlere, grup şirketlerine,
+        üçüncü gerçek kişilere) hukuka uygun olarak aktarabilir. Mevlana Petrol
+        Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi
+        aktarma işlemlerini, Kanun’un 8. maddesinde öngörülen düzenlemelere
+        uygun şekilde işlemleri gerçekleştirir.
+      </p>
       <h5>1. KişiselVerilerinAktarılması</h5>
-      <p>Kişisel verilerin akratılması için kişisel veri sahibinin açık rızası aranmakla birlikte, aşağıda belirtilen koşulların bir ya da birkaçına dayanılarak, Kurul tarafından öngörülen yöntemler de dahil gerekli tüm güvenlik önlemleri alınarak kişisel veriler üçüncü kişilere aktarılabilir.</p>
+      <p>
+        Kişisel verilerin akratılması için kişisel veri sahibinin açık rızası
+        aranmakla birlikte, aşağıda belirtilen koşulların bir ya da birkaçına
+        dayanılarak, Kurul tarafından öngörülen yöntemler de dahil gerekli tüm
+        güvenlik önlemleri alınarak kişisel veriler üçüncü kişilere
+        aktarılabilir.
+      </p>
       <ol>
         <li>Kanunlarda açıkça öngörülmesi,</li>
-        <li>Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili ve gerekli olması,</li>
-        <li>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması,</li>
-        <li>Veri sahibi tarafından kişisel verileri alenileştirilmiş olması şartıyla, alenileştirme amacıyla sınırlı,</li>
-        <li>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın veya veri sahibinin veya üçüncü kişilerin haklarının tesisi, kullanılması veya korunması için zorunlu olması,</li>
-        <li>Veri sahibinin temel hak ve özgürlüklerine zarar vermemek kaydıyla Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi meşru menfaatlerinin sağlanması içinzorunlu olması,</li>
-        <li>Fiili imkânsızlık nedeniyle rızasını açıklayamayacak durumda bulunan veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da bir başkasının hayatı veya beden bütünlüğünü koruması için zorunlu olması.</li>
+        <li>
+          Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili ve
+          gerekli olması,
+        </li>
+        <li>
+          Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+          Limited Şirketi’ın hukuki yükümlülüğünü yerine getirebilmesi için
+          zorunlu olması,
+        </li>
+        <li>
+          Veri sahibi tarafından kişisel verileri alenileştirilmiş olması
+          şartıyla, alenileştirme amacıyla sınırlı,
+        </li>
+        <li>
+          Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+          Limited Şirketi’ın veya veri sahibinin veya üçüncü kişilerin
+          haklarının tesisi, kullanılması veya korunması için zorunlu olması,
+        </li>
+        <li>
+          Veri sahibinin temel hak ve özgürlüklerine zarar vermemek kaydıyla
+          Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+          Limited Şirketi meşru menfaatlerinin sağlanması içinzorunlu olması,
+        </li>
+        <li>
+          Fiili imkânsızlık nedeniyle rızasını açıklayamayacak durumda bulunan
+          veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin ya da
+          bir başkasının hayatı veya beden bütünlüğünü koruması için zorunlu
+          olması.
+        </li>
       </ol>
 
-      <p>Kurul tarafından yeterli korumaya sahip olduğu belirlenen, “YeterliKorumayaSahipYabancıÜlke” olarak ilan edilen yabancı ülke statüsündekilere, yukarıda sayılan durumların herhangi birine bağlı kişisel veriler aktarılabilir. Yeterli koruma bulunmayan, Türkiye ve yabancı ülkedeki veri sorumlularının yeterli bir korumayı yazılı olarak taahhüt eden ve Kurul’un izninin bulunduğu “YeterliKorumayı Taahhüt Eden Veri Sorumlusunun Bulunduğu Yabancı Ülke” statüsündekilere, mevzuatta öngörülen şartlara göre kişisel veriler aktarılabilir.</p>
-      
+      <p>
+        Kurul tarafından yeterli korumaya sahip olduğu belirlenen,
+        “YeterliKorumayaSahipYabancıÜlke” olarak ilan edilen yabancı ülke
+        statüsündekilere, yukarıda sayılan durumların herhangi birine bağlı
+        kişisel veriler aktarılabilir. Yeterli koruma bulunmayan, Türkiye ve
+        yabancı ülkedeki veri sorumlularının yeterli bir korumayı yazılı olarak
+        taahhüt eden ve Kurul’un izninin bulunduğu “YeterliKorumayı Taahhüt Eden
+        Veri Sorumlusunun Bulunduğu Yabancı Ülke” statüsündekilere, mevzuatta
+        öngörülen şartlara göre kişisel veriler aktarılabilir.
+      </p>
+
       <h5>2. ÖzelNitelikliKişiselVerilerinAktarılması</h5>
-      <ol>Özel nitelikli kişisel veriler, Politika’da belirlenen ilkelere uygun olarak, Kurul’un belirleyeceği yöntemler dedahilolmaküzere,gereklihertürlüidarivetekniktedbirler alınarak aşağıda belirlenen koşullarlaaktarılabilir:
-        <li>Sağlık ve cinsel hayat dışındaki özel nitelikli kişisel veriler,kanunlarda kişisel verilerin işlenmesine ilişkin açıkça bir hüküm olması halinde veri sahibinin açık rızası aranmaksızın, aksi halde veri sahibinin açık rızası alınması durumunda.</li>
-        <li>Sağlık ve cinsel hayata ilişkin özel nitelikli kişiselveriler, kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi amacıyla, sır saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve kuruluşlar tarafından açık rıza aranmaksızın, aksi halde veri sahibinin açık rızası alınması durumunda.</li>
+      <ol>
+        Özel nitelikli kişisel veriler, Politika’da belirlenen ilkelere uygun
+        olarak, Kurul’un belirleyeceği yöntemler
+        dedahilolmaküzere,gereklihertürlüidarivetekniktedbirler alınarak aşağıda
+        belirlenen koşullarlaaktarılabilir:
+        <li>
+          Sağlık ve cinsel hayat dışındaki özel nitelikli kişisel
+          veriler,kanunlarda kişisel verilerin işlenmesine ilişkin açıkça bir
+          hüküm olması halinde veri sahibinin açık rızası aranmaksızın, aksi
+          halde veri sahibinin açık rızası alınması durumunda.
+        </li>
+        <li>
+          Sağlık ve cinsel hayata ilişkin özel nitelikli kişiselveriler, kamu
+          sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım
+          hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının
+          planlanması ve yönetimi amacıyla, sır saklama yükümlülüğü altında
+          bulunan kişiler veya yetkili kurum ve kuruluşlar tarafından açık rıza
+          aranmaksızın, aksi halde veri sahibinin açık rızası alınması
+          durumunda.
+        </li>
       </ol>
-      <p>Kişisel veriler, “Yeterli KorumayaSahipYabancıÜlke” statüsündekilere yukarıdaki şartlardan herhangi birinin bulunması halinde, yeterli korumanın bulunmaması halinde “YeterliKorumayıTaahhütEdenVeri Sorumlusunun Bulunduğu Yabancı Ülke” statüsündekilere mevzuatta düzenlenen veri aktarım şartlarına göre kişisel veriler aktarılabilir.</p>
+      <p>
+        Kişisel veriler, “Yeterli KorumayaSahipYabancıÜlke” statüsündekilere
+        yukarıdaki şartlardan herhangi birinin bulunması halinde, yeterli
+        korumanın bulunmaması halinde “YeterliKorumayıTaahhütEdenVeri
+        Sorumlusunun Bulunduğu Yabancı Ülke” statüsündekilere mevzuatta
+        düzenlenen veri aktarım şartlarına göre kişisel veriler aktarılabilir.
+      </p>
 
       <h3>4. KİŞİSEL VERİ ENVANTER PARAMETRELERİ</h3>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi yönetim, insan kaynakları, idari işler mali işler (muhasebe-finans), planlama-lojistik-bilgi işlem, üretim, ürün geliştirme-kalite, ar-ge pazarlama-satış, satın alma iş süreçlerinde, çalışan adayı, çalışan, hissedar/ortak, potansiyel ürün veya hizmet alıcısı, stajyer, tedarikçi yetkilisi, ürün veya hizmet alan kişi, veli/vasi/temsilci, ziyaretçilerden oluşan kişisel veri sahipliklerine ait veri kategorileri ve kişisel verileri (Ek-1), kişisel veri işleme amaçlarına (Ek-2) bağlı işlenmektedir. Veri kategorilerine gore işlenme amaçları ile veri konusu kişi grupları detaylarına Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın https://verbis.kvkk.gov.tr/ adresinde ki alanında bildirilmektedir.</p>
-      <p>Kişisel veri işleme amaçları kişisel veri kategorilerine göre, Kanun’un 10. maddesi ve diğer mevzuat uyarınca ilgili kişileri bilgilendirmek, Kanun’un 5. ve 6. maddesinde belirtilen kişisel veri işleme şartlarından en az birine dayalı ve sınırlı olarak, kişisel verilerin işlenmesine ilişkin Kanun’un 4. maddesinde belirtilen ilkeler başta olmak üzere, Kanun’da belirtilen genel ilkelere uygun gerçekleştirmek için belirlen amaçlara göre işlenmektedir.</p>
-      <p>Kişisel veriler Politika “3.5. Kişisel Verilerin Aktarılması” bölümünde belirlenen esaslarla: Gerçek kişiler veya özel hukuk tüzel kişileri, hissedarlar, iş ortaklari, iştirakler ve bağlı ortaklıklar, tedarikçiler, yetkili kamu kurum ve kuruluşları, özel sigorta şirketleri, denetçiler, danışmanlar, sözleşmeli hizmet aldığımız, işbirliği yaptığımız, yurt içi kuruluşlar ile belirlenen amaçlarla (Ek-3) paylaşılabilmektedir. Yabancı ülkelerle kişisel bilgi aktarımı söz konusu değildir.</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi yönetim, insan kaynakları, idari işler mali işler
+        (muhasebe-finans), planlama-lojistik-bilgi işlem, üretim, ürün
+        geliştirme-kalite, ar-ge pazarlama-satış, satın alma iş süreçlerinde,
+        çalışan adayı, çalışan, hissedar/ortak, potansiyel ürün veya hizmet
+        alıcısı, stajyer, tedarikçi yetkilisi, ürün veya hizmet alan kişi,
+        veli/vasi/temsilci, ziyaretçilerden oluşan kişisel veri sahipliklerine
+        ait veri kategorileri ve kişisel verileri (Ek-1), kişisel veri işleme
+        amaçlarına (Ek-2) bağlı işlenmektedir. Veri kategorilerine gore işlenme
+        amaçları ile veri konusu kişi grupları detaylarına Mevlana Petrol
+        Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın
+        https://verbis.kvkk.gov.tr/ adresinde ki alanında bildirilmektedir.
+      </p>
+      <p>
+        Kişisel veri işleme amaçları kişisel veri kategorilerine göre, Kanun’un
+        10. maddesi ve diğer mevzuat uyarınca ilgili kişileri bilgilendirmek,
+        Kanun’un 5. ve 6. maddesinde belirtilen kişisel veri işleme şartlarından
+        en az birine dayalı ve sınırlı olarak, kişisel verilerin işlenmesine
+        ilişkin Kanun’un 4. maddesinde belirtilen ilkeler başta olmak üzere,
+        Kanun’da belirtilen genel ilkelere uygun gerçekleştirmek için belirlen
+        amaçlara göre işlenmektedir.
+      </p>
+      <p>
+        Kişisel veriler Politika “3.5. Kişisel Verilerin Aktarılması” bölümünde
+        belirlenen esaslarla: Gerçek kişiler veya özel hukuk tüzel kişileri,
+        hissedarlar, iş ortaklari, iştirakler ve bağlı ortaklıklar,
+        tedarikçiler, yetkili kamu kurum ve kuruluşları, özel sigorta
+        şirketleri, denetçiler, danışmanlar, sözleşmeli hizmet aldığımız,
+        işbirliği yaptığımız, yurt içi kuruluşlar ile belirlenen amaçlarla
+        (Ek-3) paylaşılabilmektedir. Yabancı ülkelerle kişisel bilgi aktarımı
+        söz konusu değildir.
+      </p>
 
       <h3>5. KİŞİSEL VERİLERİN KORUNMASINA İLİŞKİN ALINAN ÖNLEMLER</h3>
-      <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, Kanunda belirlenen usul ve esaslarla işlemekte olduğu kişisel verilerin korunması için gerekli teknik ve idari tedbirleri almakta, bu kapsamda gerekli denetimleri yapmakta, bilinçlendirme ve eğitim faaliyetlerini gerçekleştirmektedir.
-        <br></br> İşlenen kişisel verilerin teknik ve idari tüm tedbirler alınmış olmasına rağmen, kanuni olmayan yollarla üçüncü kişiler tarafından ele geçirilmesi durumunda, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi bu durumu mümkün olan en kısa süre içerisinde ilgili kişi ve birimlere haber verir.</p>
-        <h3>6. KİŞİSEL VERİLERİN SAKLANMASI VE İMHASI</h3>
-        <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel verileri işleme amacı için gerekli olan süre ile ilgili mevzuatta öngörülen en az süre kadar muhafaza eder. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, öncelikle ilgili mevzuatta bir süre belirlenmiş ise bu süreye uygun; yasal bir süre öngörülmemiş ise kişisel verilerin işlenme amacı için gerekli süre kadar kişisel verileri saklar. Kişisel veriler belirlenen saklama sürelerinin sonunda, periyodik imha sürelerine veya veri sahibi başvurusuna uygun olarak, belirlenen yöntem (silme, yok etme veya anonimleştirme) ile imha edilir.</p>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, Kanunda belirlenen usul ve esaslarla işlemekte olduğu
+        kişisel verilerin korunması için gerekli teknik ve idari tedbirleri
+        almakta, bu kapsamda gerekli denetimleri yapmakta, bilinçlendirme ve
+        eğitim faaliyetlerini gerçekleştirmektedir.
+        <br></br> İşlenen kişisel verilerin teknik ve idari tüm tedbirler
+        alınmış olmasına rağmen, kanuni olmayan yollarla üçüncü kişiler
+        tarafından ele geçirilmesi durumunda, Mevlana Petrol Ürünleri Turizm
+        Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi bu durumu mümkün
+        olan en kısa süre içerisinde ilgili kişi ve birimlere haber verir.
+      </p>
+      <h3>6. KİŞİSEL VERİLERİN SAKLANMASI VE İMHASI</h3>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel verileri işleme amacı için gerekli olan süre
+        ile ilgili mevzuatta öngörülen en az süre kadar muhafaza eder. Mevlana
+        Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited
+        Şirketi, öncelikle ilgili mevzuatta bir süre belirlenmiş ise bu süreye
+        uygun; yasal bir süre öngörülmemiş ise kişisel verilerin işlenme amacı
+        için gerekli süre kadar kişisel verileri saklar. Kişisel veriler
+        belirlenen saklama sürelerinin sonunda, periyodik imha sürelerine veya
+        veri sahibi başvurusuna uygun olarak, belirlenen yöntem (silme, yok etme
+        veya anonimleştirme) ile imha edilir.
+      </p>
 
-        <h3>7. KİŞİSEL VERİ SAHİPLERİNİN HAKLARI VE BU HAKLARIN KULLANILMASI</h3>
-        <h3>7.1. Kişisel Veri SahibininHakları</h3>
-        <p>Kişisel veri sahipleri Kanundan kaynaklanan aşağıda belirtilen haklara sahiptirler:</p>
-        <ol>
-          <li>Kişisel veri işlenip işlenmediğini öğrenme,</li>
-          <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</li>
-          <li>Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
-          <li>Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,</li>
-          <li>Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
-          <li>Kanun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel verilerin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
-          <li>İşlenen verilerin münhasıran otomatik sistemler aracılığı ile analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,</li>
-          <li>Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme.</li>
-        </ol>
+      <h3>7. KİŞİSEL VERİ SAHİPLERİNİN HAKLARI VE BU HAKLARIN KULLANILMASI</h3>
+      <h3>7.1. Kişisel Veri SahibininHakları</h3>
+      <p>
+        Kişisel veri sahipleri Kanundan kaynaklanan aşağıda belirtilen haklara
+        sahiptirler:
+      </p>
+      <ol>
+        <li>Kişisel veri işlenip işlenmediğini öğrenme,</li>
+        <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</li>
+        <li>
+          Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp
+          kullanılmadığını öğrenme,
+        </li>
+        <li>
+          Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü
+          kişileri bilme,
+        </li>
+        <li>
+          Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların
+          düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin
+          aktarıldığı üçüncü kişilere bildirilmesini isteme,
+        </li>
+        <li>
+          Kanun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına
+          rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde
+          kişisel verilerin silinmesini veya yok edilmesini isteme ve bu
+          kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere
+          bildirilmesini isteme,
+        </li>
+        <li>
+          İşlenen verilerin münhasıran otomatik sistemler aracılığı ile analiz
+          edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya
+          çıkmasına itiraz etme,
+        </li>
+        <li>
+          Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara
+          uğraması hâlinde zararın giderilmesini talep etme.
+        </li>
+      </ol>
 
-        <h3>7.2. Kişisel Veri Sahibinin Haklarını Kullanması</h3>
-        <p>Kişisel veri sahipleri 6.1. maddede sayılan haklara ilişkin taleplerini, Kurul’un belirlediği yöntemlerle Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’a iletebilir. Kişisel veri sahipleri ve adlarına başvuru hakkı bulunanlar “Veri Sahibi Başvuru Formu” (Ek-4) doldurularak, Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’a başvurabilir.</p>
-        <h3>7.3. Başvurulara Cevap Verilmesi</h3>
-        <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel veri sahibi tarafından yapılan başvuruları Kanun ve diğer mevzuata uygun sonuçlandırır. Usule uygun şekilde Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’a iletilen talepler, en kısa sürede ve en geç 30 (otuz) gün içinde, ücretsiz olarak sonuçlandırır. Ancak, işlemin ayrıca bir maliyet gerektirmesi halinde, Kurul tarafından belirlenen tarife uyarınca ücret alınabilir.</p>
-        <h3>7.4. Kişisel Veri Sahibinin Başvurusunun Reddedilmesi</h3>
-        <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, başvuruda bulunan kişinin isteğini, aşağıda yer alan durumlarda, gerekçesini açıklayarak reddedebilir:</p>
-        <ol>
-          <li>Kişisel verilerin resmi istatistik ile anonim hâle getirilmek suretiyle araştırma, planlama ve istatistik gibi amaçlarla işlenmesi,</li>
-          <li>Kişisel verilerin millî savunmayı, millî güvenliği, kamu güvenliğini, kamu düzenini, ekonomik güvenliği, özel hayatın gizliliğini veya kişilik haklarını ihlal etmemek ya da suç teşkil etmemek kaydıyla, sanat, tarih, edebiyat veya bilimsel amaçlarla ya da ifade özgürlüğü kapsamında işlenmesi,</li>
-          <li>Kişisel verilerin millî savunmayı, millî güvenliği, kamu güvenliğini, kamu düzenini veya ekonomik güvenliği sağlamaya yönelik olarak kanunla görev ve yetki verilmiş kamu kurum ve kuruluşları tarafından yürütülen önleyici, koruyucu ve istihbari faaliyetler kapsamında işlenmesi,</li>
-          <li>Kişisel verilerin soruşturma, kovuşturma, yargılama veya infaz işlemlerine ilişkin olarak yargı makamları veya infaz mercileri tarafından işlenmesi,</li>
-          <li>Kişisel veri işlemenin suç işlenmesinin önlenmesi veya suç soruşturması için gerekli olması,</li>
-          <li>Kişisel veri sahibi tarafından kendisi tarafından alenileştirilmiş kişisel verilerin işlenmesi,</li>
-          <li>Kişisel veri işlemenin kanunun verdiği yetkiye dayanılarak görevli ve yetkili kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşlarınca, denetleme veya düzenleme görevlerinin yürütülmesi ile disiplin soruşturma veya kovuşturması için gerekli olması,</li>
-          <li>Kişisel veri işlemenin bütçe, vergi ve mali konulara ilişkin olarak Devletin ekonomik ve mali çıkarlarının korunması için gerekli olması,</li>
-          <li>Kişisel veri sahibinin talebinin diğer kişilerin hak ve özgürlüklerini engelleme ihtimali olması,</li>
-          <li>Orantısız çaba gerektiren taleplerde bulunulmuş olması,</li>
-          <li>Talep edilen bilginin kamuya açık bir bilgi olması.</li>
-          <li>Kişisel Veri Sahibinin KVK Kurulu’na Şikâyette Bulunma Hakkı</li>
-        </ol>
-        <p>Kanun’un 14. maddesi gereğince başvurunun reddedilmesi, verilen cevabın yetersiz bulunması veya süresinde başvuruya cevap verilmemesi hâllerinde; Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın cevabını öğrendiği tarihten itibaren otuz ve her hâlde başvuru tarihinden itibaren altmış gün içinde Kurul’a şikâyette bulunabilir.</p>
-        <span>Başvuruda Bulunan Kişisel Veri Sahibinden Talep Edilebilecek Bilgiler</span>
-        <p>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, başvuruda bulunan kişinin kişisel veri sahibi olup olmadığını tespit etmek adına ilgili kişiden bilgi talep edebilir. Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi, kişisel veri sahibinin başvurusunda yer alan hususları netleştirmek adına, kişisel veri sahibine başvurusu ile ilgili soru yöneltebilir.</p>
-        
-        <h3>8.YÜRÜTME <br></br>Politika Yönetim Kurulu tarafından onaylanmış ve yürürlülüğe konulmuştur. Politika’nın teknik yürütümü “Kişisel Veri Saklama ve İmha Politikası” (Ek-5) ile sağlanmaktadır.</h3>
-        <p>İş süreçlerinde, taraflar nezdinde Politikanın yürütümü “Kişisel Verileri İşleme Müşteri Aydınlatma Metni” (Ek-6), “Tedarikçi Gizlilik ve Kişisel Verileri Koruma Sözleşmesi” (Ek-7) “Çalışan Kişisel Verileri İşleme Aydınlatma Metni” (Ek-8), “Çalışan Adayı Aydınlatma Metni” (Ek-9), “İnternet Sitesi Çerez Aydınlatma Metni” (Ek-10), “Kamera Kayıt Sistemleri Aydınlatma Metni” (Ek-11) ile gerçekleştirilmektedir. Kanun ve Politika’nın yürütülmesinden ve gerektiğinde güncellenmesinden Yönetim Kurulu, bu kapsamdaki tüm iş ve işlemlerin takibinden, koordinasyon ve denetiminden Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi Kişisel Verileri Koruma Komitesi sorumludur.</p>
-        <h3>9. YÜRÜRLÜK ve İLANI</h3>
-        <p>Politika yayımı tarihi itibariyle yürürlüğe girmiştir. Politika’da meydana gelecek değişiklikler Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın internet sitesinde (Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi) yayımlanarak kişisel veri sahiplerinin, ilgili kişilerin erişimine sunulur. Politika değişiklikleri ilan edildiği tarihte uygulamaya girer.</p>
-        <h5>EKLER</h5>
-        <h5>Ek 1- Veri Kategorileri ve Kişisel Verileri</h5>
-        <h5>Ek 2- Kişisel Veri İşleme Amaçları</h5>
-        <h5>Ek 3- Kişisel Verilerin Aktarıldığı Kişiler ve Aktarılma Amaçları</h5>
-        <h5>Ek 4- Veri Sahibi Başvuru Formu</h5>
-        <h5>Ek 5- Kişisel Veri Saklama ve İmha Politikası</h5>
-        <h5>Ek 6- Kişisel Verileri İşleme Müşteri Aydınlatma Metni</h5>
-        <h5>Ek 7- Tedarikçi Gizlilik ve Kişisel Verileri Koruma Sözleşmesi</h5>
-        <h5>Ek 8- Çalışan Kişisel Verileri İşleme Aydınlatma Metni</h5>
-        <h5>Ek 9- Çalışan Adayı Aydınlatma Metni</h5>
-        <h5>Ek 10- İnternet Sitesi Çerez Aydınlatma Metni</h5>
-        <h5>Ek 11- Kamera Kayıt Sistemleri Aydınlatma Metni</h5>
+      <h3>7.2. Kişisel Veri Sahibinin Haklarını Kullanması</h3>
+      <p>
+        Kişisel veri sahipleri 6.1. maddede sayılan haklara ilişkin taleplerini,
+        Kurul’un belirlediği yöntemlerle Mevlana Petrol Ürünleri Turizm
+        Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’a iletebilir.
+        Kişisel veri sahipleri ve adlarına başvuru hakkı bulunanlar “Veri Sahibi
+        Başvuru Formu” (Ek-4) doldurularak, Mevlana Petrol Ürünleri Turizm
+        Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’a başvurabilir.
+      </p>
+      <h3>7.3. Başvurulara Cevap Verilmesi</h3>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel veri sahibi tarafından yapılan başvuruları
+        Kanun ve diğer mevzuata uygun sonuçlandırır. Usule uygun şekilde Mevlana
+        Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited
+        Şirketi’a iletilen talepler, en kısa sürede ve en geç 30 (otuz) gün
+        içinde, ücretsiz olarak sonuçlandırır. Ancak, işlemin ayrıca bir maliyet
+        gerektirmesi halinde, Kurul tarafından belirlenen tarife uyarınca ücret
+        alınabilir.
+      </p>
+      <h3>7.4. Kişisel Veri Sahibinin Başvurusunun Reddedilmesi</h3>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, başvuruda bulunan kişinin isteğini, aşağıda yer alan
+        durumlarda, gerekçesini açıklayarak reddedebilir:
+      </p>
+      <ol>
+        <li>
+          Kişisel verilerin resmi istatistik ile anonim hâle getirilmek
+          suretiyle araştırma, planlama ve istatistik gibi amaçlarla işlenmesi,
+        </li>
+        <li>
+          Kişisel verilerin millî savunmayı, millî güvenliği, kamu güvenliğini,
+          kamu düzenini, ekonomik güvenliği, özel hayatın gizliliğini veya
+          kişilik haklarını ihlal etmemek ya da suç teşkil etmemek kaydıyla,
+          sanat, tarih, edebiyat veya bilimsel amaçlarla ya da ifade özgürlüğü
+          kapsamında işlenmesi,
+        </li>
+        <li>
+          Kişisel verilerin millî savunmayı, millî güvenliği, kamu güvenliğini,
+          kamu düzenini veya ekonomik güvenliği sağlamaya yönelik olarak kanunla
+          görev ve yetki verilmiş kamu kurum ve kuruluşları tarafından yürütülen
+          önleyici, koruyucu ve istihbari faaliyetler kapsamında işlenmesi,
+        </li>
+        <li>
+          Kişisel verilerin soruşturma, kovuşturma, yargılama veya infaz
+          işlemlerine ilişkin olarak yargı makamları veya infaz mercileri
+          tarafından işlenmesi,
+        </li>
+        <li>
+          Kişisel veri işlemenin suç işlenmesinin önlenmesi veya suç
+          soruşturması için gerekli olması,
+        </li>
+        <li>
+          Kişisel veri sahibi tarafından kendisi tarafından alenileştirilmiş
+          kişisel verilerin işlenmesi,
+        </li>
+        <li>
+          Kişisel veri işlemenin kanunun verdiği yetkiye dayanılarak görevli ve
+          yetkili kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek
+          kuruluşlarınca, denetleme veya düzenleme görevlerinin yürütülmesi ile
+          disiplin soruşturma veya kovuşturması için gerekli olması,
+        </li>
+        <li>
+          Kişisel veri işlemenin bütçe, vergi ve mali konulara ilişkin olarak
+          Devletin ekonomik ve mali çıkarlarının korunması için gerekli olması,
+        </li>
+        <li>
+          Kişisel veri sahibinin talebinin diğer kişilerin hak ve özgürlüklerini
+          engelleme ihtimali olması,
+        </li>
+        <li>Orantısız çaba gerektiren taleplerde bulunulmuş olması,</li>
+        <li>Talep edilen bilginin kamuya açık bir bilgi olması.</li>
+        <li>Kişisel Veri Sahibinin KVK Kurulu’na Şikâyette Bulunma Hakkı</li>
+      </ol>
+      <p>
+        Kanun’un 14. maddesi gereğince başvurunun reddedilmesi, verilen cevabın
+        yetersiz bulunması veya süresinde başvuruya cevap verilmemesi
+        hâllerinde; Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+        Ticaret Limited Şirketi’ın cevabını öğrendiği tarihten itibaren otuz ve
+        her hâlde başvuru tarihinden itibaren altmış gün içinde Kurul’a
+        şikâyette bulunabilir.
+      </p>
+      <span>
+        Başvuruda Bulunan Kişisel Veri Sahibinden Talep Edilebilecek Bilgiler
+      </span>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, başvuruda bulunan kişinin kişisel veri sahibi olup
+        olmadığını tespit etmek adına ilgili kişiden bilgi talep edebilir.
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi, kişisel veri sahibinin başvurusunda yer alan hususları
+        netleştirmek adına, kişisel veri sahibine başvurusu ile ilgili soru
+        yöneltebilir.
+      </p>
 
+      <h3>
+        8.YÜRÜTME <br></br>Politika Yönetim Kurulu tarafından onaylanmış ve
+        yürürlülüğe konulmuştur. Politika’nın teknik yürütümü “Kişisel Veri
+        Saklama ve İmha Politikası” (Ek-5) ile sağlanmaktadır.
+      </h3>
+      <p>
+        İş süreçlerinde, taraflar nezdinde Politikanın yürütümü “Kişisel
+        Verileri İşleme Müşteri Aydınlatma Metni” (Ek-6), “Tedarikçi Gizlilik ve
+        Kişisel Verileri Koruma Sözleşmesi” (Ek-7) “Çalışan Kişisel Verileri
+        İşleme Aydınlatma Metni” (Ek-8), “Çalışan Adayı Aydınlatma Metni”
+        (Ek-9), “İnternet Sitesi Çerez Aydınlatma Metni” (Ek-10), “Kamera Kayıt
+        Sistemleri Aydınlatma Metni” (Ek-11) ile gerçekleştirilmektedir. Kanun
+        ve Politika’nın yürütülmesinden ve gerektiğinde güncellenmesinden
+        Yönetim Kurulu, bu kapsamdaki tüm iş ve işlemlerin takibinden,
+        koordinasyon ve denetiminden Mevlana Petrol Ürünleri Turizm Taşımacılık
+        Pazarlama İnşaat Ticaret Limited Şirketi Kişisel Verileri Koruma
+        Komitesi sorumludur.
+      </p>
+      <h3>9. YÜRÜRLÜK ve İLANI</h3>
+      <p>
+        Politika yayımı tarihi itibariyle yürürlüğe girmiştir. Politika’da
+        meydana gelecek değişiklikler Mevlana Petrol Ürünleri Turizm Taşımacılık
+        Pazarlama İnşaat Ticaret Limited Şirketi’ın internet sitesinde (Mevlana
+        Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited
+        Şirketi) yayımlanarak kişisel veri sahiplerinin, ilgili kişilerin
+        erişimine sunulur. Politika değişiklikleri ilan edildiği tarihte
+        uygulamaya girer.
+      </p>
+      <h5>EKLER</h5>
+      <h5>Ek 1- Veri Kategorileri ve Kişisel Verileri</h5>
+      <h5>Ek 2- Kişisel Veri İşleme Amaçları</h5>
+      <h5>Ek 3- Kişisel Verilerin Aktarıldığı Kişiler ve Aktarılma Amaçları</h5>
+      <h5>Ek 4- Veri Sahibi Başvuru Formu</h5>
+      <h5>Ek 5- Kişisel Veri Saklama ve İmha Politikası</h5>
+      <h5>Ek 6- Kişisel Verileri İşleme Müşteri Aydınlatma Metni</h5>
+      <h5>Ek 7- Tedarikçi Gizlilik ve Kişisel Verileri Koruma Sözleşmesi</h5>
+      <h5>Ek 8- Çalışan Kişisel Verileri İşleme Aydınlatma Metni</h5>
+      <h5>Ek 9- Çalışan Adayı Aydınlatma Metni</h5>
+      <h5>Ek 10- İnternet Sitesi Çerez Aydınlatma Metni</h5>
+      <h5>Ek 11- Kamera Kayıt Sistemleri Aydınlatma Metni</h5>
 
-        <table class="custom-table">
-    <thead>
+      <h4>EK 1- Veri Kategorileri ve Kişisel Veriler</h4>
+      <table border="1" cellspacing="0" cellpadding="8">
+      <thead>
       <tr>
-        <th>Veri AktarımıYapılabilecek Kişiler</th>
-        <th>Tanımı</th>
-        <th>Veri AktarımAmacı ve Kapsamı</th>
+        <th>Veri Kategorileri</th>
+        <th>Kişisel Veri</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>Gerçek kişiler veya özel hukuk tüzel kişileri</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi faaliyetleri gereği ilişkide bulunduğu, işlem gerçekleştirdiği gerçek veya tüzel kişiler</td>
-        <td>Gerçekleştirilen iş ve işlem ile sınırlı</td>
-      </tr>
-      <tr>
-        <td>Hissedarlar</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ile ortaklık ilişkisi kurmuş gerçek kişiler</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın ticari faaliyetlerine ilişkin stratejilerin planlanması, yürütümü ve denetimi amacıyla sınırlı</td>
-      </tr>
-      <tr>
-        <td>İş Ortakları</td>
-        <td>İş Ortakları</td>
-        <td>İş ortaklığı kurulması ve yürütülmesi amaç ve faaliyetleri ile sınırlı</td>
-      </tr>
-      <tr>
-        <td>Yetkili Kamu Kurum ve Kuruluşları</td>
-        <td>Sosyal Güvenlik Kurumu, Vergi Daireleri vb. ilgili mevzuat hükümlerine gore Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’den bilgi ve belge almaya yetkili kamu kurum ve kuruluşları</td>
-        <td>İlgili kamu kurum ve Kuruluşlarının kanuni yetkisine bağlı talep ettiği amaçla sınırlı</td>
-      </tr>
-      <tr>
-        <td>Kanunen Yetkili Özel Hukuk Kişileri</td>
-        <td>İlgili mevzuat hükümleri gereğince belirli şartlara uygun olarak kurulmuş ve bu çerçevede faaliyetlerini sürdüren kurum veya kuruluşları</td>
-        <td>Yürüttükleri faaliyet alanlarına giren konular ile ilgili sınırlı</td>
-      </tr>
-      <tr>
-        <td>Özel Sigorta Şirketleri</td>
-        <td>Özel sağlık, emekllik, BES uygulamaları</td>
-        <td>Özel sigorta kayıt ve bildirimleriyle kapsamıyla sınırlı</td>
-      </tr>
-      <tr>
-        <td>Yönetim Kurulu Üyeleri</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi Yönetim Kurulu Üyeleri</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi Yönetim Kurulu Faaliyetlerinin yürütülmesi amacıyla sınırlı</td>
-      </tr>
-      <tr>
-        <td>Hizmet alınan, işbirliği yapılan kuruluşlar</td>
-        <td>Sözleşmeli hizmet alınan, işbirliği yapılan kuruluşlar</td>
-        <td>Sözleşme ve işbirliği protokol esasları ile sınırlı</td>
-      </tr>
-      <tr>
-        <td>Avukat</td>
-        <td>İlgili mevzuat uyarunca avukat yetkisine sahip avukatlar</td>
-        <td>Şirket faaliyet ve işçi işlemlerinde hukuki sonuç doğurabilecek konularla sınırlı.</td>
-      </tr>
-      <tr>
-        <td>Tedarikçi</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’a veri işleme amaç ve istekleri doğrultusunda hizmet sunan taraflar</td>
-        <td>Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi’ın dış kaynaktan ticari faaliyetlerini yerine getirmek için mal ve hizmetlerin tedarik edilmesi amacıyla sınırlı</td>
-      </tr>
-      <tr>
-        <td>Danışmanlar</td>
-        <td>Uzman ve deneyiminden yararlanılanlar</td>
-        <td>Uzman ve deneyiminden yararlanılanlar</td>
-      </tr>
-      <tr>
-        <td>Denetçiler</td>
-        <td>İlgili mevzuat uyarunca denetim yetkisine sahip denetçiler</td>
-        <td>Mevzuatta belirlenen yetki ve görev sınırları</td>
-      </tr>
-    </tbody>
-  </table>
+        <tr>
+          <th rowspan="13">Kimlik</th>
+          <td>Ad, Soyad</td>
+        </tr>
+        <tr>
+          <td>Anne- Baba Adı</td>
+        </tr>
+        <tr>
+          <td>Anne Kızlık Soyadı</td>
+        </tr>
+        <tr>
+          <td>Doğum Tarihi</td>
+        </tr>
+        <tr>
+          <td>Doğum Yeri</td>
+        </tr>
+        <tr>
+          <td>Medeni Hali</td>
+        </tr>
+        <tr>
+          <td>Nüfus Cüzdanı Seri Sıra No</td>
+        </tr>
+        <tr>
+          <td>TC Kimlik No</td>
+        </tr>
+        <tr>
+          <td>Pasaport Numarası</td>
+        </tr>
+        <tr>
+          <td>Geçici TC Kimlik Numarası</td>
+        </tr>
+        <tr>
+          <td>Cinsiyet Bilgisi</td>
+        </tr>
+        <tr>
+          <td>TC Kimlik Kartı</td>
+        </tr>
+        <tr>
+          <td>Sürücü Belgesi</td>
+        </tr>
 
+        <tr>
+          <th rowspan="5">İletişim</th>
+          <td>Adres</td>
+        </tr>
+        <tr>
+          <td>E-posta Adresi</td>
+        </tr>
+        <tr>
+          <td>İletişim Adresi</td>
+        </tr>
+        <tr>
+          <td>Kayıtlı Elektronik Posta Adresi (KEP)</td>
+        </tr>
+        <tr>
+          <td>Telefon No</td>
+        </tr>
+
+        <tr>
+          <td>Lokasyon</td>
+          <td>Bulunduğu yerin konum bilgileri v.b.</td>
+        </tr>
+
+        <tr>
+          <th rowspan="5">Özlük</th>
+          <td>Bordro Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Disiplin Soruşturması</td>
+        </tr>
+        <tr>
+          <td>İşe Giriş- Çıkış Belgesi Kayıtları</td>
+        </tr>
+        <tr>
+          <td>Özgeçmiş Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Performans Değerlendirme Raporları</td>
+        </tr>
+
+        <tr>
+          <td>Hukuki İşlem</td>
+          <td>Adli makamlarla yazışmalardaki bilgiler, dava dosyasındaki bilgiler vb.</td>
+        </tr>
+
+        <tr>
+          <th rowspan="6">Müşteri İşlem</th>
+          <td>Fatura</td>
+        </tr>
+        <tr>
+          <td>Senet</td>
+        </tr>
+        <tr>
+          <td>Çek Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Giriş-Çıkış Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Sipariş Bilgisi</td>
+        </tr>
+        <tr>
+          <td>Randevu Bilgisi</td>
+        </tr>
+
+        <tr>
+          <th rowspan="2">Fiziksel Mekan Güvenliği</th>
+          <td>Çalışan ve Ziyaretçilerin Giriş Çıkış Kayıt Bilgileri</td>
+        </tr>
+        <tr>
+        <td>Kamera Kayıtları</td>
+        </tr>
+
+        <tr>
+          <th rowspan="4">İşlem Güvenliği</th>
+          <td>İşlem Güvenliği (IP adresi bilgileri, internet sitesi giriş çıkış bilgileri, şifre ve parola bilgileri gibi)</td>
+        </tr>
+        <tr>
+          <td>IP Adres Bilgileri</td>
+        </tr>
+        <tr>
+          <td>İnternet Sitesi Giriş Çıkış Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Şifre ve Parola Bilgileri</td>
+        </tr>
+
+        <tr>
+          <td>Risk Yönetimi</td>
+          <td>Ticari, teknik, idari risklerin yönetilmesi için işlenen bilgiler gibi</td>
+        </tr>
+
+        <tr>
+          <th rowspan="6">Finans</th>
+          <td>Bilanço Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Finansal Performans Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Kredi ve Risk Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Malvarlığı Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Banka Hesap Numarası</td>
+        </tr>
+        <tr>
+          <td>IBAN Numarası</td>
+        </tr>
+
+        <tr>
+          <th rowspan="4">Mesleki Deneyim</th>
+          <td>Diploma Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Gidilen Kurslar</td>
+        </tr>
+        <tr>
+          <td>Meslek İçi Eğitim Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Sertifikalar</td>
+        </tr>
+
+        <tr>
+          <th rowspan="4">Pazarlama</th>
+          <td>Alışveriş Geçmişi Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Anket</td>
+        </tr>
+        <tr>
+          <td>Çerez Kayıtları</td>
+        </tr>
+        <tr>
+          <td>Kampanya Çalışmasıyla Elde Edilen Bilgiler</td>
+        </tr>
+
+        <tr>
+          <td>Görsel Ve İşitsel Kayıtlar</td>
+          <td>Kapalı Devre Kamera Sistemi Görüntüsü, Ses Kaydı</td>
+        </tr>
+        <tr>
+          <td>Kılık Ve Kıyafet</td>
+          <td>Kılık ve kıyafete ilişkin bilgiler</td>
+        </tr>
+
+        <tr>
+          <td>Sendika Üyeliği</td>
+          <td>Sendika üyeliği bilgileri</td>
+        </tr>
+
+        <tr>
+          <th rowspan="8">Sağlık Bilgileri</th>
+          <td>Engellilik Durumuna Ait Bilgiler</td>
+        </tr>
+        <tr>
+          <td>Kan Grubu Bilgisi</td>
+        </tr>
+        <tr>
+          <td>Kişisel Sağlık Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Kullanılan Cihaz ve Protez Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Laboratuvar ve Görüntüleme Sonuçları</td>
+        </tr>
+        <tr>
+          <td>Test Sonuçları</td>
+        </tr>
+        <tr>
+          <td>Muayene Verileri</td>
+        </tr>
+        <tr>
+          <td>Reçete Bilgileri</td>
+        </tr>
+
+        <tr>
+          <th rowspan="2">Ceza Mahkûmiyeti Ve Güvenlik Tedbirleri</th>
+          <td>Ceza Mahkumiyetine İlişkin Bilgiler</td>
+        </tr>
+        <tr>
+          <td>Güvenlik Tedbirine İlişkin Bilgiler</td>
+        </tr>
+
+        <tr>
+          <th rowspan="4">Aile Bilgileri</th>
+          <td>Çocuk Sayısı</td>
+        </tr>
+        <tr>
+          <td>Aile Cüzdanı</td>
+        </tr>
+        <tr>
+          <td>Eş Çalışma Bilgileri</td>
+        </tr>
+        <tr>
+          <td>Çocuk Eğitim ve Yaş Bilgileri</td>
+        </tr>
+
+        <tr>
+          <th rowspan="5">Çalışma Verileri</th>
+          <td>Departmanı</td>
+        </tr>
+        <tr>
+          <td>Çalışma Şekli</td>
+        </tr>
+        <tr>
+          <td>Mesleği</td>
+        </tr>
+        <tr>
+          <td>Referansları</td>
+        </tr>
+        <tr>
+          <td>Son çalışılan şirket bilgileri</td>
+        </tr>
+
+        <tr>
+          <td>İmza</td>
+          <td>Kişisel veri niteliği taşıyan belgeler üzerinde bulunan ıslak veya elektronik imza, parmak izleri, özel işaretler</td>
+        </tr>
+
+        <tr>
+          <th rowspan="4">Web Site Kullanım Verileri</th>
+          <td>Başvuru Formu Doldurulma Tarihi</td>
+        </tr>
+        <tr>
+          <td>Siteye Login Olma Sıklığı/Zamanları</td>
+        </tr>
+        <tr>
+          <td>Son Login Tarihi</td>
+        </tr>
+        <tr>
+          <td>IP Adresi</td>
+        </tr>
+
+        <tr>
+          <th rowspan="2">Talep/Şikayet Yönetimi Bilgisi</th>
+          <td>Anket Verileri</td>
+        </tr>
+        <tr>
+          <td>Firma’ya yöneltilmiş olan her türlü talep veya şikayetin alınması ve değerlendirilmesine ilişkin kişisel veriler.</td>
+        </tr>
+
+        <tr>
+          <td>İtibar Yönetimi Bilgisi</td>
+          <td>Firma’nın ticari itibarını korumak maksatlı toplanan bilgiler ve buna ilişkin oluşturulan değerlendirme raporları ile alınan aksiyonlarla ilgili bilgiler.</td>
+        </tr>
+        <tr>
+          <td>Olay Yönetimi Bilgisi</td>
+          <td>Firma’nın ticari hak ve menfaatleri ile müşterilerinin hak ve menfaatlerini korumak maksatlı gelişen olaylara karşı gerekli hukuki, teknik ve idari tedbirlerin alınmasına yönelik olarak işlenen kişisel veriler.</td>
+        </tr>
+
+
+        <tr>
+          <th rowspan="2">Sigorta</th>
+          <td>Özel Sigorta Verileri</td>
+        </tr>
+        <tr>
+          <td>Sosyal Güvenlik Kurumu Verileri</td>
+        </tr>
+
+        <tr>
+          <td>Araç Bilgileri</td>
+          <td>Araç plakası, marka, model, model yılı, motor şasi numarası, ruhsat tescil tarihi, ruhsat örneği, hasarsızlık bilgileri</td>
+        </tr>
+        <tr>
+          <td>Uyum Bilgileri</td>
+          <td>Uyum kapsamında işlenen kişisel veriler</td>
+        </tr>
+        <tr>
+          <td>Denetim ve Teftiş Bilgileri</td>
+          <td>İç veya dış denetim faaliyetleri sırasında işlenen kişisel veriler</td>
+        </tr>
+
+        <tr>
+          <td>Yabancılarda Oturma İzni Bilgileri</td>
+          <td>Yabancılarda Oturma İznine Ait Bilgiler</td>
+        </tr>
+      </table>
+
+      <h4>EK 2- Kategorik Kişisel Veri İşleme Amaçlar</h4>
+      <table class="custom-table">
+        <tbody>
+          <tr>
+            <td>Acil Durum Yönetimi Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Bilgi Güvenliği Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>
+              Çalışan Adayı / Stajyer / Öğrenci Seçme Ve Yerleştirme
+              Süreçlerinin Yürütülmesi
+            </td>
+          </tr>
+          <tr>
+            <td>Çalışan Adaylarının Başvuru Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Çalışan Memnuniyeti Ve Bağlılığı Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>
+              Çalışanlar İçin İş Akdi Ve Mevzuattan Kaynaklı Yükümlülüklerin
+              Yerine Getirilmesi
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Çalışanlar İçin Yan Haklar Ve Menfaatleri Süreçlerinin Yürütülmesi
+            </td>
+          </tr>
+          <tr>
+            <td>Denetim / Etik Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Eğitim Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Erişim Yetkilerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Faaliyetlerin Mevzuata Uygun Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Finans Ve Muhasebe İşlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Firma / Ürün / Hizmetlere Bağlılık Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Fiziksel Mekan Güvenliğinin Temini</td>
+          </tr>
+          <tr>
+            <td>Görevlendirme Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Hukuk İşlerinin Takibi Ve Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>
+              İç Denetim/ Soruşturma / İstihbarat Faaliyetlerinin Yürütülmesi
+            </td>
+          </tr>
+          <tr>
+            <td>İletişim Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>İnsan Kaynakları Süreçlerinin Planlanması</td>
+          </tr>
+          <tr>
+            <td>İş Faaliyetlerinin Yürütülmesi / Denetimi</td>
+          </tr>
+          <tr>
+            <td>İş Sağlığı / Güvenliği Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>
+              İş Süreçlerinin İyileştirilmesine Yönelik Önerilerin Alınması Ve
+              Değerlendirilmesi
+            </td>
+          </tr>
+          <tr>
+            <td>İş Sürekliliğinin Sağlanması Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Lojistik Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Mal / Hizmet Satın Alım Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Mal / Hizmet Satış Sonrası Destek Hizmetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Mal / Hizmet Satın Alım Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Mal / Hizmet Satış Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Mal / Hizmet Üretim Ve Operasyon Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Müşteri İlişkileri Yönetimi Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Müşteri Memnuniyetine Yönelik Aktivitelerin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Organizasyon Ve Etkinlik Yönetimi</td>
+          </tr>
+          <tr>
+            <td>Pazarlama Analiz Çalışmalarının Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Performans Değerlendirme Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Reklam / Kampanya / Promosyon Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Risk Yönetimi Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Saklama Ve Arşiv Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>
+              Sosyal Sorumluluk Ve Sivil Toplum Aktivitelerinin Yürütülmesi
+            </td>
+          </tr>
+          <tr>
+            <td>Sponsorluk Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Stratejik Planlama Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Talep / Şikayetlerin Takibi</td>
+          </tr>
+          <tr>
+            <td>Taşınır Mal Ve Kaynakların Güvenliğinin Temini</td>
+          </tr>
+          <tr>
+            <td>Tedarik Zinciri Yönetimi Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Ücret Politikasının Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Ürün / Hizmetlerin Pazarlama Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Veri Sorumlusu Operasyonlarının Güvenliğinin Temini</td>
+          </tr>
+          <tr>
+            <td>Yabancı Personel Çalışma Ve Oturma İzni İşlemleri</td>
+          </tr>
+          <tr>
+            <td>Yatırım Süreçlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Yetenek / Kariyer Gelişimi Faaliyetlerinin Yürütülmesi</td>
+          </tr>
+          <tr>
+            <td>Yetkili Kişi, Kurum Ve Kuruluşlara Bilgi Verilmesi</td>
+          </tr>
+          <tr>
+            <td>Ziyaretçi Kayıtlarının Oluşturulması Ve Takibi</td>
+          </tr>
+          <tr>
+            <td>
+              İş Ortakları, Tedarikçilerin Bilgiye ve Tesislere Erişim
+              Yetkilerinin Planlanması, Yönetimi
+            </td>
+          </tr>
+          <tr>
+            <td>İş Ortakları, Tedarikçilerle Olan İlişkilerin Yönetimi</td>
+          </tr>
+          <tr>
+            <td>
+              İş Ortağı/Tedarikçi Çalışanlarının Giriş Çıkış Kayıtlarının
+              Toplanması
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Faaliyetlerinin İlgili Mevzuata veya Şirket Prosedürlerine
+              Uyumlulaştırma Planlama ve Yönetimi
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>EK 3 –Kişisel Verilerin Aktarıldığı Kişiler ve Aktarılma Amaçları</h4>
+      <p>
+        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
+        Limited Şirketi Kanun’un 8. ve 9. maddelerine uygun olarak katılımcı,
+        müşterileri ve çalışanların kişisel verilerini aşağıda sıralanan kişi
+        kategorilerine aktarabilir:
+      </p>
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Veri AktarımıYapılabilecek Kişiler</th>
+            <th>Tanımı</th>
+            <th>Veri AktarımAmacı ve Kapsamı</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gerçek kişiler veya özel hukuk tüzel kişileri</td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi faaliyetleri gereği ilişkide bulunduğu,
+              işlem gerçekleştirdiği gerçek veya tüzel kişiler
+            </td>
+            <td>Gerçekleştirilen iş ve işlem ile sınırlı</td>
+          </tr>
+          <tr>
+            <td>Hissedarlar</td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi ile ortaklık ilişkisi kurmuş gerçek
+              kişiler
+            </td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi’ın ticari faaliyetlerine ilişkin
+              stratejilerin planlanması, yürütümü ve denetimi amacıyla sınırlı
+            </td>
+          </tr>
+          <tr>
+            <td>İş Ortakları</td>
+            <td>İş Ortakları</td>
+            <td>
+              İş ortaklığı kurulması ve yürütülmesi amaç ve faaliyetleri ile
+              sınırlı
+            </td>
+          </tr>
+          <tr>
+            <td>Yetkili Kamu Kurum ve Kuruluşları</td>
+            <td>
+              Sosyal Güvenlik Kurumu, Vergi Daireleri vb. ilgili mevzuat
+              hükümlerine gore Mevlana Petrol Ürünleri Turizm Taşımacılık
+              Pazarlama İnşaat Ticaret Limited Şirketi’den bilgi ve belge almaya
+              yetkili kamu kurum ve kuruluşları
+            </td>
+            <td>
+              İlgili kamu kurum ve Kuruluşlarının kanuni yetkisine bağlı talep
+              ettiği amaçla sınırlı
+            </td>
+          </tr>
+          <tr>
+            <td>Kanunen Yetkili Özel Hukuk Kişileri</td>
+            <td>
+              İlgili mevzuat hükümleri gereğince belirli şartlara uygun olarak
+              kurulmuş ve bu çerçevede faaliyetlerini sürdüren kurum veya
+              kuruluşları
+            </td>
+            <td>
+              Yürüttükleri faaliyet alanlarına giren konular ile ilgili sınırlı
+            </td>
+          </tr>
+          <tr>
+            <td>Özel Sigorta Şirketleri</td>
+            <td>Özel sağlık, emekllik, BES uygulamaları</td>
+            <td>Özel sigorta kayıt ve bildirimleriyle kapsamıyla sınırlı</td>
+          </tr>
+          <tr>
+            <td>Yönetim Kurulu Üyeleri</td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi Yönetim Kurulu Üyeleri
+            </td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi Yönetim Kurulu Faaliyetlerinin yürütülmesi
+              amacıyla sınırlı
+            </td>
+          </tr>
+          <tr>
+            <td>Hizmet alınan, işbirliği yapılan kuruluşlar</td>
+            <td>Sözleşmeli hizmet alınan, işbirliği yapılan kuruluşlar</td>
+            <td>Sözleşme ve işbirliği protokol esasları ile sınırlı</td>
+          </tr>
+          <tr>
+            <td>Avukat</td>
+            <td>İlgili mevzuat uyarunca avukat yetkisine sahip avukatlar</td>
+            <td>
+              Şirket faaliyet ve işçi işlemlerinde hukuki sonuç doğurabilecek
+              konularla sınırlı.
+            </td>
+          </tr>
+          <tr>
+            <td>Tedarikçi</td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi’a veri işleme amaç ve istekleri
+              doğrultusunda hizmet sunan taraflar
+            </td>
+            <td>
+              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
+              Ticaret Limited Şirketi’ın dış kaynaktan ticari faaliyetlerini
+              yerine getirmek için mal ve hizmetlerin tedarik edilmesi amacıyla
+              sınırlı
+            </td>
+          </tr>
+          <tr>
+            <td>Danışmanlar</td>
+            <td>Uzman ve deneyiminden yararlanılanlar</td>
+            <td>Uzman ve deneyiminden yararlanılanlar</td>
+          </tr>
+          <tr>
+            <td>Denetçiler</td>
+            <td>İlgili mevzuat uyarunca denetim yetkisine sahip denetçiler</td>
+            <td>Mevzuatta belirlenen yetki ve görev sınırları</td>
+          </tr>
+        </tbody>
+      </table>
     </div>,
-
 
     //DÖRDÜNCÜ BUTON!!
     <div className="content-box">

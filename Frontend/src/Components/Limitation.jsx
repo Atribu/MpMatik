@@ -86,7 +86,7 @@ const Limitation = () => {
           layout="responsive"
         ></img>
         <div className="div-text">
-          <h2><span>BP TAŞITMATİK</span> Ne İşe Yarar?</h2>
+          <h2><span>BP TAŞITMATİK</span><br></br> Ne İşe Yarar?</h2>
           <p>
             <span>BP TAŞITMATİK</span>, BP’nin filolara özel geliştirdiği
             çözümümüz.Bu otomasyon sistemiyle, akaryakıtınızı aracınızdan
