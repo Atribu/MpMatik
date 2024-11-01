@@ -2,16 +2,20 @@
     display: flex;
     align-items: center;
     justify-content:baseline;
-    background-color: rgba(45, 55, 72, 0.85); 
+    background-color: rgba(66, 72, 83, 0.95); 
     flex-direction: column;
-    gap:20px;
+    gap:15px;
     text-align: center;
     font-family:sans-serif; 
+    left: 20%;
+    transform: translateX(-20%);
+    top: 10%;
+    transform: translateY(-10%);
 
     @media (min-width: 1024px) {
       width: 60%; 
       padding: 30px;
-      padding-bottom: 60px;
+      padding-bottom: 20px;
       
     }
 
@@ -49,18 +53,31 @@
     }
 }
 .h2{
-    font-size: 30px;
+    font-size: 25px;
     color: #ffffff;
     line-height: normal;
     margin:0px;
+    padding: 0;
     white-space: nowrap;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+  
+    }
     
 }
 
 .h3{
-    font-size: 20px;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 0;
     color: #ffffff;
     white-space: nowrap;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+  
+    }
 }
 
 .input-section{
@@ -69,14 +86,46 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 4%;
+    gap: 1rem;
     
 
     input{
       background:#fff;
+
+      &::placeholder{
+        color: #999;
+      }
     }
 
     
+}
+
+.input-sectionColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  input{
+    background:#fff;
+    width: 95%; 
+    gap:1rem;
+  
+    @media (min-width: 768px) {
+      width: 50%; 
+    }
+
+    &::placeholder{
+      color: #999;
+    }
+  }
+
 }
 
 .inputForm{
@@ -184,9 +233,12 @@
     width: 100%;
     background-color: #4caf50;
     color: #ffffff;
-    
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
     border:none;
     border-radius: 5px;
+    height: 58.8px;
     
     p{
         font-size: 20px;
@@ -225,9 +277,9 @@
       color: #333; // Metin rengi
       height: 25px;
       
-      &.placeholder {
+      &::placeholder {
         font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-        color: #fff; // Placeholder için farklı renk kullanabilirsin
+        color: #999; // Placeholder için farklı renk kullanabilirsin
       }
   
   

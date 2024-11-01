@@ -54,13 +54,14 @@ const BlogDetails = () => {
           <BreadCrumbs/>
 
           <p>{item.contentTitle}</p>
-          <MainBackground header="" img={item.image}/>
+          <MainBackground header="" img={item.thumbnail}/>
           <h2>{item.subTitle}</h2>
           <p>{item.contentSubTitle}</p>
-
+          <img src={item.images[0]} alt='blog resim 1' width={item.images[0].width} height={item.images[0].height}/>
           <h2>{item.subTitle1}</h2>
           <p>{item.contentSubTitle1}</p>
 
+          <img src={item.images[1]} alt='blog resim 2' width={item.images[1].width} height={item.images[1].height}/>
           <h3>{item.subTitle2}</h3>
           <p>{item.contentSubTitle2}</p>
 

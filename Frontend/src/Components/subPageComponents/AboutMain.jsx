@@ -14,7 +14,7 @@ const GrayMatik = () => {
             <h1>HAKKIMIZDA</h1>
             <p>Türkiye’nin önde gelen akaryakıt ve petrol ürünleri tedarikçilerinden biri olarak sizlere hizmet vermekten gurur duyuyoruz. BP Taşıtmatik ürünleri konusundaki uzmanlığımız ve taahhüdümüz, sürücülerin akaryakıt deneyimlerini daha güvenli, verimli ve etkili hale getirmelerine yardımcı olmak için tasarlanmıştır.</p>
            {/* <div className='social media'> */}
-           <div className="social-icons">
+           <div className="social-icons-about">
                         <a
                                 href="https://www.instagram.com/mptasitmatik/" className="icon instagram" target="_blank" rel="noopener noreferrer"><FaInstagram size={19} />
                         </a>

@@ -149,21 +149,38 @@
 .benzinlik {
     display: flex;
     margin-left: 74%;
+
+    @media (min-width: 480px) {
+        margin-left: 60%;
+      }
+
+      @media (min-width: 768px) {
+        margin-left: 69%;
+      }
+
+      @media (min-width: 1024px) {
+        margin-left: 74%;
+      }
    
   }
 
   .benzinlik-image {
     z-index: 12;
-    @media (max-width: 769px) {
-        width: 50%;
-        height: 50%;
+    width: 60%;
+    height: 60%;
+
+    @media (min-width: 480px) {
+        width: 100%;
+        height: 100%;
+        max-width: 252px;
+        max-height: 155px;
       }
    
   }
 
 /* Üst yolda olacak arabalar */
 .maviarabam, .beyazarabam {
-    top: 90px; /* Üst yol hizası */
+    top: 75px; /* Üst yol hizası */
     z-index: 9;
 }
 

@@ -20,7 +20,7 @@
     text-transform: uppercase;
     margin: 20px;
     background: #191f2c;
-    padding: 60px 20px;
+    padding: 30px 20px;
 
     @media (min-width: 768px) {
         width: 50%; 
@@ -31,13 +31,16 @@
     
       @media (max-width: 768px) {
         width: 80%;  
-        gap:25px;
+        gap:1rem;
     
       }
 }
 .h2Gray{
-    font-size: 30px;
+    font-size: 28px;
     color: #ffffff;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .h3Gray{
@@ -59,20 +62,50 @@
     width: 50%; 
     gap:2rem;
 
-    &:placeholder{
+    &::placeholder{
       color: #ffffff;
     }
     
     }
+ 
+}
 
-    
+.input-sectionGrayColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  input{
+    position: relative;
+  display: inline-block;
+  width: 92%; 
+  gap:1rem;
+
+  @media (min-width: 768px) {
+    width: 50%; 
+  }
+
+  &::placeholder{
+    color: #ffffff;
+  }
+  
+  }
+
 }
 
 input {
     font-size: 16px;           
-    font-family:sans-serif;            
+    font-family:sans-serif;    
+    font-weight: 300;        
     padding: 10px;             
-    border: 1px solid white;    
+    border: 1px solid #767f90;    
     border-radius: 4px;       
     width: 50vw;              
     height: 30px;
@@ -101,11 +134,12 @@ input {
     // padding-bottom:10px;
     border:none;
     border-radius: 3px;
-    
-    p{
-        font-size: 20px;
-        text-transform: uppercase;
-    }
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
 
     &:hover {
       background-color: #03651b;
@@ -127,7 +161,7 @@ input {
   
     &__input {
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #767f90;
       border-radius: 4px;
       cursor: pointer;
       display: flex;
@@ -140,8 +174,10 @@ input {
       height: 25px;
       
       &.placeholder {
-        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-        color: #fff; // Placeholder için farklı renk kullanabilirsin
+        font-style: normal;  
+        color: #fff; 
+        text-transform: capitalize ;
+        font-weight: 300;     
       }
   
   
@@ -150,7 +186,7 @@ input {
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #333; // Ok işareti rengi
+        border-top: 5px solid #bcbbbb; // Ok işareti rengi
         margin-left: 10px;
       }
     }
