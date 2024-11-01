@@ -41,17 +41,17 @@
     justify-content: center;
     gap:0px;
     text-align: start;
-    width: 95%;
     backdrop-filter: none;
     z-index: 10; 
 
     @media (max-width: 1024px) {
         flex-direction: column;
+        width: 98%;
     }
     
     @media (min-width: 1024px) {
         flex-direction: row;
-        
+        width: 95%;
     }
 }
 

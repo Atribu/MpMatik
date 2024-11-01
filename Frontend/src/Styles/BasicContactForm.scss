@@ -8,26 +8,26 @@
     text-align: center;
     font-family:sans-serif; 
     border-radius: 10px;
+    width: 95%;  
+    padding: 20px 15px;
+    height: 470px;
 
     @media (min-width: 1024px) {
       width: 68%; 
       padding: 20px 30px;
       padding-bottom: 60px;
+      height: 540px;
       
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
         width: 50%; 
         padding: 20px 30px ;
-        padding-bottom: 30px;
-        
-      }
-    
-      @media (max-width: 768px) {
-        width: 90%;  
-        padding: 15px;
+        padding-bottom: 50px;
         height: 540px;
       }
+    
+      
 }
 
 .divContactForm {
@@ -90,7 +90,7 @@
   height: 25px;
 
   
-  &.placeholder {
+  &::placeholder {
     font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
     color: #999; // Placeholder için farklı renk kullanabilirsin
   }
@@ -105,7 +105,7 @@
   cursor: pointer;
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
@@ -114,8 +114,12 @@
   color: #333; // Metin rengi
   background: #fff;
 
+  @media (min-width: 768px) {
+    height: 200px;
+  }
+
   
-  &.placeholder {
+  &::placeholder {
     font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
     color: #999; // Placeholder için farklı renk kullanabilirsin
   }
@@ -227,7 +231,7 @@
       height: 25px;
       width: 100%;
       
-      &.placeholder {
+      &::placeholder {
         font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
         color: #999; // Placeholder için farklı renk kullanabilirsin
       }
