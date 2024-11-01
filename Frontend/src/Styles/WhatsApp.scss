@@ -28,6 +28,7 @@
     z-index: 90;             
     background-color: #39A014;
     border-radius: 100%; 
+    cursor: pointer;
   }
   
   .card-button-container {
@@ -75,11 +76,15 @@
   
   .whatsapp-icon, .phone-icon {
     color: white; 
+    cursor: pointer;
   }
 
   .ecenin-butonu {
     display: flex;
     background: transparent;
     border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
   }
   

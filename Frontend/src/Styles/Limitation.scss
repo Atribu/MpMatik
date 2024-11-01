@@ -104,39 +104,32 @@
   background-color: #22872b;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border:none;
   text-align: center;
-  font-size: 30;
   text-transform: uppercase;
+
 
   p{
       text-align: center;
       font-size: 17px;
       text-transform: uppercase;
       color: #ffffff;
+      line-height: normal;
       font-weight: normal;
+      padding: 7.5px;
+      margin: 0px;
+
   }
 
-  // &:hover {
-  //     background-color: #000000;
-  //     cursor: pointer; 
-
-  //     text {
-  //       color: #ffffff;
-  //     }
-  //   }
 
     @media (min-width: 1281px) {
       width: 385px;
-      padding-top:25px;
-  padding-bottom:25px;
+      padding-top:22px;
+      padding-bottom:22px;
   
     }
-    
-    /* 
-      ##Cihaz = Laptoplar, Masaüstü
-      ##Ekran = 1025px to 1280px Arası Ekranlar
-    */
+
     
     @media (min-width: 1025px) and (max-width: 1280px) {
       
@@ -153,6 +146,16 @@
     }
   
 }
+
+.spanButtonText{
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: normal;
+  padding: 0px;
+}
+
 
 .buttonLim.active {
   background-color: #000; // Aktif olduğunda siyah arka plan
@@ -447,38 +450,38 @@ max-height: 1000px; /* İçeriğe uygun bir yükseklik değeri */
 opacity: 1;
 }
 
-.button{
-  background-color: #22872b;
-  align-items: center;
-  justify-content: center;
-  padding-top:25px;
-  padding-bottom:25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  border:none;
-  width: 90%;
-  text-align: center;
-  font-size: 30;
-  text-transform: uppercase;
+// .button{
+//   background-color: #22872b;
+//   align-items: center;
+//   justify-content: center;
+//   padding-top:25px;
+//   padding-bottom:25px;
+//   padding-left: 100px;
+//   padding-right: 100px;
+//   border:none;
+//   width: 90%;
+//   text-align: center;
+//   font-size: 30;
+//   text-transform: uppercase;
 
-  text{
-      text-align: center;
-      font-size: 25;
-      text-transform: uppercase;
-      color: #ffffff;
-  }
+//   text{
+//       text-align: center;
+//       font-size: 25;
+//       text-transform: uppercase;
+//       color: #ffffff;
+//   }
 
-  &:hover {
-      background-color: #000000;
-      cursor: pointer; 
+//   &:hover {
+//       background-color: #000000;
+//       cursor: pointer; 
 
-      text {
-        color: #ffffff;
-      }
-    }
+//       text {
+//         color: #ffffff;
+//       }
+//     }
 
   
-}
+// }
 
 @media (max-width: 768px) {
 .accordion-content {

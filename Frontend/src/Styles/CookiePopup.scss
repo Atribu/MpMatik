@@ -136,8 +136,9 @@
     }
     
     @media (min-width: 1024px) {
-        width: 40%;
-        height: 750px;
+        width: 42%;
+        min-width: 500px;
+        height: 755px;
     }
 }
 
@@ -162,6 +163,9 @@
     text-align: center;
     margin-top: 32px;
     margin-bottom: 48px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
     
     @media (max-width: 1024px) {
         width: 95%;
@@ -190,6 +194,7 @@
     align-items: center;
     text-align: start;
     width: 95%;
+    
 }
 
 .manage-buttons-div{
@@ -199,7 +204,6 @@
     align-items: center;
     justify-content: center;
     gap:4%;
-    
 
     @media (max-width: 1024px) {
         bottom:10px;
@@ -218,7 +222,11 @@
 
     p{
         width: 80%;
-        font-size: 14px;
+        font-size: 13px;
+
+        @media (min-width: 1024px) {
+            font-size: 14px;
+        }
     }
 
 }
@@ -260,12 +268,18 @@
 }
 
 .logo-header{
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: start;
-    gap:15%;
+    
+    h4{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .clicktext{

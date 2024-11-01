@@ -70,13 +70,27 @@
     position: relative; 
 
     @media (max-width: 1024px) {
-        width: 90%;
+        width: 80%;
+        padding:0px 10%;
       }
       @media (min-width: 1024px) {
         width: 50%;
         padding: 0% 5% ;
         padding-bottom: 5%;
         
+      }
+
+      span{
+         font-size: 28px;
+         color: #2e3645;
+         font-weight: bold;
+         line-height: 1.4;
+        line-height: 1.5;
+        margin-top: 1.5em;
+
+          @media (min-width: 1024px) {
+           font-size: 32px;
+          }
       }
 
   }
