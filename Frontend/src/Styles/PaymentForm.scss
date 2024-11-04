@@ -139,10 +139,11 @@
   color: #1A202C;
   height: 100vh;
   text-align: left;
+  padding-bottom: 30px;
 
   @media (min-width: 768px) {
     width: 25%;
-    height: 70vh;
+    height: 80vh;
    }
 
   h3{
@@ -186,7 +187,7 @@
     opacity: 1;
 
     @media (min-width: 1024px) {
-      height: 160px;
+      height: 170px;
      }
   }
 
@@ -225,7 +226,7 @@
     opacity: 1;
 
     @media (min-width: 1024px) {
-      height: 120px;
+      height: 140px;
      }
   }
 

@@ -69,7 +69,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 3%;
+    gap: 4%;
 
     
 }
@@ -80,19 +80,19 @@
   border-radius: 4px;
   cursor: pointer;
   display: flex;
-  width: 47.5%;
+  width: 48%;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
   font-family:sans-serif; 
   font-size: 16px; 
-  color: #333; // Metin rengi
-  height: 25px;
+  color: #333; 
+  height: 40px;
 
   
   &::placeholder {
-    font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-    color: #999; // Placeholder için farklı renk kullanabilirsin
+    font-style: normal;  
+    color: #999; 
   }
 
 
@@ -111,7 +111,7 @@
   background-color: transparent;
   font-family:sans-serif; 
   font-size: 16px; 
-  color: #333; // Metin rengi
+  color: #333; 
   background: #fff;
 
   @media (min-width: 768px) {
@@ -120,8 +120,8 @@
 
   
   &::placeholder {
-    font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-    color: #999; // Placeholder için farklı renk kullanabilirsin
+    font-style: normal; 
+    color: #999; 
   }
 
 
@@ -167,7 +167,6 @@
       background-color: #ddd;
     }
   
-    // İşaretli durumda bir işaret ekleyelim
     .checkbox-input:checked ~ .checkbox-custom::after {
       content: "";
       position: absolute;
@@ -210,14 +209,13 @@
 
 
 
-  .city-selecttt {
+  .city-select-basic {
     position: relative;
     display: inline-block;
-    width: 50%; 
-    
-  
+    width: 48%; 
+
     &__input {
-      padding: 10px;
+      padding: 2%;
       border: 1px solid #ccc;
       border-radius: 4px;
       cursor: pointer;
@@ -227,22 +225,21 @@
       background-color: transparent;
       font-family:sans-serif; 
       font-size: 16px; 
-      color: #333; // Metin rengi
-      height: 25px;
+      color: #999; 
+      height: 45px;
       width: 100%;
+      background: white;
       
       &::placeholder {
-        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-        color: #999; // Placeholder için farklı renk kullanabilirsin
-      }
-  
+        font-style: normal;  
+      } 
   
       .arrow {
         width: 0;
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #333; // Ok işareti rengi
+        border-top: 5px solid #999; 
         margin-left: 10px;
       }
     }
@@ -277,7 +274,7 @@
     }
   }
 
-  .city-select__dropdown{
+  .city-select-basic__dropdown{
     position: absolute;
       top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
       left: 0;
@@ -293,7 +290,7 @@
 
   }
 
-  .city-select__option{
+  .city-select-basic__option{
     padding: 5px 10px; 
         cursor: pointer;
         font-family:sans-serif; 

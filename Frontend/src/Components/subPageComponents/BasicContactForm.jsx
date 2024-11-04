@@ -62,20 +62,20 @@ const BasicContactForm = () => {
       </section>
       <section className='input-section'>
         <input className='inputForm' type="text" id="phone" name="phone" placeholder='Telefon*' required  value={formData.phone}  onChange={handleChange}/>
-        <div className="city-selecttt">
+        <div className="city-select-basic">
       <div 
-        className={`city-select__input ${formData.selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
+        className={`city-select-basic__input ${formData.selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
       >
         {formData.selectedCity}
         <span className="arrow"></span>
       </div>
       {isOpen && (
-        <div className="city-select__dropdown">
+        <div className="city-select-basic__dropdown">
           {cities.map((city, index) => (
             <div 
               key={index} 
-              className="city-select__option" 
+              className="-basic__option" 
               onClick={() => handleSelect(city)}
             >
               {city}

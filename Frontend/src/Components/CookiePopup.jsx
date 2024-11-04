@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "../Styles/CookiePopup.scss";
 import { Link } from "react-router-dom";
 import logo from "../../public/Logo/mp-matik-favicon.png";
+import { useNavigate } from 'react-router-dom';
 
 const CookiePopup = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [isChecked, setIsChecked] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleChange = () => {
     setIsChecked(!isChecked);
@@ -161,7 +164,7 @@ const CookiePopup = () => {
                         Detaylı Bilgi için {" "}
                         <Link
                           className="link-cookie"
-                          to="/gizlilik-politikasi/#cookie"
+                          to="/gizlilik-politikasi#cerez-politikasi"
                           onClick={handleModalCloseToggle}
                         >
                           tıklayın

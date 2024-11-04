@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import BlogSection from "../Components/BlogSection";
 import RoadSimulation from "../Components/RoadSimulation";
@@ -12,7 +12,7 @@ const GizlilikPolitikasi = () => {
   const [isActive, setIsActive] = useState(false);
 
   const handleButtonClick = () => {
-    setIsActive(!isActive); // Tıklanınca aktif durumu değiştir
+    setIsActive(!isActive);
   };
 
   const buttons = [
@@ -24,7 +24,23 @@ const GizlilikPolitikasi = () => {
     "Gizlilik ve Çerezler Politikası",
   ];
 
-  // Butonlara göre gösterilecek içerikler
+  useEffect(() => {
+    // URL hash'ini kontrol et
+    const hash = window.location.hash;
+    if (hash) {
+      switch (hash) {
+        case "#cerez-politikasi":
+          setSelectedContent(5);
+          break;
+
+        default:
+          setSelectedContent(0);
+      }
+    } else {
+      setSelectedContent(0);
+    }
+  }, [window.location.hash]);
+
   const contents = [
     <div className="content-box">
       <p>
@@ -1773,12 +1789,12 @@ const GizlilikPolitikasi = () => {
 
       <h4>EK 1- Veri Kategorileri ve Kişisel Veriler</h4>
       <table border="1" cellspacing="0" cellpadding="8">
-      <thead>
-      <tr>
-        <th>Veri Kategorileri</th>
-        <th>Kişisel Veri</th>
-      </tr>
-    </thead>
+        <thead>
+          <tr>
+            <th>Veri Kategorileri</th>
+            <th>Kişisel Veri</th>
+          </tr>
+        </thead>
         <tr>
           <th rowspan="13">Kimlik</th>
           <td>Ad, Soyad</td>
@@ -1861,7 +1877,10 @@ const GizlilikPolitikasi = () => {
 
         <tr>
           <td>Hukuki İşlem</td>
-          <td>Adli makamlarla yazışmalardaki bilgiler, dava dosyasındaki bilgiler vb.</td>
+          <td>
+            Adli makamlarla yazışmalardaki bilgiler, dava dosyasındaki bilgiler
+            vb.
+          </td>
         </tr>
 
         <tr>
@@ -1889,12 +1908,15 @@ const GizlilikPolitikasi = () => {
           <td>Çalışan ve Ziyaretçilerin Giriş Çıkış Kayıt Bilgileri</td>
         </tr>
         <tr>
-        <td>Kamera Kayıtları</td>
+          <td>Kamera Kayıtları</td>
         </tr>
 
         <tr>
           <th rowspan="4">İşlem Güvenliği</th>
-          <td>İşlem Güvenliği (IP adresi bilgileri, internet sitesi giriş çıkış bilgileri, şifre ve parola bilgileri gibi)</td>
+          <td>
+            İşlem Güvenliği (IP adresi bilgileri, internet sitesi giriş çıkış
+            bilgileri, şifre ve parola bilgileri gibi)
+          </td>
         </tr>
         <tr>
           <td>IP Adres Bilgileri</td>
@@ -1908,7 +1930,10 @@ const GizlilikPolitikasi = () => {
 
         <tr>
           <td>Risk Yönetimi</td>
-          <td>Ticari, teknik, idari risklerin yönetilmesi için işlenen bilgiler gibi</td>
+          <td>
+            Ticari, teknik, idari risklerin yönetilmesi için işlenen bilgiler
+            gibi
+          </td>
         </tr>
 
         <tr>
@@ -2040,7 +2065,10 @@ const GizlilikPolitikasi = () => {
 
         <tr>
           <td>İmza</td>
-          <td>Kişisel veri niteliği taşıyan belgeler üzerinde bulunan ıslak veya elektronik imza, parmak izleri, özel işaretler</td>
+          <td>
+            Kişisel veri niteliği taşıyan belgeler üzerinde bulunan ıslak veya
+            elektronik imza, parmak izleri, özel işaretler
+          </td>
         </tr>
 
         <tr>
@@ -2062,18 +2090,29 @@ const GizlilikPolitikasi = () => {
           <td>Anket Verileri</td>
         </tr>
         <tr>
-          <td>Firma’ya yöneltilmiş olan her türlü talep veya şikayetin alınması ve değerlendirilmesine ilişkin kişisel veriler.</td>
+          <td>
+            Firma’ya yöneltilmiş olan her türlü talep veya şikayetin alınması ve
+            değerlendirilmesine ilişkin kişisel veriler.
+          </td>
         </tr>
 
         <tr>
           <td>İtibar Yönetimi Bilgisi</td>
-          <td>Firma’nın ticari itibarını korumak maksatlı toplanan bilgiler ve buna ilişkin oluşturulan değerlendirme raporları ile alınan aksiyonlarla ilgili bilgiler.</td>
+          <td>
+            Firma’nın ticari itibarını korumak maksatlı toplanan bilgiler ve
+            buna ilişkin oluşturulan değerlendirme raporları ile alınan
+            aksiyonlarla ilgili bilgiler.
+          </td>
         </tr>
         <tr>
           <td>Olay Yönetimi Bilgisi</td>
-          <td>Firma’nın ticari hak ve menfaatleri ile müşterilerinin hak ve menfaatlerini korumak maksatlı gelişen olaylara karşı gerekli hukuki, teknik ve idari tedbirlerin alınmasına yönelik olarak işlenen kişisel veriler.</td>
+          <td>
+            Firma’nın ticari hak ve menfaatleri ile müşterilerinin hak ve
+            menfaatlerini korumak maksatlı gelişen olaylara karşı gerekli
+            hukuki, teknik ve idari tedbirlerin alınmasına yönelik olarak
+            işlenen kişisel veriler.
+          </td>
         </tr>
-
 
         <tr>
           <th rowspan="2">Sigorta</th>
@@ -2085,7 +2124,10 @@ const GizlilikPolitikasi = () => {
 
         <tr>
           <td>Araç Bilgileri</td>
-          <td>Araç plakası, marka, model, model yılı, motor şasi numarası, ruhsat tescil tarihi, ruhsat örneği, hasarsızlık bilgileri</td>
+          <td>
+            Araç plakası, marka, model, model yılı, motor şasi numarası, ruhsat
+            tescil tarihi, ruhsat örneği, hasarsızlık bilgileri
+          </td>
         </tr>
         <tr>
           <td>Uyum Bilgileri</td>
@@ -2093,7 +2135,9 @@ const GizlilikPolitikasi = () => {
         </tr>
         <tr>
           <td>Denetim ve Teftiş Bilgileri</td>
-          <td>İç veya dış denetim faaliyetleri sırasında işlenen kişisel veriler</td>
+          <td>
+            İç veya dış denetim faaliyetleri sırasında işlenen kişisel veriler
+          </td>
         </tr>
 
         <tr>
@@ -3122,7 +3166,7 @@ const GizlilikPolitikasi = () => {
     </div>,
 
     //ALTINCI BUTON!!
-    <div id="cookie" className="content-box">
+    <div id="çerez-politikasi" className="content-box">
       <h3>GİZLİLİK VE ÇEREZ POLİTİKASI</h3>
       <h4>
         MEVLANA PETROL ÜRÜNLERİ TURİZM TAŞIMACILIK PAZARLAMA İNŞAAT TİCARET
@@ -3403,7 +3447,6 @@ const GizlilikPolitikasi = () => {
       <div className="gizlilik-main">
         <h2>Gizlilik Politikası</h2>
         <div className="gizlilik-container">
-          {/* Sol taraftaki butonlar */}
           <div className="gizlilik-button-panel">
             {buttons.map((buttonLabel, index) => (
               <button
@@ -3416,8 +3459,28 @@ const GizlilikPolitikasi = () => {
             ))}
           </div>
 
-          {/* Sağ tarafta seçilen içerik */}
           <div className="content-panel">{contents[selectedContent]}</div>
+        </div>
+
+{/* mobile */}
+        <div className="gizlilik-container-mobile">
+          <div className="gizlilik-button-panel">
+            {buttons.map((buttonLabel, index) => (
+              <div key={index}>
+                <button
+                  onClick={() =>
+                    setSelectedContent(selectedContent === index ? -1 : index)
+                  } 
+                  className={selectedContent === index ? "active" : ""}
+                >
+                  {buttonLabel}
+                </button>
+                {selectedContent === index && (
+                  <div className="content-panel">{contents[index]}</div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

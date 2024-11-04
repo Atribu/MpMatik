@@ -27,7 +27,7 @@ const Homepage = () => {
       <MainCarousel/>
       <Limitation/>
       <Satis1/>
-      <Satis2 texts={textSatis2} button={buttonSatis2}/>
+      <Satis2 texts={textSatis2} button={buttonSatis2} href="/ihaleli-akaryakit"/>
       <BlogSection />
       <ContactForm2/>
       <Background/> 

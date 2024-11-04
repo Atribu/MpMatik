@@ -40,7 +40,7 @@ const images = [
     
   ];
 
-const Satis2 = ({texts, button}) => {
+const Satis2 = ({texts, button, href}) => {
     const innerImages = images.slice(6);
 
     useEffect(() => {
@@ -74,7 +74,7 @@ const Satis2 = ({texts, button}) => {
         {texts.map((text, index) => (
         <p key={index}>{text}</p>  
       ))}
-        <button className='buttonMore2'><a href='/ihaleli-akaryakit'>{button}</a></button>
+        <button className='buttonMore2'><a href={href}>{button}</a></button>
     </div>
 
    <div className='mainDivNew slide-upSatis2'>
