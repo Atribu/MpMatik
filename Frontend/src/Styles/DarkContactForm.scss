@@ -1,10 +1,10 @@
-.formContactForm {
+.darkContactForm {
     display: flex;
     align-items: center;
     justify-content:baseline;
-    background-color: #363f50; 
+    background-color: #191f2c; 
     flex-direction: column;
-    gap:20px;
+    gap:15px;
     text-align: center;
     font-family:sans-serif; 
     border-radius: 10px;
@@ -13,24 +13,24 @@
     height: 470px;
 
     @media (min-width: 1024px) {
-      width: 68%; 
-      padding: 20px 30px;
-      padding-bottom: 90px;
-      height: 540px;
+      width: 54%; 
+      padding: 10px 20px;
+      padding-bottom: 20px;
+      height: 440px;
       
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
         width: 50%; 
-        padding: 20px 30px ;
-        padding-bottom: 50px;
-        height: 540px;
+        padding: 10px 20px ;
+        padding-bottom: 20px;
+        height: 480px;
       }
     
       
 }
 
-.divContactForm {
+.divDarkForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@
     padding: 20px;
     text-transform: uppercase;
     @media (min-width: 768px) {
-      width: 50%; 
+      width: 40%; 
       gap:20px;
    
     }
@@ -63,7 +63,7 @@
     white-space: nowrap;
 }
 
-.input-section{
+.input-dark-section{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,10 +71,9 @@
     width: 100%;
     gap: 4%;
 
-    
 }
 
-.inputForm{
+.inputDarkForm{
   padding: 2%;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -83,11 +82,12 @@
   width: 48%;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   font-family:sans-serif; 
   font-size: 16px; 
   color: #333; 
   height: 40px;
+  background: #191f2c;
+  max-height: 56.38px;
 
   
   &::placeholder {
@@ -98,24 +98,23 @@
 
 }
 
-.inputFormMessage{
+.inputDarkMessage{
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 65px;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   font-family:sans-serif; 
   font-size: 16px; 
   color: #333; 
-  background: #fff;
+  background: inherit;
 
   @media (min-width: 768px) {
-    height: 200px;
+    height: 65px;
   }
 
   
@@ -180,20 +179,20 @@
     }
   }
 
-  .submitButton {
+  .submitDarkButton {
     display: flex;
     width: 100%;
     text-align: center;
     justify-content: center;
     align-items:center;
-    background-color: #4caf50;
+    background-color: #259c1c;
     color: #ffffff;
     border:none;
     border-radius: 4px;
-    height: 50px;
+    height: 40px;
     
     p{
-        font-size: 18px;
+        font-size: 17px;
         text-transform: uppercase;
     }
 
@@ -208,10 +207,10 @@
   }
 
 
-  .city-select-basic {
+  .city-select-dark {
     position: relative;
     display: inline-block;
-    width: 48%; 
+    width: 50%; 
 
     &__input {
       padding: 2%;
@@ -227,7 +226,7 @@
       color: #999; 
       height: 45px;
       width: 100%;
-      background: white;
+      background: inherit;
       
       &::placeholder {
         font-style: normal;  
@@ -273,7 +272,7 @@
     }
   }
 
-  .city-select-basic__dropdown{
+  .city-select-dark__dropdown{
     position: absolute;
       top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
       left: 0;
@@ -289,7 +288,7 @@
 
   }
 
-  .city-select-basic__option{
+  .city-select-dark__option{
     padding: 5px 10px; 
         cursor: pointer;
         font-family:sans-serif; 

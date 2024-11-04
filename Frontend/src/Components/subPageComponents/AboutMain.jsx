@@ -5,6 +5,7 @@ import { FaInstagram,FaLinkedin,FaPinterestP,FaVimeoV } from "react-icons/fa";
 import { FaFacebook,FaXTwitter,FaYoutube } from "react-icons/fa6";
 import { SiTiktok } from "react-icons/si";
 import { TiSocialTumbler } from "react-icons/ti";
+import DarkContactForm from "../../Components/subPageComponents/DarkContactForm"
 
 const GrayMatik = () => {
   return (
@@ -47,7 +48,7 @@ const GrayMatik = () => {
            {/* </div> */}
         </div>
         <div className='divHalfForm'>
-          <BasicContactForm/>
+          <DarkContactForm/>
         </div>
       </div>
     </section>

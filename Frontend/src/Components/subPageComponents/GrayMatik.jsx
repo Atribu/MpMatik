@@ -2,6 +2,7 @@ import React from 'react'
 import "../../Styles/GrayMatik.scss"
 import image from "../../../public/images/bp-tasitmatik-referanslar.png"
 import BasicContactForm from "../../Components/subPageComponents/BasicContactForm"
+import DarkContactForm from "../../Components/subPageComponents/DarkContactForm"
 
 const GrayMatik = () => {
   return (
@@ -13,7 +14,7 @@ const GrayMatik = () => {
             <img className="imageRes" src={image} alt='referances' width={image.width} height={image.height} />
         </div>
         <div className='divHalfForm'>
-          <BasicContactForm/>
+          <DarkContactForm/>
         </div>
       </div>
     </section>

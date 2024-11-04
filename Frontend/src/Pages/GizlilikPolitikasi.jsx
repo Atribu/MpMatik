@@ -3173,264 +3173,49 @@ const GizlilikPolitikasi = () => {
         LİMİTED ŞİRKETİ{" "}
       </h4>
       <h4>WEB SİTESİ GİZLİLİK VE ÇEREZ POLİTİKASI</h4>
-      <p>
-        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
-        Limited Şirketi (“Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama
-        İnşaat Ticaret Limited Şirketi ”) tarafından işletilen (“Mevlana Petrol
-        Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ”)
-        web sitesini ziyaret edenlerin (“ziyaretçi”) kişisel verilerini 6698
-        sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) uyarınca işlemekte
-        ve gizliliğini korumaktayız. Bu Web Sitesi Gizlilik ve Çerez Politikası
-        (“Politika”) ile ziyaretçilerin kişisel verilerinin işlenmesi, çerez
-        politikası ve internet sitesi gizlilik ilkeleri belirlenmektedir.{" "}
-      </p>
-      <p>
-        Çerezler (cookies), küçük bilgileri saklayan küçük metin dosyalarıdır.
-        Çerezler, ziyaret ettiğiniz internet siteleri tarafından, tarayıcılar
-        aracılığıyla cihazınıza veya ağ sunucusuna depolanır. İnternet sitesi
-        tarayıcınıza yüklendiğinde, çerezler cihazınızda saklanır. Çerezler,
-        internet sitesinin düzgün çalışmasını, daha güvenli hale getirilmesini,
-        daha iyi kullanıcı deneyimi sunmasını sağlar. Oturum ve yerel depolama
-        alanları da çerezlerle aynı amaç için kullanılır. İnternet sitemizde
-        çerez bulunmamakta, oturum ve yerel depolama alanları çalışmaktadır.
-      </p>
-      <p>
-        Web sitemizin ziyaretçiler tarafından en verimli şekilde faydalanılması
-        için çerezler kullanılmaktadır. Çerezler tercih edilmemesi halinde
-        tarayıcı ayarlarından silinebilir ya da engellenebilir. Ancak bu web
-        sitemizin performansını olumsuz etkileyebilir. Ziyaretçi tarayıcıdan
-        çerez ayarlarını değiştirmediği sürece bu sitede çerez kullanımını kabul
-        ettiği varsayılır.
-      </p>
-      <ol>
-        <li>
-          Kişisel Verilerin İşlenme Amacı
-          <p>
-            Web sitemizi ziyaret etmeniz dolayısıyla elde edilen kişisel
-            verileriniz aşağıda sıralanan amaçlarla Mevlana Petrol Ürünleri
-            Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi
-            tarafından Kanun’un 5. ve 6. maddelerine uygun olarak işlenmektedir:
-          </p>
-          <ul>
-            <li>
-              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
-              Ticaret Limited Şirketi tarafından yürütülen ticari faaliyetlerin
-              yürütülmesi için gerekli çalışmaların yapılması ve buna bağlı iş
-              süreçlerinin gerçekleştirilmesi,
-            </li>
-            <li>
-              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
-              Ticaret Limited Şirketi tarafından sunulan ürün ve hizmetlerden
-              ilgili kişileri faydalandırmak için gerekli çalışmaların yapılması
-              ve ilgili iş süreçlerinin gerçekleştirilmesi,
-            </li>
-            <li>
-              Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat
-              Ticaret Limited Şirketi tarafından sunulan ürün ve hizmetlerin
-              ilgili kişilerin beğeni, kullanım alışkanlıkları ve ihtiyaçlarına
-              göre özelleştirilerek ilgili kişilere önerilmesi ve tanıtılması.
-            </li>
-          </ul>
-        </li>
-      </ol>
-
-      <ol>
-        <li>
-          Kişisel Verilerin Aktarıldığı Taraflar ve Aktarım Amacı
-          <p>
-            Web sitemizi ziyaret etmeniz dolayısıyla elde edilen kişisel
-            verileriniz, kişisel verilerinizin işlenme amaçları doğrultusunda,
-            iş ortaklarımıza, tedarikçilerimize kanunen yetkili kamu kurumlarına
-            ve özel kişilere Kanun’un 8. ve 9. maddelerinde belirtilen kişisel
-            veri işleme şartları ve amaçları kapsamında aktarılabilmektedir.
-          </p>
-        </li>
-      </ol>
-
-      <ol>
-        <li>Kişisel Verilerin Toplanma Yöntemi</li>
-        <p>
-          Çerezler, ziyaret edilen internet siteleri tarafından tarayıcılar
-          aracılığıyla cihaza veya ağ sunucusuna depolanan küçük metin
-          dosyalarıdır. Web sitemiz ziyaret edildiğinde, ziyaretçinin izniyle
-          web sitemize ek olarak google.com, facebook.com, twitter.com,
-          instagram.com, linkedin.com, youtube.com alanlarına da çerezler
-          uygulanmaktadır.
-        </p>
-      </ol>
-
-      <ol>
-        <li>Çerezleri Kullanım Amacı</li>
-        <p>
-          Web sitemiz birinci ve üçüncü taraf çerezleri kullanır. Birinci taraf
-          çerezleri çoğunlukla web sitesinin doğru şekilde çalışması için
-          gereklidir, kişisel verilerinizi tutmazlar. Üçüncü taraf çerezleri,
-          web sitemizin performansını, etkileşimini, güvenliğini, reklamları ve
-          sonucunda daha iyi bir hizmet sunmak için kullanılır. Kullanıcı
-          deneyimi ve web sitemizle gelecekteki etkileşimleri hızlandırmaya
-          yardımcı olur. Bu kapsamda çerezler;
-        </p>
-        <p>
-          İstatistikler: Bu çerezler, web sitesine gelen ziyaretçi sayısı,
-          benzersiz ziyaretçi sayısı, web sitesinin hangi sayfalarının ziyaret
-          edildiği, ziyaretin kaynağı vb. bilgileri depolar. Bu veriler, web
-          sitesinin ne kadar iyi performans gösterdiğini ve analiz etmemize
-          yardımcı olur.
-        </p>
-        <p>
-          Pazarlama: Web sitemiz reklam veriyor. Bu çerezler, size gösterdiğimiz
-          reklamları sizin için anlamlı olacak şekilde kişiselleştirmek için
-          kullanılır. Bu çerezler ayrıca bu reklam kampanyalarının verimliliğini
-          takip etmemize yardımcı olur. Bu çerezlerde depolanan bilgiler, üçüncü
-          taraf reklam sağlayıcıları tarafından size tarayıcıdaki diğer web
-          sitelerinde reklam göstermek için de kullanılabilir.
-        </p>
-        <p>
-          İşlevsel: Bunlar, web sitemizdeki bazı önemli olmayan işlevlere
-          yardımcı olan çerezlerdir. Bu işlevler arasında videolar gibi içerik
-          yerleştirme veya web sitesindeki içerikleri sosyal medya
-          platformlarında paylaşma yer alır.
-        </p>
-        <p>
-          Tercihler: Bu çerezler ayarlarınızı kaydetmemize ve dil tercihleri
-          gibi tarama tercihlerinizi belirlememize yardımcı olur, böylece web
-          sitesine gelecekteki ziyaretlerinizde daha iyi ve verimli bir deneyime
-          sahip olursunuz.
-        </p>
-      </ol>
-
+      <p>Son Güncelleme Tarihi:  04.01.2023</p>
       <h4>
-        Teknik olarak web sitemizde kullanılan çerez türleri aşağıdaki tabloda
-        gösterilmektedir.
+      MPTaşıtmatik olarak çerezleri nasıl kullanıyoruz?
       </h4>
-      <table class="custom-table">
-        <tbody>
-          <tr>
-            <td>Oturum Çerezleri(Session Cookies)</td>
-            <td>
-              Oturum çerezleri ziyaretçilerimizin web sitemizi ziyaretleri
-              süresince kullanılan, tarayıcı kapatıldıktan sonra silinen geçici
-              çerezlerdir. Amacı ziyaretiniz süresince İnternet Sitesinin düzgün
-              bir biçimde çalışmasının teminini sağlamaktır.
-            </td>
-          </tr>
-          <tr>
-            <td>Kalıcı Çerezler(Persistent Cookies)</td>
-            <td>
-              Kalıcı çerezler web sitesinin işlevselliğini artırmak,
-              ziyaretçilerimize daha hızlı ve iyi bir hizmet sunmak amacıyla
-              kullanılan çerez türleridir. Bu tür çerezler tercihlerinizi
-              hatırlamak için kullanılır ve tarayıcılar vasıtasıyla cihazınızda
-              depolanır.
-            </td>
-          </tr>
-          <tr>
-            <td>Teknik Çerezler(Technical Cookies)</td>
-            <td>
-              Teknik çerezler ile web sitesinin çalışması sağlanmakta, internet
-              sitesinin çalışmayan sayfaları ve alanları tespit edilmektedir.
-            </td>
-          </tr>
-          <tr>
-            <td>Otantikasyon Çerezleri(Authentication Cookies)</td>
-            <td>
-              Ziyaretçiler, şifrelerini kullanarak internet sitesine giriş
-              yapmaları durumunda, ziyaret ettiği her bir sayfada site
-              kullanıcısı olduğu belirlenerek, her sayfada şifresini yeniden
-              girmesi önlenir.
-            </td>
-          </tr>
-          <tr>
-            <td>Flash Çerezleri(Flash Cookies)</td>
-            <td>
-              İnternet sitesinde yer alan görüntü veya ses içeriklerini
-              etkinleştirmek için kullanılan çerez türleridir.
-            </td>
-          </tr>
-          <tr>
-            <td>Kişiselleştirme Çerezleri(Customization Cookies)</td>
-            <td>
-              Kullanıcıların dil gibi tercihlerini farklı internet sitesinin
-              farklı sayfalarını ziyarette de hatırlamak için kullanılan
-              çerezlerdir.{" "}
-            </td>
-          </tr>
-          <tr>
-            <td>Analitik Çerezler(Analytical Cookies)</td>
-            <td>
-              Web sitesini ziyaret edenlerin sayıları, görüntülenen sayfaların
-              tespiti, ziyaret saatleri, sayfaları kaydırma hareketleri gibi
-              analitik sonuçları izleyen çerezlerdir.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+      MPTaşıtmatik web sitesinde (bundan sonra "Site" olarak anılacaktır), kullanıcı deneyiminizi iyileştirmek, web sitemizin performansını analiz etmek, kişiselleştirilmiş içerik sunmak ve hizmetlerimizi geliştirmek amacıyla çerezler kullanmaktayız. Bu Çerez Politikası, hangi tür çerezleri kullandığımızı, bunların ne amaçla toplandığını ve nasıl kontrol edebileceğinizi açıklamaktadır.
+      </p>
+      <h4>Çerez Nedir?</h4>
 
-      <span>
-        Web sitemizde çerez kullanılmasının başlıca amaçları aşağıda
-        sıralanmaktadır:
-      </span>
-
-      <ul>
-        <li>
-          İnternet sitesinin işlevselliğini ve performansını arttırmak yoluyla
-          sizlere sunulan hizmetleri geliştirmek,
-        </li>
-        <li>
-          İnternet Sitesini iyileştirmek ve İnternet Sitesi üzerinden yeni
-          özellikler sunmak ve sunulan özellikleri sizlerin tercihlerine göre
-          kişiselleştirmek,
-        </li>
-        <li>
-          İnternet Sitesinin, Sizin ve Mevlana Petrol Ürünleri Turizm
-          Taşımacılık Pazarlama İnşaat Ticaret Limited Şirketi ’ın hukuki ve
-          ticari güvenliğinin teminini sağlamak.
-        </li>
-      </ul>
-
+      <p>
+      Çerezler, bir web sitesini ziyaret ettiğinizde tarayıcınıza veya cihazınıza kaydedilen küçük veri dosyalarıdır. Çerezler, sizi tanımamıza, tercihlerinizi hatırlamamıza ve size daha kişiselleştirilmiş bir deneyim sunmamıza olanak tanır.
+      </p>
+      <h4>Hangi Tür Çerezleri Kullanıyoruz?</h4>
       <ol>
-        <li>Çerez Tercihlerini Kontrol Etme</li>
-        <p>
-          Farklı tarayıcılar web siteleri tarafından kullanılan çerezleri
-          engellemek ve silmek için farklı yöntemler sunar. Çerezleri engellemek
-          / silmek için tarayıcı ayarları değiştirilmelidir. Tanımlama
-          bilgilerinin nasıl yönetileceği ve silineceği hakkında daha fazla
-          bilgi edinmek için www.allaboutcookies.org adresini ziyaret
-          edilebilir. Ziyaretçi, tarayıcı ayarlarını değiştirerek çerezlere
-          ilişkin tercihlerini kişiselleştirme imkânına sahiptir.{" "}
-        </p>
+        <li>Zorunlu Çerezler: Web sitemizin temel işlevlerini yerine getirmesi için gerekli olan bu çerezler, güvenlik, ağ yönetimi ve kullanıcı oturumlarının yönetimi gibi işlemleri sağlar. Bu çerezler olmadan web sitemiz düzgün çalışamaz.</li>
+        <li>Performans ve Analitik Çerezleri: Ziyaretçilerin web sitemizi nasıl kullandığı hakkında anonim veriler toplayarak sitenin performansını değerlendirmemize ve kullanıcı deneyimini iyileştirmemize yardımcı olan çerezlerdir.
+        </li>
+        <li>Fonksiyonel Çerezler: Bu çerezler, web sitemizi daha işlevsel hale getirir. Dil tercihleriniz veya oturum bilgileriniz gibi ayarlarınızı hatırlayarak size daha iyi bir kullanıcı deneyimi sunar.</li>
+        <li>Reklam ve Pazarlama Çerezleri: Web sitemizde gezinirken ilgi alanlarınıza uygun reklamlar sunmak amacıyla kullanılan çerezlerdir. Bu çerezler, üçüncü taraf reklam sağlayıcılar tarafından kullanıcı davranışını izlemek ve ilgi alanlarına göre hedeflenmiş içerik sunmak için kullanılabilir.</li>
       </ol>
 
-      <ol>
-        <li>Veri Sahiplerinin Hakları</li>
-        <p>
-          Kanunun “ilgili kişinin haklarını düzenleyen” 11. maddesi kapsamındaki
-          talepleri, Politika’da düzenlendiği şekilde, ayrıntısını
-          http://www.karatascam.com/kisisel-verilerin-korunmasi adresinden
-          ulaşabileceğiniz Başvuru Formunu’nu Karataş Cam’a ileterek yapabilir.
-          Talebin niteliğine göre en kısa sürede ve en geç otuz gün içinde
-          başvuruları ücretsiz olarak sonuçlandırılır; ancak işlemin ayrıca bir
-          maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarafından
-          belirlenecek tarifeye göre ücret talep edilebilir.
-        </p>
-      </ol>
+     <h4>Çerezlerin Kullanım Amaçları</h4>
+     <p>Çerezler, şu amaçlarla kullanılmaktadır:</p>
+     <ul>
+      <li>Web sitesinin etkin çalışmasını sağlamak</li>
+      <li>Tercihlerinizi hatırlamak</li>
+      <li>Kullanıcı deneyimini iyileştirmek</li>
+      <li>Ziyaretçi trafiğini analiz etmek</li>
+      <li>Kişiselleştirilmiş içerik ve reklam sunmak</li>
+      <li>Çerezleri Yönetmek</li>
+      <li>Tarayıcı ayarlarınızı değiştirerek çerezleri engelleyebilir veya silebilirsiniz. Ancak, çerezlerin devre dışı bırakılması, sitemizin bazı özelliklerinin doğru çalışmasını engelleyebilir.</li>
+     </ul>
 
-      <ol>
-        <li>Politika’nın Yürürlüğü</li>
-        <p>
-          Bu Politika yayınlandığı tarihte yürürlüğe girer. Politika’nın tümünün
-          veya belirli maddelerinin yenilenmesi halinde Politika’nın yürürlük
-          tarihi revize edilir.
-        </p>
-      </ol>
+     <h4>Üçüncü Taraf Çerezleri</h4>
+     <p>Web sitemizde üçüncü taraf hizmet sağlayıcılar tarafından yerleştirilen çerezler de bulunmaktadır. Bu üçüncü taraf çerezlerin nasıl çalıştığına dair daha fazla bilgi almak için ilgili hizmet sağlayıcının çerez politikasını incelemenizi öneririz.</p>
+     <h4>Çerez Politikamızdaki Değişiklikler</h4>
+     <p>Çerez politikamızda zaman zaman güncellemeler yapabiliriz. Bu tür değişiklikler web sitemizde yayınlandığı andan itibaren geçerli olur. Çerez politikamızdaki değişikliklerden haberdar olmak için bu sayfayı düzenli olarak ziyaret etmenizi öneririz.</p>
 
-      <span>
-        Mevlana Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret
-        Limited Şirketi Kişisel Verilerin Korunması ve İşlenmesi Politikası,
-        Kişisel Veri Saklama ve İmha Politikası, Başvuru Formu için “Mevlana
-        Petrol Ürünleri Turizm Taşımacılık Pazarlama İnşaat Ticaret Limited
-        Şirketi ” adresinden ulaşabilirsiniz.
-      </span>
+     <h4>İletişim Bilgileri</h4>
+     <p>Çerez politikamız hakkında daha fazla bilgi almak veya sorularınızı iletmek için bizimle mevlana@mevlanapetrol.com.tr adresinden iletişime geçebilirsiniz.<br></br>
+
+      Bu çerez politikası, Türkiye’de 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Yönetmeliği (GDPR) hükümlerine uygun olarak hazırlanmıştır.</p>
+
     </div>,
   ];
 
