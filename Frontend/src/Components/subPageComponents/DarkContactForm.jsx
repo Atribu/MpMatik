@@ -26,13 +26,22 @@ const BasicContactForm = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await fetch('/api/basic-contact/yeni', {
+        // İlk API çağrısı (basic-contact)
+        const dbRes = await fetch('/api/basic-contact/yeni', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         });
-  
-        if (res.ok) {
+    
+        // İkinci API çağrısı (Node.js sunucusu)
+        const mailRes = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+    
+        // Her iki yanıtın da başarılı olup olmadığını kontrol et
+        if (dbRes.ok && mailRes.ok) {
           alert('Form başarıyla gönderildi!');
           setFormData({
             name: '',
@@ -49,6 +58,7 @@ const BasicContactForm = () => {
         alert('Form gönderilemedi.');
       }
     };
+    
 
   return (
     <form className='darkContactForm' onSubmit={handleSubmit}>

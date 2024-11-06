@@ -13,14 +13,14 @@ const transporter = nodemailer.createTransport({
 });
 
 // POST isteği işlemi
-export async function POST(req) {
-  const { name, surname, email, phone, selectedCity } = await req.json();
+export default async function POST(req) {
+  const { name, email, phone, selectedCity,mesaj } = await req.json();
   
   const mailOptions = {
     from: email, // Formdan gelen email adresi
     to: 'mpmatik@dgtlface.com', // Hedef e-posta adresi
     subject: 'İletişim Formu Mesajı',
-    text: `Ad: ${name}\nSoyad: ${surname}\nEmail: ${email}\nTelefon: ${phone}\nMesaj: ${selectedCity}`,
+    text: `Ad: ${name}\nEmail: ${email}\nTelefon: ${phone}\nŞehir: ${selectedCity}\nMessage: ${mesaj}`,
   };
 
   try {

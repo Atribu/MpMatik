@@ -3,6 +3,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import nodemailer from 'nodemailer';
 import paymentRoutes from './routes/payment.js';
 import loginRegister from "./routes/loginRegister.js";
 import blogRoute from "./routes/blog.js";
@@ -26,6 +27,55 @@ app.use(cors({
 app.use(express.json()); // JSON verilerini parse et
 app.use(express.urlencoded({ extended: true })); // URL-encoded verilerini parse et
 
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: parseInt(process.env.SMTP_PORT, 10),
+  secure: true, // Genellikle port 465 için true
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
+
+app.post('/api/contact', async (req, res) => {
+  const { name, surname, email, phone, selectedCity } = req.body;
+
+  const mailOptions = {
+    from: email,
+    to: 'mpmatik@dgtlface.com',
+    subject: 'İletişim Formu Mesajı',
+    text: `Ad: ${name}\nSoyad: ${surname}\nEmail: ${email}\nTelefon: ${phone}\nSelectedCity: ${selectedCity}`,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ message: 'Mesajınız başarıyla gönderildi!' });
+  } catch (error) {
+    console.error('Hata:', error);
+    res.status(500).json({ error: 'Mesaj gönderilirken bir hata oluştu.' });
+  }
+});
+
+app.post('/api/teklifcontact', async (req, res) => {
+  const { name, firmaname, phone, email, selectedCity,selectedProduct,selectedTuketim,selectedVehicle } =  req.body;
+
+  const mailOptions = {
+    from: email, // Formdan gelen email adresi
+    to: 'mpmatik@dgtlface.com', // Hedef e-posta adresi
+    subject: 'İletişim Formu Mesajı',
+    text: `Ad: ${name}\nFirmaAdı: ${firmaname}\nEmail: ${email}\nTelefon: ${phone}\nŞehir: ${selectedCity},\nÜrün: ${selectedProduct},\nTüketim: ${selectedTuketim},\nAraç:${selectedVehicle}`,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ message: 'Mesajınız başarıyla gönderildi!' });
+  } catch (error) {
+    console.error('Hata:', error);
+    res.status(500).json({ error: 'Mesaj gönderilirken bir hata oluştu.' });
+  }
+});
+
+
 app.use(express.static('public'));
 
 // MongoDB bağlantısı (Gerekirse)
@@ -46,6 +96,7 @@ app.use("/api/form", formRouter);
 app.use("/api/basic-contact", basicContactRouter);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/metric', metricRoute);
+
 
 // Hata middleware'i
 app.use((error, req, res, next) => {
