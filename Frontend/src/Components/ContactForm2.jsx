@@ -82,14 +82,34 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await fetch('/api/form/yeni', {
+        // İlk API çağrısı (basic-contact)
+        const dbRes = await fetch('/api/form/yeni', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ...formData, isChecked }),
         });
-  
-        if (res.ok) {
+    
+        // İkinci API çağrısı (Node.js sunucusu)
+        const mailRes = await fetch('/api/teklifcontact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...formData, isChecked }),
+        });
+    
+        // Her iki yanıtın da başarılı olup olmadığını kontrol et
+        if (dbRes.ok && mailRes.ok) {
           alert('Form başarıyla gönderildi!');
+          setFormData({
+            name: '',
+            firmaname:'',
+            phone: '',
+            email: '',
+            selectedCity: 'Şehir Seçiniz*',
+            selectedProduct:'Ürün Seçiniz*',
+            selectedTuketim:'Aylık Tüketim*',
+            selectedVehicle:'Araç Seçiniz*',
+  
+          });
         } else {
           alert('Form gönderilirken hata oluştu.');
         }
