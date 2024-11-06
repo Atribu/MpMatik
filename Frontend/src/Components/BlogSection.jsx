@@ -129,7 +129,7 @@ const BlogSection = () => {
               <div className="carousel-texts">
                <h3>{titles[index]}</h3>
                <p>{texts[index]}</p>
-               <button 
+               <button id="teklifal"
                       className="carousel-buttons" 
                     >
                       Daha Fazla Bilgi Al

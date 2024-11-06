@@ -79,7 +79,7 @@ const ContactForm = () => {
         <p className='h2'>BP TAŞITMATİK</p>
         <p className='h3'>Kurumsal Başvuru Formu</p>
       </div>
-      <section className='input-section'>
+      <section className='input-sectionColumn'>
         <input 
           className='inputForm' 
           type="text" 
@@ -234,7 +234,7 @@ const ContactForm = () => {
         Ben robot değilim
       </label>
 
-      <button className='green-button '><p>Gönder</p></button>
+      <button className='green-button '>Gönder</button>
     </form>
   );
 };

@@ -19,7 +19,7 @@
   }
 
   .gizlilik-container {
-    display: flex;
+    
     width: 90%;
     max-width: 1408px;
     min-height: 500px;
@@ -27,11 +27,29 @@
     padding: 60px 0px;
 
     @media (min-width: 768px) {
+      display: flex;
        flex-direction: row;
       }
 
       @media (max-width: 768px) {
+        display: none;
+      }
+  }
+
+  .gizlilik-container-mobile {
+    width: 90%;
+    max-width: 1408px;
+    min-height: 500px;
+    gap: 1%;
+    padding: 60px 0px;
+
+    @media (min-width: 768px) {
+      display: none;
+      }
+
+      @media (max-width: 768px) {
        flex-direction: column;
+       display: flex;
       }
   }
   
@@ -48,7 +66,7 @@
      }
 
     button {
-        padding: 25px;
+        padding: 25px 5%;
         cursor: pointer;
         border: none;
         background-color: #24a31f;
@@ -60,6 +78,10 @@
         color: #fff;
         line-height: 1.4em;
         text-align: start;
+
+        @media (max-width: 768px) {
+          width: 90%; 
+         }
       }
       
       button.active {

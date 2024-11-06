@@ -175,10 +175,14 @@
 
 .contentButtons.open {
   display: flex;
-  max-height: 200px;
+  max-height: 350px;
   padding: 2% 10%; 
   width: 100% !important; 
   background: #1A202C;
+
+  @media (min-width: 1024px) {
+    max-height: 200px;
+  }
 }
 
 .button-container {

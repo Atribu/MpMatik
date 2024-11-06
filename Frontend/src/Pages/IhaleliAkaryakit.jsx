@@ -55,9 +55,9 @@ const IhaleliAkaryakit = () => {
     <title>İhaleli Akaryakıt Satışı - BP Taşıtmatik</title>
     <meta name="description" content="İhaleli Akaryakıt Satışında Güvencesiyle Tanınan Lideriz! Geniş müşteri portföyümüz ve deneyimli ekibimizle, ihaleli akaryakıt satışında öncü rol üstleniyoruz." />
     </Helmet>
-      <div>
+      <div >
         <MainBackground header="İHALELİ AKARYAKIT" img={imageMain} />
-        <Satis2 texts={textSatis2} button={buttonSatis2} />
+        <Satis2 texts={textSatis2} button={buttonSatis2} href="/ihaleli-akaryakit#teklifal"/>
         <TextSection
           headers={headersArray}
           text={textsArray}

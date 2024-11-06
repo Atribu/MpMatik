@@ -52,7 +52,7 @@ Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve m�
           GÜVENLİK NAKLİYE
         </button>
         <div
-          className={`contentButtons ${activeContent === 'content1' ? 'open' : ''}`}
+          className={`contentButtonsNew ${activeContent === 'content1' ? 'open' : ''}`}
           id='content1'
         >
           <p>Mevlana Petrol, siparişlerini en geç 24 saat içerisinde teslimini gerçekleştirerek müşterilerinin iş akışını sorunsuz devam etmesini sağlamaktadır.
@@ -67,7 +67,7 @@ Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve m�
           ÖDEME KOLAYLIĞI
         </button>
         <div
-          className={`contentButtons ${activeContent === 'content2' ? 'open' : ''}`}
+          className={`contentButtonsNew ${activeContent === 'content2' ? 'open' : ''}`}
           id='content2'
         >
           <p>Mevlana Petrol müşterileri aldıkları ürünün faturasını ve tüm resmi evraklarını aynı gün eksiksiz olarak alır ve finans uzmanı personelleri ile sorunsuz bir şekilde ödemesini gerçekleştirir.</p>
@@ -81,7 +81,7 @@ Akaryakıt sektöründe başarının; kaliteli hizmet, zamanında teslimat ve m�
           KUSURSUZ HİZMET
         </button>
         <div
-          className={`contentButtons ${activeContent === 'content3' ? 'open' : ''}`}
+          className={`contentButtonsNew ${activeContent === 'content3' ? 'open' : ''}`}
           id='content3'
         >
           <p>Mevlana Petrol ile çalışma kararı alan tüm müşterilerimizin öncelikle ürün sevkiyatı yapılmadan önce akaryakıt tanklarının temizliğini titizlik ile profesyonel ekibimiz tarafından temizlenmektedir. Eğerki tank, pompa veya otomasyon ekipmanlarında bir sorun var ise gerekli yönlendirmeler ile onarımları ayrıca sağlanmaktadır.</p>

@@ -58,9 +58,10 @@ const blogSchema = new mongo.Schema({
         type: String,
         default: ""
     },
-    image: {
-        type: String,
-    },
+    images: {
+         type: [String], default: [] 
+        }, 
+
     author : {
         type: String,
         required: true

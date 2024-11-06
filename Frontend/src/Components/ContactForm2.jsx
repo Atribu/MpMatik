@@ -102,17 +102,17 @@ const ContactForm = () => {
   return (
     <form id="basvuru" className='formGray' onSubmit={handleSubmit}>
       <div id="teklif" className='divGray slide-upSatis'>
-        <p className='h2Gray'>TEKLİF AL</p>
-        <section className='input-sectionGray'>
+        <span className='h2Gray'>TEKLİF AL</span>
+        <section className='input-sectionGrayColumn'>
         <input type="text" id="name" name="name" required placeholder='İsim-Soyisim*' value={formData.name}
           onChange={handleChange}/>
         <input type="text" id="firmaname" name="firmaname" placeholder='Firma Adı*' required value={formData.firmaname}
           onChange={handleChange}/>
       </section>
       <section className='input-sectionGray'>
-        <input type="text" id="phone" name="phone" placeholder='Telefon*' required value={formData.phone}
+      <input type="text" id="email" name="email" placeholder='Email*' required value={formData.email}
           onChange={handleChange}/>
-        <input type="text" id="email" name="email" placeholder='Email*' required value={formData.email}
+        <input type="text" id="phone" name="phone" placeholder='Telefon*' required value={formData.phone}
           onChange={handleChange}/>
       </section>
       <section className='input-sectionGray'>
@@ -214,7 +214,7 @@ const ContactForm = () => {
     </div>
       </section>
       
-      <button className='green-buttonGray '><p>Gönder</p></button>
+      <button className='green-buttonGray '>Gönder</button>
       </div>
       
       

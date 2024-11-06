@@ -201,6 +201,29 @@
     width: 98% !important; 
     background: #1A202C;
 
+    // @media (min-width: 1024px) {
+    //   max-height: 200px;
+    // }
+
+  }
+
+  .contentButtonsNew {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    background-color: #1A202C;
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0% 10%; 
+  }
+  
+  .contentButtonsNew.open {
+    display: flex;
+    max-height: 370px;
+    padding: 2% 10%; 
+    width: 98% !important; 
+    background: #1A202C;
+
     @media (min-width: 1024px) {
       max-height: 200px;
     }

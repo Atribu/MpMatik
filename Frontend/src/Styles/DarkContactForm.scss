@@ -1,39 +1,36 @@
-.formCarousel-main {
+.darkContactForm {
     display: flex;
     align-items: center;
     justify-content:baseline;
-    background-color: rgba(66, 72, 83, 0.95); 
+    background-color: #191f2c; 
     flex-direction: column;
     gap:15px;
     text-align: center;
     font-family:sans-serif; 
-    left: 20%;
-    transform: translateX(-20%);
-    top: 10%;
-    transform: translateY(-10%);
+    border-radius: 10px;
+    width: 95%;  
+    padding: 20px 15px;
+    height: 470px;
 
     @media (min-width: 1024px) {
-      width: 60%; 
-      padding: 30px;
+      width: 54%; 
+      padding: 10px 20px;
       padding-bottom: 20px;
+      height: 440px;
       
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1023px) {
         width: 50%; 
-        padding: 30px;
-        padding-bottom: 60px;
-        
+        padding: 10px 20px ;
+        padding-bottom: 20px;
+        height: 480px;
       }
     
-      @media (max-width: 768px) {
-        width: 80%;  
-        padding: 15px;
-        height: 540px;
-      }
+      
 }
 
-.divcontact-main {
+.divDarkForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,9 +38,8 @@
     text-align: center;
     padding: 20px;
     text-transform: uppercase;
-    
     @media (min-width: 768px) {
-      width: 50%; 
+      width: 40%; 
       gap:20px;
    
     }
@@ -53,127 +49,82 @@
     }
 }
 .h2{
-    font-size: 25px;
+    font-size: 30px;
     color: #ffffff;
     line-height: normal;
     margin:0px;
-    padding: 0;
     white-space: nowrap;
-
-    @media (min-width: 768px) {
-      font-size: 30px;
-  
-    }
     
 }
 
 .h3{
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 0;
+    font-size: 20px;
     color: #ffffff;
     white-space: nowrap;
-
-    @media (min-width: 768px) {
-      font-size: 20px;
-  
-    }
 }
 
-.input-section{
+.input-dark-section{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 1rem;
-    
+    gap: 4%;
 
-    input{
-      background:#fff;
-
-      &::placeholder{
-        color: #999;
-      }
-    }
-
-    
 }
 
-.input-sectionColumn{
+.inputDarkForm{
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
+  width: 48%;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 1rem;
+  font-family:sans-serif; 
+  font-size: 16px; 
+  color: #333; 
+  height: 40px;
+  background: #191f2c;
+  max-height: 56.38px;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-
-  input{
-    background:#fff;
-    width: 95%; 
-    gap:1rem;
   
-    @media (min-width: 768px) {
-      width: 50%; 
-    }
-
-    &::placeholder{
-      color: #999;
-    }
+  &::placeholder {
+    font-style: normal;  
+    color: #999; 
   }
+
 
 }
 
-.inputForm{
+.inputDarkMessage{
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
-  width: 50%;
+  width: 100%;
+  height: 65px;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
   font-family:sans-serif; 
   font-size: 16px; 
-  color: #333; // Metin rengi
-  height:25px;
+  color: #333; 
+  background: inherit;
+
+  @media (min-width: 768px) {
+    height: 65px;
+  }
+
   
-  &.placeholder {
-    font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-    color: #999; // Placeholder için farklı renk kullanabilirsin
+  &::placeholder {
+    font-style: normal; 
+    color: #999; 
   }
 
 
 }
-
-// input {
-//     font-size: 16px;           
-//     font-family:sans-serif; 
-//     color: #333;                          
-//     border: 1px solid #ccc;    
-//     border-radius: 4px;       
-//     width: 50vw;              
-//     height: 50px;
-//     display: inline-block; // Padding ve border ile uyumlu genişlik hesaplama
-  
-//     // Placeholder için stil
-//     &.placeholder {
-//         font-style: normal;  
-//         color: #999; 
-//       }
-  
-//     // Odaklanma (focus) durumunda stil
-//     &:focus {
-//       outline: none;           // Varsayılan outline kaldırılır
-//       border-color: #4caf50;   // Odaklanınca kenar rengi değişir
-//       box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); // Hafif bir gölge verilir
-//     }
-//   }
   
 
 .checkbox-container {
@@ -215,7 +166,6 @@
       background-color: #ddd;
     }
   
-    // İşaretli durumda bir işaret ekleyelim
     .checkbox-input:checked ~ .checkbox-custom::after {
       content: "";
       position: absolute;
@@ -229,19 +179,20 @@
     }
   }
 
-  .green-button {
+  .submitDarkButton {
+    display: flex;
     width: 100%;
-    background-color: #4caf50;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    background-color: #259c1c;
     color: #ffffff;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 300;
     border:none;
-    border-radius: 5px;
-    height: 58.8px;
+    border-radius: 4px;
+    height: 40px;
     
     p{
-        font-size: 20px;
+        font-size: 17px;
         text-transform: uppercase;
     }
 
@@ -256,39 +207,37 @@
   }
 
 
-
-  .city-select {
+  .city-select-dark {
     position: relative;
     display: inline-block;
-    width: 50vw; 
-    
-  
+    width: 50%; 
+
     &__input {
-      padding: 10px;
+      padding: 2%;
       border: 1px solid #ccc;
       border-radius: 4px;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #fff !important;
+      background-color: transparent;
       font-family:sans-serif; 
       font-size: 16px; 
-      color: #333; // Metin rengi
-      height: 25px;
+      color: #999; 
+      height: 45px;
+      width: 100%;
+      background: inherit;
       
       &::placeholder {
-        font-style: normal;  // Burada italic'i devre dışı bırakıyoruz
-        color: #999; // Placeholder için farklı renk kullanabilirsin
-      }
-  
+        font-style: normal;  
+      } 
   
       .arrow {
         width: 0;
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #333; // Ok işareti rengi
+        border-top: 5px solid #999; 
         margin-left: 10px;
       }
     }
@@ -323,7 +272,7 @@
     }
   }
 
-  .city-select__dropdown{
+  .city-select-dark__dropdown{
     position: absolute;
       top: 100%; // Dropdown'ın input'un altında görünmesini sağlar
       left: 0;
@@ -339,7 +288,7 @@
 
   }
 
-  .city-select__option{
+  .city-select-dark__option{
     padding: 5px 10px; 
         cursor: pointer;
         font-family:sans-serif; 

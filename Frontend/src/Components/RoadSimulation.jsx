@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import '../Styles/RoadSimulation.scss'; // Sass dosyanızı burada import ediyorsunuz
-import benzinlik from "../../public/images/bp-mp-istasyonu.png";
+import benzinlik from "../../public/images/mpistasyonuzun.png";
 import maviaraba from "../../public/images/maviaraba.png";
 import kisakamyon from "../../public/images/kisakamyon.png";
 import uzunkamyon from "../../public/images/uzunkamyon.png";

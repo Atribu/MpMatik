@@ -1,5 +1,5 @@
 import React, { useState }  from 'react'
-import "../../Styles/BasicContactForm.scss"
+import "../../Styles/DarkContactForm.scss"
 
 const BasicContactForm = () => {
   const [formData, setFormData] = useState({
@@ -51,31 +51,31 @@ const BasicContactForm = () => {
     };
 
   return (
-    <form className='formContactForm' onSubmit={handleSubmit}>
-      <div className='divContactForm'>
+    <form className='darkContactForm' onSubmit={handleSubmit}>
+      <div className='divDarkForm'>
         <p className='h2'>BP TAŞITMATİK</p>
         <span className='h3'>İLETİŞİM formu</span>
       </div>
-      <section className='input-section'>
-        <input className='inputForm' type="text" id="name" name="name" required placeholder='İsim-Soyisim*'  value={formData.name}  onChange={handleChange}/>
-        <input className='inputForm' type="email" id="email" name="email" placeholder='Email*' required value={formData.email}  onChange={handleChange}/>
+      <section className='input-dark-section'>
+        <input className='inputDarkForm' type="text" id="name" name="name" required placeholder='İsim-Soyisim*'  value={formData.name}  onChange={handleChange}/>
+        <input className='inputDarkForm' type="email" id="email" name="email" placeholder='Email*' required value={formData.email}  onChange={handleChange}/>
       </section>
-      <section className='input-section'>
-        <input className='inputForm' type="text" id="phone" name="phone" placeholder='Telefon*' required  value={formData.phone}  onChange={handleChange}/>
-        <div className="city-select-basic">
+      <section className='input-dark-section'>
+        <input className='inputDarkForm' type="text" id="phone" name="phone" placeholder='Telefon*' required  value={formData.phone}  onChange={handleChange}/>
+        <div className="city-select-dark">
       <div 
-        className={`city-select-basic__input ${formData.selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
+        className={`city-select-dark__input ${formData.selectedCity === 'Şehir Seçiniz*' ? 'placeholder' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
       >
         {formData.selectedCity}
         <span className="arrow"></span>
       </div>
       {isOpen && (
-        <div className="city-select-basic__dropdown">
+        <div className="city-select-dark__dropdown">
           {cities.map((city, index) => (
             <div 
               key={index} 
-              className="-basic__option" 
+              className="-dark__option" 
               onClick={() => handleSelect(city)}
             >
               {city}
@@ -86,10 +86,10 @@ const BasicContactForm = () => {
     </div>
       </section>
       <section className='input-section'>
-        <textarea className='inputFormMessage' type="text" id="mesaj" name="mesaj" required placeholder='Mesaj*' value={formData.mesaj}
+        <textarea className='inputDarkMessage' type="text" id="mesaj" name="mesaj" required placeholder='Mesaj*' value={formData.mesaj}
           onChange={handleChange}/>
       </section>
-      <button className='submitButton'><p>Gönder</p></button>
+      <button className='submitDarkButton'><p>Gönder</p></button>
       
     </form>
   )

@@ -45,7 +45,7 @@ const ToptanAkaryakit = () => {
     </Helmet>
     <div>
       <MainBackground header="TOPTAN AKARYAKIT" img={imageMain}/>
-       <Teklif/>
+       <Teklif href=""/>
       <TextSection headers={headersArray} text={textsArray} list1={list1} list2={list2}/>
       <BlogSection/> 
       <ContactForm2/>

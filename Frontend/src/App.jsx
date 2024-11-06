@@ -139,7 +139,7 @@ const App = () => {
                 <Route path="users/:id" element={<ProfilEditor />} />
               </Route>
 
-              {<Route path="/blog/:url" element={<BlogDetails />} />}
+              <Route path="/blog/:url" element={<BlogDetails />} />
               <Route path="/page/:url" element={<NewPage />} />
             </Routes>
           </main>

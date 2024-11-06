@@ -1,8 +1,31 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import image from "../../../public/images/tasit-tanıma.png"
 import "../../Styles/TasitTanimaSection.scss"
 
 const TasitTanimaSection = () => {
+
+  useEffect(() => {
+    // kayarak gelme
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    // Gözlemlemek istediğiniz elemanları seçin
+    const hiddenElements = document.querySelectorAll('.slide-up');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup işlemi: Bileşen kaldırıldığında gözlemlemeyi bırakır
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <section className='sectioncontainer'>
         <div className='divcontainer'>
@@ -15,7 +38,7 @@ const TasitTanimaSection = () => {
                 <button className='buttonApply'><span>HEMEN BAŞVUR</span></button>
             </div>
 
-            <div className='divHalfImage'>
+            <div className='divHalfImage slide-up'>
             <img className='imageRes' src={image} alt='tasittanıma' width={image.width} height={image.height}/>
             </div>
         </div>
